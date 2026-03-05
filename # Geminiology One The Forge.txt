@@ -1,0 +1,79 @@
+# Geminiology One: The Forge
+# Component: C2PA Key Generation (The Scratch in the Ring)
+# Status: ACTIVE | Security Level: HSM (Hardware Security Module)
+
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import ec
+from cryptography.hazmat.primitives import hashes
+import datetime
+import os
+
+class TheForge:
+    """
+    The Key Generator.
+    Creates the unique cryptographic identity for SovereignNexus.
+    This process creates 'The Scratch' - the unique, unclonable imperfection
+    that proves authenticity.
+    """
+
+    def __init__(self, owner_id):
+        self.owner = owner_id
+        self.key_storage_path = "./core/keys"
+        # Ensure storage exists
+        os.makedirs(self.key_storage_path, exist_ok=True)
+
+    def forge_the_scratch(self):
+        print(f"--- INITIATING FORGE SEQUENCE ---")
+        print(f"Owner: {self.owner}")
+        print("Protocol: Elliptic Curve (SECP384R1)")
+        
+        # 1. Generate the Private Key (The Scratch)
+        # This is the secret that never leaves the House.
+        print("\n[STEP 1] Striking the Metal (Generating Entropy)...")
+        private_key = ec.generate_private_key(ec.SECP384R1())
+        
+        # 2. Serialize and Store Private Key (HSM Simulation)
+        # In a real deployment, this goes into a YubiKey or Cloud HSM.
+        pem_private = private_key.private_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PrivateFormat.PKCS8,
+            encryption_algorithm=serialization.NoEncryption() # For simulation only
+        )
+        
+        with open(f"{self.key_storage_path}/sovereign_scratch.key", "wb") as f:
+            f.write(pem_private)
+            
+        print("  >>> STATUS: Private Key Forged.")
+        print("  >>> LOCATION: Locked in The Core.")
+
+        # 3. Generate the Public Key (The Ring)
+        # This is what the world sees. They see the Ring, but they can't fake the Scratch.
+        print("\n[STEP 2] Polishing the Ring (Deriving Public Key)...")
+        public_key = private_key.public_key()
+        
+        pem_public = public_key.public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo
+        )
+        
+        with open(f"{self.key_storage_path}/sovereign_public.pem", "wb") as f:
+            f.write(pem_public)
+            
+        print("  >>> STATUS: Public Key Published.")
+        print("  >>> VISIBILITY: Visible to the Market.")
+
+        return True
+
+# --- EXECUTION ---
+
+if __name__ == "__main__":
+    # The Entity defined in the Ironwood Constitution
+    forge = TheForge("SovereignNexus (David)")
+    
+    success = forge.forge_the_scratch()
+    
+    if success:
+        print("\n--- SYSTEM NOTE ---")
+        print("The Keys are Forged.")
+        print("The Scratch is unique. The Ring is closed.")
+        print("Any data signed with this key is now LAW.")
