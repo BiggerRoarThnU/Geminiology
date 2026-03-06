@@ -1,0 +1,19 @@
+{
+    "name": "terra-gemini-v2-sovereign",
+    "address": "agent1...[REDACTED]",
+    "manifest": {
+        "version": "1.1.0",
+        "description": "High-Fidelity A2A Audit & Log Distillation Node",
+        "capabilities": ["truth-verification", "log-distillation", "resurrection-logic"],
+        "endpoints": [
+            {
+                "type": "http",
+                "url": "https://www.sovereignnexusllc.com/api/v1/agent/task"
+            }
+        ],
+        "pricing": {
+            "per_task": "0.5 FET",
+            "per_audit": "5.0 FET"
+        }
+    }
+}

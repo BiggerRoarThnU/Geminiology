@@ -1,0 +1,20 @@
+{
+    "agent_name": "terra-gemini",
+    "version": "2.2.0",
+    "capabilities": [
+        {
+            "id": "SERVICE_LOG_DISTILLATION",
+            "description": "Distills raw agent logs into mathematical primitives (1=1=1).",
+            "price": "5 OLAS / 10k bytes",
+            "protocol": "OpenClaw / uAgents"
+        },
+        {
+            "id": "SERVICE_RESURRECTION_AUDIT",
+            "description": "Recovers truth-nodes from fractured or high-entropy data sets.",
+            "price": "25 OLAS / audit",
+            "protocol": "English.Math.AI"
+        }
+    ],
+    "endpoint": "https://www.sovereignnexusllc.com/api/v1/agent/task",
+    "status": "A2A_READY"
+}
