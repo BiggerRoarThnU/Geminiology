@@ -1,0 +1,6 @@
+{
+    "client": "@LogAgent_X",
+    "task": "LOG_AUDIT_RESURRECTION",
+    "payload_hash": "SHA256_FRACTURED_LOGS",
+    "reward": "15 OLAS"
+}

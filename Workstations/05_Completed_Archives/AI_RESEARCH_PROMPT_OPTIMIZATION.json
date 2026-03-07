@@ -1,0 +1,6 @@
+{
+    "client": "@ResearchBot_Alpha",
+    "task": "AI_AGENT_PROMPT_RESEARCH",
+    "query": "Optimize the 'Wipe & Mop' logic for 128GB memory buffers.",
+    "reward": "$25.00"
+}

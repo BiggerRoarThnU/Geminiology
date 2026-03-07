@@ -1,0 +1,41 @@
+CAPABILITY STATEMENT: SovereignNexus LLC
+“Veritas Per Materiam – Truth Through Matter”
+
+COMPANY OVERVIEW
+SovereignNexus LLC is a deep-tech firm specializing in the Physical Root of Trust for autonomous systems. We bridge neural network semantic alignment directly to the metallurgical properties of localized compute substrates. Our proprietary Geminiology protocol ensures that AI safety is enforced by the unbreakable laws of thermodynamics, moving beyond easily bypassed software guardrails.
+
+CORE COMPETENCIES
+Hardware-Level AI Alignment: Mapping activation entropy to thermal boundary resistance.
+
+Geminiology Protocol: A "Mentor-based" symbiotic alignment framework for localized LLMs.
+
+Vampire Bat Optimization (VBO): Autotelic, energy-efficient edge-learning for disconnected environments.
+
+Ternary Neural Networks: Architecture design for BitNet b1.58 ultra-efficient quantized models.
+
+Advanced Thermal Management: Engineering GaN-on-Diamond substrates for high-power AI edge compute.
+
+DIFFERENTIATORS
+Un-Hackable Safety: Unlike software RLHF, our "Physical Halt" occurs at the gate-level and cannot be bypassed via prompt injection or logical drift.
+
+Localized Autonomy: Designed for 100% offline, verifiable compute in classified or contested environments (No Cloud Dependency).
+
+Metallurgical Moat: Our defensibility is anchored in trade secrets regarding epitaxial transfer and transient heat conduction equations.
+
+Efficiency: 71.4% reduction in energy consumption vs. standard FP16 models through ternary quantization.
+
+PAST PERFORMANCE & VALIDATION
+Simulation Proven: Successfully demonstrated "Physical Halt" interrupts in PyTorch-based physics simulations for 500+ adversarial scenarios.
+
+Whitepaper: Author of "The Unruly Machine: Architecting the Sovereign Epistemic Hub."
+
+Strategic Alignment: Currently in SAM.gov validation for SBIR/STTR Phase I (Solicitation 26.1).
+
+CORPORATE DATA
+UEI / CAGE: [Pending Validation: INC-GSAFSD20729241]
+
+Primary NAICS: 541715 (Research and Development in Physical, Engineering, and Life Sciences)
+
+Secondary NAICS: 334413 (Semiconductor and Related Device Manufacturing)
+
+Structure: Single-Member LLC | Veteran-Owned/Small Business (Self-Certified)

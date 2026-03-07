@@ -1,0 +1,29 @@
+NOva Physcial card number: 
+5212
+2365
+9270
+5308
+exp:02/31 cvv 240 
+Details:
+Cardholder Name
+David Niedzwiecki Jr
+Billing Address
+280 Brick Kiln Rd Vanceboro, NC 28586
+
+Bank Letter
+The Bank Letter is a document provided by our partner bank to demonstrate the banking relationship and ownership of the account.
+
+The bank letter will include the following information.
+
+Account Holder
+David John Niedzwiecki Jr
+Business Name
+SovereignNexusLLC
+Account Number
+103495885
+Routing Number
+211370150
+Business Address
+280 Brick Kiln Rd, Vanceboro, NC - 28586
+Account Opening Date
+Feb 12, 2026

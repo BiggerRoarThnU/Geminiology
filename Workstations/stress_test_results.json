@@ -1,0 +1,133 @@
+{
+    "timestamp": "2026-03-05T21:26:12.714184",
+    "flow": "medium",
+    "tasks": [
+        {
+            "id": "NEXUS_1772763972",
+            "client": "MOCK_CLIENT_000",
+            "revenue": 341.80316333769315
+        },
+        {
+            "id": "NEXUS_1772763972",
+            "client": "MOCK_CLIENT_001",
+            "revenue": 1087.1150461301181
+        },
+        {
+            "id": "NEXUS_1772763972",
+            "client": "MOCK_CLIENT_002",
+            "revenue": 183.26482063958647
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_003",
+            "revenue": 486.44458337340353
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_004",
+            "revenue": 176.33844418454032
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_006",
+            "revenue": 2253.1752602041606
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_007",
+            "revenue": 1624.9124971378071
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_008",
+            "revenue": 913.8617232581333
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_009",
+            "revenue": 2285.9564192555727
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_010",
+            "revenue": 419.34886200728494
+        },
+        {
+            "id": "NEXUS_1772763973",
+            "client": "MOCK_CLIENT_011",
+            "revenue": 1772.691156162251
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_013",
+            "revenue": 577.8027429872809
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_014",
+            "revenue": 782.1267680703764
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_016",
+            "revenue": 791.3359775776889
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_017",
+            "revenue": 1229.2575906851876
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_018",
+            "revenue": 318.3786087119316
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_019",
+            "revenue": 1701.345444099272
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_020",
+            "revenue": 2188.352747708558
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_021",
+            "revenue": 1059.9745478531038
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "client": "MOCK_CLIENT_022",
+            "revenue": 1287.7424585644856
+        },
+        {
+            "id": "NEXUS_1772763975",
+            "client": "MOCK_CLIENT_024",
+            "revenue": 2085.1348631206884
+        }
+    ],
+    "failures": [
+        {
+            "id": "NEXUS_1772763973",
+            "error": "504",
+            "client": "MOCK_CLIENT_005"
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "error": "504",
+            "client": "MOCK_CLIENT_012"
+        },
+        {
+            "id": "NEXUS_1772763974",
+            "error": "401",
+            "client": "MOCK_CLIENT_015"
+        },
+        {
+            "id": "NEXUS_1772763975",
+            "error": "808",
+            "client": "MOCK_CLIENT_023"
+        }
+    ]
+}

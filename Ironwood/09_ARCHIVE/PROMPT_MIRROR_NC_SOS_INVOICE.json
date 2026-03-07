@@ -1,0 +1,42 @@
+{
+  "document_metadata": {
+    "type": "State Registration Invoice",
+    "issuer": "North Carolina Department of The Secretary of State",
+    "invoice_number": "23686166",
+    "invoice_date": "1/16/2026",
+    "account_type": "Payment upon Delivery",
+    "ship_via": "Online"
+  },
+  "billing_information": {
+    "entity_name": "Sovereignnexusllc",
+    "address_line_1": "280 Brick Kiln Rd",
+    "address_line_2": "Vanceboro, NC 28586-8234"
+  },
+  "invoiced_items": [
+    {
+      "description": "01/16/2026-Articles of Organization-SovereignNexus llc",
+      "certificate_number": "125848818",
+      "qty": 1,
+      "item_cost": 125.00,
+      "total": 125.00
+    },
+    {
+      "description": "Electronic Transaction Fee",
+      "certificate_number": "125848819",
+      "qty": 1,
+      "item_cost": 3.00,
+      "total": 3.00
+    }
+  ],
+  "payment_details": {
+    "transaction_info": "Credit: Up-Filing for $128.00, Visa Acct XXXXXXXXXXXX3688, TXId: AV0A1B10731F",
+    "total_paid": 128.00,
+    "balance_due": 0.00
+  },
+  "remittance_contact": {
+    "agency": "Secretary of State",
+    "address": "PO Box 29622, Raleigh, NC 27626",
+    "customer_service": "(919) 814-5400",
+    "toll_free": "(888) 246-7636"
+  }
+}

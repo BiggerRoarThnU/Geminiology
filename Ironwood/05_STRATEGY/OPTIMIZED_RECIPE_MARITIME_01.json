@@ -1,0 +1,8 @@
+{
+    "trend_id": "MARITIME_01",
+    "solution_name": "SovereignNexus_MARITIME_01_Agent",
+    "market_vector": "IMO DCS Compliance",
+    "pricing_model": "Unit-of-Value ($5,000 - $15,000)",
+    "infrastructure": "Cloud Satellite (Template 10) + Ghost Strikers",
+    "nc_shield": "H.B. 920 & SOS Anchored"
+}

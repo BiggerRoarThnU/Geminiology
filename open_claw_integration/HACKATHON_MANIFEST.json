@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "project": "Sovereign Vampire-Claw Bridge",
     "version": "1.0.0",
@@ -12,3 +13,19 @@
     "verification": "1=1=1 Symmetrical Line Proof Active",
     "contact": "admin@sovereignnexus.org"
 }
+=======
+{
+    "project": "Sovereign Vampire-Claw Bridge",
+    "version": "1.0.0",
+    "bounty_target": "UK AI Agent Hackathon EP4",
+    "fidelity_score": 0.99,
+    "tech_stack": [
+        "Python 3.12",
+        "uAgents Framework",
+        "OpenClaw Protocol v0.1.4",
+        "Vampire Engine v2.2 (Local RAG)"
+    ],
+    "verification": "1=1=1 Symmetrical Line Proof Active",
+    "contact": "admin@sovereignnexus.org"
+}
+>>>>>>> dfa58a92e69ae961dcd415a6e849c153e2860bbe

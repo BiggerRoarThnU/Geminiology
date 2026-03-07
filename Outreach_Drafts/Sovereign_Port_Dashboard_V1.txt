@@ -1,0 +1,19 @@
+SOVEREIGN PORT DASHBOARD V1.0 - TECHNICAL OVERVIEW
+============================================================
+SovereignNexus LLC | Vanceboro, North Carolina
+============================================================
+
+1. AGENTIC COMPLIANCE LAYER
+Our system utilizes the Sentinel_M1 Agent to proactively monitor 2026 IMO and FMCSA regulatory shifts. This ensures that Unis Logistics and A2 Global Shipping LLC remain ahead of the $75,000 liquid bond mandates and ACE 2.0 AI-driven checks.
+
+2. EMISSIONS & SUSTAINABILITY (IMO DCS)
+Automated data ingestion for real-time emissions tracking. The dashboard provides a "Sovereign Proof" certificate for all sustainability audits, reducing reporting overhead by 85%.
+
+3. DATA SOVEREIGNTY (THE 8GB REALITY)
+Unlike traditional cloud-based AI, SovereignNexus operates within a local, secured "8GB Reality" boundary. Your sensitive operational data is never used for external AI training. Your data stays in your kingdom.
+
+4. REAL-TIME LOGISTICS FORECASTING
+Identify bottlenecks in Morehead City and Wilmington ports before they impact your P&L. 
+
+CONTACT: David Niedzwiecki Jr. | Manager, SovereignNexus LLC
+============================================================

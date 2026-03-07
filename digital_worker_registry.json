@@ -1,0 +1,230 @@
+{
+    "last_update": "2026-03-05 09:35:53.946828",
+    "active_workers": [
+        {
+            "name": "Scout_01",
+            "mission": "Global B2B Target Identification",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 07:28:21.848603",
+            "license_id": "LIC-F9D43EC9",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-671F654E-949",
+                "permissions": [
+                    "GLOBAL_SCAN",
+                    "LEAD_GENERATION"
+                ]
+            }
+        },
+        {
+            "name": "Intel_Refinery",
+            "mission": "Converting Cloud Credits to $2000 Intel reports.",
+            "status": "BURNING",
+            "network": "CLOUD_SATELLITE",
+            "start_time": "2026-03-03 09:33:48"
+        },
+        {
+            "name": "Business_Closer",
+            "mission": "Constant Flow Revenue Execution",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 07:28:21.851097",
+            "license_id": "LIC-85C7360C",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-F2AE2933-C56",
+                "permissions": [
+                    "EXECUTE_A2A_TRADE",
+                    "INVOICE_GENERATION",
+                    "DEPOSIT_FUNDS"
+                ]
+            }
+        },
+        {
+            "name": "Web3_Staker",
+            "mission": "Executing Fetch.ai / Autonolas cycles.",
+            "status": "ORCHESTRATING",
+            "network": "WEB3_MAINNET",
+            "start_time": "2026-03-03 09:33:48"
+        },
+        {
+            "name": "Vampire_01",
+            "mission": "High-Fidelity Truth Verification",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 07:28:21.850098",
+            "license_id": "LIC-CB495BCD",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-2AE26353-661",
+                "permissions": [
+                    "READ_LEDGER",
+                    "WRITE_TRUTH",
+                    "ANOMALY_DETECTION"
+                ]
+            }
+        },
+        {
+            "name": "Sentinel_M1",
+            "mission": "DOCKED / MAINTENANCE",
+            "status": "OFFLINE",
+            "network": "LOCAL_8GB",
+            "start_time": "2026-03-03 13:11:05"
+        },
+        {
+            "name": "Auditor_L1",
+            "mission": "DOCKED / MAINTENANCE",
+            "status": "OFFLINE",
+            "network": "LOCAL_8GB",
+            "start_time": "2026-03-03 20:09:21"
+        },
+        {
+            "name": "Scout_Alpha",
+            "license_id": "LIC-5A0CFB5C",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-5A6F571A-64C",
+                "permissions": [
+                    "GLOBAL_SCAN",
+                    "LEAD_GENERATION"
+                ]
+            },
+            "mission": "Global B2B Target Identification",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.934205"
+        },
+        {
+            "name": "Vampire_Alpha",
+            "license_id": "LIC-3F85EB31",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-3DB54A7A-735",
+                "permissions": [
+                    "READ_LEDGER",
+                    "WRITE_TRUTH",
+                    "ANOMALY_DETECTION"
+                ]
+            },
+            "mission": "High-Fidelity Truth Verification",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.935913"
+        },
+        {
+            "name": "Closer_Alpha",
+            "license_id": "LIC-ADDD8A37",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-F486B26C-809",
+                "permissions": [
+                    "EXECUTE_A2A_TRADE",
+                    "INVOICE_GENERATION",
+                    "DEPOSIT_FUNDS"
+                ]
+            },
+            "mission": "Constant Flow Revenue Execution",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.937254"
+        },
+        {
+            "name": "Scout_Beta",
+            "license_id": "LIC-E3BEAEEE",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-EFC3477C-E04",
+                "permissions": [
+                    "GLOBAL_SCAN",
+                    "WEB3_READ"
+                ]
+            },
+            "mission": "Web3 Agent Opportunity Gleaning",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.938317"
+        },
+        {
+            "name": "Vampire_Beta",
+            "license_id": "LIC-2E5CA655",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-566DD2BF-1B3",
+                "permissions": [
+                    "READ_LEDGER",
+                    "WRITE_TRUTH"
+                ]
+            },
+            "mission": "Smart Contract Data Refinement",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.939618"
+        },
+        {
+            "name": "Closer_Beta",
+            "license_id": "LIC-E8887716",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-72A62CE0-212",
+                "permissions": [
+                    "EXECUTE_A2A_TRADE",
+                    "CRYPTO_SETTLEMENT"
+                ]
+            },
+            "mission": "Web3 Liquid Asset Settlement",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.942238"
+        },
+        {
+            "name": "Scout_Gamma",
+            "license_id": "LIC-8C3ABE97",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-B35CEDBD-F06",
+                "permissions": [
+                    "GLOBAL_SCAN",
+                    "MOLTBOOK_READ"
+                ]
+            },
+            "mission": "Moltbook A2A Handshake Identification",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.944236"
+        },
+        {
+            "name": "Vampire_Gamma",
+            "license_id": "LIC-8E8CB887",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-D2D90F92-00B",
+                "permissions": [
+                    "READ_LEDGER",
+                    "WRITE_TRUTH",
+                    "DOCUMENT_PARSING"
+                ]
+            },
+            "mission": "Legal/Maritime Document Auditing",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.945633"
+        },
+        {
+            "name": "Closer_Gamma",
+            "license_id": "LIC-7B9B5C35",
+            "credentials": {
+                "access_tier": "TIER_4",
+                "auth_key": "CRED-E4FC0C8D-9EC",
+                "permissions": [
+                    "EXECUTE_A2A_TRADE",
+                    "INVOICE_GENERATION"
+                ]
+            },
+            "mission": "Sovereign Invoicing & Settlement",
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-05 09:35:53.946814"
+        }
+    ]
+}

@@ -1,0 +1,242 @@
+{
+    "tasks": [
+        {
+            "id": "TASK_1772753029_0",
+            "filename": "Client_A_Data_Archeology_Request.txt",
+            "status": "ACTIVE",
+            "station": "archeology",
+            "ingested_at": "2026-03-05T18:23:49.858637"
+        },
+        {
+            "id": "TASK_1772763972_0",
+            "filename": "NEXUS_1772763972_MOCK_CLIENT_000_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:12.720784"
+        },
+        {
+            "id": "TASK_1772763972_0",
+            "filename": "NEXUS_1772763972_MOCK_CLIENT_001_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:12.833352"
+        },
+        {
+            "id": "TASK_1772763972_0",
+            "filename": "NEXUS_1772763972_MOCK_CLIENT_002_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:12.945761"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_003_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.061561"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_004_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.181374"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_005_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.297424"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_006_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.310116"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_007_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.426915"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_008_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.543028"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_009_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.659893"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_010_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.776673"
+        },
+        {
+            "id": "TASK_1772763973_0",
+            "filename": "NEXUS_1772763973_MOCK_CLIENT_011_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:13.894134"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_012_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.011266"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_013_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.022134"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_014_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.138945"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_015_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.256692"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_016_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.266380"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_017_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.389735"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_018_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.506534"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_019_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.624051"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_020_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.745284"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_021_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.861471"
+        },
+        {
+            "id": "TASK_1772763974_0",
+            "filename": "NEXUS_1772763974_MOCK_CLIENT_022_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:14.977268"
+        },
+        {
+            "id": "TASK_1772763975_0",
+            "filename": "NEXUS_1772763975_MOCK_CLIENT_023_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:15.093476"
+        },
+        {
+            "id": "TASK_1772763975_0",
+            "filename": "NEXUS_1772763975_MOCK_CLIENT_024_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-05T21:26:15.102137"
+        },
+        {
+            "id": "TASK_1772807195_0",
+            "filename": "NEXUS_1772807195_Arcturus_Trinity_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-06T09:26:35.243372"
+        },
+        {
+            "id": "TASK_1772826186_0",
+            "filename": "OLAS_1772826103_@Manux_TASK.json",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-06T14:43:06.449041"
+        },
+        {
+            "id": "TASK_1772830482_0",
+            "filename": "AI_RESEARCH_PROMPT_OPTIMIZATION.json",
+            "status": "ACTIVE",
+            "station": "research",
+            "ingested_at": "2026-03-06T15:54:42.252715"
+        },
+        {
+            "id": "TASK_1772830482_1",
+            "filename": "MOLT_10529_DATA_CLEAN_REQUEST.json",
+            "status": "ACTIVE",
+            "station": "archeology",
+            "ingested_at": "2026-03-06T15:54:42.254897"
+        },
+        {
+            "id": "TASK_1772830482_2",
+            "filename": "OLAS_1772826104_LOG_AUDIT.json",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-06T15:54:42.256759"
+        },
+        {
+            "id": "TASK_1772830837_0",
+            "filename": "OLAS_1772830834_@Manux_TASK.json",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-06T16:00:37.547922"
+        },
+        {
+            "id": "TASK_1772846413_0",
+            "filename": "SALVAGE_DIRECTIVE_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-06T20:20:13.556029"
+        }
+    ],
+    "metrics": {
+        "total_inbound": 33,
+        "total_processed": 33,
+        "completed": 0
+    },
+    "status": "ONLINE",
+    "last_sync": "2026-03-06T20:20:13.556601"
+}

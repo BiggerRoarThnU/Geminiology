@@ -1,0 +1,100 @@
+{
+  "monthly_target": 12500.0,
+  "current_mrr": 0.0,
+  "liquid_usd": 0.0,
+  "total_in_play": 15765.0,
+  "revenue_nodes": {
+    "high_ticket_strikes": [
+      {
+        "target": "Ward and Smith, P.A.",
+        "service": "Legal_Auditor_L1",
+        "amount": 5000.0,
+        "status": "STRIKE_ACTIVE_LINKEDIN",
+        "last_touch": "2026-03-03 16:25:00"
+      },
+      {
+        "target": "Michelle Jerome Law",
+        "service": "Legal_Auditor_L1",
+        "amount": 5000.0,
+        "status": "STRIKE_ACTIVE_LINKEDIN",
+        "last_touch": "2026-03-03 16:15:00"
+      },
+      {
+        "target": "Sumrell Sugg, P.A.",
+        "service": "Legal_Auditor_L1",
+        "amount": 5000.0,
+        "status": "REFIT_PENDING_NEW_TARGET",
+        "last_touch": "2026-03-03 15:55:00"
+      },
+      {
+        "target": "Unis Logistics",
+        "service": "Maritime_Sentinel_M1",
+        "amount": 500.0,
+        "status": "SENT_AWAITING_REPLY",
+        "last_touch": "2026-03-03 15:45:00"
+      }
+    ],
+    "constant_flow_nodes": [
+      {
+        "agent": "Vector_Mill_01",
+        "task_type": "Document_Scanning_OCR",
+        "estimated_daily": 15.0,
+        "status": "ACTIVE"
+      },
+      {
+        "agent": "Web3_Shield_01",
+        "task_type": "Bounty_Data_Cleaning",
+        "estimated_daily": 250.0,
+        "status": "SIM_SUCCESS"
+      },
+      {
+        "agent": "Agentic_Hunter_01",
+        "task_id": "ASI_BOUNTY_402",
+        "task_type": "Autonomous_Lead_Qual",
+        "amount": 500.0,
+        "status": "WORK_SUBMITTED_AWAITING_PAYMENT"
+      }
+    ]
+  },
+  "vessel_nodes": [
+    {
+      "type": "Cloud_Credit_Pool",
+      "value": 80000.0,
+      "status": "ACTIVE_MARCH_2026",
+      "note": "Covers storage (2TB), API compute, and operational overhead."
+    }
+  ],
+  "accounts": {
+    "blue_vine": {
+      "balance": 1250.0,
+      "last_sync": "2026-03-03 16:25:00"
+    },
+    "novo": {
+      "balance": 450.0,
+      "last_sync": "2026-03-03 16:25:00",
+      "status": "ENTITY_FUEL_ACTIVE"
+    }
+  },
+  "audit_trail": [
+    {
+      "timestamp": "2026-03-06 11:42:00",
+      "event": "WEB3_STRIKE: ASI_BOUNTY_402 SUBMITTED",
+      "note": "$500 USDC projected revenue anchored in the Symmetrical Line."
+    },
+    {
+      "timestamp": "2026-03-04 12:25:00",
+      "event": "PHYSICAL_WIN: WELLS_FARGO_RECOVERY",
+      "note": "$81.90 allocated to clear negative balance. Symmetrical anchor restored."
+    },
+    {
+      "timestamp": "2026-03-04 12:25:00",
+      "event": "OPERATIONAL_NODE: STRATEGIC_SURPLUS",
+      "note": "$43.10 remaining for subscriptions and high-frequency strikes."
+    },
+    {
+      "timestamp": "2026-03-03 16:25:00",
+      "event": "STRIKE_ACTIVATED",
+      "note": "LinkedIn Lateral Strikes for Ward and Smith and Michelle Jerome Law are ACTIVE."
+    }
+  ]
+}

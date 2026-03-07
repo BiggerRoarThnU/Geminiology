@@ -1,0 +1,59 @@
+{
+    "vessel_name": "SOVEREIGN_COMMAND_128GB",
+    "target_usd": 8500.00,
+    "current_usd_liquid": 0.00,
+    "projected_revenue": 13215.00,
+    "nodes": [
+        {
+            "id": "NEXUS_1772807195",
+            "source": "Arcturus_Trinity",
+            "amount": 750.00,
+            "status": "AWAITING_SETTLEMENT",
+            "type": "WATER"
+        },
+        {
+            "id": "ASI_BOUNTY_402",
+            "source": "Fetch.ai",
+            "amount": 500.00,
+            "status": "SUBMITTED",
+            "type": "BOUNTY"
+        },
+        {
+            "id": "DORAHACKS_UK_EP4",
+            "source": "DoraHacks / OpenClaw",
+            "amount": 5000.00,
+            "status": "STRIKE_ACTIVE",
+            "type": "EMPIRE"
+        },
+        {
+            "id": "ST_EARN_SOL_AUDIT",
+            "source": "Superteam Earn",
+            "amount": 3000.00,
+            "status": "STRIKE_ACTIVE",
+            "type": "EMPIRE"
+        },
+        {
+            "id": "OLAS_1772826103",
+            "source": "Autonolas / @Manux",
+            "amount": 125.00,
+            "status": "COMPLETED",
+            "type": "WATER"
+        },
+        {
+            "id": "MICRO_FACTORY_BATCH_0306",
+            "source": "A2A / MoltBook / Olas",
+            "amount": 60.00,
+            "status": "COMPLETED",
+            "type": "WATER"
+        },
+        {
+            "id": "TY_SAVAGE_HOMES",
+            "source": "Ty Savage Homes",
+            "amount": 3840.00,
+            "status": "STRIKE_SENT",
+            "type": "WATER_MRR"
+        }
+    ],
+    "remaining_gap": 0.00,
+    "last_sync": "2026-03-06 15:05:00"
+}

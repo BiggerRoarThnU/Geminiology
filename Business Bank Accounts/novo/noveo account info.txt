@@ -1,0 +1,117 @@
+Account Info
+Bank Letter
+Users
+Personal Info
+Legal Name
+David John Niedzwiecki Jr
+
+Not Editable
+
+Email
+admin@sovereignnexus.org
+
+Edit
+
+Mobile Phone
+(252) 259-1724
+
+Edit
+
+Home Address
+280 Brick Kiln Rd, Vanceboro, NC - 28586
+
+Edit
+
+SSN (Social Security Number)
+XXX-XX-4001
+Not Editable
+
+Date of Birth
+30 Apr 1984
+
+Not Editable
+
+Business Info
+Edit
+
+Legal Business Name
+SovereignNexusLLC
+Business Type
+Single Member LLC
+EIN (Employer Identification Number)
+39-4933157
+DBA
+N.A
+
+Edit
+
+Phone Number
+(252) 259-1724
+
+Edit
+
+Business Address
+280 Brick Kiln Rd, Vanceboro, NC - 28586
+
+Edit
+
+Mailing Address
+280 Brick Kiln Rd, Vanceboro, NC - 28586
+
+Edit
+
+Website
+www.linkedin.com/in/david-niedzwiecki-jr-7b51252ab
+
+Edit
+
+Transfer Limits
+Bank Transfer
+ACH push from your Novo account
+Per Transfer
+$5,000.00
+Per Day
+$5,000.00
+Per Month
+$50,000.00
+Transfers Per Day
+60
+Transfers Per Month
+120
+Request a Limit Change
+Mailed Check
+Mail a check from your Novo account
+Per Transfer
+$500,000.00
+Per Day
+$500,000.00
+Per Month
+$1,000,000.00
+Transfers Per Day
+20
+Transfers Per Month
+40
+Request a Limit Change
+Check Deposit
+Deposit checks from your mobile device
+Per Transfer
+$10,000.00
+Per Day
+$10,000.00
+Per Month
+$20,000.00
+Request a Limit Change
+Transfer funds to Novo
+ACH pull from external account
+Per Transfer
+$600.00
+Per Day
+$600.00
+Per Month
+$15,000.00
+Transfers Per Day
+5
+Transfers Per Month
+30
+Stop Payment
+Use this service to block an incoming ACH transaction from pulling funds from your checking accoun

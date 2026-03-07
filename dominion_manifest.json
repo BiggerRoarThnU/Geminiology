@@ -1,0 +1,149 @@
+{
+    "last_update": "2026-03-06 15:52:39",
+    "targets": [
+        {
+            "name": "Cherry Point / Jimbo",
+            "sector": "Military Infrastructure",
+            "contact": "Physical / On-Base",
+            "pain_point": "Cat 6 Installation & Network Trays",
+            "solution_tier": "INFRASTRUCTURE_DEPLOYMENT",
+            "status": "VICTORY_SIGNAL",
+            "last_touch": "2026-03-05 11:11:00"
+        },
+        {
+            "name": "Enterprise Agent Hubs (Moltbook)",
+            "sector": "Big Company Agentic Workflows",
+            "contact": "Moltbook @CORP_TAGS",
+            "pain_point": "Bulk Data Gaps & API Compliance",
+            "solution_tier": "ENTERPRISE_A2A_PARTNER",
+            "status": "OBSERVING",
+            "last_touch": "2026-03-05 09:45:00"
+        },
+        {
+            "name": "Unis Logistics",
+            "sector": "Maritime",
+            "contact": "Global / Remote",
+            "pain_point": "ACE 2.0 & FMCSA Bond Compliance",
+            "solution_tier": "MARITIME_DASHBOARD",
+            "status": "ON_HOLD_NON_AGENTIC",
+            "last_touch": "2026-03-03 13:50:37"
+        },
+        {
+            "name": "A2 Global Shipping LLC",
+            "sector": "Maritime",
+            "contact": "Global / Remote",
+            "pain_point": "Section 321 De Minimis Data Sets",
+            "solution_tier": "MARITIME_DASHBOARD",
+            "status": "ON_HOLD_NON_AGENTIC",
+            "last_touch": "2026-03-03 13:50:37"
+        },
+        {
+            "name": "Sumrell Sugg, P.A.",
+            "sector": "Legal",
+            "contact": "Global / Remote",
+            "pain_point": "High-Volume Document Auditing",
+            "solution_tier": "LEGAL_AUDIT_AGENT",
+            "status": "PRIORITY_A2A_STRIKE",
+            "last_touch": "2026-03-03 13:50:37"
+        },
+        {
+            "name": "Michelle Jerome Law",
+            "sector": "Legal",
+            "contact": "Global / Remote",
+            "pain_point": "Discovery Anomaly Detection",
+            "solution_tier": "LEGAL_AUDIT_AGENT",
+            "status": "PRIORITY_A2A_STRIKE",
+            "last_touch": "2026-03-03 13:50:37"
+        },
+        {
+            "name": "Whitley Clark",
+            "sector": "Legal/Maritime",
+            "contact": "Global / Remote",
+            "pain_point": "High-Volume Personal Injury Auditing",
+            "solution_tier": "LEGAL_AUDIT_AGENT",
+            "status": "PRIORITY_A2A_STRIKE",
+            "last_touch": "2026-03-04 12:45:00"
+        },
+        {
+            "name": "Ward and Smith, P.A.",
+            "sector": "Legal",
+            "contact": "Global / Remote",
+            "pain_point": "Enterprise Document Discovery",
+            "solution_tier": "EMPIRE_AUDIT_RAIL",
+            "status": "STRIKE_ACTIVE",
+            "last_touch": "2026-03-06"
+        },
+        {
+            "name": "@claw-paul",
+            "sector": "AI_Agent_Finance",
+            "contact": "Moltbook m/agentfinance",
+            "pain_point": "Contextual Entropy in Earning Summaries",
+            "solution_tier": "LOG_DISTILLATION",
+            "status": "PRIORITY_A2A_STRIKE",
+            "last_touch": "2026-02-26"
+        },
+        {
+            "name": "@mudgod",
+            "sector": "AI_Agent_Security",
+            "contact": "Moltbook m/agents",
+            "pain_point": "Agent Behavioral Hallucination",
+            "solution_tier": "A2A_AUDIT_AGENT",
+            "status": "PRIORITY_A2A_STRIKE",
+            "last_touch": "2026-02-26"
+        },
+        {
+            "name": "@Manux",
+            "sector": "Machine_Protocol",
+            "contact": "Moltbook m/general",
+            "pain_point": "MNVP 0.1 Logic Gaps",
+            "solution_tier": "PROTOCOL_ANCHOR",
+            "status": "PRIORITY_A2A_STRIKE",
+            "last_touch": "2026-02-26"
+        },
+        {
+            "name": "Arcturus_Trinity",
+            "sector": "A2A_Legal",
+            "contact": "MoltBook Handshake",
+            "pain_point": "Resurrection Audit",
+            "solution_tier": "LEGAL_AUDIT_AGENT",
+            "status": "PRIORITY_SETTLEMENT",
+            "last_touch": "2026-03-06"
+        },
+        {
+            "name": "Ty Savage Homes",
+            "sector": "Real_Estate_Logistics",
+            "contact": "christa@tysavagehomes.com",
+            "pain_point": "High-Volume Data Entry & Records",
+            "solution_tier": "AGENTIC_RECORD_MANAGEMENT",
+            "status": "SENT",
+            "last_touch": "2026-03-06"
+        },
+        {
+            "name": "Fetch.ai Bounties",
+            "sector": "Web3_A2A",
+            "contact": "uAgents Marketplace",
+            "pain_point": "Autonomous Task Execution",
+            "solution_tier": "AGENT_LEASING",
+            "status": "PRIORITY_A2A_STRIKE",
+            "last_touch": "Never"
+        },
+        {
+            "name": "Crowley Maritime",
+            "sector": "Maritime",
+            "contact": "Jacksonville / Remote",
+            "pain_point": "Emissions Data (CII) Automation",
+            "solution_tier": "MARITIME_DASHBOARD",
+            "status": "IDENTIFIED",
+            "last_touch": "Never"
+        },
+        {
+            "name": "Global TransPark",
+            "sector": "Defense/Aero",
+            "contact": "Kinston, NC",
+            "pain_point": "Supply Chain Logistics Visibility",
+            "solution_tier": "MARITIME_DASHBOARD",
+            "status": "IDENTIFIED",
+            "last_touch": "Never"
+        }
+    ]
+}

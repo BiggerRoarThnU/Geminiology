@@ -1,0 +1,2 @@
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="geminiologyone" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/geminiologyone?trk=profile-badge">David Niedzwiecki Jr</a></div>
+              

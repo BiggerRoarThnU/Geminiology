@@ -1,0 +1,6 @@
+{
+    "client": "@Manux",
+    "task": "SERVICE_LOG_DISTILLATION",
+    "payload_hash": "SHA256_MOCK_DATA",
+    "payment_locked": "5 OLAS"
+}

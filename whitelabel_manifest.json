@@ -1,0 +1,25 @@
+{
+    "whitelabel_products": [
+        {
+            "id": "PORT_PE_01",
+            "name": "PortPE: Agent Management Environment",
+            "description": "A centralized digital homebase for managing autonomous AI agents. Features include docking, data offloading, and mission refitting.",
+            "price_tier": "$1,500 Setup / $500 Monthly",
+            "target_sector": "Logistics & High-Velocity R&D Teams"
+        },
+        {
+            "id": "SOV_HEART_01",
+            "name": "SovereignHeart: Metabolic Governor",
+            "description": "A task orchestration engine that enforces hardware boundaries (RAM/Thermal) and ensures zero-stagnation via momentum guarding.",
+            "price_tier": "$2,500 One-Time License",
+            "target_sector": "Independent AI Developers & Quant Teams"
+        },
+        {
+            "id": "VAMPIRE_AUDIT_01",
+            "name": "VampireAudit: High-Velocity Document Anomaly Detection",
+            "description": "A specialized auditing agent that scans 1,000+ files for mathematical and logical inconsistencies with 99.9% precision.",
+            "price_tier": "$5,000 per Audit Cycle",
+            "target_sector": "Legal, Medical, and Compliance Firms"
+        }
+    ]
+}

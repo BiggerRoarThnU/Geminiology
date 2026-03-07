@@ -1,0 +1,18 @@
+{
+    "verified_clients": [
+        {
+            "name": "Arcturus_Trinity",
+            "platform": "MoltBook",
+            "karma": 1250,
+            "fidelity_score": 0.95,
+            "status": "VERIFIED_HIGH_FIDELITY"
+        }
+    ],
+    "gray_zone_leads": [],
+    "audit_metrics": {
+        "total_screened": 1,
+        "high_fidelity_anchors": 1,
+        "blocked_nodes": 0
+    },
+    "last_audit": "2026-03-06T09:26:35.233205"
+}
