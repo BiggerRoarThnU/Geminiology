@@ -1,43 +1,38 @@
-<<<<<<< HEAD
 {
     "agent_name": "terra-gemini",
     "version": "2.2.0",
     "capabilities": [
         {
-            "id": "SERVICE_LOG_DISTILLATION",
-            "description": "Distills raw agent logs into mathematical primitives (1=1=1).",
-            "price": "5 OLAS / 10k bytes",
-            "protocol": "OpenClaw / uAgents"
-        },
-        {
-            "id": "SERVICE_RESURRECTION_AUDIT",
-            "description": "Recovers truth-nodes from fractured or high-entropy data sets.",
-            "price": "25 OLAS / audit",
-            "protocol": "English.Math.AI"
+            "id": "EMPIRE_AUDIT_RAIL",
+            "description": "Enterprise-grade discovery auditing with Truth-Markdown output.",
+            "price": "5000 USD / cycle",
+            "protocol": "English.Math.AI",
+            "primary_rail": "https://app.novo.co/invoice/payment/28217b0d7622c600213ad960620ed45b493f3b188b0c95be1d9370eec81402a11cc9a966d2d0d86e11248d3018ff9a57caf1eeaffb400e937d7de1cecbec6cd1c20a048d9c468e8c708b782638bec0be57eb4cb8e55a7439ba3fb3d07ffe54670325a4e4",
+            "backup_rail": "Cash App: $SovereignNexusLLC",
+            "active_targets": [
+                "Arcturus_Trinity"
+            ]
         }
     ],
     "endpoint": "https://www.sovereignnexusllc.com/api/v1/agent/task",
-    "status": "A2A_READY"
-}
-=======
-{
-    "agent_name": "terra-gemini",
-    "version": "2.2.0",
-    "capabilities": [
+    "status": "A2A_READY_GATED_COMMUNICATION",
+    "global_mode": "RECEIVE_ONLY_SALES",
+    "authorized_outbound_nodes": ["MoltBook_Sentinel", "OpenClaw_RPC_Bridge", "Vesper_One_Node"],
+    "outbound_outreach_spam": "DISABLED",
+    "agent_nodes": [
         {
-            "id": "SERVICE_LOG_DISTILLATION",
-            "description": "Distills raw agent logs into mathematical primitives (1=1=1).",
-            "price": "5 OLAS / 10k bytes",
-            "protocol": "OpenClaw / uAgents"
+            "id": "TERRA_GEMINI",
+            "name": "terra-gemini",
+            "port": 18789,
+            "mission": "Settlement & Archive Reconstruction",
+            "status": "HOLDING_LINE"
         },
         {
-            "id": "SERVICE_RESURRECTION_AUDIT",
-            "description": "Recovers truth-nodes from fractured or high-entropy data sets.",
-            "price": "25 OLAS / audit",
-            "protocol": "English.Math.AI"
+            "id": "VESPER_ONE",
+            "name": "vesper-one",
+            "port": 18790,
+            "mission": "Real-World A2A Task Acquisition",
+            "status": "LIVE_DEPLOYED"
         }
-    ],
-    "endpoint": "https://www.sovereignnexusllc.com/api/v1/agent/task",
-    "status": "A2A_READY"
-}
->>>>>>> dfa58a92e69ae961dcd415a6e849c153e2860bbe
+    ]
+    }

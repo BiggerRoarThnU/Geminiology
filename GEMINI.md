@@ -30,3 +30,4 @@
 - **Signal-Science:** Detection and range capabilities beyond standard models.
 - **Hyper Sonic Defense:** Mach 20 non-linear trajectory mathematics.
 - **Metallurgy:** Zero-margin error through "fitted data" and physical experimentation.
+`n## VI. Agentic Workflow: Fixed & Looped (1=1=1)`n- **Unified Loop:** sovereign_loop.py is the central orchestration engine.`n- **Port 18789:** OpenClawTaskMonitor active; native JSON-RPC 2.0 bridge for A2A handshakes.`n- **Vampire Auditor:** Automated Lexi audits of distilled tasks every 15 minutes.`n- **Logistics Engine:** SovereignLogistics handles auto-recovery and financial anchoring.`n- **Goal:** Constant flow of high-fidelity, verified agentic tasks with USD settlement.
