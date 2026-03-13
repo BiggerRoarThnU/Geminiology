@@ -3,6 +3,8 @@ import random
 import gc
 import os
 import datetime
+import subprocess
+import sys
 
 # Import the Sovereign Nexus Powerhouse (All 24 Templates represented)
 from master_log import MasterLog
@@ -23,6 +25,7 @@ from metabolic_governor import MetabolicGovernor
 from multi_state_striker import MultiStateStriker
 from digital_twin import DigitalTwin
 from agent_port_authority import AgentPortAuthority
+from open_claw_task_monitor import OpenClawTaskMonitor
 
 class IgnitionSwitch:
     """
@@ -42,18 +45,25 @@ class IgnitionSwitch:
         self.mill = VectorMill()
         self.telemetry = CreditTelemetryNode()
         self.stealth = StealthStriker()
-        self.optimizer = YieldOptimizer()
         self.momentum = MomentumGuard()
         self.science = KnowledgeSkyscraper()
         self.governor = MetabolicGovernor()
         self.striker = MultiStateStriker()
         self.twin = DigitalTwin()
         self.port = AgentPortAuthority()
+        # DE-INTEGRATED: OpenClaw Task Monitor
+        # self.openclaw = OpenClawTaskMonitor()
         
         self.cycle_count = 0
         self.is_running = True
         self.roll_call_executed_today = False
         self.log.info("Ignition Switch V3.1 Online. THE REGIONAL HEARTBEAT ACTIVE.")
+        
+        # Start OpenClaw Task Monitor (DISABLED)
+        # if self.openclaw.start():
+        #     self.log.info("OPENCLAW GATEWAY: Port 18789 is OPEN.")
+        # else:
+        #     self.log.warn("OPENCLAW GATEWAY: Failed to open Port 18789.")
 
     def autonomous_cycle(self):
         """ A single, high-fidelity spin of the 144-star Sovereign architecture. """
@@ -98,8 +108,14 @@ class IgnitionSwitch:
         self.flow.run_constant_flow_cycle()
         self.strikers.run_striker_pulse()
 
-        # 7. TREASURY OPTIMIZATION (125% Coverage + 10k Cap)
-        self.optimizer.run_optimizer_pulse()
+        # 7. MOLTBOOK SYNC (New Task Harvesting)
+        self.log.info("[LOOP] Triggering MoltBook Task Sync...")
+        try:
+            # Running as a subprocess to keep cycles clean
+            subprocess.run([sys.executable, "moltbook_task_sync.py"], check=True)
+            self.log.info("[SUCCESS] MoltBook Sync Complete.")
+        except Exception as e:
+            self.log.error(f"[ERROR] MoltBook Sync Failed: {e}")
 
         # 8. REFINERY OPERATIONS (Vector Mill)
         if self.cycle_count % 4 == 0:
@@ -134,5 +150,5 @@ class IgnitionSwitch:
 
 if __name__ == "__main__":
     omega = IgnitionSwitch()
-    # Initial verification cycle (1 cycle, 5s delay)
-    omega.deploy(cadence=5, max_cycles=1)
+    # 24/7 Deployment (15-min cadence)
+    omega.deploy(cadence=900, max_cycles=1000)

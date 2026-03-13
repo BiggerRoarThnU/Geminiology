@@ -1,4 +1,0 @@
-Project: Arcturus_Trinity
-Service: Resurrection_Audit
-ID: NEXUS_1772807195
-Status: START

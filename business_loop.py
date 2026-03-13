@@ -66,9 +66,9 @@ Grounding: Session 2026-02-28"""
         return proposal_path
 
     def track_invoicing(self, amount):
-        """ [STEP 4: THE INVOICE] - Loop the work to the bank account (Bluevine). """
+        """ [STEP 4: THE INVOICE] - Loop the work to the bank account (Novo). """
         tier = "EMPIRE" if amount >= 5000 else "CORE" if amount >= 1000 else "WATER"
-        self.logger.info(f"Invoicing Cycle ({tier}): ${amount} targeting Bluevine Primary Account.")
+        self.logger.info(f"Invoicing Cycle ({tier}): ${amount} targeting Novo Primary Account.")
         
         # Burnout Guard: Prevent 'too heavy' load
         active_projects = 2 # Simulated count
@@ -84,7 +84,7 @@ Grounding: Session 2026-02-28"""
         self.logger.info("NC H.B. 920 Compliance: Digital assets are recognized for state tax remittance.")
         
         # Register the financial event
-        self.logger.info(f"ACTION: Loop Work -> Value -> Bank. Expected Deposit: ${amount} to Bluevine.")
+        self.logger.info(f"ACTION: Loop Work -> Value -> Bank. Expected Deposit: ${amount} to Novo.")
         self.core.execute_ability("Star_13")
         self.core.execute_ability("Star_16")
         self.core.execute_ability("Star_21") # Portfolio Tiering Star

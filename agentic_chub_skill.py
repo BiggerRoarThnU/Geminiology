@@ -36,5 +36,5 @@ class ChubAgentSkill:
 
 if __name__ == "__main__":
     skill = ChubAgentSkill()
-    # Test with Stripe to ensure our payment rails are 100% compliant
+    # Test with Cash App to ensure our payment rails are 100% compliant
     skill.get_api_docs("stripe/api", lang="js")

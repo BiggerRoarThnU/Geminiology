@@ -41,7 +41,7 @@ class AutoAgentEnergyDiverter:
         report = self.intel.generate_monetized_output(f"CLIENT_{sector}", f"{data['pain_point']} Automation Analysis")
         
         # 3. BUSINESS: Connect to Treasury
-        self.registry.register_worker("Business_Closer", "Invoicing $2000 via Bluevine/Stripe.", status="SCALING", network="LOCAL_8GB")
+        self.registry.register_worker("Business_Closer", "Invoicing $2000 via Novo/Cash App.", status="SCALING", network="LOCAL_8GB")
         self.business.track_invoicing(report["invoice_target"])
         
         # 4. WEB3: Parallel Wealth Capture

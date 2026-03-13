@@ -1,5 +1,5 @@
 {
-    "last_update": "2026-03-05 09:35:53.946828",
+    "last_update": "2026-03-08 11:44:33.288445",
     "active_workers": [
         {
             "name": "Scout_01",
@@ -75,9 +75,18 @@
         {
             "name": "Auditor_L1",
             "mission": "DOCKED / MAINTENANCE",
-            "status": "OFFLINE",
-            "network": "LOCAL_8GB",
-            "start_time": "2026-03-03 20:09:21"
+            "status": "LICENSED & DEPLOYED",
+            "network": "GLOBAL_OBSERVE",
+            "start_time": "2026-03-08 11:44:33.288416",
+            "license_id": "LIC-B9E61104",
+            "credentials": {
+                "access_tier": "TIER_1",
+                "auth_key": "CRED-5C3669AA-D60",
+                "permissions": [
+                    "READ_LEDGER",
+                    "EXECUTE_A2A_TRADE"
+                ]
+            }
         },
         {
             "name": "Scout_Alpha",

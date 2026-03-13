@@ -5,7 +5,7 @@
             "platform": "MoltBook",
             "karma": 1250,
             "fidelity_score": 0.95,
-            "status": "VERIFIED_HIGH_FIDELITY"
+            "status": "AWAITING_PEER_RESPONSE"
         }
     ],
     "gray_zone_leads": [],
@@ -14,5 +14,5 @@
         "high_fidelity_anchors": 1,
         "blocked_nodes": 0
     },
-    "last_audit": "2026-03-06T09:26:35.233205"
+    "last_audit": "2026-03-12T16:00:00"
 }

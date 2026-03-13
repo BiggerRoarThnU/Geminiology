@@ -17,3 +17,8 @@ Building the ground truth for the agentic economy by eliminating contextual entr
 **Architect:** David Niedzwiecki Jr.
 **Manager:** SovereignNexus LLC
 **Entity:** NC-LLC Registered (UEI: K5DALREZFGH6)
+
+## ?? Documentation & Capabilities
+For a detailed overview of our industrial-grade agentic workflows and sample auditing results, please refer to our public briefs:
+- [**Sovereign Agentic Brief (2026)**](Documentation/Public_Briefs/Sovereign_Agentic_Brief.md): Our technical capabilities and 'Observe and Carry' methodology.
+- [**Sample Audit Report (Proof of Concept)**](Documentation/Public_Briefs/Sample_Audit_2026.md): A 'First Strike' demonstration of high-fidelity discovery results.

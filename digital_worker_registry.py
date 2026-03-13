@@ -26,6 +26,10 @@ class DigitalWorkerRegistry:
             "total_earnings_credits": 0.0
         }
 
+    def register_worker(self, name, mission, status="OFFLINE", network="GLOBAL_OBSERVE"):
+        """Compatibility wrapper for agent_port_authority.py"""
+        return self.grant_license(name, mission, network=network, access_tier="TIER_1")
+
     def grant_license(self, name, mission, network="GLOBAL_OBSERVE", permissions=None, access_tier="TIER_4"):
         """Grants a formal digital license and credentials to an agent."""
         if permissions is None:

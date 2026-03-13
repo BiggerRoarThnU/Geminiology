@@ -230,13 +230,34 @@
             "status": "ACTIVE",
             "station": "salvage",
             "ingested_at": "2026-03-06T20:20:13.556029"
+        },
+        {
+            "id": "TASK_1772929111_0",
+            "filename": "OLAS_1772929111_SYSTEM_FEED_TASK.json",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-07T19:18:31.097327"
+        },
+        {
+            "id": "TASK_1772929121_0",
+            "filename": "OLAS_1772929121_SYSTEM_FEED_TASK.json",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-07T19:18:41.060599"
+        },
+        {
+            "id": "TASK_1772930922_0",
+            "filename": "OLAS_1772930922_SYSTEM_FEED_TASK.json",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-07T19:48:42.072702"
         }
     ],
     "metrics": {
-        "total_inbound": 33,
-        "total_processed": 33,
+        "total_inbound": 36,
+        "total_processed": 36,
         "completed": 0
     },
     "status": "ONLINE",
-    "last_sync": "2026-03-06T20:20:13.556601"
+    "last_sync": "2026-03-07T19:48:42.073495"
 }
