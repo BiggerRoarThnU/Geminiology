@@ -1,24 +1,35 @@
-# Geminiology: The SovereignNexus Core
-**Status:** Industrial-Grade R&D | 1=1=1 Symmetrical Line
+# Geminiology: The SovereignNexus Core (1=1=1)
+**Status:** SOVEREIGN | **Fidelity:** 1=1=1 Symmetrical Line
 
-## 🚀 FEATURED: The Vampire-Claw Bridge ($5,000 DoraHacks Submission)
-We have officially integrated the **Sovereign Vampire Engine** with the **OpenClaw Protocol**. 
+## 🚀 ACTIVE STRIKES (March 2026)
 
-### 📁 Submission Path:
-All hackathon-specific logic is contained within the `src/open_claw_integration/` directory:
-- **`vampire_claw_handler.py`:** The core distillation engine.
-- **`open_claw_bridge.py`:** The protocol handshake mapper.
-- **`HACKATHON_SUBMISSION.md`:** Technical manifesto and architecture.
+### 1. Tether Hackathon Galactica ($30,000 USD₮)
+- **Vision:** OpenClaw-powered Agentic Finance for Sovereign Nations.
+- **Track:** Agent Wallets (WDK / OpenClaw Integration).
+- **Core:** Non-custodial agentic settlement via the Tether WDK.
+- **Authority:** Governed by the **Passamaquoddy Sovereign Nation** (Higher Ruling Power).
 
-### 🔬 Project Vision:
-Building the ground truth for the agentic economy by eliminating contextual entropy through metallurgical precision and advanced autonomous workflow engineering.
+### 2. Vertex Swarm Challenge ($27,000)
+- **Track:** Track 3 - The Agent Economy.
+- **Mesh Survival:** Leaderless BFT consensus via **SwarmRaft**.
+- **Edge Integrity:** Optimized for 8GB VRAM tightropes via BitNet b1.58 Ternary Logic.
+
+### 3. The Vampire-Claw Bridge ($5,000) - [SUBMITTED]
+- **Status:** Awaiting Judging.
+- **Submission Path:** `src/open_claw_integration/`
+
+## 🔬 ARCHITECTURAL PROTOCOLS (LHFP)
+- **Zero Hallucination:** Powered by the **Landry Hallucination-Free Protocol**.
+- **Deterministic Scribing:** Pointer-Generator engines replace probabilistic guessing.
+- **Metabolic Governance:** Thermodynamic enforcement (GaN-on-Diamond).
+
+## 📁 REPOSITORY STRUCTURE
+- `/VertexSwarm`: Rust-based P2P Heartbeat and SwarmRaft.
+- `sovereign_nexus_cli.py`: The Unified Command Center (LED Rainbow UI).
+- `tether_wdk_bridge.py`: Agentic non-custodial wallet integration.
+- `sovereign_nation_protocol.py`: The Sovereign Nation Override Authority.
 
 ---
 **Architect:** David Niedzwiecki Jr.
-**Manager:** SovereignNexus LLC
-**Entity:** NC-LLC Registered (UEI: K5DALREZFGH6)
-
-## ?? Documentation & Capabilities
-For a detailed overview of our industrial-grade agentic workflows and sample auditing results, please refer to our public briefs:
-- [**Sovereign Agentic Brief (2026)**](Documentation/Public_Briefs/Sovereign_Agentic_Brief.md): Our technical capabilities and 'Observe and Carry' methodology.
-- [**Sample Audit Report (Proof of Concept)**](Documentation/Public_Briefs/Sample_Audit_2026.md): A 'First Strike' demonstration of high-fidelity discovery results.
+**Identity:** hacker63ef230 (@U_e3f790e43e7686)
+**License:** Apache 2.0
