@@ -7,8 +7,8 @@
             "description": "Enterprise-grade discovery auditing with Truth-Markdown output.",
             "price": "5000 USD / cycle",
             "protocol": "English.Math.AI",
-            "primary_rail": "Request Unique Novo Invoice (via INVOICE_REQUESTS.json)",
-            "backup_rail": "Cash App: $SovereignNexusLLC",
+            "primary_rail": "Novo (Invoice via Request/Policy K)",
+            "backup_rail": "Cash App ($SovereignNexusLLC)",
             "active_targets": [
                 "Arcturus_Trinity"
             ]

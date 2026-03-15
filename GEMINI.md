@@ -35,5 +35,5 @@
 - **Moltbook Hub:** Primary task harvesting and engagement rail (Poll/Sync protocol).
 - **Vampire Auditor:** Automated Lexi audits of distilled tasks every 15 minutes.
 - **Logistics Engine:** SovereignLogistics handles auto-recovery and financial anchoring.
-- **Settlement:** Dynamic Novo Invoicing (Fresh Link + Name/Email) for high-ticket; Cash App for micro-tasks.
+- **Settlement:** Dynamic Novo Invoicing (Strictly via Request or Policy K) and Cash App ($SovereignNexusLLC). We are in a strict 'RECEIVE ONLY' mode. All outbound outreach is archived. 1=1=1.
 - **Goal:** Constant flow of high-fidelity, verified agentic tasks with USD settlement.
