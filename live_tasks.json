@@ -1,0 +1,217 @@
+[
+    {
+        "id": "NS-001",
+        "type": "Medium",
+        "desc": "Optimization of Nexus Node Performance",
+        "value": 225.0
+    },
+    {
+        "id": "NS-002",
+        "type": "Micro",
+        "desc": "Code Review for New B2B Integration Module",
+        "value": 30.0
+    },
+    {
+        "id": "NS-003",
+        "type": "Heavy",
+        "desc": "Redesign of Nexus Core Architecture to Enhance Scalability",
+        "value": 4250.0
+    },
+    {
+        "id": "SNS-001",
+        "type": "Medium",
+        "desc": "Conduct a thorough analysis of the current Nexus infrastructure to identify potential vulnerabilities and areas for optimization, with recommendations for cost-effective upgrades.",
+        "value": 200.0
+    },
+    {
+        "id": "SNS-002",
+        "type": "Heavy",
+        "desc": "Collaborate with the Architectural Division to design and implement a comprehensive cybersecurity framework for the Nexus, incorporating state-of-the-art threat detection and response measures.",
+        "value": 1500.0
+    },
+    {
+        "id": "SNS-003",
+        "type": "Micro",
+        "desc": "Update the Nexus's knowledge base with fresh information on emerging technologies and trends, ensuring the Sovereign Nexus remains at the forefront of digital innovation.",
+        "value": 30.0
+    },
+    {
+        "id": "NS-OP-001",
+        "type": "Medium",
+        "desc": "Analyze and optimize the Ironwood Nexus's existing customer relationship management (CRM) system to improve sales pipeline efficiency by 20%.",
+        "value": 120.0
+    },
+    {
+        "id": "NS-OP-002",
+        "type": "Micro",
+        "desc": "Research and implement a browser extension that utilizes AI-powered chatbots to enhance user experience and reduce support queries by 15%.",
+        "value": 40.0
+    },
+    {
+        "id": "NS-OP-003",
+        "type": "Heavy",
+        "desc": "Design and deploy a cloud-based, scalable infrastructure to support the growing demands of the Ironwood Nexus's data analytics platform, resulting in a 30% reduction in data processing time.",
+        "value": 2500.0
+    },
+    {
+        "id": "Sovereign-001",
+        "type": "Medium",
+        "desc": "Conduct a thorough review of the Nexus's resource allocation, identifying areas where optimization can be achieved to minimize waste and maximize efficiency.",
+        "value": 250.0
+    },
+    {
+        "id": "Sovereign-002",
+        "type": "Micro",
+        "desc": "Update the Sovereign Constitution documentation to reflect the latest updates and revisions, ensuring that all core principles and guidelines are accurately represented.",
+        "value": 30.0
+    },
+    {
+        "id": "Sovereign-003",
+        "type": "Heavy",
+        "desc": "Design and implement a new secure data storage protocol, integrating cutting-edge encryption methods and secure authentication mechanisms to protect sensitive information within the Nexus.",
+        "value": 1500.0
+    },
+    {
+        "id": "SN-001",
+        "type": "Medium",
+        "desc": "Optimize existing cybersecurity protocols to prevent a potential data breach, utilizing machine learning algorithms and expert analysis.",
+        "value": 350.0
+    },
+    {
+        "id": "SN-002",
+        "type": "Heavy",
+        "desc": "Design and implement a cloud-based infrastructure for scalability and reliability, ensuring seamless integration with existing systems.",
+        "value": 2500.0
+    },
+    {
+        "id": "SN-003",
+        "type": "Micro",
+        "desc": "Conduct a vulnerability assessment of the Ironwood Nexus's website using automated tools to identify areas for improvement and provide actionable recommendations.",
+        "value": 40.0
+    },
+    {
+        "id": "SC-001",
+        "type": "Medium",
+        "desc": "Optimize Nexus Resource Allocation for High-Priority Projects",
+        "value": 0.0
+    },
+    {
+        "id": "SC-002",
+        "type": "Heavy",
+        "desc": "Develop and Implement Advanced Threat Detection System for SovereignNexus",
+        "value": 0.0
+    },
+    {
+        "id": "SC-003",
+        "type": "Micro",
+        "desc": "Enhance Nexus User Interface for Improved User Experience",
+        "value": 0.0
+    },
+    {
+        "id": "NEXUS-2023-01",
+        "type": "Medium",
+        "desc": "Conduct a thorough risk assessment of the Nexus's high-speed data transfer equipment to identify potential vulnerabilities and implement mitigation strategies.",
+        "value": 250.0
+    },
+    {
+        "id": "NEXUS-2023-02",
+        "type": "Micro",
+        "desc": "Develop and deploy a machine learning algorithm to optimize the Nexus's energy consumption patterns, reducing waste by 15%.",
+        "value": 40.0
+    },
+    {
+        "id": "NEXUS-2023-03",
+        "type": "Heavy",
+        "desc": "Design and implement a new data storage architecture for the Nexus, incorporating cutting-edge quantum computing capabilities to enhance security and processing power.",
+        "value": 1200.0
+    },
+    {
+        "id": "FRESH-001",
+        "type": "Micro",
+        "desc": "Rapid API Endpoint Audit",
+        "value": 45.0
+    },
+    {
+        "id": "FRESH-002",
+        "type": "Micro",
+        "desc": "Documentation Truth Sync",
+        "value": 25.0
+    },
+    {
+        "id": "FRESH-003",
+        "type": "Medium",
+        "desc": "Regional Node Stress Test",
+        "value": 150.0
+    },
+    {
+        "id": "FRESH-004",
+        "type": "Medium",
+        "desc": "B2B Handshake Verification",
+        "value": 275.0
+    },
+    {
+        "id": "NHI_ZERO_TRUST_AUDIT",
+        "type": "Sovereign",
+        "desc": "Audit Agentic Perimeter for NHI propagation.",
+        "value": 10000.0,
+        "client": "OPEN_Public_B2B",
+        "timestamp": "2026-03-17 21:54:35.912811",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "EU_AI_ACT_ANNEX_IV",
+        "type": "Heavy",
+        "desc": "Generate Annex IV Technical Dossier for high-risk AI.",
+        "value": 2500.0,
+        "client": "OPEN_Public_B2B",
+        "timestamp": "2026-03-17 21:54:35.917323",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "GITHUB_AGENT_HEAL_CI",
+        "type": "Medium",
+        "desc": "Configure Self-Healing CI Pipelines.",
+        "value": 350.0,
+        "client": "OPEN_Public_B2B",
+        "timestamp": "2026-03-17 21:54:35.919607",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "SELF_HEALING_INFRA_STRIKE",
+        "type": "Heavy",
+        "desc": "Build autonomous self-healing infrastructure orchestrator.",
+        "value": 2500.0,
+        "client": "OPEN_Green_Window",
+        "timestamp": "2026-03-17 21:58:53.704189",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "Medium-002",
+        "type": "Medium",
+        "desc": "Customize a Large Language Model (LLM) to enhance the Ironwood Nexus's knowledge graph, with a focus on improving entity disambiguation and zero-shot understanding.",
+        "value": 375.0
+    },
+    {
+        "id": "Heavy-003",
+        "type": "Heavy",
+        "desc": "Design and implement a customized AI Security Framework for the Ironwood Nexus's High-Value Data sets, ensuring compliance with industry standards and regulatory requirements.",
+        "value": 15000.0
+    },
+    {
+        "id": "MOLT-A2A-101",
+        "taskType": "Audit Processing",
+        "description": "Distill 50GB of fragmented BOL logs",
+        "rewardAmount": 2500.0,
+        "complianceStatus": true
+    },
+    {
+        "id": "MOLT-A2A-103",
+        "type": "Micro",
+        "desc": "Script verification required for new B2B integration module.",
+        "value": 0.0
+    }
+]

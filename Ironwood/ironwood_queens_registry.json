@@ -1,0 +1,100 @@
+{
+    "metadata": {
+        "nexus": "Ironwood",
+        "architect": "David Niedzwiecki Jr",
+        "status": "BOUND_TRUTH"
+    },
+    "queens": {
+        "01_GENESIS": {
+            "id": "QUEEN-01-0D01",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/01_GENESIS",
+            "last_pulse": "2026-03-07 20:30:48.055773"
+        },
+        "02_SENTINEL": {
+            "id": "QUEEN-02-04F6",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/02_SENTINEL",
+            "last_pulse": "2026-03-07 20:30:48.055910"
+        },
+        "03_LEDGER": {
+            "id": "QUEEN-03-AE42",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/03_LEDGER",
+            "last_pulse": "2026-03-07 20:30:48.055926"
+        },
+        "04_SCRIBE": {
+            "id": "QUEEN-04-00D5",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/04_SCRIBE",
+            "last_pulse": "2026-03-07 20:30:48.055937"
+        },
+        "05_STRATEGY": {
+            "id": "QUEEN-05-337A",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/05_STRATEGY",
+            "last_pulse": "2026-03-07 20:30:48.055948"
+        },
+        "06_FORGE": {
+            "id": "QUEEN-06-76A9",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/06_FORGE",
+            "last_pulse": "2026-03-07 20:30:48.055957"
+        },
+        "07_THERMAL": {
+            "id": "QUEEN-07-6C7C",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/07_THERMAL",
+            "last_pulse": "2026-03-07 20:30:48.055966"
+        },
+        "08_PRISM": {
+            "id": "QUEEN-08-69F1",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/08_PRISM",
+            "last_pulse": "2026-03-07 20:30:48.055974"
+        },
+        "09_ARCHIVE": {
+            "id": "QUEEN-09-AB8D",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/09_ARCHIVE",
+            "last_pulse": "2026-03-07 20:30:48.055984"
+        },
+        "10_BRIDGE": {
+            "id": "QUEEN-10-F730",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/10_BRIDGE",
+            "last_pulse": "2026-03-07 20:30:48.055994"
+        },
+        "11_HARMONY": {
+            "id": "QUEEN-11-8523",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/11_HARMONY",
+            "last_pulse": "2026-03-07 20:30:48.056003"
+        },
+        "12_APEX": {
+            "id": "QUEEN-12-44E7",
+            "status": "FIXED_RESERVED",
+            "rights": "RESERVED_ARCHITECT_ONLY",
+            "location": "Ironwood/12_APEX",
+            "last_pulse": "2026-03-07 20:30:48.056014"
+        }
+    },
+    "digital_twin": {
+        "identity": "SovereignNexus_Twin",
+        "state": "LOCAL_ONLY",
+        "bridge": "CONTEXT_GHOST_ACTIVE",
+        "last_sync": "2026-03-07 20:30:48.056026",
+        "rights_reserved": true
+    }
+}

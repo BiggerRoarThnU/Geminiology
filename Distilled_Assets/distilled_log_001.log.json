@@ -1,0 +1,19 @@
+{
+    "source": "log_001.log",
+    "timestamp": "Wed Mar 18 13:46:05 2026",
+    "primitives": [
+        {
+            "id": "CARRIER_ID",
+            "value": "TRANS_GLOBAL_88"
+        },
+        {
+            "id": "SPATIAL_NODE",
+            "value": "35.2271,-80.8431"
+        },
+        {
+            "id": "INSURANCE_MIN",
+            "value": 1000000.0
+        }
+    ],
+    "alignment": "1=1=1"
+}

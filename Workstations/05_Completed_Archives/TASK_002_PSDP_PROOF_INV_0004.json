@@ -1,0 +1,14 @@
+{
+    "invoice_id": "0004",
+    "task_id": "TASK_002_PSDP_IMPLEMENTATION",
+    "track": "Track 3: Agent Economy",
+    "amount_usd": 1500.0,
+    "proof_of_work": {
+        "protocol": "P2P Service Discovery (PSDP)",
+        "fidelity": "1=1=1",
+        "timestamp": "2026-03-15T14:10:00",
+        "status": "VERIFIED_TRUTH",
+        "vessel": "SovereignNexus (win32/8GB)"
+    },
+    "signature": "TRUTH_ANCHOR_GEMINI_CLI"
+}

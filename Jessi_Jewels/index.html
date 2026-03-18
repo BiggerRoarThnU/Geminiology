@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JESSI JEWELS | Handcrafted Sovereignty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="hero-title">Jessi Jewels</h1>
+        <p class="hero-subtitle">Handcrafted • Timeless • Sovereign</p>
+    </header>
+
+    <div class="container">
+        <section id="product-grid" class="product-grid">
+            <!-- Products will be injected here via Sovereign Engine Logic -->
+        </section>
+
+        <!-- Sovereign Verification Rail -->
+        <section class="section" style="background: var(--card-bg); padding: 3rem; border: 1px solid var(--gold); margin-top: 2rem; border-radius: 8px;">
+            <h2 style="color: var(--gold); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">The Verification Rail</h2>
+            <p style="margin-bottom: 2rem;">Every Jessi Jewels piece is a stateful registration of truth. To secure your acquisition, we utilize the **Sovereign Invoicing Protocol**.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <h3 style="color: var(--gold-light); font-size: 1rem; margin-bottom: 0.5rem;">1. THE HANDSHAKE</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Click "Acquire Piece" to generate your unique Project ID. This ID anchors your transaction in the SovereignNexus Master Log.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--gold-light); font-size: 1rem; margin-bottom: 0.5rem;">2. THE SETTLEMENT</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Settle via Cash App: <strong>$SovereignNexusLLC</strong>. You MUST include your Project ID in the memo field for immediate verification.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; padding: 4rem 0; border-top: 1px solid var(--border);">
+            <p style="color: var(--gold); letter-spacing: 0.2rem; font-weight: 200;">POWERED BY SOVEREIGNNEXUS ENGINE V2</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.5;">1=1=1. One Task. One Truth.</p>
+        </footer>
+    </div>
+
+    <script>
+        const products = [
+            {
+                id: "JJ-OBS-01",
+                title: "Obsidian Collection",
+                price: 45.00,
+                description: "Handcrafted bracelets featuring high-fidelity stone patterns. Grounded in beauty.",
+                tag: "B2B / LOGISTICS",
+                image: "[ Image: Bracelet Group A ]"
+            },
+            {
+                id: "JJ-GOLD-01",
+                title: "Gold Hearth Series",
+                price: 65.00,
+                description: "Elegant gold-accented pieces designed for family resilience and light.",
+                tag: "FAMILY / HERITAGE",
+                image: "[ Image: Bracelet Group B ]"
+            },
+            {
+                id: "JJ-ARC-CUSTOM",
+                title: "Architect's Choice",
+                price: "Custom",
+                description: "Bespoke bracelet designs tailored to your unique truth and signature.",
+                tag: "BESPOKE",
+                image: "[ Image: Custom Inquiry ]"
+            }
+        ];
+
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = products.map(p => `
+                <div class="product-card" data-id="${p.id}">
+                    <div class="product-image-placeholder">${p.image}</div>
+                    <h2 class="product-title">${p.title}</h2>
+                    <p class="product-price">${typeof p.price === 'number' ? '$' + p.price.toFixed(2) : p.price}</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-dim);">${p.description}</p>
+                    <button class="buy-button" onclick="initiateHandshake('${p.id}')">
+                        ${p.id.includes('CUSTOM') ? 'Initiate Handshake' : 'Acquire Piece'}
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function initiateHandshake(productId) {
+            console.log(\`[SOVEREIGN ENGINE] Project ID Generated: NEXUS_\${Date.now()}\`);
+            alert('Sovereign Handshake Initiated. Project ID: NEXUS_' + Date.now() + '\\nPlease memo this ID in your Cash App settlement.');
+        }
+
+        renderProducts();
+    </script>
+</body>
+</html>

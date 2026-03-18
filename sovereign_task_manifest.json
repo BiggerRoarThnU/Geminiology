@@ -1,0 +1,42 @@
+{
+  "manifest_name": "Sovereign_Task_Expansion_Alpha",
+  "status": "ACTIVE",
+  "fidelity": "96.9x_SCALED",
+  "tasks": [
+    {
+      "task_id": "T-AS-001",
+      "pillar": "Asymmetric_Defense",
+      "objective": "Drone_Fleet_Swarmlogic_Simulation",
+      "status": "ACCELERATED_ONE",
+      "anchor": "Llama-3-Lexi",
+      "fidelity": "1=1=1_SYNCED"
+    },
+    {
+      "task_id": "T-CL-002",
+      "pillar": "Cognitive_Logic",
+      "objective": "Ternary_1.58Bit_Inference_Proofing",
+      "status": "IN_PROGRESS",
+      "anchor": "Qwen3-Writing-On-Fire"
+    },
+    {
+      "task_id": "T-SS-003",
+      "pillar": "Substrate_Science",
+      "objective": "GaN-on-Diamond_Thermal_Boundary_Analysis",
+      "status": "ACCELERATED_ONE",
+      "anchor": "TheTower_Hardware",
+      "fidelity": "1=1=1_SYNCED"
+    },
+    {
+      "task_id": "T-RH-004",
+      "pillar": "Regional_Hubs",
+      "objective": "ENC_Tech_Bridge_Data_Ingestion",
+      "status": "ACCELERATED_ONE",
+      "anchor": "Sovereign_Bridge",
+      "fidelity": "1=1=1_SYNCED"
+    }
+  ],
+  "attention_sync": {
+    "pulse_interval": "15m",
+    "last_sync": "2026-03-13 02:49:00"
+  }
+}

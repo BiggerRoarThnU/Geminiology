@@ -1,0 +1,6 @@
+{
+    "client": "SYSTEM_FEED",
+    "task": "SERVICE_LOG_DISTILLATION",
+    "payload_hash": "MOCK_DATA_001",
+    "payment_locked": "5 OLAS"
+}

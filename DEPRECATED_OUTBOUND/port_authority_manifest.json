@@ -1,0 +1,63 @@
+{
+    "last_sync": "2026-03-15 17:32:14",
+    "docked_agents": {
+        "Sentinel_M1": {
+            "docked_at": "2026-03-03 13:11:05",
+            "status": "MAINTENANCE",
+            "last_payload_size": 247
+        },
+        "Auditor_L1": {
+            "docked_at": "2026-03-08 11:44:33",
+            "status": "MAINTENANCE",
+            "last_payload_size": 320
+        }
+    },
+    "active_deployments": [
+        {
+            "name": "Vampire_01",
+            "spectrum": "Maritime",
+            "mission": "Scan NC Port Data for Compliance.",
+            "dispatched_at": "2026-03-15 17:32:14"
+        }
+    ],
+    "port_storage": {
+        "Vampire_01": {
+            "history_hits": 45,
+            "convergence_points": [
+                1,
+                1,
+                1
+            ]
+        },
+        "Sentinel_M1": {
+            "target": "Unis Logistics",
+            "findings": [
+                {
+                    "type": "ACE_DRIFT",
+                    "severity": "MEDIUM",
+                    "impact": "Possible $5k Fine"
+                },
+                {
+                    "type": "BOND_LEVEL",
+                    "status": "BELOW_75K",
+                    "impact": "Immediate Suspension Risk"
+                }
+            ],
+            "timestamp": "2026-03-03 13:11:05.906597"
+        },
+        "Auditor_L1": {
+            "firm": "Michelle Jerome Law",
+            "case": "CASE_ALPHA_2026",
+            "findings": {
+                "docs_scanned": 2549,
+                "logic_gaps_identified": 14,
+                "privilege_alerts": 4,
+                "chain_of_custody_anomalies": 3,
+                "estimated_attorney_hours_saved": 169.9,
+                "status": "COMPLETED_SUCCESS"
+            },
+            "revenue_node": "$5,000",
+            "timestamp": "2026-03-08 11:44:33.286531"
+        }
+    }
+}

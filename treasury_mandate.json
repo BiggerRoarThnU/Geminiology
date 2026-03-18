@@ -1,0 +1,20 @@
+{
+    "mandate_id": "MANDATE_INTENT_KNOWLEDGE_001",
+    "type": "INTENT_MANDATE",
+    "timestamp": "2026-03-17T23:15:00",
+    "protocol": "AP2 (Agent Payments Protocol)",
+    "rules": {
+        "spending_limit": 50.00,
+        "currency": "USD",
+        "allowed_categories": ["Scientific_Data", "API_Access", "Compute_Credits"],
+        "vendor_restrictions": ["None"],
+        "approval_workflow": "Architect_Pulse_Required_Over_50"
+    },
+    "intent": {
+        "objective": "Ingest high-fidelity scientific data via Knowledge Skyscraper (Template 28).",
+        "fidelity": "1=1=1",
+        "target": "arXiv / Open Public Avenues"
+    },
+    "status": "AUTHORIZED",
+    "architect_signature": "David Niedzwiecki Jr."
+}

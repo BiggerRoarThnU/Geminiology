@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "id": "TASK_001_GHOST_SYNC_WARMUP",
+            "track": "Warm Up: Stateful Handshake",
+            "status": "COMPLETED",
+            "reward_usd": 250.0,
+            "verification_hash": "D4E38889",
+            "settlement_status": "SETTLING"
+        },
+        {
+            "id": "TASK_002_PSDP_IMPLEMENTATION",
+            "track": "Track 3: Agent Economy",
+            "status": "COMPLETED",
+            "reward_usd": 1500.0,
+            "verification_hash": "53148FF5",
+            "settlement_status": "SETTLING"
+        },
+        {
+            "id": "TASK_003_SEARCH_RESCUE_SIM",
+            "track": "Track 2: Search & Rescue",
+            "status": "PENDING",
+            "reward_usd": 3000.0,
+            "verification_hash": "N/A",
+            "settlement_status": "UNINITIALIZED"
+        }
+    ],
+    "last_sync": "2026-03-14 10:59:40.994203",
+    "total_projected_usd": 4750.0
+}

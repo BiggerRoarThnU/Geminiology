@@ -1,0 +1,49 @@
+# THE GARAGE MASTER LOG: TOOL DIAGNOSTICS (2026-2028)
+Status: ACTIVE | Fidelity: 1=1=1 | Vessel: SovereignNexus
+
+- [Sun Mar 15 17:04:12 2026] **# Geminiology One Empire Builder.py**: STABLE (0.04s)
+- [Sun Mar 15 17:04:46 2026] **# Geminiology One Empire Builder.py**: STABLE (0.04s)
+- [Sun Mar 15 17:04:46 2026] **# Geminiology One Empire Builder.py**: STABLE (0.04s)
+- [Sun Mar 15 17:04:46 2026] **# Geminiology One Empire Builder.py**: STABLE (0.04s)
+- [Sun Mar 15 17:04:46 2026] **# Geminiology One Empire Builder.py**: STABLE (0.05s)
+- [Sun Mar 15 17:04:46 2026] **# Geminiology One Empire Builder.py**: STABLE (0.05s)
+- [Sun Mar 15 17:04:57 2026] **# Geminiology One Fusion Reactor.py**: STABLE (0.04s)
+- [Sun Mar 15 17:04:57 2026] **# Geminiology One The Guide.py**: STABLE (0.04s)
+- [Sun Mar 15 17:04:57 2026] **# Geminiology One The Reach.py**: STABLE (0.04s)
+- [Sun Mar 15 17:04:59 2026] **thermodynamic_engine.py**: STABLE (1.90s)
+- [Sun Mar 15 17:05:01 2026] **bitnet_layers.py**: STABLE (1.91s)
+- [Sun Mar 15 17:22:12 2026] **tool_nexus.py** [Orchestration]: ABERRANT
+- [Sun Mar 15 17:22:28 2026] **tool_nexus.py** [Orchestration]: STABLE
+- [Sun Mar 15 17:23:15 2026] **agentic_bounty_processor.py** [Execution]: STABLE
+- [Sun Mar 15 17:23:15 2026] **moltbook_task_hub.py** [Uncategorized]: ABERRANT
+- [Sun Mar 15 17:23:17 2026] **agentic_chub_skill.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:23:17 2026] **openclaw_settlement_engine.py** [Uncategorized]: ABERRANT
+- [Sun Mar 15 17:23:56 2026] **moltbook_task_hub.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:23:56 2026] **openclaw_settlement_engine.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:26:13 2026] **acceptable_truth_validator.py** [Foundation]: STABLE
+- [Sun Mar 15 17:26:13 2026] **dual_truth_validator.py** [Foundation]: ABERRANT
+- [Sun Mar 15 17:26:13 2026] **grounding_verification.py** [Uncategorized]: ABERRANT
+- [Sun Mar 15 17:26:13 2026] **epistemic_conditioner.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:26:13 2026] **drift_audit.py** [Uncategorized]: ABERRANT
+- [Sun Mar 15 17:27:36 2026] **dual_truth_validator.py** [Foundation]: STABLE
+- [Sun Mar 15 17:27:36 2026] **grounding_verification.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:27:36 2026] **drift_audit.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:29:30 2026] **agentic_expansion_sim.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:29:30 2026] **agentic_opportunity_hunter.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:29:30 2026] **agentic_hackathon_scout.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:29:30 2026] **b2b_opportunity_scout.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:29:31 2026] **agentic_web3_strike.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:31:29 2026] **attention_persistence_monitor.py** [Uncategorized]: ABERRANT
+- [Sun Mar 15 17:32:14 2026] **heartbeat_guard.py** [Uncategorized]: TIMEOUT (INTERACTIVE/HEAVY)
+- [Sun Mar 15 17:32:14 2026] **agent_port_authority.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:32:14 2026] **agent_truth_registry.py** [Uncategorized]: ABERRANT
+- [Sun Mar 15 17:32:14 2026] **credit_telemetry_node.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:32:46 2026] **attention_persistence_monitor.py** [Uncategorized]: STABLE
+- [Sun Mar 15 17:33:31 2026] **heartbeat_guard.py** [Uncategorized]: TIMEOUT (INTERACTIVE/HEAVY)
+- [Sun Mar 15 17:33:31 2026] **agent_truth_registry.py** [Uncategorized]: STABLE
+- [Sun Mar 15 18:17:16 2026] **sovereign_loop.py** [Orchestration]: TIMEOUT (INTERACTIVE/HEAVY)
+- [Sun Mar 15 18:17:18 2026] **ironwood_runtime.py** [Orchestration]: ABERRANT
+- [Sun Mar 15 18:17:20 2026] **tool_nexus.py** [Orchestration]: STABLE
+- [Sun Mar 15 18:17:21 2026] **sovereign_nexus_cli.py** [Orchestration]: ABERRANT
+- [Sun Mar 15 18:18:25 2026] **ironwood_runtime.py** [Orchestration]: STABLE
+- [Sun Mar 15 18:19:11 2026] **sovereign_nexus_cli.py** [Orchestration]: TIMEOUT (INTERACTIVE/HEAVY)

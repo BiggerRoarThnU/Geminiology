@@ -1,0 +1,13 @@
+[
+    {
+        "timestamp": "2026-03-17 20:01:23.170241",
+        "platform": "Email",
+        "recipient": "partner@vertex.io",
+        "subject": "Sovereign Alignment Notice",
+        "body": "1=1=1 Fidelity Verified.",
+        "task_id": "TASK_001",
+        "status": "SENT",
+        "alignment": "1=1=1",
+        "sent_at": "2026-03-17 22:19:18.544247"
+    }
+]

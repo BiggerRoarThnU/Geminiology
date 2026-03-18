@@ -1,0 +1,263 @@
+[
+    {
+        "request_id": "REQ_NHI_ZERO_TRUST_AUDIT_1773798885_1773798899",
+        "task_id": "NHI_ZERO_TRUST_AUDIT_1773798885",
+        "track": "Sovereign Workflow",
+        "amount_usd": 10000.0,
+        "client_details": {
+            "name": "OPEN_Public_B2B",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 21:54:59.699175",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_EU_AI_ACT_ANNEX_IV_1773798904_1773798912",
+        "task_id": "EU_AI_ACT_ANNEX_IV_1773798904",
+        "track": "Heavy Workflow",
+        "amount_usd": 2500.0,
+        "client_details": {
+            "name": "OPEN_Public_B2B",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 21:55:12.384476",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_GITHUB_AGENT_HEAL_CI_1773798917_1773798924",
+        "task_id": "GITHUB_AGENT_HEAL_CI_1773798917",
+        "track": "Medium Workflow",
+        "amount_usd": 350.0,
+        "client_details": {
+            "name": "OPEN_Public_B2B",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 21:55:24.943048",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_SELF_HEALING_INFRA_STRIKE_1773799167_1773799175",
+        "task_id": "SELF_HEALING_INFRA_STRIKE_1773799167",
+        "track": "Heavy Workflow",
+        "amount_usd": 2500.0,
+        "client_details": {
+            "name": "OPEN_Green_Window",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 21:59:35.263537",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_SELF_HEALING_INFRA_STRIKE_1773799169_1773799177",
+        "task_id": "SELF_HEALING_INFRA_STRIKE_1773799169",
+        "track": "Heavy Workflow",
+        "amount_usd": 2500.0,
+        "client_details": {
+            "name": "OPEN_Green_Window",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 21:59:37.075817",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_Medium-002_1773800260_1773800275",
+        "task_id": "Medium-002_1773800260",
+        "track": "Medium Workflow",
+        "amount_usd": 375.0,
+        "client_details": {
+            "name": "PUBLIC_AVENUE",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 22:17:55.941248",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_Medium-002_1773800262_1773800288",
+        "task_id": "Medium-002_1773800262",
+        "track": "Medium Workflow",
+        "amount_usd": 375.0,
+        "client_details": {
+            "name": "PUBLIC_AVENUE",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 22:18:08.038140",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_Heavy-003_1773800280_1773800293",
+        "task_id": "Heavy-003_1773800280",
+        "track": "Heavy Workflow",
+        "amount_usd": 15000.0,
+        "client_details": {
+            "name": "PUBLIC_AVENUE",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 22:18:13.792087",
+        "alignment": "1=1=1"
+    },
+    {
+        "request_id": "REQ_Heavy-003_1773800293_1773800300",
+        "task_id": "Heavy-003_1773800293",
+        "track": "Heavy Workflow",
+        "amount_usd": 15000.0,
+        "client_details": {
+            "name": "PUBLIC_AVENUE",
+            "email": "PENDING"
+        },
+        "status": "SENT_TO_ARCHITECT",
+        "payment_options": {
+            "cash_app_tag": "$SovereignNexusLLC",
+            "cash_app_routing": "041215663",
+            "cash_app_account": "1332427173816",
+            "novo_routing": "211370150",
+            "novo_account": "103495885",
+            "beneficiary_name": "David Niedzwiecki Jr",
+            "beneficiary_address": "280 Brick Kiln Rd, Vanceboro, NC 28586",
+            "bank_name": "Middlesex Federal Savings",
+            "bank_swift": "MFEDUS42",
+            "bank_address": "One College Avenue, Somerville, MA 02144",
+            "invoice_link_policy": "On-Demand Only"
+        },
+        "policy_note": "For a formal Novo invoice link or additional settlement info, contact: admin@sovereignnexus.org. Please include your business information in the request. All other settlements are conducted via direct dual-rail (Cash App / Novo ACH) for 1=1=1 fidelity.",
+        "payment_rail": "Dual-Rail: Cash App ($SovereignNexusLLC) or Novo ACH/Wire",
+        "policy": "Policy K (On-Demand Only)",
+        "timestamp": "2026-03-17 22:18:20.619920",
+        "alignment": "1=1=1"
+    }
+]

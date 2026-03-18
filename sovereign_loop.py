@@ -17,6 +17,7 @@ from communication_nexus import CommunicationNexus
 from regulatory_sentinel import RegulatorySentinel
 from live_task_scout import LiveTaskScout
 from moltbook_task_harvester import MoltbookTaskHarvester
+from desktop_sync import DesktopSync
 
 class SovereignLoop:
     """
@@ -33,6 +34,7 @@ class SovereignLoop:
         self.sentinel = RegulatorySentinel()
         self.scout = LiveTaskScout()
         self.harvester = MoltbookTaskHarvester()
+        self.desktop = DesktopSync()
         self.is_running = True
         self.active_processes = []
         self.last_architect_pulse = time.time()
@@ -128,6 +130,9 @@ class SovereignLoop:
                 
                 # Failover Check
                 self.check_dark_mode_failover()
+                
+                # Desktop Sync (Physical Mirror)
+                self.desktop.sync()
                 
                 self.log.info(f"[PULSE] 1=1=1 | System Aligned: {time.ctime()}")
                 time.sleep(3600) # Hourly Heartbeat

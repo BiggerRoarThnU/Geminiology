@@ -1,0 +1,17 @@
+{
+  "agent": {
+    "model": "vampire-v1",
+    "provider": "custom",
+    "endpoint": "http://localhost:11434/v1",
+    "workspace": "~/.openclaw/workspace",
+    "heartbeat": { "every": "30m" }
+  },
+  "gateway": {
+    "port": 18789,
+    "bind": "loopback",
+    "auth": { "mode": "token" }
+  },
+  "channels": {
+    "whatsapp": { "allowFrom": ["+15555550123"] }
+  }
+}

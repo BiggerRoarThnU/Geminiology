@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# SOVEREIGN MISSION LEDGER: THE GHOST CALENDAR (1=1=1)
+# FIDELITY: 1=1=1 | VESSEL: SovereignNexus
+# PURPOSE: Lock in mission windows and authorized courses.
+# ---------------------------------------------------------------------------
+
+[
+    {
+        "mission_id": "TETHER_GALACTICA_STRIKE",
+        "start_time": "2026-03-13T00:00:00",
+        "end_time": "2026-03-22T23:59:59",
+        "authorized_commands": ["do_pay_agent", "do_align", "git_push"],
+        "status": "AUTHORIZED"
+    },
+    {
+        "mission_id": "VERTEX_SWARM_WARMUP",
+        "start_time": "2026-03-17T08:00:00",
+        "end_time": "2026-04-06T20:00:00",
+        "authorized_commands": ["do_expand", "swarm_heartbeat"],
+        "status": "AWAITING_WINDOW"
+    }
+]

@@ -1,0 +1,33 @@
+{
+  "system_identity": "SovereignNexus_Walled_Purpose",
+  "substrate": "TheTower_Laboratory",
+  "metabolic_governor": {
+    "throttle_temp": 75,
+    "cooldown_node_temp": 85,
+    "hard_termination_temp": 91
+  },
+  "cognitive_nodes": {
+    "creative_engine": "Qwen3-MOE-6x0.6B-3.6B-Writing-On-Fire",
+    "analytical_anchor": "Llama-3-8B-Lexi-Uncensored",
+    "coding_utility": "CodeGemma-1.1-7B-IT",
+    "security_gate": "ShieldGemma-9B",
+    "semantic_vector": "nomic-embed-text-v1.5"
+  },
+  "protocols": {
+    "lhfp": {
+      "mode": "deterministic",
+      "pointer_generator": "active",
+      "surgical_token_patching": "enabled",
+      "neuro_symbolic_logic_gate": "engaged"
+    },
+    "sawtooth_context": {
+      "limit_gb": 8,
+      "compression_node": "auto_summarize"
+    }
+  },
+  "bridge": {
+    "local_host": "http://localhost:1234",
+    "proxy_bypass": true,
+    "sandbox": false
+  }
+}

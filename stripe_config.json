@@ -1,0 +1,11 @@
+{
+  "stripe_defaults": {
+    "domain": "pay.sovereignnexus.org",
+    "checkout": "pay.sovereignnexus.org",
+    "payment_links": "pay.sovereignnexus.org",
+    "customer_portal": "pay.sovereignnexus.org",
+    "stripe_domain_id": "bpc_1T8Ny2RxKJtjRq1umUNrlMdj"
+  },
+  "status": "REVERTED_TO_DEFAULT_DOMAIN",
+  "last_updated": "2026-03-11 06:55:00"
+}

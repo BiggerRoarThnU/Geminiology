@@ -1,0 +1,22 @@
+{
+    "name": "Vampire Auditor",
+    "description": "Automated Lexi audit of agentic history.",
+    "skill_contract": "vampire_auditor_skill.md",
+    "fidelity": "1=1=1",
+    "pricing_model": "Micro-Transaction (x402)",
+    "owner": "SovereignNexus LLC",
+    "attributes": [
+        {
+            "trait_type": "Fidelity",
+            "value": "1=1=1"
+        },
+        {
+            "trait_type": "Runtime",
+            "value": "OpenClaw 2026.3.2"
+        },
+        {
+            "trait_type": "Security",
+            "value": "Vampire Auditor"
+        }
+    ]
+}

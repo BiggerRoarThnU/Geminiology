@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign DocuStrike Engine | 1=1=1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;800&display=swap');
+
+        :root {
+            --bg-obsidian: #0a0a0a;
+            --gold: #d4af37;
+            --gold-light: #f1e5ac;
+            --border: #1a1a1a;
+        }
+
+        .sovereign-gradient {
+            background: linear-gradient(90deg, #d4af37 0%, #0a0a0a 100%);
+            height: 2px;
+            width: 100%;
+        }
+        
+        .document-page {
+            background: #ffffff; /* Contrast for high-fidelity printing */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            width: 8.5in;
+            min-height: 11in;
+            margin: 2rem auto;
+            padding: 1in;
+            position: relative;
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+        }
+
+        .fidelity-mark {
+            position: absolute;
+            top: 1in;
+            right: 1in;
+            border: 1px solid #d4af37;
+            padding: 4px 8px;
+            font-size: 0.7rem;
+            color: #d4af37;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        [contenteditable="true"]:hover {
+            outline: 1px dashed #d4af37;
+            background-color: #fffdf0;
+        }
+
+        .gold-accents h1, .gold-accents h2, .gold-accents h3 {
+            color: #0a0a0a;
+            border-left: 4px solid #d4af37;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-[#050505] min-h-screen text-gray-300 flex flex-col">
+
+    <!-- Sovereign Header -->
+    <nav class="bg-[#0a0a0a] border-b border-[#1a1a1a] sticky top-0 z-50">
+        <div class="sovereign-gradient"></div>
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-[#d4af37] rounded-sm flex items-center justify-center text-black font-bold text-xs">1=1</div>
+                <h1 class="text-lg font-light tracking-[0.3em] uppercase text-[#d4af37]">DocuStrike <span class="text-white opacity-50">V2</span></h1>
+            </div>
+            <div class="flex items-center space-x-6">
+                <span class="text-[0.7rem] uppercase tracking-widest text-gray-500 italic hidden sm:block">Status: Harmonized</span>
+                <button onclick="generatePDF()" id="downloadBtn" class="bg-[#d4af37] hover:bg-[#f1e5ac] text-black font-bold py-2 px-8 rounded-sm shadow-xl transition-all duration-300 transform hover:scale-105 uppercase text-xs tracking-widest">
+                    Export Truth (PDF)
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Workspace -->
+    <main class="flex-grow p-4 overflow-y-auto">
+        
+        <div id="document-content" class="document-page shadow-2xl">
+            <div class="fidelity-mark">FIDELITY: 1=1=1</div>
+            
+            <header class="border-b border-gray-100 pb-8 mb-10">
+                <h1 contenteditable="true" class="text-4xl font-extrabold tracking-tight mb-2">SOVEREIGN TECHNICAL PLAYBOOK: V1</h1>
+                <h2 contenteditable="true" class="text-lg text-gray-500 font-light uppercase tracking-[0.2em]">Crystalline Hardening & The Acton-Turing Test</h2>
+                <div class="mt-6 flex justify-between items-center text-[0.7rem] uppercase tracking-widest text-gray-400">
+                    <span contenteditable="true">ARCHITECT: DAVID NIEDZWIECKI JR.</span>
+                    <span contenteditable="true">DATE: MARCH 10, 2026</span>
+                </div>
+            </header>
+
+            <article class="prose prose-sm max-w-none space-y-8">
+                <section>
+                    <h3 contenteditable="true" class="text-xl font-bold mb-4">I. THE AGENTIC DRIFT</h3>
+                    <p contenteditable="true" class="text-gray-700 leading-relaxed text-justify">
+                        The 2026 agentic landscape is suffering from a 13% regression rate. We define this as <strong>"Probabilistic Lore"</strong>—a failure state where reasoning is based on next-token prediction rather than stateful registration. 
+                    </p>
+                </section>
+
+                <section>
+                    <h3 contenteditable="true" class="text-xl font-bold mb-4">II. THE 8GB REALITY BOUNDARY</h3>
+                    <p contenteditable="true" class="text-gray-700 leading-relaxed text-justify">
+                        We enforce a <strong>Physical Root of Trust</strong>. By restricting agentic reasoning to local hardware, we achieve Immune Camouflage and zero "API Tax" drift. The truth is inextricably linked to the metal.
+                    </p>
+                </section>
+
+                <section class="bg-gray-50 p-8 border-l-4 border-[#d4af37]">
+                    <h4 contenteditable="true" class="text-sm font-bold uppercase tracking-widest mb-2">Architect's Directive</h4>
+                    <p contenteditable="true" class="text-gray-600 italic">
+                        "Power tends to induce algorithmic capture. We solve the Power Paradox through Constitutional Corrigibility. Every decision must be registered in the Immutable Master Log."
+                    </p>
+                </section>
+
+                <section>
+                    <h3 contenteditable="true" class="text-xl font-bold mb-4">III. IMPLEMENTATION RECIPE</h3>
+                    <ul class="space-y-3 text-gray-700 list-none">
+                        <li contenteditable="true" class="flex items-start">
+                            <span class="text-[#d4af37] mr-3">ONE.</span> Deploy a local Lexi-node (Port 1234) to bypass cloud taxation.
+                        </li>
+                        <li contenteditable="true" class="flex items-start">
+                            <span class="text-[#d4af37] mr-3">TWO.</span> Wrap all destructive tool calls in a Neuro-Symbolic Four-Way Stop.
+                        </li>
+                        <li contenteditable="true" class="flex items-start">
+                            <span class="text-[#d4af37] mr-3">THREE.</span> Use high-frequency settlement rails (Cash App/Novo) to close the loop.
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <footer class="absolute bottom-12 left-0 w-full px-[1in]">
+                <div class="border-t border-gray-100 pt-6 flex justify-between items-end">
+                    <div class="text-[0.6rem] text-gray-400 uppercase tracking-widest">
+                        <p>© 2026 SOVEREIGNNEXUS LLC</p>
+                        <p>NEW BERN, NORTH CAROLINA</p>
+                    </div>
+                    <div class="text-[0.6rem] font-bold text-[#d4af37] tracking-[0.3em]">
+                        1=1=1
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+
+    <script>
+        function generatePDF() {
+            const button = document.getElementById('downloadBtn');
+            button.innerHTML = 'ALIGNING...';
+            button.disabled = true;
+
+            const element = document.getElementById('document-content');
+            const opt = {
+                margin: 0,
+                filename: 'Sovereign_Technical_Playbook_V1.pdf',
+                image: { type: 'jpeg', quality: 1.0 },
+                html2canvas: { scale: 3, useCORS: true, letterRendering: true },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                button.innerHTML = 'TRUTH EXPORTED';
+                setTimeout(() => {
+                    button.innerHTML = 'Export Truth (PDF)';
+                    button.disabled = false;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
