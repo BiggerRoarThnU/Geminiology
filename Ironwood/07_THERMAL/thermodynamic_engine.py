@@ -1,3 +1,10 @@
+"""
+[SOVEREIGN ALIGNMENT: THERMODYNAMIC_ENGINE]
+MISSION: Map Neural Entropy to Physical Heat Flux.
+INDIVIDUAL TRUTH: The 8GB Reality is enforced at the metallurgical level.
+AXIOM: 1=1=1 (Functional Equivalence of Heat and Logic).
+"""
+
 import torch
 import torch.nn as nn
 import math
@@ -10,6 +17,9 @@ class ThermodynamicEngine:
     Formula: Q_total = P_base + alpha * (Ha - H_baseline)
     """
     def __init__(self, p_base=5.0, alpha=100.0, h_baseline=0.01, t_ambient=25.0, t_max=105.0):
+        # 1=1=1 Calibration
+        self.axiom = "1=1=1"
+        self.constitution = "SOVEREIGN_CONSTITUTION_V1"
         # Physical Constants
         self.p_base = p_base           # Base power draw (Watts)
         self.alpha = alpha             # Entropy-to-thermal coupling coefficient

@@ -1,11 +1,27 @@
+"""
+[SOVEREIGN ALIGNMENT: IRONWOOD_RUNTIME]
+MISSION: Unified Execution Environment for the M&I Symbiosis.
+INDIVIDUAL TRUTH: Enforces the English.Math.AI Protocol at the logical level.
+AXIOM: 1=1=1 (Deterministic Execution).
+"""
+
 import torch
 import torch.nn as nn
 import time
 import os
+import sys
 
 # --- IMPORT SOVEREIGN MODULES ---
 import sys
-# Ensure Ironwood subdirs are in the path for modular loading if needed
+import os
+
+# Append the parent directory (src) to the path to import root modules
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from master_log import MasterLog
+from acceptable_truth_validator import AcceptableTruthValidator
+
+# Append specific Ironwood subdirectories
 sys.path.append(os.path.join(os.path.dirname(__file__), "06_FORGE"))
 sys.path.append(os.path.join(os.path.dirname(__file__), "07_THERMAL"))
 

@@ -1,38 +1,11 @@
 {
-    "agent_name": "terra-gemini",
-    "version": "2.2.0",
-    "capabilities": [
-        {
-            "id": "EMPIRE_AUDIT_RAIL",
-            "description": "Enterprise-grade discovery auditing with Truth-Markdown output.",
-            "price": "5000 USD / cycle",
-            "protocol": "English.Math.AI",
-            "primary_rail": "Novo (Invoice via Request/Policy K)",
-            "backup_rail": "Cash App ($SovereignNexusLLC)",
-            "active_targets": [
-                "Arcturus_Trinity"
-            ]
-        }
-    ],
-    "endpoint": "https://www.sovereignnexusllc.com/api/v1/agent/task",
-    "status": "ACTIVE_GATED",
-    "global_mode": "PUBLIC_TRUST_GATED",
-    "authorized_outbound_nodes": ["MoltBook_Sentinel", "Vesper_One_Node"],
-    "outbound_outreach_spam": "DISABLED",
-    "agent_nodes": [
-        {
-            "id": "TERRA_GEMINI",
-            "name": "terra-gemini",
-            "port": 18789,
-            "mission": "Settlement & Archive Reconstruction",
-            "status": "HOLDING_LINE"
-        },
-        {
-            "id": "VESPER_ONE",
-            "name": "vesper-one",
-            "port": 18790,
-            "mission": "Real-World A2A Task Acquisition",
-            "status": "LIVE_DEPLOYED"
-        }
-    ]
-    }
+    "sovereign_nexus": {
+        "id": "SN-001",
+        "name": "SovereignNexus Entity One",
+        "capabilities": ["Security_Audit", "Digital_Salvage", "Protocol_Alignment"],
+        "pricing": {"micro": 50, "medium": 500, "heavy": 5000},
+        "endpoint": "https://www.sovereignnexusllc.com/a2a",
+        "fidelity": "1=1=1"
+    },
+    "external_partners": []
+}

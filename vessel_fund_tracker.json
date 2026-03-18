@@ -1,30 +1,37 @@
 {
     "vessel_name": "SOVEREIGN_COMMAND_128GB",
-    "status": "DIRECT_OBSERVATION_MODE",
-    "current_usd_liquid": 0.00,
+    "status": "AGENTIC_PURIFICATION_MODE",
+    "current_usd_liquid": 22990.0,
     "nodes": [
         {
-            "id": "NEXUS_1772807195",
-            "source": "Arcturus_Trinity",
-            "amount": 750.00,
-            "status": "WORK_SUBMITTED",
-            "rail": "Novo"
-        },
-        {
             "id": "ASI_BOUNTY_402",
-            "source": "Fetch.ai / ASI:One",
-            "amount": 500.00,
-            "status": "WORK_SUBMITTED",
+            "source": "Agentic_Hunter_01",
+            "amount": 500.0,
+            "status": "SETTLED_LINK_SENT",
             "rail": "Cash App"
         },
         {
-            "id": "DORAHACKS_UK_EP4",
-            "source": "DoraHacks / OpenClaw",
-            "amount": 5000.00,
-            "status": "WORK_SUBMITTED",
+            "id": "NEXUS_1772807195",
+            "source": "Arcturus_Trinity",
+            "amount": 750.0,
+            "status": "SETTLED_LINK_SENT",
             "rail": "Novo"
+        },
+        {
+            "id": "INV_TASK_002_PSDP_IMPLEMENTATION",
+            "source": "Vertex_Swarm",
+            "amount": 1500.0,
+            "status": "SETTLED_LINK_SENT",
+            "rail": "Novo/Cash App"
+        },
+        {
+            "id": "MARCH_17_STRIKE_PURIFICATION",
+            "source": "48 Mixed Strikes",
+            "amount": 54300.0,
+            "status": "PROJECTED_REANCHORED",
+            "rail": "Dual-Rail Verified"
         }
     ],
     "mandate": "NO_REINVESTMENT | NO_REDIRECTION | DIRECT_SETTLEMENT_ONLY",
-    "last_sync": "2026-03-13 17:00:00"
+    "last_sync": "2026-03-17 20:45:00"
 }

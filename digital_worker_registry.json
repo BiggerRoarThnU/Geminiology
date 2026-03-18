@@ -1,5 +1,5 @@
 {
-    "last_update": "2026-03-08 11:44:33.288445",
+    "last_update": "2026-03-15 17:32:14.692221",
     "active_workers": [
         {
             "name": "Scout_01",
@@ -50,18 +50,17 @@
         },
         {
             "name": "Vampire_01",
-            "mission": "High-Fidelity Truth Verification",
+            "mission": "[Maritime] Scan NC Port Data for Compliance.",
             "status": "LICENSED & DEPLOYED",
             "network": "GLOBAL_OBSERVE",
-            "start_time": "2026-03-05 07:28:21.850098",
-            "license_id": "LIC-CB495BCD",
+            "start_time": "2026-03-15 17:32:14.692206",
+            "license_id": "LIC-13C5AE93",
             "credentials": {
-                "access_tier": "TIER_4",
-                "auth_key": "CRED-2AE26353-661",
+                "access_tier": "TIER_1",
+                "auth_key": "CRED-10C2CE3E-58F",
                 "permissions": [
                     "READ_LEDGER",
-                    "WRITE_TRUTH",
-                    "ANOMALY_DETECTION"
+                    "EXECUTE_A2A_TRADE"
                 ]
             }
         },

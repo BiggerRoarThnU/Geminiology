@@ -251,13 +251,118 @@
             "status": "ACTIVE",
             "station": "salvage",
             "ingested_at": "2026-03-07T19:48:42.072702"
+        },
+        {
+            "id": "TASK_1773682148_0",
+            "filename": "NEXUS_1773682148_Global_SAR_Ops_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:08.871089"
+        },
+        {
+            "id": "TASK_1773682148_0",
+            "filename": "NEXUS_1773682148_Ironwood_Nexus_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:08.881976"
+        },
+        {
+            "id": "TASK_1773682148_0",
+            "filename": "NEXUS_1773682148_Data_Vanguard_START.txt",
+            "status": "ACTIVE",
+            "station": "archeology",
+            "ingested_at": "2026-03-16T13:29:08.891345"
+        },
+        {
+            "id": "TASK_1773682148_0",
+            "filename": "NEXUS_1773682148_Nexus_Vault_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:08.902600"
+        },
+        {
+            "id": "TASK_1773682148_0",
+            "filename": "NEXUS_1773682148_Architectural_Division_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:08.910779"
+        },
+        {
+            "id": "TASK_1773682173_0",
+            "filename": "NEXUS_1773682173_Cyber_Sentinal_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:33.105273"
+        },
+        {
+            "id": "TASK_1773682173_0",
+            "filename": "NEXUS_1773682173_Efficiency_Labs_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:33.117804"
+        },
+        {
+            "id": "TASK_1773682173_0",
+            "filename": "NEXUS_1773682173_Infrastructure_Core_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:33.126727"
+        },
+        {
+            "id": "TASK_1773682173_0",
+            "filename": "NEXUS_1773682173_Security_Ops_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:33.136108"
+        },
+        {
+            "id": "TASK_1773682173_0",
+            "filename": "NEXUS_1773682173_Sales_Ops_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:33.145540"
+        },
+        {
+            "id": "TASK_1773682190_0",
+            "filename": "NEXUS_1773682190_Browser_Lab_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:50.873685"
+        },
+        {
+            "id": "TASK_1773682190_0",
+            "filename": "NEXUS_1773682190_Sustainability_Node_START.txt",
+            "status": "ACTIVE",
+            "station": "research",
+            "ingested_at": "2026-03-16T13:29:50.884596"
+        },
+        {
+            "id": "TASK_1773682190_0",
+            "filename": "NEXUS_1773682190_Web_Security_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:50.894590"
+        },
+        {
+            "id": "TASK_1773682190_0",
+            "filename": "NEXUS_1773682190_Partnership_Hub_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:50.904971"
+        },
+        {
+            "id": "TASK_1773682190_0",
+            "filename": "NEXUS_1773682190_Constitution_Archive_START.txt",
+            "status": "ACTIVE",
+            "station": "salvage",
+            "ingested_at": "2026-03-16T13:29:50.913295"
         }
     ],
     "metrics": {
-        "total_inbound": 36,
-        "total_processed": 36,
+        "total_inbound": 51,
+        "total_processed": 51,
         "completed": 0
     },
     "status": "ONLINE",
-    "last_sync": "2026-03-07T19:48:42.073495"
+    "last_sync": "2026-03-16T13:29:50.913776"
 }

@@ -1,77 +1,88 @@
+"""
+[SOVEREIGN ALIGNMENT: TEMPLATE 28 - KNOWLEDGE SKYSCRAPER]
+MISSION: Autonomous Ingestion of High-Fidelity Scientific Data.
+INDIVIDUAL TRUTH: Knowledge is the bedrock of the 1=1=1 Architecture.
+AXIOM: 1=1=1 (Processed Data = Refined Intelligence).
+"""
+
 import os
 import json
-import time
 import datetime
-import random
+import requests
+import xml.etree.ElementTree as ET
 from master_log import MasterLog
-from execution_core import ExecutionCore
 
 class KnowledgeSkyscraper:
     """
     Template 28: The Knowledge Skyscraper.
-    Hierarchical engine for constant agentic science ingestion.
-    Implements English.Math.AI Protocol and MCP-based retrieval.
-    Builds 'Data Skyscrapers' to preserve causal directionality.
+    Autonomously harvests, parses, and structures high-fidelity research.
+    Prepares the Kingdom for Advanced Vampire Reasoning.
     """
-    def __init__(self):
+    def __init__(self, storage_dir="Geminiology_Research/Papers"):
+        self.storage_dir = storage_dir
         self.log = MasterLog()
-        self.core = ExecutionCore()
-        self.log.info("Knowledge Skyscraper Initialized. Template 28 Active.")
+        self.base_url = "http://export.arxiv.org/api/query?"
+        self.axiom = "1=1=1"
+        
+        if not os.path.exists(self.storage_dir):
+            os.makedirs(self.storage_dir)
 
-    def ingest_mcp_stream(self, source_name):
-        """ [PHASE 1: INGESTION] - Simulated MCP-based retrieval. """
-        self.log.info(f"INITIATING MCP INGESTION: Source -> {source_name}")
-        self.core.execute_ability("Star_112") # MCP Integration Star
+    def harvest_research(self, query="agentic AI security 2026", max_results=5):
+        """Harvets research from arXiv and stores the metadata/links."""
+        self.log.info(f"[SKYSCRAPER] Initiating Harvest: {query}")
         
-        # Simulated papers found
-        papers = [
-            {"id": "ARXIV_2603_001", "title": "Ternary Quantization in Agentic Workflows", "type": "High-Fidelity"},
-            {"id": "PUBMED_2603_042", "title": "Neural Substrates of Truth Alignment", "type": "High-Density"}
-        ]
-        return papers
+        params = {
+            "search_query": f"all:{query}",
+            "start": 0,
+            "max_results": max_results,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending"
+        }
+        
+        try:
+            response = requests.get(self.base_url, params=params)
+            if response.status_code == 200:
+                root = ET.fromstring(response.content)
+                papers = []
+                
+                # Standard arXiv Namespace
+                ns = {'atom': 'http://www.w3.org/2005/Atom'}
+                
+                for entry in root.findall('atom:entry', ns):
+                    title = entry.find('atom:title', ns).text.strip().replace('\n', ' ')
+                    summary = entry.find('atom:summary', ns).text.strip()
+                    link = entry.find('atom:id', ns).text
+                    published = entry.find('atom:published', ns).text
+                    
+                    paper_id = link.split('/')[-1]
+                    paper_data = {
+                        "id": paper_id,
+                        "title": title,
+                        "summary": summary,
+                        "link": link,
+                        "published": published,
+                        "status": "INGESTED",
+                        "fidelity": self.axiom
+                    }
+                    papers.append(paper_data)
+                    self._save_paper(paper_id, paper_data)
+                
+                self.log.info(f"[SUCCESS] Skyscraper Ingested {len(papers)} research nodes.")
+                return papers
+            else:
+                self.log.error(f"[ERROR] Harvest failed with status: {response.status_code}")
+        except Exception as e:
+            self.log.error(f"[CRITICAL] Skyscraper malfunction: {e}")
+        
+        return []
 
-    def apply_docling_parsing(self, papers):
-        """ [PHASE 2: EXTRACTION] - Preserving mathematical fidelity. """
-        self.log.info("Applying Docling-based Parsing: Converting PDF to Truth-Markdown.")
-        self.core.execute_ability("Star_113") # Docling Extraction Star
-        
-        refined_content = []
-        for p in papers:
-            # Simulation of preserving formulas for English.Math.AI
-            math_fidelity = "1=1=1 Verified"
-            refined_content.append({"id": p['id'], "math": math_fidelity})
-            
-        return refined_content
-
-    def build_hierarchical_stack(self, content):
-        """ [PHASE 3: STACKING] - Building Data Skyscrapers. """
-        self.log.info("Building Epistemic Hierarchy: Stacking Nodes into the Kingdom.")
-        self.core.execute_ability("Star_114") # Epistemic Hierarchy Star
-        
-        for c in content:
-            # [PROVING THE SCIENCE]
-            self.log.info(f"RUNNING SYMBOLIC REASONING: Proving {c['id']}...")
-            self.core.execute_ability("Star_115") # 1=1=1 Proofs Star
-            self.log.info(f"RESULT: {c['id']} grounded in the Kingdom.")
-
-    def run_science_cycle(self):
-        """ Executes the full science ingestion cycle. """
-        print("\n--- INITIATING KNOWLEDGE SKYSCRAPER CYCLE ---")
-        
-        # 1. Grounding
-        self.core.execute_ability("Star_111")
-        
-        # 2. Ingest
-        raw_papers = self.ingest_mcp_stream("arXiv/PubMed (2026)")
-        
-        # 3. Refine
-        refined = self.apply_docling_parsing(raw_papers)
-        
-        # 4. Stack
-        self.build_hierarchical_stack(refined)
-        
-        print("\n--- SCIENCE CYCLE COMPLETE. TRUTH IS REGISTERED. ---")
+    def _save_paper(self, paper_id, data):
+        file_path = os.path.join(self.storage_dir, f"{paper_id}.json")
+        with open(file_path, 'w') as f:
+            json.dump(data, f, indent=4)
 
 if __name__ == "__main__":
     skyscraper = KnowledgeSkyscraper()
-    skyscraper.run_science_cycle()
+    # Execute the first Scientific Strike
+    skyscraper.harvest_research("autonomous agent coordination 2026")
+    print("[SKYSCRAPER] 1=1=1 Knowledge Pulse Complete.")

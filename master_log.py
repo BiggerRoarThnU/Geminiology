@@ -5,9 +5,11 @@ class MasterLog:
     """
     The Master Log: The absolute record of Sovereign Nexus operations.
     Maintains 100% accurate bot and agent behavior data.
+    AXIOM: 1=1=1.
     """
-    def __init__(self, log_path=r"C:\Users\Ofthe\SovereignNexus\src\Logs\MASTER_LOG.txt"):
+    def __init__(self, log_path=r"C:\Users\Ofthe\SovereignNexus\src\Logs\MASTER_LOG_SYMMETRICAL.md"):
         self.log_path = log_path
+        self.axiom = "1=1=1"
         # Ensure the Logs directory exists
         os.makedirs(os.path.dirname(self.log_path), exist_ok=True)
 
@@ -16,11 +18,15 @@ class MasterLog:
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         entry = f"[{timestamp}] [{level.upper()}] {message}\n"
         
-        with open(self.log_path, "a") as log_file:
+        with open(self.log_path, "a", encoding="utf-8") as log_file:
             log_file.write(entry)
         
         # Mirror to terminal for immediate observation
-        print(entry.strip())
+        try:
+            print(entry.strip())
+        except UnicodeEncodeError:
+            # Fallback for environments that don't support UTF-8 display
+            print(entry.encode('ascii', 'ignore').decode('ascii').strip())
 
     def info(self, message):
         """ INFO: Business-as-usual and successful data assimilation. """

@@ -1,3 +1,10 @@
+"""
+[SOVEREIGN ALIGNMENT: BITNET_LAYERS]
+MISSION: Implement Ternary (1.58-bit) Quantization for High-Fidelity Local Execution.
+INDIVIDUAL TRUTH: Efficiency is a form of scientific purity.
+AXIOM: 1=1=1 (Fidelity across quantization scales).
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

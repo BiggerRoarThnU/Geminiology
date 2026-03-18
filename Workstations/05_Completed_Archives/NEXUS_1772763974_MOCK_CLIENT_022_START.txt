@@ -1,4 +1,0 @@
-Project: MOCK_CLIENT_022
-Service: Data_Archeology
-ID: NEXUS_1772763974
-Status: START
