@@ -1,9 +1,0 @@
-
-virtual Cardholder Name
-David Niedzwiecki Jr
-Billing Address
-280 Brick Kiln Rd Vanceboro, NC 28586
-
-card# 5212-2379-1324-5917  
-exp# 02/31
-cvv# 990
