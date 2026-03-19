@@ -28,3 +28,13 @@ dist-ssr
 
 .env
 gcp_service_account.json
+
+# Sensitive Data
+Business Bank Accounts/
+Clean_Storage/
+Archive_Legacy/
+CONSOLDIDATED_INPUT.md
+*.txt.txt
+**/Passwords back up/
+**/*recovery-codes.txt
+**/*backup_codes*

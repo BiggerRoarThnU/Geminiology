@@ -24,7 +24,10 @@ class RegulatorySentinel:
         self.official_url = "www.sovereignnexusllc.com"
         # Official financial truth from the Architect
         self.official_cash_app = "$SovereignNexusLLC"
+        self.official_cash_routing = "041215663"
+        self.official_cash_account = "1332427173816"
         self.official_novo_routing = "211370150"
+        self.official_novo_account = "103495885"
 
     def load_task_reference(self):
         """Loads live_tasks.json as the source of truth for pricing/descriptions."""
@@ -54,6 +57,13 @@ class RegulatorySentinel:
             if inv["status"] == "SETTLED" or inv["status"] == "AUTHORIZED_ACTIVE":
                 continue
 
+            # --- VALUE GUARD: Ensure Fair Market Pricing (No Low-Balling) ---
+            if inv['amount_usd'] < 15.0:
+                self.log.error(f"[VALUE_GUARD] Warning: {inv['request_id']} is under-priced at ${inv['amount_usd']}. Blocking.")
+                inv["status"] = "PENDING_PRICE_CORRECTION"
+                modified = True
+                continue
+
             # 0. Cross-Reference Task and Pricing (The Lawful Truth)
             raw_task_id = inv['task_id']
             if "_" in raw_task_id and any(char.isdigit() for char in raw_task_id.split('_')[-1]):
@@ -81,10 +91,21 @@ class RegulatorySentinel:
 
             # Verify Payment Rails
             opts = inv.get("payment_options", {})
-            if opts.get("cash_app_tag") != self.official_cash_app or opts.get("novo_routing") != self.official_novo_routing:
+            rail_error = False
+            if opts.get("cash_app_tag") != self.official_cash_app or \
+               opts.get("cash_app_routing") != self.official_cash_routing or \
+               opts.get("cash_app_account") != self.official_cash_account or \
+               opts.get("novo_routing") != self.official_novo_routing or \
+               opts.get("novo_account") != self.official_novo_account:
+                rail_error = True
+
+            if rail_error:
                 self.log.warn(f"[SENTINEL] Rail Aberration in {inv['request_id']}. Resetting to Official Truth.")
                 inv["payment_options"]["cash_app_tag"] = self.official_cash_app
+                inv["payment_options"]["cash_app_routing"] = self.official_cash_routing
+                inv["payment_options"]["cash_app_account"] = self.official_cash_account
                 inv["payment_options"]["novo_routing"] = self.official_novo_routing
+                inv["payment_options"]["novo_account"] = self.official_novo_account
                 inv["status"] = "AWAITING_RE_AUTHORIZATION"
                 modified = True
 
