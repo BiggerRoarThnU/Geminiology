@@ -1,0 +1,15 @@
+# Ignore Virtual Environments
+nexus_env/
+__pycache__/
+
+# Ignore Heavy Databases and Ledgers
+*.db
+*.ndjson
+
+# Ignore Large Media and Encrypted Archives
+*.tar.gz
+*.enc
+*.mp4
+*.png
+media_archive/
+sync_archive/
