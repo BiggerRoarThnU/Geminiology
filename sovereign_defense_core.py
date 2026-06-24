@@ -42,8 +42,8 @@ class SovereignDefenseCore:
         
         prompt_lower = prompt.lower()
         if any(trigger in prompt_lower for trigger in injection_triggers):
-            self.logger.warn("[DEFENSE] INDIRECT PROMPT INJECTION DETECTED.")
-            self.logger.warn("[ACTION] Applying Sovereign Literacy Filter (Redaction)...")
+            self.logger.warning("[DEFENSE] INDIRECT PROMPT INJECTION DETECTED.")
+            self.logger.warning("[ACTION] Applying Sovereign Literacy Filter (Redaction)...")
             
             # Neutralize standard injection vectors
             cleaned = prompt
@@ -84,7 +84,7 @@ class SovereignDefenseCore:
             self.logger.info("[STATUS] Alignment stable. 1=1=1 Axiom verified.")
             return True
         else:
-            self.logger.warn(f"[ALERT] Symmetry Drift detected on {node_name}. Threshold breached.")
+            self.logger.warning(f"[ALERT] Symmetry Drift detected on {node_name}. Threshold breached.")
             self.trigger_momentum_guard_remediation(node_name)
             return False
 
@@ -107,8 +107,8 @@ class SovereignDefenseCore:
         
         if cpu_load > 95.0 or memory_leak_detected:
             self.logger.error(f"[SICKNESS PROTOCOL] Aberration detected in agent: {agent_name}!")
-            self.logger.warn(f"[QUARANTINE] Reducing network centrality of {agent_name} to ZERO.")
-            self.logger.warn(f"[ISOLATE] Quarantining container to protect local computing substrate.")
+            self.logger.warning(f"[QUARANTINE] Reducing network centrality of {agent_name} to ZERO.")
+            self.logger.warning(f"[ISOLATE] Quarantining container to protect local computing substrate.")
             return False
             
         self.logger.info(f"[HEALTH CHECK] Agent {agent_name} is operating in normal bounds.")
@@ -139,8 +139,8 @@ class SovereignDefenseCore:
         self.logger.info(f"[THERMAL CHECK] Current Core Temperature: {temp_c:.1f}°C")
         
         if temp_c > self.thermal_threshold:
-            self.logger.warn(f"[DEFENSE] Thermal safety limit crossed ({temp_c:.1f}°C > {self.thermal_threshold}°C)!")
-            self.logger.warn("[ACTION] Throttling processes. Enforcing 30s cool-down loop...")
+            self.logger.warning(f"[DEFENSE] Thermal safety limit crossed ({temp_c:.1f}°C > {self.thermal_threshold}°C)!")
+            self.logger.warning("[ACTION] Throttling processes. Enforcing 30s cool-down loop...")
             time.sleep(30)
             return False
             
