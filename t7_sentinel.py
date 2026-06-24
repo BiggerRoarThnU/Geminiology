@@ -54,7 +54,7 @@ def scan_and_ingest():
         if os.path.exists(WATCH_DIR):
             for root, _, files in os.walk(WATCH_DIR):
                 for file in files:
-                    if file.startswith('.'):
+                    if file.startswith('.') or file.lower().endswith(('.chk', '.enc', '.bin', '.db', '.ndjson', '.tmp')):
                         continue
                     found_files.append(os.path.join(root, file))
                     
