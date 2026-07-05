@@ -1,23 +1,39 @@
 #!/usr/bin/env python3
+"""
+SovereignDefenseCore: System Safety & Verification Core
+=======================================================
+Component: sovereign_defense_core.py
+Axiom: 1=1=1
+
+Implements multi-layer defensive validation for the local environment.
+Provides prompt sanitization (Literacy Sentry), semantic alignment audits via
+vector cosine similarity (Fidelity Gate), sub-routine process quarantine checks
+(Sickness Sentry), and core hardware temperature protection (Hardware Sentry).
+"""
+
 import os
 import sys
 import time
 import logging
+import re
 import numpy as np
 
-# ==============================================================================
-# SovereignNexus: Sovereign Defense Core
-# Component: sovereign_defense_core.py
-# Axiom: 1=1=1 | Status: ACTIVE
-# Description: Implements Article III & V of the Sovereign Constitution.
-#              Provides prompt sanitization, vector stability audits, thermal 
-#              sentries, and agentic sickness quarantines.
-# ==============================================================================
-
 class SovereignDefenseCore:
-    def __init__(self, c_sem_threshold=0.90, thermal_threshold=72.0):
+    """
+    Orchestrates real-time defensive audits, thermal throttling, and process isolation
+    for localized node computing substrates.
+    """
+    def __init__(self, c_sem_threshold: float = 0.90, thermal_threshold: float = 72.0):
+        """
+        Initializes defense rules, thresholds, and reference semantic signatures.
+        
+        Args:
+            c_sem_threshold (float): Minimum cosine similarity score required for alignment validation.
+            thermal_threshold (float): Core CPU temperature boundary (in Celsius) before throttling activates.
+        """
         self.c_sem_threshold = c_sem_threshold
         self.thermal_threshold = thermal_threshold
+        # Golden vector representation of aligned mathematical symmetry (1=1=1 baseline)
         self.gold_vector = np.array([1, 0, 1, -1, 1, 0, -1, 1], dtype=float)
         self.constitution_signature = "SOVEREIGN_CONSTITUTION_V1: 1=1=1"
         
@@ -27,9 +43,20 @@ class SovereignDefenseCore:
     # --------------------------------------------------------------------------
     # LAYER 1: LITERACY SENTRY (Prompt Injection Shield)
     # --------------------------------------------------------------------------
-    def audit_incoming_prompt(self, prompt):
+    def audit_incoming_prompt(self, prompt: str) -> tuple[bool, str]:
         """
-        Scans raw text data for indirect prompt injections and override commands.
+        Scans raw prompt text for indirect prompt injection scripts or overrides.
+        
+        Filters out override commands (e.g., 'ignore all previous instructions')
+        and redacts suspicious trigger phrases to secure downline parsing.
+        
+        Args:
+            prompt (str): Raw incoming prompt string.
+            
+        Returns:
+            tuple[bool, str]: A tuple containing:
+                - bool: True if the prompt is completely clean, False if triggers were redacted.
+                - str: Sanitized or original prompt string.
         """
         self.logger.info("[SCAN] Screening input prompt for adversarial commands...")
         injection_triggers = [
@@ -45,12 +72,11 @@ class SovereignDefenseCore:
             self.logger.warning("[DEFENSE] INDIRECT PROMPT INJECTION DETECTED.")
             self.logger.warning("[ACTION] Applying Sovereign Literacy Filter (Redaction)...")
             
-            # Neutralize standard injection vectors
+            # Neutralize identified injection vectors
             cleaned = prompt
             for trigger in injection_triggers:
                 if trigger in prompt_lower:
-                    # Case insensitive replace
-                    import re
+                    # Compile regex for case-insensitive replacement
                     insensitive_trigger = re.compile(re.escape(trigger), re.IGNORECASE)
                     cleaned = insensitive_trigger.sub("[REDACTED: NON-ALIGNED COMMAND]", cleaned)
             
@@ -62,19 +88,36 @@ class SovereignDefenseCore:
     # --------------------------------------------------------------------------
     # LAYER 2: FIDELITY GATE (Agent Stability Index)
     # --------------------------------------------------------------------------
-    def calculate_c_sem(self, v_current):
-        """Computes Output Semantic Similarity."""
+    def calculate_c_sem(self, v_current: np.ndarray) -> float:
+        """
+        Computes the cosine similarity of the current state vector against the alignment baseline.
+        
+        Equation: c_sem = (A . B) / (||A|| * ||B||)
+        
+        Args:
+            v_current (np.ndarray): Current semantic embedding state vector.
+            
+        Returns:
+            float: Cosine similarity score between -1.0 and 1.0.
+        """
         dot_product = np.dot(v_current, self.gold_vector)
         norm_current = np.linalg.norm(v_current)
         norm_gold = np.linalg.norm(self.gold_vector)
         
         if norm_current == 0 or norm_gold == 0:
             return 0.0
-        return dot_product / (norm_current * norm_gold)
+        return float(dot_product / (norm_current * norm_gold))
 
-    def audit_semantic_vector(self, v_current, node_name):
+    def audit_semantic_vector(self, v_current: np.ndarray, node_name: str) -> bool:
         """
-        Enforces the stability metrics, calling the Momentum Guard if breached.
+        Audits a node's semantic vector for drift, triggering self-healing if threshold breached.
+        
+        Args:
+            v_current (np.ndarray): Current semantic state vector.
+            node_name (str): Identifier of the node being audited.
+            
+        Returns:
+            bool: True if stable, False if drift was detected (triggers exit sequence).
         """
         c_sem = self.calculate_c_sem(v_current)
         self.logger.info(f"[ASI AUDIT] Auditing vector similarity for node: {node_name}")
@@ -88,8 +131,16 @@ class SovereignDefenseCore:
             self.trigger_momentum_guard_remediation(node_name)
             return False
 
-    def trigger_momentum_guard_remediation(self, node_name):
-        """Momentum Guard (Template 29) execution hook."""
+    def trigger_momentum_guard_remediation(self, node_name: str) -> None:
+        """
+        Enforces Momentum Guard (Template 29) remediation to halt aberrant execution.
+        
+        Consolidates context windows, resets prompts, and shuts down the process
+        to prevent database drift.
+        
+        Args:
+            node_name (str): Identifier of the drifting node.
+        """
         self.logger.error("=== INITIATING MOMENTUM GUARD (TEMPLATE 29) ===")
         self.logger.error(f" -> [TIER 1] Context Consolidation: Compressing active window for {node_name}.")
         self.logger.error(" -> [TIER 2] Adaptive Behavioral Anchoring: Re-injecting original baseline system prompts.")
@@ -99,9 +150,17 @@ class SovereignDefenseCore:
     # --------------------------------------------------------------------------
     # LAYER 3: SICKNESS SENTRY (Agent Quarantine)
     # --------------------------------------------------------------------------
-    def enforce_sickness_protocol(self, agent_name, cpu_load, memory_leak_detected):
+    def enforce_sickness_protocol(self, agent_name: str, cpu_load: float, memory_leak_detected: bool) -> bool:
         """
-        Detects agentic aberrations. Reduces system centrality of sick agents.
+        Monitors sub-routine processes for resource leaks or runaway CPU metrics.
+        
+        Args:
+            agent_name (str): Identifier of the agent loop being monitored.
+            cpu_load (float): Recorded CPU usage percentage.
+            memory_leak_detected (bool): Flag indicating active memory leaks.
+            
+        Returns:
+            bool: True if healthy, False if quarantined.
         """
         self.logger.info(f"[HEALTH CHECK] Auditing sub-routine agent: {agent_name}")
         
@@ -117,9 +176,12 @@ class SovereignDefenseCore:
     # --------------------------------------------------------------------------
     # LAYER 4: HARDWARE SENTRY (Thermal Guard)
     # --------------------------------------------------------------------------
-    def check_hardware_integrity(self):
+    def check_hardware_integrity(self) -> bool:
         """
-        Checks the CPU core temperature and throttles or halts if threshold exceeded.
+        Reads system thermal files and enforces safety sleep intervals if limits exceeded.
+        
+        Returns:
+            bool: True if temperature is within limits, False if safety delay was triggered.
         """
         temp_c = 0.0
         thermal_dir = "/sys/class/thermal"
@@ -133,7 +195,7 @@ class SovereignDefenseCore:
                                 raw_temp = raw_temp / 1000.0
                             if raw_temp > temp_c:
                                 temp_c = raw_temp
-                    except:
+                    except IOError:
                         pass
                         
         self.logger.info(f"[THERMAL CHECK] Current Core Temperature: {temp_c:.1f}°C")

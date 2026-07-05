@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+"""
+SovereignCommandCenter: local REST API Gateway
+============================================
+Component: oracle_server.py
+Axiom: 1=1=1
+
+A Flask-based local gateway microservice hosting a developer console UI.
+Provides secure endpoints for local database context queries and token-gated
+payload ingestion. Interfaces with a local Ollama service for offline inference.
+"""
+
 from flask import Flask, request, jsonify, render_template_string
 import sqlite3
 import ollama
@@ -6,15 +17,19 @@ import os
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+
+# System file paths for local execution
 DB_PATH = os.path.expanduser("~/SovereignNexus/nexus_ledger.db")
 INTAKE_DIR = os.path.expanduser("~/SovereignNexus/sync_intake")
 MODEL_NAME = "qwen2.5:0.5b"
 
-# Master key for testing. Later, this will check a database of Stripe-generated tokens.
+# Active access tokens (Master key for B2B client demonstration)
 VALID_TOKENS = ["NEXUS-777-ALPHA"]
 
+# Ensure target directories exist before server startup
 os.makedirs(INTAKE_DIR, exist_ok=True)
 
+# Embedded developer console UI (Glassmorphic dark console theme)
 HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html lang="en">
@@ -165,7 +180,19 @@ HTML_TEMPLATE = """
 </html>
 """
 
-def retrieve_context(query_text):
+def retrieve_context(query_text: str) -> str:
+    """
+    Searches the local SQLite ledger for relevant information chunks.
+    
+    Splits the query into individual keywords and runs an SQL query to retrieve
+    the top matching items from the chunk_ledger table to formulate system context.
+    
+    Args:
+        query_text (str): Raw string containing user query keywords.
+        
+    Returns:
+        str: Aggregated context text extracted from the database, or 'NO DATA FOUND.'
+    """
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     keywords = query_text.lower().split()
@@ -175,29 +202,57 @@ def retrieve_context(query_text):
         c.execute(f"SELECT chunk_summary FROM chunk_ledger WHERE {query_conditions} LIMIT 2", search_params)
         results = c.fetchall()
         conn.close()
-        if not results: return "NO DATA FOUND."
+        if not results:
+            return "NO DATA FOUND."
         return "\n".join([row[0] for row in results])
-    except:
+    except sqlite3.Error:
          return "NO DATA FOUND."
 
 @app.route('/')
 def index():
+    """
+    Renders the primary web interface console.
+    
+    Returns:
+        str: HTML template content.
+    """
     return render_template_string(HTML_TEMPLATE)
 
 @app.route('/api/query', methods=['POST'])
 def handle_query():
+    """
+    Handles incoming JSON research queries.
+    
+    Retrieves local SQLite context matches and prompts the local Ollama LLM
+    instance, returning the model's response.
+    
+    Returns:
+        Response: JSON payload containing model's answer or error details.
+    """
     user_query = request.json.get('query', '')
     context = retrieve_context(user_query)
     system_prompt = "You are a strict data extraction tool. Output ONLY facts found in the context. If 'NO DATA FOUND.', reply exactly with 'DATA NOT FOUND IN LEDGER.'"
     full_prompt = f"CONTEXT:\n{context}\n\nQUESTION: {user_query}\n\nANSWER:"
     try:
-        response = ollama.chat(model=MODEL_NAME, messages=[{'role': 'system', 'content': system_prompt}, {'role': 'user', 'content': full_prompt}])
+        response = ollama.chat(model=MODEL_NAME, messages=[
+            {'role': 'system', 'content': system_prompt},
+            {'role': 'user', 'content': full_prompt}
+        ])
         return jsonify({'answer': response['message']['content']})
     except Exception as e:
         return jsonify({'answer': f"System Error: {e}"})
 
 @app.route('/api/upload', methods=['POST'])
 def handle_upload():
+    """
+    Validates token authorization and processes file ingestion payloads.
+    
+    Validates the authorization header/token. If authenticated, saves the uploaded
+    file to the secure sync intake staging directory.
+    
+    Returns:
+        Response: JSON status response indicating success or access denial.
+    """
     token = request.form.get('token', '')
     if token not in VALID_TOKENS:
         print(f"[!] Unauthorized upload attempt blocked. Token: {token}")
