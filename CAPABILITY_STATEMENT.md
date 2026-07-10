@@ -1,5 +1,5 @@
 SovereignNexus LLC: Capability Statement
-UEI: K5DALREZFGH6 | CAGE: [In Process] | Status: IRS Validated
+UEI: K5DALREZFGH6 | CAGE: 1AQG5 | Status: IRS Validated
 
 Core Mission: > To provide Deterministic, Zero-Drift AI Solutions via proprietary 1.58-bit Ternary Hardening. We eliminate the "Black Box" problem of traditional LLMs by anchoring all reasoning to a cryptographic truth-ledger.
 
