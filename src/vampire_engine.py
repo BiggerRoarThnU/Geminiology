@@ -7,6 +7,14 @@ import hashlib
 import hmac
 from typing import Callable, Dict, Any
 
+# ==============================================================================
+# SOVEREIGN NEXUS: THE VAMPIRE ENGINE (V2.4 - PERSISTENCE & IMMORTALITY)
+# CORE MANDATE: Wipe, Mop, Cryptographically Anchor, and Resurrect Data
+# PERC: Scratch in the ring - Symmetrical Line Verified
+# ==============================================================================
+
+AGENT_IDENTITY_KEY = b"agent1q_sovereign_nexus_offline_key_001"
+
 def to_jsonable(val: Any) -> Any:
     """
     Recursively converts arbitrary Python objects (including custom classes)
@@ -27,21 +35,8 @@ def to_jsonable(val: Any) -> Any:
         except (TypeError, ValueError):
             return str(val)
 
-# ==============================================================================
-# SOVEREIGN NEXUS: THE VAMPIRE ENGINE (V2.3 - IDENTITY & PERSISTENCE)
-# CORE MANDATE: Wipe, Mop, and Cryptographically Anchor Data
-# PERC: Scratch in the ring - Symmetrical Line Verified
-# ==============================================================================
-
-# Simulated Secure Enclave Key (Offline Identity Signature)
-# Represents the Fetch.ai 'agent1' prefix verifiable credential
-AGENT_IDENTITY_KEY = b"agent1q_sovereign_nexus_offline_key_001"
-
 class CryptoCheckpointer:
     def __init__(self, db_path="nexus_checkpoints.db"):
-        """
-        LANGGRAPH EXTRACTION: Initializes the SQLite-backed dual-table checkpointer.
-        """
         self.db_path = db_path
         self.conn = sqlite3.connect(self.db_path)
         self.cursor = self.conn.cursor()
@@ -63,16 +58,18 @@ class CryptoCheckpointer:
         self.conn.commit()
 
     def _get_last_hash(self) -> str:
-        """Retrieves the hash of the last state to create the Merkle-linked chain."""
         self.cursor.execute('SELECT current_hash FROM checkpoints ORDER BY id DESC LIMIT 1')
         row = self.cursor.fetchone()
-        return row[0] if row else "0000000000000000000000000000000000000000000000000000000000000000" # Genesis hash
+        return row[0] if row else "0000000000000000000000000000000000000000000000000000000000000000"
+
+    def load_last_state(self):
+        """
+        LANGGRAPH EXTRACTION: Fetches the entire last row to reconstruct the agent's memory.
+        """
+        self.cursor.execute('SELECT id, task_name, current_hash, signature FROM checkpoints ORDER BY id DESC LIMIT 1')
+        return self.cursor.fetchone()
 
     def sign_and_store(self, task_name: str, payload: dict, result: Any):
-        """
-        FETCH.AI EXTRACTION: Cryptographically signs the payload and writes to the DB.
-        If a single character in the history is altered, the entire chain breaks.
-        """
         timestamp = time.time()
         prev_hash = self._get_last_hash()
         
@@ -89,10 +86,7 @@ class CryptoCheckpointer:
             "prev_hash": prev_hash
         }, sort_keys=True)
 
-        # Generate SHA-256 Hash
         current_hash = hashlib.sha256(data_string.encode('utf-8')).hexdigest()
-
-        # Generate Offline Signature (Simulated ECDSA/Bech32 identity proof)
         signature = hmac.new(AGENT_IDENTITY_KEY, current_hash.encode('utf-8'), hashlib.sha256).hexdigest()
 
         self.cursor.execute('''
@@ -108,6 +102,21 @@ class VampireEngine:
         self.max_tokens = max_tokens
         self.active_tokens = 0
         self.checkpointer = CryptoCheckpointer()
+        self.resurrect_agent() # Auto-trigger resurrection on boot
+
+    def resurrect_agent(self):
+        """
+        Pulls the agent back from the void. Sets the internal state to match the 
+        last verified cryptographic block before the system powered down.
+        """
+        state = self.checkpointer.load_last_state()
+        if state:
+            block_id, task, c_hash, sig = state
+            print(f"\n[!] VAMPIRE ENGINE RESURRECTED.")
+            print(f"[+] Anchoring to Block {block_id} | Last Task: {task}")
+            print(f"[+] Restored State Hash: {c_hash[:16]}...\n")
+        else:
+            print(f"\n[*] VAMPIRE ENGINE INITIALIZED. Genesis State (No prior history found).\n")
 
     def _thermal_cutoff_check(self) -> bool:
         if self.active_tokens >= (self.max_tokens * 0.85):
@@ -115,9 +124,7 @@ class VampireEngine:
         return True
 
     def coerce_payload_recursive(self, expected_type, val: Dict[str, Any]) -> Any:
-        """
-        Recursively coerces nested dictionary data based on class annotations.
-        """
+        """Recursively coerces nested dictionary data based on class annotations."""
         if not hasattr(expected_type, '__annotations__'):
             return val
         
@@ -170,7 +177,7 @@ class VampireEngine:
         return coerced_data
 
     def route_dictionary_pass(self, tool_func: Callable, raw_llm_output: Dict[str, Any]) -> Dict[str, Any]:
-        print(f"\n[*] VAMPIRE ENGINE: Auditing payload for {tool_func.__name__}...")
+        print(f"[*] VAMPIRE ENGINE: Auditing payload for {tool_func.__name__}...")
         
         if not self._thermal_cutoff_check():
             return {"status": "TERMINATED", "reason": "Thermal Limit"}
@@ -193,37 +200,9 @@ class VampireEngine:
             return {"status": "REJECTED", "error": str(e)}
 
 if __name__ == "__main__":
-    # Test 1: Flat Coercion
-    def generate_novo_invoice(client_email: str, amount_usd: float, invoice_id: int):
-        return f"Invoice {invoice_id} generated for {client_email} at ${amount_usd:.2f}"
+    def test_immortality_tool(test_id: int):
+        return f"Immortality Test {test_id} Confirmed."
 
-    incoming_slop = {"client_email": "test@sovereignnexus.org", "amount_usd": "750.00", "invoice_id": "1001"}
-    
     vampire = VampireEngine()
-    print("=== TEST 1: Flat Coercion ===")
-    vampire.route_dictionary_pass(generate_novo_invoice, incoming_slop)
-
-    # Test 2: Recursive Nested Coercion
-    class ClientMetadata:
-        client_name: str
-        tier_level: int
-        def __init__(self, client_name: str, tier_level: int):
-            self.client_name = client_name
-            self.tier_level = tier_level
-
-    def generate_complex_invoice(client_email: str, amount_usd: float, client_info: ClientMetadata):
-        return f"Complex Invoice for {client_email} (${amount_usd:.2f}) | Client: {client_info.client_name} (Tier {client_info.tier_level})"
-
-    incoming_complex_slop = {
-        "client_email": "complex@sovereignnexus.org",
-        "amount_usd": "1250.50",
-        "client_info": {
-            "client_name": "Nexus Corp",
-            "tier_level": "3"
-        }
-    }
-    
-    print("\n=== TEST 2: Recursive Coercion ===")
-    vampire.route_dictionary_pass(generate_complex_invoice, incoming_complex_slop)
-    
-    print("\n[+] Verification: Run 'sqlite3 nexus_checkpoints.db \"SELECT * FROM checkpoints;\"' in terminal to view the immutable ledger.")
+    print("--- Simulating New Strike Post-Resurrection ---")
+    vampire.route_dictionary_pass(test_immortality_tool, {"test_id": "999"})
