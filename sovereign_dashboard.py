@@ -306,6 +306,33 @@ class DashboardHandler(BaseHTTPRequestHandler):
                     "status": status
                 })
             self.send_json(merged_agents)
+        elif self.path == '/api/ledger':
+            try:
+                db_file = '/home/geminiology/SovereignNexus/nexus_checkpoints.db'
+                if not os.path.exists(db_file):
+                    self.send_json({"status": "SUCCESS", "ledger": []})
+                    return
+                conn = sqlite3.connect(f"file:{db_file}?mode=ro", uri=True)
+                cursor = conn.cursor()
+                cursor.execute('''
+                    SELECT id, task_name, current_hash, signature 
+                    FROM checkpoints 
+                    ORDER BY id DESC LIMIT 5
+                ''')
+                blocks = cursor.fetchall()
+                conn.close()
+
+                ledger_data = [
+                    {
+                        "block": row[0],
+                        "task": row[1],
+                        "hash": row[2][:16] + "...",
+                        "signature": row[3][:16] + "..."
+                    } for row in blocks
+                ]
+                self.send_json({"status": "SUCCESS", "ledger": ledger_data})
+            except Exception as e:
+                self.send_json({"status": "ERROR", "message": f"Ledger error: {str(e)}"})
         else:
             self.send_error(404, 'Path not found')
 
@@ -1149,6 +1176,22 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
     </div>
 
+    <!-- Sovereign Ledger: Merkle Chain -->
+    <div class="card">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="logo-icon" style="background-color: var(--accent-cyan);"></div>
+                Sovereign Ledger : Merkle Chain
+            </div>
+            <div class="axiom-badge" style="background: rgba(6, 182, 212, 0.1); border-color: var(--accent-cyan); color: var(--accent-cyan);">1=1=1 Immutable Chaining</div>
+        </div>
+        <div class="ledger-container" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; font-family: monospace;">
+            <div id="live-ledger-feed" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <p style="color: var(--text-muted); text-align: center; padding: 1rem;">Awaiting cryptographic sync...</p>
+            </div>
+        </div>
+    </div>
+
     <!-- 12-Agent Swarm Grid -->
     <div class="card">
         <div class="section-header">
@@ -1465,6 +1508,39 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             .replace(/'/g, "&#039;");
     }
 
+    async function updateLedgerFeed() {
+        try {
+            const res = await fetch('/api/ledger');
+            const data = await res.json();
+            
+            if (data.status === "SUCCESS") {
+                const feed = document.getElementById('live-ledger-feed');
+                if (!data.ledger || data.ledger.length === 0) {
+                    feed.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 1rem;">No cryptographic blocks recorded.</div>';
+                    return;
+                }
+                
+                feed.innerHTML = data.ledger.map(block => `
+                    <div style="margin-bottom: 0.5rem; border-left: 2px solid var(--accent-cyan); padding-left: 0.75rem; display: flex; flex-direction: column; gap: 0.25rem;">
+                        <div>
+                            <strong style="color: var(--accent-cyan);">BLK ${block.block}</strong> | 
+                            <span style="color: #ffffff; font-weight: bold;">${escapeHtml(block.task)}</span>
+                        </div>
+                        <div style="color: var(--text-muted); font-size: 0.85rem;">
+                            Hash: <span style="color: #94a3b8; font-family: monospace;">${escapeHtml(block.hash)}</span>
+                        </div>
+                        <div style="color: var(--text-muted); font-size: 0.85rem;">
+                            Sig: <span style="color: var(--accent-purple); font-family: monospace;">${escapeHtml(block.signature)}</span> 
+                            <span style="color: var(--accent-emerald); font-weight: bold; margin-left: 0.5rem;">[Verified]</span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        } catch (err) {
+            console.error("Ledger polling paused:", err);
+        }
+    }
+
     // Main loops
     function init() {
         initTrinaryLab();
@@ -1474,12 +1550,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         updateDbMetrics();
         updateDriftMatrix();
         updateAgentSwarm();
+        updateLedgerFeed();
         
         // Dynamic poll loops
         setInterval(updateTelemetry, 3000);  // 3s telemetry
         setInterval(updateDbMetrics, 10000); // 10s DB refresh
         setInterval(updateAgentSwarm, 10000); // 10s agent swarm
         setInterval(updateDriftMatrix, 30000); // 30s drift audit
+        setInterval(updateLedgerFeed, 3000); // 3s ledger polling
     }
 
     window.onload = init;
