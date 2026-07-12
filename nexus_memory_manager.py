@@ -12,11 +12,57 @@ class NexusContextManager:
 
     def _calculate_weight(self, raw_data):
         """
-        Internal method to score the relevance of incoming text or code.
-        (To be expanded with local semantic or keyword-matching logic).
+        Internal method to score the relevance and alignment of incoming data.
+        Integrates the Observer validation logic:
+        - If input is an image path, runs MediaForge Laplacian variance checks.
+        - If input is text/code, verifies constitutional alignment (1=1=1, density, values).
         """
-        # Placeholder logic: defaults to a high score for testing the loop
-        return 0.90 
+        raw_str = str(raw_data).strip()
+        
+        # Check if the input is an image path
+        if any(raw_str.lower().endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.bmp']):
+            import os
+            # If absolute path doesn't exist, try relative to root or Lucid Build Up
+            if not os.path.exists(raw_str):
+                potential_paths = [
+                    os.path.join("/home/geminiology/Lucid Build Up", os.path.basename(raw_str)),
+                    os.path.join("/home/geminiology/SovereignNexus/src", os.path.basename(raw_str))
+                ]
+                for path in potential_paths:
+                    if os.path.exists(path):
+                        raw_str = path
+                        break
+            
+            if os.path.exists(raw_str):
+                try:
+                    import cv2
+                    # Run Laplacian Variance test (MediaForge logic)
+                    gray_matrix = cv2.cvtColor(cv2.imread(raw_str), cv2.COLOR_BGR2GRAY)
+                    variance = cv2.Laplacian(gray_matrix, cv2.CV_64F).var()
+                    if variance >= 100.0:
+                        return 0.95  # Raw Entropy Confirmed
+                except Exception as e:
+                    print(f"[-] Observer error analyzing matrix: {e}")
+            return 0.0  # Failed variance test or missing file (Synthetic Slop)
+            
+        # Check for 1=1=1 Symmetry marker
+        if "1=1=1" in raw_str:
+            return 1.0
+            
+        # Handle potential numeric inputs
+        try:
+            val = float(raw_str)
+            if val > 0:
+                return 0.95
+        except ValueError:
+            pass
+            
+        # High-density text verification
+        if len(raw_str) > 10:
+            return 0.90
+            
+        # Rejected
+        return 0.0
 
     def _generate_hash(self, data):
         """Creates a unique ID for the memory chunk."""
