@@ -18,6 +18,9 @@ import hashlib
 import subprocess
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from socketserver import ThreadingTCPServer
+from nexus_swarm_router import NexusSwarmRouter
+
+swarm_router = NexusSwarmRouter()
 
 DB_PATH = "/home/geminiology/sovereign_memory.db"
 GENESIS_HASH = "289706b29def9cc2d40bb88ca5368bc899b70c6ab7fd08ddef3110918ec7ce8b"
@@ -337,7 +340,24 @@ class DashboardHandler(BaseHTTPRequestHandler):
             self.send_error(404, 'Path not found')
 
     def do_POST(self):
-        if self.path == '/api/trinary':
+        if self.path == '/api/swarm':
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            try:
+                payload = json.loads(post_data.decode('utf-8'))
+                user_prompt = payload.get("prompt", "")
+                if not user_prompt:
+                    self.send_json({"error": "Missing 'prompt' parameter"})
+                    return
+                swarm_execution_log = swarm_router.execute_swarm(user_prompt)
+                self.send_json({
+                    "status": "Execution Complete",
+                    "input_prompt": user_prompt,
+                    "routing_topology": swarm_execution_log
+                })
+            except Exception as e:
+                self.send_json({"error": f"Internal Server Error: {str(e)}"})
+        elif self.path == '/api/trinary':
             content_length = int(self.headers['Content-Length'])
             post_data = json.loads(self.rfile.read(content_length).decode('utf-8'))
             op = post_data.get("op")

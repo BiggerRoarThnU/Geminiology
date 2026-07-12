@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-07-12T14:31:00Z",
+    "source_truth": "LongCat-2.0 / Meituan Open Source",
+    "integration_module": "nexus_memory_manager.py",
+    "authority_anchor": "Integrated sparse memory routing. Decoupled evaluation from commitment. State is exclusively updated via commit_step to prevent data contamination and preserve 8GB hardware limits."
+  },
+  {
+    "timestamp": "2026-07-12T14:39:00Z",
+    "source_truth": "ComfyUI MCP Protocol",
+    "integration_module": "nexus_comfy_bridge.py",
+    "authority_anchor": "Integrated local MCP-style API bridge. Bypasses node-noodle complexity by using JSON injection. Secures the creative generation pipeline entirely on-edge without external cloud dependencies."
+  },
+  {
+    "timestamp": "2026-07-12T14:41:00Z",
+    "source_truth": "Agents A1 Knowledge-Action Infrastructure",
+    "integration_module": "nexus_swarm_router.py",
+    "authority_anchor": "Integrated task-decomposition and dynamic tool routing engine. Translates high-level complex user queries into sequential local node tool calls."
+  },
+  {
+    "timestamp": "2026-07-12T14:45:00Z",
+    "source_truth": "SovereignNexus LLC Swarm Integration",
+    "integration_module": "sovereign_dashboard.py",
+    "authority_anchor": "Bound NexusSwarmRouter directly to the port 8000 HTTP gateway. Exposed /api/swarm POST endpoint to securely intake natural language commands and parse tool delegation rules fully offline."
+  }
+]
