@@ -34,5 +34,11 @@
     "source_truth": "T7 Archives / Agent Handshake Protocol",
     "integration_module": "nexus_swarm_router.py",
     "authority_anchor": "Integrated Synthesizer Handoff verification check into the delegate_step logic. Enforces P2P verification ensuring target scripts exist and contain alignment token 1=1=1 before task delegation."
+  },
+  {
+    "timestamp": "2026-07-12T15:16:00Z",
+    "source_truth": "T7 Archives / thermodynamic_engine_v2.py & metabolic_governor.py",
+    "integration_module": "nexus_metabolic_governor.py",
+    "authority_anchor": "Integrated metabolic monitoring based on /proc filesystem checks. Protects edge environment limits of 8GB by enforcing dynamic limits on RAM and CPU load averages prior to execution."
   }
 ]
