@@ -52,5 +52,11 @@
     "source_truth": "T7 Archives / auto_slicer.py & chunk_ingester.py",
     "integration_module": "nexus_context_slicer.py",
     "authority_anchor": "Integrated long-form text pre-processing and segment slicing. Enforces low-footprint 2000 character boundaries with 200 character overlap to preserve semantic continuity across 8GB RAM constraints."
+  },
+  {
+    "timestamp": "2026-07-12T15:24:00Z",
+    "source_truth": "T7 Archives / agentic_walker.py & live_task_scout.py",
+    "integration_module": "nexus_agentic_walker.py",
+    "authority_anchor": "Integrated zero-trust external crawler and HTML text stripper. Ensures zero external dependencies and enforces timeout bounds on network calls to protect 8GB edge performance."
   }
 ]
