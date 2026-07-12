@@ -58,5 +58,11 @@
     "source_truth": "T7 Archives / agentic_walker.py & live_task_scout.py",
     "integration_module": "nexus_agentic_walker.py",
     "authority_anchor": "Integrated zero-trust external crawler and HTML text stripper. Ensures zero external dependencies and enforces timeout bounds on network calls to protect 8GB edge performance."
+  },
+  {
+    "timestamp": "2026-07-12T15:28:00Z",
+    "source_truth": "T7 Archives / notebook_archivist.py & pdf_generator_v2.py",
+    "integration_module": "nexus_archivist.py",
+    "authority_anchor": "Integrated structured document compilation. Generates Truth-Markdown files matching 1=1=1 constitutional templates to assemble the local Educational Moat autonomously."
   }
 ]
