@@ -22,5 +22,11 @@
     "source_truth": "SovereignNexus LLC Swarm Integration",
     "integration_module": "sovereign_dashboard.py",
     "authority_anchor": "Bound NexusSwarmRouter directly to the port 8000 HTTP gateway. Exposed /api/swarm POST endpoint to securely intake natural language commands and parse tool delegation rules fully offline."
+  },
+  {
+    "timestamp": "2026-07-12T15:03:00Z",
+    "source_truth": "T7 Archives / Momentum & Heartbeat Guards",
+    "integration_module": "nexus_swarm_router.py",
+    "authority_anchor": "Integrated Enforcer Firewall containing Momentum Guard and Heartbeat Guard checks at the execute_swarm entry point to protect 8GB edge limits and core deterministic logic."
   }
 ]
