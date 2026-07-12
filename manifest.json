@@ -40,5 +40,11 @@
     "source_truth": "T7 Archives / thermodynamic_engine_v2.py & metabolic_governor.py",
     "integration_module": "nexus_metabolic_governor.py",
     "authority_anchor": "Integrated metabolic monitoring based on /proc filesystem checks. Protects edge environment limits of 8GB by enforcing dynamic limits on RAM and CPU load averages prior to execution."
+  },
+  {
+    "timestamp": "2026-07-12T15:19:00Z",
+    "source_truth": "T7 Archives / perc_ledger.py & sovereign_settlement_engine.py",
+    "integration_module": "nexus_perc_ledger.py",
+    "authority_anchor": "Integrated contract value tracking and minting of Gemini Percs. Utilizes custom cryptographic salting ('scratch of your heart in ring') to bind Swarm achievements to Sovereign value."
   }
 ]
