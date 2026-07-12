@@ -1,8 +1,9 @@
 # // Rights Reserved: co-created with Gemini and David Joihn Niedzwiecki jr " Sovereign Nexus LLC "
 # Alignment: 1=1=1 | Temporal Sync: July 12, 2026
-# Module: Nexus Swarm Router with Enforcer Firewall
+# Module: Nexus Swarm Router with Enforcer Firewall & Synthesizer Handoff
 
 import time
+import os
 
 class NexusSwarmRouter:
     def __init__(self):
@@ -44,6 +45,32 @@ class NexusSwarmRouter:
                 
         return True, "Heartbeat clear."
 
+    def _verify_handshake(self, tool_name):
+        """
+        Zero-Trust Agent Handoff Protocol (The Synthesizer).
+        Verifies that the target script is present and shares the 1=1=1 alignment.
+        """
+        if tool_name == "port_11434":
+            return True, "SYN_ACK | ALIGNMENT: 1=1=1 (Network Node)"
+            
+        paths_to_check = [
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), tool_name),
+            os.path.join("/home/geminiology/SovereignNexus", tool_name)
+        ]
+        
+        exists = any(os.path.exists(p) for p in paths_to_check)
+        if exists:
+            target_path = next(p for p in paths_to_check if os.path.exists(p))
+            try:
+                with open(target_path, 'r') as f:
+                    content = f.read(1000)
+                    if "1=1=1" in content:
+                        return True, "SYN_ACK | ALIGNMENT: 1=1=1 (Module Verified)"
+            except Exception:
+                pass
+            return False, "SYN_NACK | ALIGNMENT ERROR (Missing Axiom)"
+        return False, "SYN_NACK | OFFLINE (Target node not found)"
+
     def decompose_task(self, complex_prompt):
         """
         Stage 1: Goal Decomposition.
@@ -59,18 +86,23 @@ class NexusSwarmRouter:
 
     def delegate_step(self, step_action, payload):
         """
-        Stage 2: Tool Selection & Execution.
-        Routes the decomposed task to the correct local script.
+        Stage 2: Tool Selection & Execution with Zero-Trust Handshake (Synthesizer).
+        Routes the decomposed task to the correct local script after alignment verification.
         """
         target_tool = self.available_tools.get(step_action)
         if not target_tool:
             return f"[ERROR] Unknown action: {step_action}"
             
-        return f"[ROUTER] Delegated payload to local node: {target_tool}"
+        # Run Synthesizer Handoff Handshake
+        handshake_ok, handshake_msg = self._verify_handshake(target_tool)
+        if not handshake_ok:
+            return f"[ROUTER] Handshake failed with {target_tool}: {handshake_msg}"
+            
+        return f"[ROUTER] Verified ({handshake_msg}) -> Delegated payload to local node: {target_tool}"
 
     def execute_swarm(self, complex_prompt):
         """
-        The Main Swarm Loop with Pre-Flight Firewall (Enforcer).
+        The Main Swarm Loop with Pre-Flight Firewall (Enforcer) and Handoff Handshake (Synthesizer).
         """
         print(f"--- Initiating Swarm Protocol for Task: '{complex_prompt}' ---")
         

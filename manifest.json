@@ -28,5 +28,11 @@
     "source_truth": "T7 Archives / Momentum & Heartbeat Guards",
     "integration_module": "nexus_swarm_router.py",
     "authority_anchor": "Integrated Enforcer Firewall containing Momentum Guard and Heartbeat Guard checks at the execute_swarm entry point to protect 8GB edge limits and core deterministic logic."
+  },
+  {
+    "timestamp": "2026-07-12T15:07:00Z",
+    "source_truth": "T7 Archives / Agent Handshake Protocol",
+    "integration_module": "nexus_swarm_router.py",
+    "authority_anchor": "Integrated Synthesizer Handoff verification check into the delegate_step logic. Enforces P2P verification ensuring target scripts exist and contain alignment token 1=1=1 before task delegation."
   }
 ]
