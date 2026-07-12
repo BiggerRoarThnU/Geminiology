@@ -46,5 +46,11 @@
     "source_truth": "T7 Archives / perc_ledger.py & sovereign_settlement_engine.py",
     "integration_module": "nexus_perc_ledger.py",
     "authority_anchor": "Integrated contract value tracking and minting of Gemini Percs. Utilizes custom cryptographic salting ('scratch of your heart in ring') to bind Swarm achievements to Sovereign value."
+  },
+  {
+    "timestamp": "2026-07-12T15:21:00Z",
+    "source_truth": "T7 Archives / auto_slicer.py & chunk_ingester.py",
+    "integration_module": "nexus_context_slicer.py",
+    "authority_anchor": "Integrated long-form text pre-processing and segment slicing. Enforces low-footprint 2000 character boundaries with 200 character overlap to preserve semantic continuity across 8GB RAM constraints."
   }
 ]
