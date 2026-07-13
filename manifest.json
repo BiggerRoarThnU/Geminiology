@@ -70,5 +70,11 @@
     "source_truth": "T7 Archives / vector_mill.py",
     "integration_module": "nexus_vector_mill.py",
     "authority_anchor": "Integrated atomic text structuring. Segregates raw chunks into a subject node and causal fact pack with visual directional arrows (->) to create clean knowledge graphs under 1=1=1."
+  },
+  {
+    "timestamp": "2026-07-12T22:12:00Z",
+    "source_truth": "T7 Archives / vampire_algorithm.py & vampire_auditor.py",
+    "integration_module": "nexus_vampire_auditor.py",
+    "authority_anchor": "Integrated background log optimization and de-duplication loop. Strips conversational semantic noise and filters redundant state_ids to preserve vault cleanliness under 8GB constraints."
   }
 ]
