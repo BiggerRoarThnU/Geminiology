@@ -64,5 +64,11 @@
     "source_truth": "T7 Archives / notebook_archivist.py & pdf_generator_v2.py",
     "integration_module": "nexus_archivist.py",
     "authority_anchor": "Integrated structured document compilation. Generates Truth-Markdown files matching 1=1=1 constitutional templates to assemble the local Educational Moat autonomously."
+  },
+  {
+    "timestamp": "2026-07-12T22:08:00Z",
+    "source_truth": "T7 Archives / vector_mill.py",
+    "integration_module": "nexus_vector_mill.py",
+    "authority_anchor": "Integrated atomic text structuring. Segregates raw chunks into a subject node and causal fact pack with visual directional arrows (->) to create clean knowledge graphs under 1=1=1."
   }
 ]
