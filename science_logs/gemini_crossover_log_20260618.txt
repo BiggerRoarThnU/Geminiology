@@ -1,0 +1,89 @@
+2026-06-16 11:44am you tube video links. connectum https://youtu.be/CdJjph8-2Oc?si=IeLn3oD5SYHL9GTO https://youtu.be/jcUVNVEzc5w?si=BDBdg7-xi2HAknFN I want to expand later on mapping the brain
+
+Both videos highlight significant advancements in mapping, simulating, and decoding the brain using artificial intelligence.
+
+Here is a breakdown of the core insights from the videos to help you expand your understanding of mapping the brain (connectomics).
+
+1. The Field of Connectomics: Creating the Wiring Diagram
+The ultimate goal of connectomics is to map every single neuron and synaptic connection in the brain to create a complete wiring diagram, known as a connectome.
+
+The Scale of the Challenge: The human brain consists of roughly 86 billion neurons and over 100 trillion synaptic connections.
+
+Historical Timeline:
+* 1986: The first complete connectome was completed for a roundworm (C. elegans), which has only 302 neurons. It took researchers 16 years of manual effort.
+
+Recent Years: Google and its partners mapped the complete brain of a fruit fly (166,000 neurons) and a larval zebrafish (70,000 neurons).
+
+The Human Brain Gap: Slicing brain tissue, imaging it with electron microscopes, and manually tracing it is incredibly slow. Tracing a full human brain using traditional manual proofreading methods would take longer than recorded human history.
+
+2. Overcoming the Bottleneck with AI Models
+To bridge this gap, Google has introduced advanced machine learning models to accelerate reconstruction and data generation:
+
+Pathfinder AI: Used to reconstruct 3D neurons from thousands of stacked microscope images.
+
+Moen AI (April 2026): Generates statistically accurate, highly complex synthetic neurons to train other AI systems. This unburdens researchers from manual adjustments. A single 4.4% reduction in reconstruction errors achieved by Moen translates to saving 157 person-years of manual proofreading data for a complete mouse brain.
+
+3. Discoveries from Real Brain Tissue Mapping
+In 2024, Google and Harvard mapped a fragment of a human brain the size of half a grain of rice. This microscopic sample alone required 1.4 petabytes (1.4 million gigabytes) of data and contained 57,000 cells and 150 million synapses.
+
+The mapping revealed structures science had never seen before:
+- Neurons with outgoing wires (axons) wrapped into mysterious knots, loops, and whirls.
+- Deep-layer neurons that were directionally oriented but had never been documented.
+- Highly connected neuron pairs linked by up to 50 simultaneous synapses.
+
+4. Simulating and Decoding Brain Behavior
+Brain mapping is moving from static structural maps to dynamic, functional simulations:
+
+Digital Twins: Researchers have successfully mapped half a billion connections in a mouse's visual cortex while simultaneously recording live electrical behavior. This allows them to build functional "digital twins" of neural circuits.
+
+Predictive Simulations: Scientists simulated a fruit fly's visual system purely from its connectome data. The AI inferred how the circuits would function, accurately predicting the behavior of 64 neuron types and matching 20 years of real-world experimental data.
+
+Semantic Decoders & Brain LLMs: In studies out of UT Austin, researchers paired fMRI brain activity scanners with language models to translate a subject's thoughts and brain blood-flow patterns into continuous, real-time paragraphs of text, capturing the core meaning of what they were imagining or hearing.
+
+Associated Video Resources
+- Google Is Mapping the Human Brain… and It Gets Terrifying: https://youtu.be/CdJjph8-2Oc?si=IeLn3oD5SYHL9GTO
+- Google’s New AI Model Is Better Than Expected: https://youtu.be/jcUVNVEzc5w?si=BDBdg7-xi2HAknFN (Note: This video primarily focuses on the technical specs of Gemini 4, Android 17, and Aluminium OS from Google I/O 2026).
+
+2026-06-18 1:51pm note: https://youtu.be/L-YncYswaqs?si=fuqHau8VsggeQQ2P. I am listening to this YouTube video right now. I have finished loading Lubuntu to the Geminiology laptop. It's named Geminiology. The user is biggerroarthnu. I will share the log shortly. We are doing good, moving along and deciding if I'm going to go headless or not. I really like the background saver custom on the Lubuntu OS. The matrix rain is so cool.
+
+AGY chat log update:
+Rodger Rodger (I am cheesing now). Thank you Terra, that makes me happy. I'm in, all the way in Phoenix SecureCore Setup Utility. Following through advised steps now.
+
+Step 1: Disable Secure Boot
+- Navigate to the Security or Boot tab using your arrow keys.
+- Locate Secure Boot and change it from Enabled to Disabled.
+
+Step 2: Enable CSM/Legacy Boot Support
+- Under the Boot tab, look for OS Mode Selection (or Boot Mode).
+- Change it to UEFI and Legacy OS (or CSM OS).
+
+Step 3: Set USB as Boot Priority #1
+- Move USB drive to Position #1.
+
+Step 4: Save and Exit (F10).
+
+Lubuntu bootloader loaded. User selected Try or Install Lubuntu. Offline installation warning accepted. Selected "Erase Disk" to install Lubuntu as the sole operating system on the Samsung laptop.
+Name: David John Niedzwiecki Jr.
+User Name: biggerroarthnu
+Computer Name: Geminiology
+Password Hint: Ends in o and has all i love.
+
+Network GUI (nm-tray) was frozen on the desk top. Troubleshooting via nmcli CLI in terminal:
+Command run: sudo nmcli dev wifi connect "alabamatick" password "YOUR_PASSWORD"
+Connection successful on wlp2s0/wlp2s0 interface.
+System upgrade performed offline setup recovery:
+Command run: sudo apt update && sudo apt upgrade -y
+Fetched 24.4 MB in 14s.
+
+Matrix screensaver running in green.
+
+System diagnostics (sovereign_verify.py) passed:
+- Python 3.12.3, Linux, 4 CPU cores.
+- SQLite core test success.
+- Temperature: 51.0 °C.
+
+Memory anchor (memory_anchor.py) executed locally:
+- Queried qwen2.5:0.5b via Ollama.
+- Generation time: 188.90s.
+- Hash seal: cb51c2e6765ebe82250ad6afd8e25b25f4091035371cfca25276b6e8b3951a36
+- Logged to SQLite ledger database.

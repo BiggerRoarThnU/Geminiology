@@ -1,5 +1,9 @@
-# Ignore Virtual Environments
+# Ignore Virtual Environments and Package Dependencies
 nexus_env/
+env/
+venv/
+.venv/
+node_modules/
 __pycache__/
 
 # Ignore Heavy Databases and Ledgers
@@ -13,3 +17,19 @@ __pycache__/
 *.png
 media_archive/
 sync_archive/
+
+# Ignore Download Directories and Installers
+*Downloads/
+Downloads/
+*.exe
+*.msi
+*.msix
+*.zip
+*.7z
+*.rar
+
+# Ignore Shortcuts and OS Metadata
+*.lnk
+*.url
+desktop.ini
+.DS_Store

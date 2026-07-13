@@ -1,0 +1,152 @@
+{
+    "Heavy-003": {
+        "key": "vQSaydyhrKmAWljAAY2/rkqrAqs+ksCsaJA+4BptDe0=",
+        "status": "HOLDING",
+        "timestamp": "0"
+    },
+    "NS-003": {
+        "key": "xM7JvmZIgP+nDsGyOM+X4hjxJg3KukVugtQe18ogpGM=",
+        "status": "HOLDING",
+        "timestamp": "1783019092.63896"
+    },
+    "SNS-002": {
+        "key": "mTXlv+hmSSStKTbZfbFlFs8Os4h0KNPgM7KMviC4D44=",
+        "status": "HOLDING",
+        "timestamp": "1783019487.401972"
+    },
+    "NS-OP-003": {
+        "key": "vVAMfH3l81tnqp5iOIhsWuh2uGfYfZtmbbIbgb1cS0Y=",
+        "status": "HOLDING",
+        "timestamp": "1783020027.2259884"
+    },
+    "Sovereign-003": {
+        "key": "jrCoWoG9WUWj9g9Ygrre5sCWcegVPjB1oFBxLHWa+dU=",
+        "status": "HOLDING",
+        "timestamp": "1783020585.4560056"
+    },
+    "SN-002": {
+        "key": "0T04bTHKZtGb/oYjEfho1tTJoCX9YaQb3EESCPepGr4=",
+        "status": "HOLDING",
+        "timestamp": "1783020737.6320102"
+    },
+    "NEXUS-2023-03": {
+        "key": "OCLCljFuh+vD4ofkSz0LIgZDgix1TLFDVvDvzIk/Bvc=",
+        "status": "HOLDING",
+        "timestamp": "1783020931.656016"
+    },
+    "NHI_ZERO_TRUST_AUDIT": {
+        "key": "lorMlDtIpkLV3dN1faDjLrB76t8wJYq2yuY5pnTvSnI=",
+        "status": "HOLDING",
+        "timestamp": "1783021646.4250379"
+    },
+    "EU_AI_ACT_ANNEX_IV": {
+        "key": "35TRt8tJDZo3nkbRrhkTOnO6PySn/1CNszKY6cKvgNs=",
+        "status": "HOLDING",
+        "timestamp": "1783021995.5740485"
+    },
+    "SELF_HEALING_INFRA_STRIKE": {
+        "key": "rNJgy+Wz3xTX2E11Goj423J225RDUfKAYlD8WoMskKQ=",
+        "status": "HOLDING",
+        "timestamp": "1783022108.006052"
+    },
+    "MOLT-A2A-101": {
+        "key": "TuV+8yqFNk9NoOwklV35e3ZsjGoFroantOj7utTPrnw=",
+        "status": "HOLDING",
+        "timestamp": "1783022295.6420577"
+    },
+    "LLMFineTuneProject1": {
+        "key": "b0OkQDo/iwZmADaiza4MJ9K0P8cP3iayt8JDbYVAzZY=",
+        "status": "HOLDING",
+        "timestamp": "1783296350.827053"
+    },
+    "StrategicInfrastructureAudit1": {
+        "key": "jx0CzJDg28Ur5Xa8Ov8h4JCTTCkj8NQbqQsxYbvpGvQ=",
+        "status": "HOLDING",
+        "timestamp": "1783301443.9782085"
+    },
+    "Custom-LLM-Fine-tuning": {
+        "key": "DbLR8Hda0BHLl6ra8R8odbNoLsqQm5DtJ6P4mAnV7Fc=",
+        "status": "HOLDING",
+        "timestamp": "1783301592.2832131"
+    },
+    "Custom_LLM_Fine_Tuning_Project": {
+        "key": "fbBYg53bvHKQx9mdOpog4+9G1Yv2xI3EaHwQgrgINS8=",
+        "status": "HOLDING",
+        "timestamp": "1783306607.4253662"
+    },
+    "IAE-Deployment-Assessment": {
+        "key": "YUlhCcyXl75uRtfoZb2wxq73bqKdLHc3qxqLZNHhxxU=",
+        "status": "HOLDING",
+        "timestamp": "1783315963.3276517"
+    },
+    "LLM-FineTune": {
+        "key": "WvWA0Ww+p0ajtS0zfUkjI/QvKLzYTXnIhfoACaf+ElI=",
+        "status": "HOLDING",
+        "timestamp": "1783352327.9397614"
+    },
+    "EA-Infrastructure": {
+        "key": "6vIHL0aBYx3HjHz9pRU5LYsHSm+SeKLODRTCirBkI6Y=",
+        "status": "HOLDING",
+        "timestamp": "1783355967.9898725"
+    },
+    "Nexus-Enterprise-Infrastructure": {
+        "key": "oN5mJHEUX1weulWohoTbdmHb1JC1jqQp8KQXFJVM6Us=",
+        "status": "HOLDING",
+        "timestamp": "1783356087.541876"
+    },
+    "Custom LLM Fine-Tuning for Specific Use Cases": {
+        "key": "EGi0mKT6n3N3WPuUf7qczTh+rjZWpMavk2l6c7Uw5oQ=",
+        "status": "HOLDING",
+        "timestamp": "1783363207.0900934"
+    },
+    "LLM-Fine-tuning-Pro": {
+        "key": "OH9WezB7NJWzmaO6S1aJLiaB/h7ffJ82VC+nh7XDEdI=",
+        "status": "HOLDING",
+        "timestamp": "1783388824.7371683"
+    },
+    "AI Security Audit for Nexus Core": {
+        "key": "cV+10cAqkzBYqpuyu2dhk1UUIATwxLrDpcsbos6Qm5A=",
+        "status": "HOLDING",
+        "timestamp": "1783410792.1968389"
+    },
+    "LLM-Fine-Tuning-for-Specific-Use-Case": {
+        "key": "Q3c7vkBi7og93K15zRsCXIkxJc/N0GELfzAVbgMkFyo=",
+        "status": "HOLDING",
+        "timestamp": "1783432729.0485082"
+    },
+    "LLM Fine-tuning Project": {
+        "key": "+9tLuRXj+z5wkZmpVbRcb32aZb+gBeUb/kpPOoY1LhI=",
+        "status": "HOLDING",
+        "timestamp": "1783451079.5040684"
+    },
+    "LLM Fine-tuning for Business Applications": {
+        "key": "TjuJOUxKt2uJwgoLAYlOoScWXWF34ZXnK16Y/K9mpr4=",
+        "status": "HOLDING",
+        "timestamp": "1783465838.3495188"
+    },
+    "B2B-LLM-Fine-Tune-2": {
+        "key": "L4d2KBU3UI7C5KtEoinWgQrI8aLtR0MVv/hfoOtKfxk=",
+        "status": "HOLDING",
+        "timestamp": "1783529038.0405617"
+    },
+    "Sovereign-Agentic-Infra-3": {
+        "key": "6Mpi+8ye+RcUw+g1kzIYLgxxQXUmU1TeZRhnXdptVqI=",
+        "status": "HOLDING",
+        "timestamp": "1783591548.805742"
+    },
+    "Custom_LLM_Fine_Tuning_250": {
+        "key": "YGwhC2SqJsuH5B/73xKmb71MQMgz8237stzr3aXqwcQ=",
+        "status": "HOLDING",
+        "timestamp": "1783591711.619747"
+    },
+    "Enterprise_Agentic_Infrastructure_10K": {
+        "key": "3skBndjoFy1S7+V4/Ojf6Qreajdx3qTTsUje1rNNpm8=",
+        "status": "HOLDING",
+        "timestamp": "1783599073.1149716"
+    },
+    "LLM-Fine-tune-for-Industry-Specificity": {
+        "key": "cRbbT6jrRgAZxQqaarsFDJfUVjBrk48+5rPPhYvKhJU=",
+        "status": "HOLDING",
+        "timestamp": "1783599232.7079766"
+    }
+}

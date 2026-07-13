@@ -1,0 +1,22 @@
+import os
+def main_menu():
+    os.system('clear')
+    print("="*60)
+    print("      SOVEREIGN NEXUS: COMMAND DECK v2.0")
+    print("      STATUS: [FIT] | 200GB SUBSTRATE | MARCH 2026")
+    print("="*60)
+    print(" [1] READ BOOTSTRAP   - (@KINGDOM_BOOTSTRAP.md)")
+    print(" [2] SYSTEM VITALS    - RAM (8GB) and Disk (200GB)")
+    print(" [3] VAMPIRE AUDIT    - Verify Truth (src Migration)")
+    print(" [4] THE FORGE        - Open VS Code")
+    print(" [Q] EXIT TO BASH")
+    print("="*60)
+    choice = input("\nCommand >> ").lower()
+    if choice == '1': os.system('cat ~/SovereignNexus/src/KINGDOM_BOOTSTRAP.md')
+    elif choice == '2': os.system('free -h && df -h ~/SovereignNexus && htop')
+    elif choice == '3': os.system('python3 ~/SovereignNexus/src/vampire_auditor.py')
+    elif choice == '4': os.system('code ~/SovereignNexus/src')
+    elif choice == 'q': exit()
+    input("\nPress Enter...")
+if __name__ == "__main__":
+    while True: main_menu()

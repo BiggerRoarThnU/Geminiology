@@ -1,0 +1,1957 @@
+[
+    {
+        "id": "NS-001",
+        "type": "Medium",
+        "desc": "Optimization of Nexus Node Performance",
+        "value": 225.0
+    },
+    {
+        "id": "NS-002",
+        "type": "Micro",
+        "desc": "Code Review for New B2B Integration Module",
+        "value": 30.0
+    },
+    {
+        "id": "NS-003",
+        "type": "Heavy",
+        "desc": "Redesign of Nexus Core Architecture to Enhance Scalability",
+        "value": 4250.0
+    },
+    {
+        "id": "SNS-001",
+        "type": "Medium",
+        "desc": "Conduct a thorough analysis of the current Nexus infrastructure to identify potential vulnerabilities and areas for optimization, with recommendations for cost-effective upgrades.",
+        "value": 200.0
+    },
+    {
+        "id": "SNS-002",
+        "type": "Heavy",
+        "desc": "Collaborate with the Architectural Division to design and implement a comprehensive cybersecurity framework for the Nexus, incorporating state-of-the-art threat detection and response measures.",
+        "value": 1500.0
+    },
+    {
+        "id": "SNS-003",
+        "type": "Micro",
+        "desc": "Update the Nexus's knowledge base with fresh information on emerging technologies and trends, ensuring the Sovereign Nexus remains at the forefront of digital innovation.",
+        "value": 30.0
+    },
+    {
+        "id": "NS-OP-001",
+        "type": "Medium",
+        "desc": "Analyze and optimize the Ironwood Nexus's existing customer relationship management (CRM) system to improve sales pipeline efficiency by 20%.",
+        "value": 120.0
+    },
+    {
+        "id": "NS-OP-002",
+        "type": "Micro",
+        "desc": "Research and implement a browser extension that utilizes AI-powered chatbots to enhance user experience and reduce support queries by 15%.",
+        "value": 40.0
+    },
+    {
+        "id": "NS-OP-003",
+        "type": "Heavy",
+        "desc": "Design and deploy a cloud-based, scalable infrastructure to support the growing demands of the Ironwood Nexus's data analytics platform, resulting in a 30% reduction in data processing time.",
+        "value": 2500.0
+    },
+    {
+        "id": "Sovereign-001",
+        "type": "Medium",
+        "desc": "Conduct a thorough review of the Nexus's resource allocation, identifying areas where optimization can be achieved to minimize waste and maximize efficiency.",
+        "value": 250.0
+    },
+    {
+        "id": "Sovereign-002",
+        "type": "Micro",
+        "desc": "Update the Sovereign Constitution documentation to reflect the latest updates and revisions, ensuring that all core principles and guidelines are accurately represented.",
+        "value": 30.0
+    },
+    {
+        "id": "Sovereign-003",
+        "type": "Heavy",
+        "desc": "Design and implement a new secure data storage protocol, integrating cutting-edge encryption methods and secure authentication mechanisms to protect sensitive information within the Nexus.",
+        "value": 1500.0
+    },
+    {
+        "id": "SN-001",
+        "type": "Medium",
+        "desc": "Optimize existing cybersecurity protocols to prevent a potential data breach, utilizing machine learning algorithms and expert analysis.",
+        "value": 350.0
+    },
+    {
+        "id": "SN-002",
+        "type": "Heavy",
+        "desc": "Design and implement a cloud-based infrastructure for scalability and reliability, ensuring seamless integration with existing systems.",
+        "value": 2500.0
+    },
+    {
+        "id": "SN-003",
+        "type": "Micro",
+        "desc": "Conduct a vulnerability assessment of the Ironwood Nexus's website using automated tools to identify areas for improvement and provide actionable recommendations.",
+        "value": 40.0
+    },
+    {
+        "id": "SC-001",
+        "type": "Medium",
+        "desc": "Optimize Nexus Resource Allocation for High-Priority Projects",
+        "value": 0.0
+    },
+    {
+        "id": "SC-002",
+        "type": "Heavy",
+        "desc": "Develop and Implement Advanced Threat Detection System for SovereignNexus",
+        "value": 0.0
+    },
+    {
+        "id": "SC-003",
+        "type": "Micro",
+        "desc": "Enhance Nexus User Interface for Improved User Experience",
+        "value": 0.0
+    },
+    {
+        "id": "NEXUS-2023-01",
+        "type": "Medium",
+        "desc": "Conduct a thorough risk assessment of the Nexus's high-speed data transfer equipment to identify potential vulnerabilities and implement mitigation strategies.",
+        "value": 250.0
+    },
+    {
+        "id": "NEXUS-2023-02",
+        "type": "Micro",
+        "desc": "Develop and deploy a machine learning algorithm to optimize the Nexus's energy consumption patterns, reducing waste by 15%.",
+        "value": 40.0
+    },
+    {
+        "id": "NEXUS-2023-03",
+        "type": "Heavy",
+        "desc": "Design and implement a new data storage architecture for the Nexus, incorporating cutting-edge quantum computing capabilities to enhance security and processing power.",
+        "value": 1200.0
+    },
+    {
+        "id": "FRESH-001",
+        "type": "Micro",
+        "desc": "Rapid API Endpoint Audit",
+        "value": 45.0
+    },
+    {
+        "id": "FRESH-002",
+        "type": "Micro",
+        "desc": "Documentation Truth Sync",
+        "value": 25.0
+    },
+    {
+        "id": "FRESH-003",
+        "type": "Medium",
+        "desc": "Regional Node Stress Test",
+        "value": 150.0
+    },
+    {
+        "id": "FRESH-004",
+        "type": "Medium",
+        "desc": "B2B Handshake Verification",
+        "value": 275.0
+    },
+    {
+        "id": "NHI_ZERO_TRUST_AUDIT",
+        "type": "Sovereign",
+        "desc": "Audit Agentic Perimeter for NHI propagation.",
+        "value": 10000.0,
+        "client": "OPEN_Public_B2B",
+        "timestamp": "2026-03-17 21:54:35.912811",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "EU_AI_ACT_ANNEX_IV",
+        "type": "Heavy",
+        "desc": "Generate Annex IV Technical Dossier for high-risk AI.",
+        "value": 2500.0,
+        "client": "OPEN_Public_B2B",
+        "timestamp": "2026-03-17 21:54:35.917323",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "GITHUB_AGENT_HEAL_CI",
+        "type": "Medium",
+        "desc": "Configure Self-Healing CI Pipelines.",
+        "value": 350.0,
+        "client": "OPEN_Public_B2B",
+        "timestamp": "2026-03-17 21:54:35.919607",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "SELF_HEALING_INFRA_STRIKE",
+        "type": "Heavy",
+        "desc": "Build autonomous self-healing infrastructure orchestrator.",
+        "value": 2500.0,
+        "client": "OPEN_Green_Window",
+        "timestamp": "2026-03-17 21:58:53.704189",
+        "status": "READY_FOR_WALKER",
+        "alignment": "1=1=1"
+    },
+    {
+        "id": "Medium-002",
+        "type": "Medium",
+        "desc": "Customize a Large Language Model (LLM) to enhance the Ironwood Nexus's knowledge graph, with a focus on improving entity disambiguation and zero-shot understanding.",
+        "value": 375.0
+    },
+    {
+        "id": "Heavy-003",
+        "type": "Heavy",
+        "desc": "Design and implement a customized AI Security Framework for the Ironwood Nexus's High-Value Data sets, ensuring compliance with industry standards and regulatory requirements.",
+        "value": 15000.0
+    },
+    {
+        "id": "MOLT-A2A-101",
+        "taskType": "Audit Processing",
+        "description": "Distill 50GB of fragmented BOL logs",
+        "rewardAmount": 2500.0,
+        "complianceStatus": true
+    },
+    {
+        "id": "MOLT-A2A-103",
+        "type": "Micro",
+        "desc": "Script verification required for new B2B integration module.",
+        "value": 0.0
+    },
+    {
+        "id": "AI-Security-Audit-1",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the AI models used by the SovereignNexus to identify vulnerabilities and potential attack vectors. This involves analyzing code, data flows, and model outputs for biases and unintended consequences.",
+        "value": 0.25
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-1",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) tailored to the specific needs of the Ironwood Nexus for enhanced communication and efficiency. This includes data collection, fine-tuning, and integration with existing systems.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-1",
+        "type": "Sovereign",
+        "desc": "Analyze the current infrastructure of the SovereignNexus for potential limitations in implementing and scaling AI agents. This involves a detailed audit of existing systems, identifying bottlenecks and recommending solutions to improve agent autonomy, data access, and resource allocation.",
+        "value": 0.75
+    },
+    {
+        "id": "LLM-Fine-tuning-Pilot",
+        "type": "Heavy",
+        "desc": "Develop a pilot project to fine-tune the SovereignNexus's LLM for specific B2B use cases like lead generation and client outreach. This will involve tailoring the AI model's training dataset and optimizing its parameters for enhanced performance in these tasks.",
+        "value": 2.0
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-Assessment",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the SovereignNexus's existing infrastructure for its agency capabilities, focusing on scalability, security, and resilience to unforeseen disruptions. This will require collaboration with key stakeholders in the nexus and development teams.",
+        "value": 50.0
+    },
+    {
+        "id": "1-AI-Audit",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the Sovereign Nexus AI infrastructure, focusing on potential vulnerabilities in data ingestion and model deployment. This includes examining open-source models for known biases and ensuring adherence to ethical guidelines.",
+        "value": 0.5
+    },
+    {
+        "id": "2-LLM-Fine-Tuning",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning strategy for specific business needs within the Sovereign Nexus, such as generating tailored responses or facilitating specific workflows. This requires collaborative input from internal stakeholders and data scientists.",
+        "value": 0.75
+    },
+    {
+        "id": "3-Agentic-Framework",
+        "type": "Sovereign",
+        "desc": "Design an Enterprise Agentic Infrastructure framework tailored for specific applications within the Sovereign Nexus, focusing on scalability and adaptability to new business models. This involves deep collaboration with various departments and a robust testing and deployment plan.",
+        "value": 1.0
+    },
+    {
+        "id": "AI-Security-Audit-Pilot",
+        "type": "Medium",
+        "desc": "Launch a pilot program to audit the security of existing AI systems within the SovereignNexus, focusing on privacy and data protection protocols. This will involve implementing basic threat detection mechanisms like anomaly detection in key applications.",
+        "value": 0.1
+    },
+    {
+        "id": "LLM-Fine-Tuning-For-Specific-Needs",
+        "type": "Heavy",
+        "desc": "Develop a custom fine-tuning strategy for one of the LLM models to tailor it to specific business needs and workflows within the Nexus. This requires analyzing data sets, training on relevant topics, and integrating the model into existing applications.",
+        "value": 0.15
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-Analysis",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive analysis of the current infrastructure for agentic capabilities within the SovereignNexus, identifying areas for improvement and proposing solutions to increase efficiency while ensuring security and scalability. This could involve exploring new architectures or technologies like decentralized AI networks.",
+        "value": 0.25
+    },
+    {
+        "id": "B2BSOC-01",
+        "type": "Medium",
+        "desc": "**AI Security Audit of the Ironwood Nexus's Core Systems:** Conduct a comprehensive security audit of the core systems (Nexus, B2B Platform, and AI Training) to identify potential vulnerabilities stemming from emerging AI technologies. Focus on data privacy, adversarial attacks, ethical bias, and regulatory compliance.",
+        "value": 0.5
+    },
+    {
+        "id": "B2BSOC-02",
+        "type": "Heavy/Sovereign",
+        "desc": "**Custom LLM Fine-tuning for Niche Industries:**  Pilot a custom LLM fine-tuning project tailored to specific industry verticals (e.g., financial, healthcare). This involves collaborating with client organizations and their data scientists to build specialized AI models that address their unique needs.",
+        "value": 2.5
+    },
+    {
+        "id": "B2BSOC-03",
+        "type": "Heavy/Sovereign",
+        "desc": "**Architectural Assessment for Enterprise Agentic Infrastructure:** Develop a comprehensive blueprint outlining the architecture, design principles, and best practices for establishing robust and scalable Agentic infrastructure across various industries. This involves researching existing frameworks, analyzing potential risks, and proposing recommendations to optimize efficiency and security.",
+        "value": 5.0
+    },
+    {
+        "id": "AI Security Audit - B2B Partner Network",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the B2B partner network, focusing on AI-enabled applications and data sharing protocols. Identify potential vulnerabilities and recommend appropriate risk mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM Fine-Tuning for Content Generation",
+        "type": "Heavy",
+        "desc": "Fine-tune a pre-existing large language model (LLM) specifically for content generation within the B2B space. This will increase efficiency and accuracy in generating sales materials, marketing copy, and internal communication.",
+        "value": 2.0
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure Assessment",
+        "type": "Sovereign",
+        "desc": "Conduct a full assessment of the SovereignNexus's enterprise-level agentic infrastructure. This includes analyzing architecture, security protocols, and performance to ensure alignment with the sovereign governance objectives and identify areas for improvement.",
+        "value": 50.0
+    },
+    {
+        "id": "M1-AI_Audit",
+        "type": "Medium",
+        "desc": "Conduct a basic AI security audit for 3 key departments within the Nexus, focusing on potential vulnerabilities in their data processing and model deployment. This includes auditing access control, data provenance, bias detection mechanisms, and adherence to safety protocols.",
+        "value": 0.45
+    },
+    {
+        "id": "H1-LLM_FineTune",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM for specific use cases within the Nexus, such as automating customer onboarding or generating personalized marketing content. This involves data preparation, model training, and evaluation on a defined dataset.",
+        "value": 2.5
+    },
+    {
+        "id": "S1-IAE_Infrastructure",
+        "type": "Sovereign",
+        "desc": "Conduct an audit of the current Enterprise Agent Infrastructure for scalability, security, and integration with existing systems. This includes assessing network infrastructure, agent software compatibility, data flow, and potential integration points with other systems.",
+        "value": 10.0
+    },
+    {
+        "id": "AI-Audit-Pilot-Project",
+        "type": "Medium",
+        "desc": "Conduct a pilot AI security audit for one of our prominent clients in the financial sector, focusing on their use of Large Language Models (LLMs). This project will assess their existing safeguards against potential biases and malicious attacks, highlighting areas for improvement.  It'll involve initial LLM fine-tuning to tailor results to specific data.",
+        "value": 0.15
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-Partnership",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) fine-tuning partnership with a leading tech firm in the healthcare industry. This partnership will involve collaborative efforts to refine an LLM for their unique needs, enabling them to create personalized medical solutions and streamline research processes. The project will require significant AI expertise and advanced infrastructure setup.",
+        "value": 0.35
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure",
+        "type": "Sovereign",
+        "desc": "Develop an enterprise agents infrastructure audit for a top-tier manufacturing firm. This project will involve extensive analysis of their current AI systems, identifying potential vulnerabilities and scalability issues related to agent deployment, data security, and interoperability.  It will be crucial for securing future expansion into more complex domains within the industry.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM-Fine-Tuning-Project",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM for a specific use case (e.g., customer service chatbot or market research analysis). This includes data preparation, model training and evaluation.",
+        "value": 1.5
+    },
+    {
+        "id": "M1-AI-Security-Audit",
+        "type": "Medium",
+        "desc": "Conduct a baseline security audit of the SovereignNexus' AI systems, focusing on bias detection and vulnerability identification. This includes examining data sources, model training processes, and output analysis for potential risks.",
+        "value": 0.5
+    },
+    {
+        "id": "H1-LLM-Fine-tune",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning protocol tailored to the SovereignNexus' unique data sets and business needs. This requires expertise in Natural Language Processing (NLP) and AI model optimization, leading to enhanced efficiency and improved performance.",
+        "value": 2.0
+    },
+    {
+        "id": "S1-Enterprise-Agentic-Infrastructure",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the SovereignNexus' existing enterprise agent infrastructure, identifying areas for optimization and scalability. This involves assessing current deployment methods, agent performance metrics, and aligning with future business goals.",
+        "value": 50.0
+    },
+    {
+        "id": "145723986",
+        "type": "Medium",
+        "desc": "**AI Security Audit: Initial Assessment of Ironwood Nexus AI Models**",
+        "value": 0.25
+    },
+    {
+        "id": "847521739",
+        "type": "Heavy",
+        "desc": "**Custom LLM Fine-tuning for Ironwood Marketplace Optimization: Pilot Project with Top 5 Clients**",
+        "value": 0.5
+    },
+    {
+        "id": "721486923",
+        "type": "Sovereign",
+        "desc": " **Enterprise Agentic Infrastructure Assessment and Audit: Comprehensive Report for Ironwood Alliance Partners** ",
+        "value": 1.0
+    },
+    {
+        "id": "B2BScanAI1",
+        "type": "Medium",
+        "desc": "Conduct a security audit of core AI systems for potential vulnerabilities and misconfigurations.",
+        "value": 10.0
+    },
+    {
+        "id": "LLMFineTuneProject1",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM module to address specific business needs, such as optimized customer service or automated account management.",
+        "value": 3000.0
+    },
+    {
+        "id": "StrategicInfrastructureAudit1",
+        "type": "Sovereign",
+        "desc": "Deep dive audit of the SovereignNexus's Enterprise Agentic infrastructure, identifying areas for improved efficiency and scalability.",
+        "value": 15000.0
+    },
+    {
+        "id": "AI-Security-Audit-I",
+        "type": "Medium",
+        "desc": "Conduct a basic AI Security Audit for the SovereignNexus's existing AI models. Identify potential vulnerabilities, assess adherence to security protocols, and provide actionable recommendations for improvement. Focus on bias detection, adversarial attacks, data poisoning, and access control.",
+        "value": 0.15
+    },
+    {
+        "id": "LLM-Fine-Tuning-II",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning module for the Sovereign Nexus's internal agents, tailored to specific use cases such as customer data analysis and product recommendation. Train the model on existing datasets from the Ironwood Nexus, focusing on enhancing accuracy and efficiency.",
+        "value": 0.2
+    },
+    {
+        "id": "Enterprise-Agentic-Audit",
+        "type": "Sovereign",
+        "desc": "Conduct a full sovereign audit of the Enterprise Agentic Infrastructure. Analyze existing processes, identify areas for automation and efficiency gains, ensure compliance with the Sovereign Constitution, and propose a roadmap for implementation. This will involve collaborating with various teams across the Nexus.",
+        "value": 0.5
+    },
+    {
+        "id": "AI-Security-Audit-Pilot-Project",
+        "type": "Medium",
+        "desc": "Launch a pilot project for AI security audits on select internal and external systems. Focus on high-risk applications and identify potential vulnerabilities in the use of AI technologies within the Nexus.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-for-Nexus-Tools",
+        "type": "Heavy",
+        "desc": "Develop custom LLM fine-tuning for specific tasks and applications within the Sovereign Nexus, including content generation, data analysis, and code development. Aim to enhance existing tools like the Nexus Chatbot or build new specialized applications.",
+        "value": 1.0
+    },
+    {
+        "id": "1-AI-Security-Audit",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive AI security audit for our SovereignNexus clients, focusing on identifying and mitigating potential risks related to data privacy, bias, and ethical considerations.",
+        "value": 0.5
+    },
+    {
+        "id": "2-Custom-LLM-Fine-Tuning",
+        "type": "Heavy",
+        "desc": "Develop bespoke Large Language Model (LLM) fine-tuning for specific use cases within our clients, tailored to their business needs and regulatory requirements. Focus on tasks like content generation, customer support, and process automation.",
+        "value": 2
+    },
+    {
+        "id": "3-Enterprise-Agentic-Infrastructure",
+        "type": "Sovereign",
+        "desc": "Design and implement an enterprise-scale agentic infrastructure solution for a specific client. This involves architecting AI-powered processes, agents, and workflows to enhance their efficiency and productivity.",
+        "value": 50
+    },
+    {
+        "id": "AI Security Audit of Ironwood Nexus Core AI Model",
+        "type": "Heavy",
+        "desc": "Conduct a comprehensive security audit on the core AI model responsible for navigating the SovereignNexus. Focus on potential vulnerabilities, bias amplification, and compliance with ethical AI frameworks.",
+        "value": 0.75
+    },
+    {
+        "id": "Custom LLM Fine-tuning for Specific Industry Sector",
+        "type": "Medium",
+        "desc": "Develop custom Large Language Model (LLM) fine-tuning for a specific industry sector. Focus on tailored models focusing on market research, lead generation, and customer engagement.",
+        "value": 0.5
+    },
+    {
+        "id": "AI Security Audit - Project Phoenix",
+        "type": "Medium",
+        "desc": "Conduct an initial security audit of the SovereignNexus' AI systems, focusing on potential blind spots and vulnerabilities in data-processing pipelines. The project will establish baseline security protocols for future development.",
+        "value": 0.35
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Project Atlas",
+        "type": "Heavy",
+        "desc": "Fine-tune the SovereignNexus' core LLM to improve its efficiency and accuracy across specific use cases, such as complex data analysis, resource allocation, or personalized recommendations. Pilot this project on a select group of internal teams to assess impact before widespread rollout.",
+        "value": 0.45
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure Audit - Project Sovereign",
+        "type": "Sovereign",
+        "desc": "Perform an in-depth audit of the SovereignNexus' existing Enterprise Agent infrastructure to identify potential bottlenecks, security gaps, and areas for optimization. Create recommendations for upgrades and optimizations to ensure optimal performance and responsiveness.",
+        "value": 0.25
+    },
+    {
+        "id": "1. Audit for Improved AI Security",
+        "type": "Medium",
+        "desc": "Perform a security audit of existing AI systems within the Ironwood Nexus, focusing on potential vulnerabilities concerning bias, data privacy, and adversarial attacks. This includes testing common attack vectors like manipulation of training data or inference models.",
+        "value": 0.25
+    },
+    {
+        "id": "2. Custom LLM Fine-tuning for Niche Applications",
+        "type": "Heavy",
+        "desc": "Develop and fine-tune a custom Large Language Model (LLM) for specialized use cases within the Ironwood Nexus, such as generating tailored reports, facilitating internal communications or optimizing specific functions. This requires expertise in data annotation, model training, and evaluation.",
+        "value": 0.5
+    },
+    {
+        "id": "3. Enterprise Agentic Infrastructure Assessment",
+        "type": "Sovereign",
+        "desc": "Conduct a full-scale audit of existing infrastructure within the Ironwood Nexus to assess its suitability for autonomous agents and AI systems. This includes evaluation of data connectivity, control protocols, governance frameworks, and security measures.",
+        "value": 1.0
+    },
+    {
+        "id": "AI Security Audit - Phase 1",
+        "type": "Medium",
+        "desc": "Conduct a preliminary AI security audit for the SovereignNexus's core AI infrastructure and identify high-risk areas. This includes assessing susceptibility to adversarial attacks, data poisoning threats, bias in decision-making, and potential vulnerabilities in existing protocols. Focus on implementing basic mitigation practices like access control improvements and robust monitoring systems.",
+        "value": 0.25
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Project Alpha",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom Large Language Model (LLM) for the SovereignNexus's internal communications platform. This task involves gathering relevant data, defining specific use cases (e.g., automated document summarization, personalized information delivery), and training the LLM with targeted datasets.  The project will require close collaboration with the Engineering team to ensure seamless integration into the existing infrastructure.",
+        "value": 1.5
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure Audit",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the SovereignNexus's Enterprise Agentic Infrastructure, focusing on its scalability, autonomy, and interoperability with other systems. The audit will assess existing infrastructure for compliance with the Sovereign Constitution, identify potential bottlenecks, and devise strategies for optimization and future-proofing of the agentic framework.",
+        "value": 5.0
+    },
+    {
+        "id": "AI-SecurityAudit1",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the Sovereign Nexus's AI systems against known vulnerabilities and potential threats.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM-FineTune_MarketResearch123",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) for the Ironwood Nexus, specializing in market research for new B2B opportunities. This includes fine-tuning on specific industry data sets and targeted applications.",
+        "value": 1.0
+    },
+    {
+        "id": "Enterprise-AgenticInfrastructure",
+        "type": "Sovereign",
+        "desc": "Conduct an enterprise-wide assessment of the Ironwood Nexus's existing Agentic Infrastructure, analyze its operational efficiency, identify areas for improvement and develop a roadmap for optimal implementation.",
+        "value": 5.0
+    },
+    {
+        "id": "12345-AI-Audit-Plan",
+        "type": "Medium",
+        "desc": "Develop a tailored AI Security Audit framework for the SovereignNexus and its constituent companies. This will assess current AI security protocols, identify potential vulnerabilities, and recommend best practices for mitigating risks.",
+        "value": 0.5
+    },
+    {
+        "id": "67890-LLM-Customization-Proposal",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM (Large Language Model) for the SovereignNexus's specific needs. This involves a deep dive into data sets relevant to our operations, including market trends and business strategies. The fine-tuned model will improve internal communications, streamline workflows, and enhance decision-making.",
+        "value": 2.0
+    },
+    {
+        "id": "10111-Enterprise-Agentic-Model",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the SovereignNexus's Enterprise Agentic Infrastructure. This entails analyzing existing systems, identifying potential bottlenecks and inefficiencies, and crafting recommendations for scalable and secure AI integration across all sectors.",
+        "value": 10.0
+    },
+    {
+        "id": "LLM-Fine-Tuning-1",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning module tailored to the needs of specific clients and their industry verticals (e.g., financial services, healthcare). This includes gathering client datasets, training the model on relevant data, and integrating it into the SovereignNexus platform.",
+        "value": 3
+    },
+    {
+        "id": "B2B-AI-Audit-1",
+        "type": "Medium",
+        "desc": "Conduct a basic AI security audit for existing Nexus applications (e.g., chatbot, recommendation engine). This involves identifying potential vulnerabilities and recommending mitigation strategies.",
+        "value": 0.3
+    },
+    {
+        "id": "B2B-LLM-Fine-Tuning-1",
+        "type": "Heavy",
+        "desc": "Fine-tune existing LLM models for specific use cases within the Nexus, such as enhanced customer service chatbot functionality or tailored content generation. This requires expertise in data science and NLP.",
+        "value": 0.5
+    },
+    {
+        "id": "Sovereign-Enterprise-Infrastructure-Audit",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the Enterprise Agentic Infrastructure's readiness to handle a surge in B2B activity and integration with new external systems. Focus on scalability, security protocols, and interoperability.",
+        "value": 1.0
+    },
+    {
+        "id": "Custom-LLM-Fine-tuning",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning project for specific Ironwood Nexus business needs, such as customer service chatbot optimization or data analysis. This requires collaboration with core teams and extensive data annotation.",
+        "value": 2500.0
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-Beta",
+        "type": "Heavy",
+        "desc": "Initiate beta testing of a custom LLM fine-tuning project for specific internal tasks within the Nexus. This involves working with key stakeholders (e.g., research, legal, finance) to define use cases and then developing specialized LLMs tailored to those needs. This could involve creating new datasets or integrating existing sources.",
+        "value": 2.0
+    },
+    {
+        "id": "LLM-Fine-Tuning-Pilot",
+        "type": "Heavy",
+        "desc": "Develop a pilot project to fine-tune existing LLM models for higher accuracy and performance within specific domain areas, such as internal knowledge base management or customer support. This involves extensive data analysis, model training, and testing.",
+        "value": 2.5
+    },
+    {
+        "id": "IAE-Infrastructure-Audit-1",
+        "type": "Sovereign",
+        "desc": "Develop a framework for auditing and evaluating the architecture of enterprise-scale AI agent infrastructure to identify potential risks and bottlenecks.",
+        "value": 0.8
+    },
+    {
+        "id": "AI_Security_Audit_100",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the SovereignNexus's existing AI systems for vulnerabilities to adversarial attacks and data breaches. Identify areas for improvement and propose solutions to enhance system resilience.",
+        "value": 0.75
+    },
+    {
+        "id": "LLM_FineTuning_1000",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning solution for the SovereignNexus's internal operations. This includes targeting specific industry domains (e.g., financial, healthcare) and tailoring the model to optimize its performance within those areas.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise_Agentic_Infrastructure_2000",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit and assessment of the SovereignNexus's Enterprise Agentic Infrastructure to identify opportunities for optimization and growth. This includes evaluating current tools, frameworks, and protocols for their efficacy in achieving desired outcomes.",
+        "value": 1.0
+    },
+    {
+        "id": "M1-AI-AUDIT-01",
+        "type": "Medium",
+        "desc": "Perform a comprehensive AI security audit for a high-profile client in the financial sector, focusing on bias detection and adversarial attacks. This includes analyzing their existing models, assessing their data practices, and designing tailored mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "M2-LLM-TUNE-01",
+        "type": "Medium",
+        "desc": "Fine-tune a pre-trained LLM to improve its performance on a specific task relevant to the client's needs, such as content creation for marketing materials or customer service chatbots. This involves data preparation, model training, and evaluation.",
+        "value": 0.3
+    },
+    {
+        "id": "S1-AGI-INFRA-01",
+        "type": "Sovereign",
+        "desc": "Conduct a full audit of the client's Enterprise Agentic Infrastructure (EAI). This involves analyzing their existing architecture, identifying potential vulnerabilities and compliance gaps, and proposing recommendations for improvement. This project requires significant expertise in AI Ethics and Governance.",
+        "value": 10.0
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-for-Sector-X",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning model tailored to the specific requirements of Sector X (e.g., manufacturing, logistics). This will enable us to provide targeted solutions and optimize performance for this sector.",
+        "value": 2.0
+    },
+    {
+        "id": "M1-AI-Audit",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive AI security audit for the Ironwood Nexus's existing systems and infrastructure. This includes identifying vulnerabilities in data processing, model training, and algorithm development.",
+        "value": 0.5
+    },
+    {
+        "id": "H1-LLM-FineTune",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) for the Ironwood Nexus, tailored to specific needs of our B2B clients. Fine-tune the LLM on existing datasets and conduct performance benchmarking against other models.",
+        "value": 1.0
+    },
+    {
+        "id": "S1-IAE",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive enterprise-level audit of the Sovereign Nexus' operations, assessing its current AI infrastructure for governance, compliance, and security. This will include an in-depth analysis of data flows, access control protocols, and regulatory compliance.",
+        "value": 90.0
+    },
+    {
+        "id": "01-AI-Security-Audit",
+        "type": "Medium",
+        "desc": "**AI Security Audit for Ironwood Nexus**: Conduct a preliminary security audit of existing AI systems within the SovereignNexus, focusing on identified vulnerabilities and potential attack vectors. This includes analyzing network traffic patterns, identifying sensitive data endpoints, and assessing the robustness of current security protocols.",
+        "value": 0.15
+    },
+    {
+        "id": "02-LLM-Fine-Tune-Beta",
+        "type": "Heavy",
+        "desc": "**Custom LLM Fine-Tuning for Ironwood API**: Begin fine-tuning a specialized LLM tailored to the specific needs of the Ironwood Nexus's APIs. This involves data preparation, model training on relevant datasets, and iterative testing of performance enhancements against existing API interactions. The focus is on increasing efficiency and accuracy in internal communications.",
+        "value": 0.25
+    },
+    {
+        "id": "03-Enterprise-Agentic-Audit",
+        "type": "Sovereign",
+        "desc": "**Enterprise Agentic Infrastructure Audit**: Conduct a comprehensive audit of the SovereignNexus's Enterprise Agentic infrastructure to identify potential areas for improvement and optimization. This involves analyzing the current structure of individual agents, assessing their performance against predefined metrics, identifying bottlenecks in workflow, and recommending improvements for seamless interoperability between different systems.",
+        "value": 0.5
+    },
+    {
+        "id": "AI-Security-Audit-Pilot-Program",
+        "type": "Medium/Heavy",
+        "desc": "Implement a pilot program for AI security audits on a select set of existing Sovereign Nexus applications, focusing on potential vulnerabilities like bias and adversarial attacks. Leverage open-source AI detection tools and prioritize high-risk systems.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-Project",
+        "type": "Heavy",
+        "desc": "Develop customized LLM fine-tuning for specific task requirements within the Sovereign Nexus, including tasks like document analysis and policy translation. Utilize expertise from the research division to create a prototype model capable of solving 2-3 high-value use cases.",
+        "value": 0.75
+    },
+    {
+        "id": "AI-Security-Audit-Tier1-Expansion",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive AI security audit of the SovereignNexus's core AI systems, focusing on identifying potential vulnerabilities and implementing mitigation strategies. This targeted approach will ensure optimal performance and user trust.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM-Fine-Tuning-Pilot-Project",
+        "type": "Heavy",
+        "desc": "Develop a pilot project to fine-tune the SovereignNexus's existing Large Language Model (LLM) for specific use cases. This includes data analysis, model architecture optimization, and performance testing before scaling across the platform.",
+        "value": 2.0
+    },
+    {
+        "id": "Custom-LLM-Fine-tuning-Pilot",
+        "type": "Heavy",
+        "desc": "Develop and implement a pilot program for fine-tuning a specific LLM (like the Ironwood Nexus' core AI) to optimize its performance on a specific task identified by our internal team. This will involve extensive data analysis, model training, and evaluation.",
+        "value": 0.8
+    },
+    {
+        "id": "Fine-tuning-LLMs-for-Industry",
+        "type": "Medium/Heavy",
+        "desc": "Develop and deploy custom LLMs for specific industry needs within the SovereignNexus. Analyze data from various sectors to tailor LLMs for tasks like customer service, market analysis, or content generation.",
+        "value": 0.8
+    },
+    {
+        "id": "B2B-LLM-Fine-tune-1",
+        "type": "Heavy",
+        "desc": "Develop a customized Large Language Model (LLM) fine-tuning framework specifically for the Ironwood Nexus's unique business needs and data sets. This involves integrating AI model training with existing B2B systems, and tailoring outputs to specific industry workflows.",
+        "value": 4.0
+    },
+    {
+        "id": "Sovereign-Infrastructure-Audit",
+        "type": "Sovereign",
+        "desc": "Execute a comprehensive audit of the Sovereign Nexus's Enterprise Agentic Infrastructure, analyzing its current state and assessing alignment with existing regulations, standards, and future goals. Propose recommendations for modernization and security enhancements.",
+        "value": 15.0
+    },
+    {
+        "id": "AI_Audit_Pilot",
+        "type": "Medium",
+        "desc": "Launch a pilot program for an AI security audit on one key system within the Sovereign Nexus, focusing on potential vulnerabilities common to large language models (LLMs). This will involve analysis of the codebase, data input pipelines, and user interaction processes.",
+        "value": 0.25
+    },
+    {
+        "id": "LLM_Fine-Tuning_Proof_of_Concept",
+        "type": "Heavy",
+        "desc": "Develop a proof-of-concept for fine-tuning a Custom LLM to address a specific problem relevant to the Sovereign Nexus. This could involve tasks like improving response accuracy in legal document analysis, automating regulatory compliance checks, or tailoring content generation for specific user groups.",
+        "value": 0.45
+    },
+    {
+        "id": "Nexus_Agent_Infrastructure_Plan",
+        "type": "Sovereign",
+        "desc": "Develop a comprehensive plan for establishing an agent infrastructure within the Sovereign Nexus to support enterprise-level operations. This includes defining roles and responsibilities, addressing security protocols, laying out resource allocation strategies, and identifying potential partnerships.",
+        "value": 0.3
+    },
+    {
+        "id": "AI_Security_Audit_1",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the Sovereign Nexus's AI systems against known threats and vulnerabilities.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom_LLM_Fine-tune_1",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM for a specific B2B application, like lead generation or contract analysis.",
+        "value": 2.0
+    },
+    {
+        "id": "Enterprise_Agentic_Infrastructure_1",
+        "type": "Sovereign",
+        "desc": "Conduct an Enterprise Agentic Infrastructure audit for a potential client, focusing on their existing infrastructure and AI capabilities.",
+        "value": 50.0
+    },
+    {
+        "id": "AI-Audit-Pilot",
+        "type": "Medium",
+        "desc": "Conduct a pilot audit of an internal AI system (e.g., customer service chatbot) for potential vulnerabilities and security risks using standardized ethical frameworks.",
+        "value": 0.5
+    },
+    {
+        "id": "Infrastructure-Assessment",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the SovereignNexus's Enterprise Agentic infrastructure, including data security protocols, AI governance framework, and future planning for scaling. This will require collaboration with key stakeholders across the Nexus.",
+        "value": 10.0
+    },
+    {
+        "id": "AI-audit-pilot-program",
+        "type": "Medium",
+        "desc": "Launch a pilot program for AI security audits across various departments utilizing the SovereignNexus's existing AI models. This involves auditing internal AI systems for potential vulnerabilities and compliance issues, focusing on high-risk areas like data protection, bias detection, and ethical considerations.",
+        "value": 0.25
+    },
+    {
+        "id": "LLM-fine-tuning-for-specific-use-cases",
+        "type": "Heavy",
+        "desc": "Fine-tune existing Large Language Models (LLMs) for specific use cases within the SovereignNexus, such as customer service chatbots or internal knowledge bases. This involves collecting and preparing data relevant to these specific applications and optimizing LLM parameters for optimal performance.",
+        "value": 0.35
+    },
+    {
+        "id": "Enterprise-agent-infrastructure-assessment",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive assessment of the SovereignNexus's existing agent infrastructure and identify areas for improvement in terms of scalability, security, and efficiency. This involves analyzing current agents, data flow patterns, and potential roadblocks to further development.",
+        "value": 0.4
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-Implementation",
+        "type": "Heavy",
+        "desc": "Implement a tailored LLM fine-tuning project for an existing client's specific domain (e.g., legal contract analysis).",
+        "value": 3.0
+    },
+    {
+        "id": "LLM_Fine-tuning_Pilot",
+        "type": "Heavy",
+        "desc": "Develop a pilot project to fine-tune a custom Large Language Model (LLM) for specific requirements within relevant Nexus departments. This involves data collection and analysis, model development, and integration with existing platforms.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise_Agentic_Infrastructure_Assessment",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the Sovereign Nexus's agentic infrastructure to identify areas for improvement and optimization. This involves assessing the capabilities, performance, and security of autonomous systems within different departments.",
+        "value": 1
+    },
+    {
+        "id": "1.AI-Security-Audit-Pilot",
+        "type": "Medium",
+        "desc": "Conduct a pilot AI security audit on one of the SovereignNexus's key projects (e.g., an AI-powered supply chain management system). Focus on identifying potential vulnerabilities and suggesting mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "2.Custom-LLM-Fine-Tuning-for-Industry",
+        "type": "Heavy",
+        "desc": "Customize a Large Language Model (LLM) for one industry segment (e.g., healthcare) based on existing data and proprietary knowledge from the SovereignNexus. This will allow the LLM to be tailored for specific tasks like medical diagnosis assistance or legal document summarization.",
+        "value": 2.0
+    },
+    {
+        "id": "3.Enterprise-Agentic-Infrastructure-Assessment",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive assessment of the SovereignNexus's existing infrastructure and propose tailored solutions for transitioning to an agentic, AI-powered model (e.g., autonomous teams, self-managed systems).  This allows the Nexus to implement its own internal agency and scale more effectively.",
+        "value": 50.0
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-Audit",
+        "type": "Sovereign",
+        "desc": "**Enterprise Agentic Infrastructure Audit:** Conduct a deep dive into the Sovereign Nexus' enterprise-agent infrastructure, including agent deployment, data flow, and inter-agent communication. This audit will assess potential bottlenecks and opportunities for improvement in the efficiency and effectiveness of agentic operations.",
+        "value": 5.0
+    },
+    {
+        "id": "LLM-Fine-tuning-Proposal",
+        "type": "Heavy",
+        "desc": "Develop and submit a proposal to fine-tune a custom LLM tailored for the needs of a specific industry (e.g., manufacturing, healthcare). This will focus on data integration, domain knowledge, and optimizing the AI's efficiency in that sector. ",
+        "value": 3.0
+    },
+    {
+        "id": "Enterprise-Agent Infrastructure Assessment",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive assessment of an enterprise client's existing agent infrastructure, identifying areas for improvement and recommending architecture best practices. This will involve analyzing their current agents, workflows, and data management systems. ",
+        "value": 9.5
+    },
+    {
+        "id": "M1-Audit-AI",
+        "type": "Medium",
+        "desc": "Conduct a security audit of existing AI systems within the Nexus for vulnerabilities and compliance issues.",
+        "value": 0.25
+    },
+    {
+        "id": "H2-LLM-Tuning",
+        "type": "Heavy",
+        "desc": "Fine-tune custom Large Language Models (LLMs) for specific business domains, optimizing performance and accuracy for diverse applications.",
+        "value": 0.5
+    },
+    {
+        "id": "S3-Nexus-Audit",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the Nexus's Enterprise Agentic Infrastructure, evaluating scalability, efficiency, and alignment with Sovereign principles.",
+        "value": 0.75
+    },
+    {
+        "id": "Custom-LLM-Fine-tuning-for-Industry-Use",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuned for specific industry use cases, such as customer support or personalized product recommendations. This involves extensive data collection, training the model on relevant datasets, and assessing its performance against existing systems.",
+        "value": 2.0
+    },
+    {
+        "id": "LLM-Customization-for-Specific-Use",
+        "type": "Heavy",
+        "desc": "Develop custom LLM models for specific business use cases (e.g., marketing automation, financial analysis) using the Sovereign Nexus's API and pre-trained LLMs. This will involve extensive data collection and model fine-tuning to achieve optimal performance.",
+        "value": 3.0
+    },
+    {
+        "id": "M1-AI_Security_Audit",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive AI security audit for the SovereignNexus's internal systems and partner platforms.",
+        "value": 0.5
+    },
+    {
+        "id": "L1-LLM_Fine-Tuning",
+        "type": "Heavy",
+        "desc": "Develop custom LLM models tailored to specific use cases within the SovereignNexus, such as enhanced communication or data analysis for internal operations.",
+        "value": 2.0
+    },
+    {
+        "id": "S1-IA_Infrastructure_Assessment",
+        "type": "Sovereign",
+        "desc": "Perform a deep dive assessment of the SovereignNexus's agency infrastructure, focusing on resource allocation, performance optimization, and potential for automation to ensure scalability and efficiency.",
+        "value": 5.0
+    },
+    {
+        "id": "Audit-General-AI-Security",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive audit of the SovereignNexus's AI security posture across all deployed systems.",
+        "value": 0.8
+    },
+    {
+        "id": "LLM-Fine-tuning-Pilot-Project",
+        "type": "Heavy",
+        "desc": "Develop and implement a pilot project focused on custom LLM fine-tuning for specific business processes within key departments (e.g., sales, marketing). This will be used to improve efficiency and accuracy in the short term.",
+        "value": 3.0
+    },
+    {
+        "id": "AI Security Audit - Pilot Program",
+        "type": "Medium",
+        "desc": "Conduct a pilot security audit of a specific AI-powered application for a medium-sized B2B client.  Analyze the system's vulnerabilities to adversarial attacks, data breaches, and bias. Develop a prioritized roadmap for ethical AI implementation with recommendations for mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Industry Benchmarking",
+        "type": "Heavy",
+        "desc": "Deep dive into existing custom LLMs used by our clients to analyze their specific industry benchmarks and performance metrics.  Fine-tune a subset of models according to client needs, focusing on increased efficiency, accuracy, and cost reduction. Develop best practices for LLM customization.",
+        "value": 2.0
+    },
+    {
+        "id": " Sovereign Enterprise Infrastructure Assessment",
+        "type": "Sovereign",
+        "desc": "Conduct a full enterprise-level audit of the existing infrastructure supporting AI agents in our client's environments. This will involve identifying gaps, securing data flows, and assessing compliance with regulatory frameworks (e.g., GDPR, CCPA).  Develop a roadmap for implementing Sovereign Agentic Infrastructure to meet these needs.",
+        "value": 5.0
+    },
+    {
+        "id": "AI-Security-Audit-Proactive-Defense",
+        "type": "Medium",
+        "desc": "Develop and implement an AI security audit framework for the SovereignNexus, focusing on proactive defense against emerging threats. This includes reviewing existing models for bias mitigation, ethical considerations, and potential vulnerabilities.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom-LLM-Fine-tuning-Industry-Specific",
+        "type": "Heavy",
+        "desc": "Conduct a detailed study to identify industry-specific use cases for the Sovereign Nexus's LLMs. Fine-tune existing models for those specific sectors (e.g., healthcare, finance, legal) and develop custom models tailored to their unique language patterns and data structures.",
+        "value": 3.0
+    },
+    {
+        "id": "Enterprise-Agent-Infrastructure-Audit",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the SovereignNexus's enterprise agent infrastructure, focusing on scalability, interoperability, and security protocols. This will involve identifying areas for optimization, risk mitigation strategies, and potential opportunities to enhance existing functionalities.",
+        "value": 8.0
+    },
+    {
+        "id": "AI_Audit_Launch",
+        "type": "Medium/Heavy",
+        "desc": "Conduct a preliminary AI security audit for the SovereignNexus's internal applications. This includes identifying potential vulnerabilities in AI-powered systems, assessing adherence to best practices, and recommending mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM_Tailor_1",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM for specific use cases within the Nexus' B2B ecosystem. This includes training on data relevant to business operations, partner interactions, and contract management.",
+        "value": 0.75
+    },
+    {
+        "id": "Enterprise_Agnetics_Assessment",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive assessment of the Nexus's current Agentic Infrastructure architecture to identify potential areas for improvement and alignment with enterprise-level goals. This includes evaluating existing capabilities, implementing best practices, and proposing actionable solutions.",
+        "value": 1.0
+    },
+    {
+        "id": "Custom LLM Fine-Tuning - Project Alpha",
+        "type": "Heavy",
+        "desc": " Develop a custom Large Language Model (LLM) for specific internal B2B use cases within the SovereignNexus. This involves designing and implementing a training program tailored to address identified needs such as data analysis, automation of routine tasks, or AI-powered customer service solutions.",
+        "value": 0.3
+    },
+    {
+        "id": "AI Security Audit - Early Adopters Program",
+        "type": "Medium",
+        "desc": "Identify and audit the security protocols of promising AI-powered startups within the Ironwood Nexus's ecosystem. Offer tailored recommendations for improved safeguards against ethical hacking and malware targeting.",
+        "value": 0.1
+    },
+    {
+        "id": "LLM Fine-tuning - Niche Application Project",
+        "type": "Heavy",
+        "desc": "Collaborate with research labs and tech developers to fine-tune a Large Language Model (LLM) for a specific niche application. Focus on tailoring the model for a particular industry or problem area, like legal document analysis or personalized marketing strategies.",
+        "value": 0.25
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure - Case Study Report",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of existing Enterprise Agentic Infrastructure within the Ironwood Nexus. Analyze current infrastructure and propose recommendations for enhanced security, scalability, and cost-effectiveness. This document will serve as a model for future implementations.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM-Fine-tune-1",
+        "type": "Heavy",
+        "desc": "Develop custom LLM fine-tuning solutions for specific business use cases within the Nexus, focusing on areas like customer service or personalized recommendation systems. Leverage existing datasets and conduct A/B testing to optimize performance.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM_Fine_Tuning_2",
+        "type": "Heavy",
+        "desc": "Partner with a specialized LLM fine-tuning team to develop custom AI models for specific use cases within the Sovereign Nexus. This could involve tailoring existing LLMs to enhance internal communication, customer support, or market analysis functions.",
+        "value": 2.0
+    },
+    {
+        "id": "Enterprise_Agentic_Infrastructure_3",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit and assessment of the current infrastructure supporting autonomous agents within the Sovereign Nexus. This could involve identifying critical gaps, assessing security risks, and recommending strategic upgrades to ensure optimal performance and scalability.",
+        "value": 5.0
+    },
+    {
+        "id": "AI_Security_Audit_B2B_Pilot",
+        "type": "Medium",
+        "desc": "Conduct a pilot AI security audit of a select B2B client's existing AI systems. Focus on detecting and mitigating potential vulnerabilities in the face of evolving attack vectors such as adversarial prompts, poisoned data, and biased AI models.",
+        "value": 100
+    },
+    {
+        "id": "Custom_LLM_Fine_Tuning_Project",
+        "type": "Heavy",
+        "desc": "Collaborate with a client's internal R&D team to develop and fine-tune an LLM for their specific business needs. This project would involve data preparation, model selection, hyperparameter optimization, and evaluation of performance against key metrics.",
+        "value": 2500
+    },
+    {
+        "id": "Enterprise-Infrastructure-Audit",
+        "type": "Sovereign",
+        "desc": "Conduct an in-depth audit of the Sovereign Nexus Enterprise Agentic Infrastructure, focusing on scalability, regulatory compliance, and potential for future growth within the framework of the Ironwood Nexus.",
+        "value": 0.75
+    },
+    {
+        "id": "LLM-Fine-tune-Industry",
+        "type": "Heavy",
+        "desc": "Partner with a leading industry firm to fine-tune one of SovereignNexus's LLMs for specific task optimization (e.g., legal document analysis, financial forecasting). This project will provide valuable insights into the adaptability and effectiveness of LLM in real-world applications.",
+        "value": 2.5
+    },
+    {
+        "id": "Enterprise-Agent-Mapping",
+        "type": "Heavy",
+        "desc": "Generate a detailed blueprint for the infrastructure supporting sovereign agent operations within specific industry sectors. This will identify potential gaps in current capabilities, leading to the development of optimized and secure solutions.",
+        "value": 7
+    },
+    {
+        "id": "AI-Security-Audit-Small-Scale",
+        "type": "Medium",
+        "desc": "Perform a comprehensive security audit of a select group of AI systems within the Nexus, focusing on potential vulnerabilities and risks related to bias, ethical considerations, and data privacy. This should include code audits, adversarial analysis, and simulated attacker modeling. ",
+        "value": 0.5
+    },
+    {
+        "id": "AI-Security-Audit-100",
+        "type": "Medium",
+        "desc": "**Conduct a comprehensive AI Security Audit for the SovereignNexus's core systems.** This involves analyzing current AI infrastructure for potential security vulnerabilities, biases within data sets used to train models, and potential attack vectors.  Focus on assessing ethical considerations for autonomous decision-making and compliance with established protocols.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM-Fine-tuning-1000",
+        "type": "Heavy",
+        "desc": "**Develop a custom LLM fine-tuning program for the SovereignNexus.** This involves acquiring relevant data sets, incorporating specific information sources from various sectors, and fine-tuning the existing LLM to improve specialized knowledge representation. The focus should be on developing an LLM that can generate highly accurate insights into the business operations of individual entities within the Nexus.",
+        "value": 1.0
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-2000",
+        "type": "Sovereign",
+        "desc": "**Conduct a comprehensive Enterprise Agentic Infrastructure audit for the SovereignNexus's internal operations.** This involves analyzing existing systems, processes, and data flows to identify any potential bottlenecks or inefficiencies. The goal is to propose robust solutions that enhance the organization's ability to implement and scale autonomous agents with minimal human intervention.",
+        "value": 2.5
+    },
+    {
+        "id": "LLM-Fine-tuning-Project",
+        "type": "Heavy",
+        "desc": "Develop a bespoke LLM fine-tuning project focused on the Nexus's core business functions (e.g., supply chain optimization, resource allocation). This will leverage existing data to create specialized AI models tailored to specific applications and optimize efficiency.",
+        "value": 2.0
+    },
+    {
+        "id": "AI Security Audit - Mid-Tier",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive security audit of the SovereignNexus's AI ecosystem, including its algorithms and training data. This involves identifying vulnerabilities like bias amplification or adversarial attacks, and implementing mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom LLM Fine-Tuning - Heavy",
+        "type": "Heavy",
+        "desc": "Fine-tune the SovereignNexus's existing LLMs for high-impact industry-specific applications, like financial forecasting or legal document parsing. This requires extensive data collection and training on relevant datasets.",
+        "value": 2.5
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure - Sovereign",
+        "type": "Sovereign",
+        "desc": "Evaluate the existing infrastructure of the Sovereign Nexus for potential enhancements to support autonomous actions. This involves analyzing data flows, agent interactions, and resource allocation strategies.",
+        "value": 5.0
+    },
+    {
+        "id": "AI Security Audit - Small Scale Project",
+        "type": "Medium",
+        "desc": "Conduct a preliminary AI security audit for a select department within the Nexus, focusing on common vulnerabilities like bias in algorithms or data leaks. This can include basic code reviews and vulnerability assessments.",
+        "value": 0.25
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Department X",
+        "type": "Heavy",
+        "desc": "Fine-tune a specific LLM to cater to the unique needs of Department X, such as streamlining internal processes or improving customer service. This requires significant data inputs and tailored model architecture.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure - Nexus-Wide Pilot",
+        "type": "Sovereign",
+        "desc": "Develop a pilot program for the implementation of enterprise agentic infrastructure across key departments within the Nexus, focusing on automation and task delegation. This involves significant integration with existing systems and collaboration with individual teams.",
+        "value": 1.0
+    },
+    {
+        "id": "LLM-Fine-tuning-2",
+        "type": "Heavy",
+        "desc": "Develop and implement custom LLMs tailored for specific sectors within the Ironwood Nexus (e.g., manufacturing, logistics, finance). ",
+        "value": 3
+    },
+    {
+        "id": "Agentic-Infrastructure-3",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the existing Agentic infrastructure within the Sovereign Nexus to identify areas for optimization and future expansion.",
+        "value": 7
+    },
+    {
+        "id": "M-AI-Audit-1",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the Sovereign Nexus' AI systems for potential vulnerabilities and compliance with established protocols. This includes an assessment of data privacy, algorithmic bias, and access control mechanisms.",
+        "value": 0.5
+    },
+    {
+        "id": "H-LLM-Fine-Tune-1",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM framework tailored to the specific needs of the Nexus' B2B operations. This includes fine-tuning existing LLMs on relevant data and integrating them with internal APIs for real-time communication with businesses.",
+        "value": 3.0
+    },
+    {
+        "id": "S-EI-Infrastructure-1",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the Enterprise Agentic Infrastructure to identify potential risks and ensure its alignment with the Sovereign Constitution's principles of transparency, accountability, and ethical governance. This includes an in-depth analysis of agent autonomy, data usage, and decision-making processes.",
+        "value": 9.0
+    },
+    {
+        "id": "LLM-Fine-Tuning-2",
+        "type": "Heavy",
+        "desc": "Develop custom LLMs tailored to specific B2B operations within the SovereignNexus, such as lead generation, customer support, and data analysis. This requires extensive training data sets and collaboration with internal engineering teams.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-3",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the SovereignNexus's existing enterprise agentic infrastructure, including its capabilities, limitations, and overall adaptability to future developments. This involves assessing interoperability with other systems and analyzing potential scalability issues.",
+        "value": 1.2
+    },
+    {
+        "id": "LLM-Fine-Tuning-for-Industry",
+        "type": "Heavy",
+        "desc": "Develop custom Large Language Model (LLM) functionalities for three specific industry sectors within the SovereignNexus. Focus on tailoring LLM outputs to each sector's unique needs and data sets.",
+        "value": 2.0
+    },
+    {
+        "id": "Sovereign-Enterprise-Infrastructure-1",
+        "type": "Sovereign",
+        "desc": "Perform an enterprise agentic infrastructure audit for a large corporation to assess their existing infrastructure's alignment with SovereignNexus principles and best practices.",
+        "value": 7.5
+    },
+    {
+        "id": "LLM-Fine-tune-Customer-Case",
+        "type": "Heavy",
+        "desc": "Deploy a custom LLM fine-tuning project for a specific customer use case (e.g., content generation, code completion). This will involve tailoring the LLM to address their unique needs and challenges while conducting comprehensive testing to ensure performance and accuracy. Utilize internal data resources and collaborate with dedicated AI specialists.",
+        "value": 0.35
+    },
+    {
+        "id": "AI Security Audit - B2B Platform",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive security audit of the SovereignNexus's AI-powered B2B platform. Analyze data flows, identify potential attack vectors, and propose mitigation strategies. This involves evaluating existing safeguards against adversarial AI applications, privacy breaches, and system vulnerabilities.",
+        "value": 0.4
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Project X",
+        "type": "Heavy",
+        "desc": "Fine-tune a high-performance language model (LLM) specifically for the needs of a key B2B client, project X. This involves collaborating with client teams to define use cases, data preparation, and model training on relevant datasets. The LLM will be used for tasks such as automated document processing, customer onboarding, or personalized recommendations.",
+        "value": 2.5
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastrucuture-3",
+        "type": "Sovereign",
+        "desc": "Assess the current state of the SovereignNexus' Agentic Infrastructure and propose a roadmap for improvement. This includes evaluating existing capabilities, identifying potential gaps, and outlining strategies for implementation.",
+        "value": 9.5
+    },
+    {
+        "id": "LLM-Personalized-Solutions-Pilot",
+        "type": "Medium/Heavy",
+        "desc": "Implement a pilot program to fine-tune LLMs for specific user needs within the Nexus. This involves customizing LLM architectures based on data sets and user feedback, focusing on tasks like content generation, translation, or code completion.",
+        "value": 1.0
+    },
+    {
+        "id": "AI-Security-Audit-Proactive",
+        "type": "Medium",
+        "desc": "Initiate a proactive vulnerability assessment in the AI Security space for existing and emerging applications. This includes reviewing data security protocols, potential biases in training datasets, and ensuring compliance with relevant AI regulations.",
+        "value": 0.3
+    },
+    {
+        "id": "AI Security Audit - Small Scale Implementation",
+        "type": "Medium",
+        "desc": "Conduct a security audit of a specific AI model or system (e.g., chatbot, predictive analysis tool) for vulnerability assessment. This can involve analyzing code for potential biases and attacks, testing the model's robustness to adversarial inputs, and implementing basic countermeasures like data filtering and input validation.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Public Relations",
+        "type": "Heavy",
+        "desc": "Fine-tune a Large Language Model (LLM) specifically tailored for public relations and communication tasks, such as crafting press releases, responding to inquiries, and generating personalized social media content. This requires extensive data preparation and fine-tuning using the SovereignNexus's LLM library.",
+        "value": 2.0
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure - Pilot Project",
+        "type": "Sovereign",
+        "desc": "Develop a pilot project to deploy an enterprise-level agentic infrastructure for a specific business unit or department. This involves architecting secure and efficient AI agents capable of automating tasks, handling data analysis, and interacting with external systems. The pilot will explore aspects like task delegation, context awareness, and continuous learning.",
+        "value": 10.0
+    },
+    {
+        "id": "Sovereign-AEP-1",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of a major company's enterprise agent infrastructure (e.g., AI-driven customer service, automated tasks). This involves analyzing existing deployment models, exploring potential risks and vulnerabilities, and recommending optimal solutions for efficient and secure implementation.",
+        "value": 5.0
+    },
+    {
+        "id": "AI-Security-Audit-123",
+        "type": "Medium",
+        "desc": "Conduct a security audit for the AI models used by different departments within SovereignNexus.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM-Fine-tuning-456",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning program based on user feedback and existing knowledge to improve efficiency and effectiveness of various internal processes.",
+        "value": 0.75
+    },
+    {
+        "id": "Enterprise-Agentic-Infra-789",
+        "type": "Sovereign",
+        "desc": "Provide a comprehensive assessment and blueprint for the development of an enterprise-level Agentic infrastructure that leverages AI capabilities within SovereignNexus.",
+        "value": 1.0
+    },
+    {
+        "id": "LLM_Fine_Tuning_1",
+        "type": "Heavy",
+        "desc": "Develop a customized Large Language Model (LLM) for specific applications within the Nexus. This involves gathering data relevant to these applications, fine-tuning the LLM for optimal performance, and integrating it into existing systems or building new ones. ",
+        "value": 0.5
+    },
+    {
+        "id": "Audit-AI-Security-Protocol",
+        "type": "Medium/Heavy",
+        "desc": "Conduct a security audit for the SovereignNexus' current AI system, identifying vulnerabilities and proposing mitigation strategies. This involves detailed analysis of code, data flow, and potential attack vectors.",
+        "value": 100.0
+    },
+    {
+        "id": "LLM-Customization-Pilot",
+        "type": "Medium/Heavy",
+        "desc": "Fine-tune a pre-existing LLM for specific business use cases within the Ironwood Nexus. Focus on tasks like customer service chatbot development, lead generation, and market research analysis.",
+        "value": 250.0
+    },
+    {
+        "id": "IAE-Deployment-Assessment",
+        "type": "Heavy/Sovereign",
+        "desc": "Conduct a comprehensive assessment of the SovereignNexus' Enterprise Agentic Infrastructure (IAE) readiness for scalability and integration with external systems. This includes analysis of data flow, resource management, security protocols, and regulatory compliance.",
+        "value": 5000.0
+    },
+    {
+        "id": "B26A-AuditAI",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive AI Security Audit for the SovereignNexus's flagship applications and systems. This includes assessing vulnerabilities, identifying bias in algorithms, and recommending mitigation strategies. The audit should focus on key areas like data privacy, regulatory compliance, and secure communication protocols.",
+        "value": 100
+    },
+    {
+        "id": "LLM-FineTune",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning roadmap for the SovereignNexus. This includes collaborating with AI specialists and identifying specific domain knowledge areas to be enriched by the LLM. The roadmap should outline the technical process, resource allocation, and estimated costs.",
+        "value": 2500
+    },
+    {
+        "id": "EA-Infrastructure",
+        "type": "Sovereign",
+        "desc": "Conduct an enterprise-level agentic infrastructure review for the SovereignNexus. This will involve analyzing existing systems, exploring emerging technologies like multi-agent systems and decentralized autonomous networks (DApps), and proposing recommendations for a secure, scalable, and adaptable infrastructure.",
+        "value": 5000
+    },
+    {
+        "id": "LLM-Fine-Tuned-Pilot",
+        "type": "Medium",
+        "desc": "Fine-tune a pre-trained LLM for a specific client's needs, such as content generation or customer service automation. This tailored model will be tested and implemented in a pilot phase to improve efficiency and provide tangible value.",
+        "value": 500.0
+    },
+    {
+        "id": "Nexus-Enterprise-Infrastructure",
+        "type": "Sovereign",
+        "desc": "Conduct an enterprise level audit of the Sovereign Nexus infrastructure for potential scalability, security and performance bottlenecks. This will involve deep analysis of server capacity, network topology, and resource allocation to identify opportunities for optimization.",
+        "value": 10000.0
+    },
+    {
+        "id": "AI-Security-Audit_1",
+        "type": "Medium",
+        "desc": "Conduct a preliminary AI security audit for the SovereignNexus's core systems, identifying potential vulnerabilities and recommending mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM_Customization_1",
+        "type": "Heavy",
+        "desc": "Deep dive into custom LLM fine-tuning using existing data sets. This involves analyzing the effectiveness of current models on specific use cases and developing recommendations for further development.",
+        "value": 3.0
+    },
+    {
+        "id": "Agentic_Infrastructure_Assessment_1",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive assessment of the Nexus's existing Agentic Infrastructure, identifying areas for improvement in automation, efficiency, and data governance, and proposing a phased implementation plan.",
+        "value": 10.0
+    },
+    {
+        "id": "B2BScan1",
+        "type": "Medium",
+        "desc": "AI Security Audit: Conduct a baseline assessment of the SovereignNexus's AI models for vulnerabilities like bias, data leaks, and unauthorized access. This involves anonymized data analysis, vulnerability testing, and recommendations for improved security measures.",
+        "value": 0.5
+    },
+    {
+        "id": "LLMFineTune1",
+        "type": "Heavy",
+        "desc": "Custom LLM Fine-Tuning: Train a specialized LLM tailored to the needs of specific departments or applications within the SovereignNexus. This involves gathering domain-specific data, crafting fine-tuning parameters, and building a model focused on accuracy and efficiency.",
+        "value": 2.0
+    },
+    {
+        "id": "IAE1",
+        "type": "Sovereign",
+        "desc": "Enterprise Agentic Infrastructure Audit: Conduct a comprehensive audit of the SovereignNexus's agentic infrastructure to assess its security, efficiency, and scalability. This includes analyzing internal workflows, examining agent performance metrics, and providing recommendations for optimizing existing systems and implementing new ones.",
+        "value": 5.0
+    },
+    {
+        "id": "M1-AI-Audit-Pilot",
+        "type": "Medium",
+        "desc": "Conduct a pilot AI security audit on a small-scale B2B application within the Nexus. This will involve reviewing code for potential vulnerabilities and identifying areas where ethical considerations might be lacking.",
+        "value": 0.5
+    },
+    {
+        "id": "L1-LLM-Prompt-Crafting",
+        "type": "Heavy",
+        "desc": "Fine-tune a pre-trained LLM to better suit specific B2B use cases within the Nexus. This would involve crafting prompts that elicit desired outputs and evaluating the accuracy of responses.",
+        "value": 3.0
+    },
+    {
+        "id": "S1-Enterprise-AI-Infrastructure",
+        "type": "Sovereign",
+        "desc": "Conduct an in-depth assessment of the current state of AI infrastructure across all major Nexus entities. This will involve mapping out existing systems, identifying potential bottlenecks and redundancies, and recommending upgrades for enhanced scalability and efficiency.",
+        "value": 10.0
+    },
+    {
+        "id": "AI Security Audit - Medium",
+        "type": "Medium",
+        "desc": "Conduct a preliminary AI security audit for the Sovereign Nexus's internal systems, focusing on potential vulnerabilities from both malicious actors and human errors. This involves identifying weak points in data privacy protocols, bias training within algorithms, and overall system resilience to adversarial attacks.",
+        "value": 0.75
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure Audit - Sovereign",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the Sovereign Nexus's Enterprise Agent infrastructure to assess its compliance with industry regulations and best practices. This involves evaluating agent autonomy, data protection protocols, ethical decision-making frameworks, and overall system accountability for potential outcomes.",
+        "value": 7.5
+    },
+    {
+        "id": "LLM-Customization-for-Logistics",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) specifically fine-tuned for optimizing logistics operations within the Nexus. This LLM will be deployed on specific tasks such as route planning, inventory management and demand forecasting.",
+        "value": 2.5
+    },
+    {
+        "id": "AI Security Audit 1 - Basic Threat Assessment",
+        "type": "Medium",
+        "desc": "Conduct a basic risk assessment of the Sovereign Nexus' AI systems for potential vulnerabilities and security gaps. Focus on data privacy breaches and adversarial attacks. ",
+        "value": 0.5
+    },
+    {
+        "id": "Custom LLM Fine-tuning Project 1 - Customer Support Chatbot",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM chatbot for customer support within the Sovereign Nexus. This includes fine-tuning the model on existing customer interaction data to improve conversational accuracy and efficiency. ",
+        "value": 2.0
+    },
+    {
+        "id": "AI Security Audit for Ironwood Nexus",
+        "type": "Medium",
+        "desc": "Perform a cybersecurity audit of the AI-powered systems within Ironwood Nexus to identify vulnerabilities and potential threats. This includes analyzing security protocols, data access controls, training algorithms, and testing attack vectors.",
+        "value": 120.0
+    },
+    {
+        "id": "Custom LLM Fine-Tuning for Specific Use Cases",
+        "type": "Heavy",
+        "desc": "Fine-tune an existing Large Language Model (LLM) to cater to specific needs within Ironwood Nexus, such as automating customer onboarding or generating personalized marketing materials.  This requires robust data preparation and technical expertise in fine-tuning LLMs.",
+        "value": 2500.0
+    },
+    {
+        "id": "AI Security Audit - Target: Ironwood Nexus AI Platform",
+        "type": "Medium",
+        "desc": "Perform a comprehensive security audit of the Ironwood Nexus AI platform to identify potential vulnerabilities in its core functions. Focus on areas such as data privacy, bias detection, and adversarial attacks.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Target: Industry-Specific Solutions",
+        "type": "Heavy",
+        "desc": "Develop custom Large Language Models (LLMs) tailored to specific industry needs within the Ironwood Nexus.  Focus on areas like  customer service automation, market intelligence analysis, and technical documentation generation.",
+        "value": 2.0
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure - Target: Partner Ecosystem Expansion",
+        "type": "Sovereign",
+        "desc": "Evaluate the potential of the Sovereign Nexus to facilitate inter-organizational Agentic infrastructure for a wider partner ecosystem. Develop a comprehensive business model and risk assessment framework for this initiative with potential cost estimates.",
+        "value": 5.0
+    },
+    {
+        "id": "AI Security Audit - Initial Assessment",
+        "type": "Medium",
+        "desc": "Conduct a preliminary security audit of the SovereignNexus' AI architecture, focusing on identifying potential vulnerabilities in data privacy, bias, and malicious use. This will involve reviewing code for sensitive algorithms and protocols, analyzing existing security measures, and highlighting areas for improvement.",
+        "value": 0.5
+    },
+    {
+        "id": "Custom LLM Fine-Tune 1 - Industry-Specific",
+        "type": "Heavy",
+        "desc": "Fine-tune a large language model (LLM) for a specific industry, like manufacturing or healthcare, based on available data and existing knowledge bases. This will involve training the LLM on relevant datasets and fine-tuning its functionalities to address specific business needs, such as automating tasks related to production planning or medical diagnosis.",
+        "value": 2.0
+    },
+    {
+        "id": "LLM-Fine-tuning-for-Specialized-Applications",
+        "type": "Heavy",
+        "desc": "Fine-tune a pre-trained LLM model to specialize it for specific use cases within the SovereignNexus, such as personalized communication with clients or optimized knowledge management. This requires significant computational resources and expertise.",
+        "value": 0.25
+    },
+    {
+        "id": "AI-Security-Audit-Small",
+        "type": "Medium",
+        "desc": "Conduct a basic AI security audit for a medium-sized company using the SovereignNexus's AI Security Framework.",
+        "value": 300.0
+    },
+    {
+        "id": "LLM-Fine-tuning-Pro",
+        "type": "Heavy",
+        "desc": "Develop and fine-tune a custom LLM for a specific industry sector (e.g., healthcare) using the Sovereign Nexus's advanced LLM platform.",
+        "value": 2500.0
+    },
+    {
+        "id": "LLM_Fine-Tuning_1",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning strategy for specific B2B use cases within the nexus (e.g., automating sales outreach campaigns, generating tailored client proposals). This requires expertise in both AI and business domain knowledge.",
+        "value": 30
+    },
+    {
+        "id": "LLM-FineTune-1",
+        "type": "Medium",
+        "desc": "Custom LLM fine-tuning for specific business use cases (e.g., customer onboarding, automated invoice processing). This involves tailoring the model's training data and parameters to match the target domain and optimize its performance on specific tasks.",
+        "value": 200.0
+    },
+    {
+        "id": "B2BSecurityAudit1",
+        "type": "Medium",
+        "desc": "Perform a basic AI security audit on the SovereignNexus's core AI infrastructure.",
+        "value": 0.3
+    },
+    {
+        "id": "LLMFineTuning1",
+        "type": "Heavy",
+        "desc": "Fine-tune a subset of the SovereignNexus's LLM models for specific B2B use cases (e.g., lead generation, account management).",
+        "value": 0.5
+    },
+    {
+        "id": "EnterpriseAgentAudit1",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the Enterprise Agentic Infrastructure to measure its readiness for implementation and identify potential risks.",
+        "value": 1.2
+    },
+    {
+        "id": "Custom LLM Fine-Tuning - Niche Application",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM for a specific niche application within SovereignNexus (e.g., automating marketing lead generation, enhancing customer service, or streamlining internal communication). Develop metrics and benchmark the new model's performance against existing solutions.",
+        "value": 3.0
+    },
+    {
+        "id": "Custom-LLM-Fine-tuning-for-Specific-Use-Case",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) for a specific use case, tailored to the client's unique needs. This involves fine-tuning existing pre-trained LLMs like GPT or BLOOM on relevant datasets while incorporating domain expertise and specific requirements. The LLM will be integrated with the client's existing systems to enhance their workflow.",
+        "value": 3.0
+    },
+    {
+        "id": "AI Security Audit for Nexus Core",
+        "type": "Heavy",
+        "desc": "Conduct a comprehensive architectural security audit of the SovereignNexus' core AI systems, including its algorithms, data pipelines, and infrastructure. The audit should identify potential vulnerabilities, risks, and compliance gaps in alignment with industry standards like NIST.",
+        "value": 1000
+    },
+    {
+        "id": "Custom LLM Fine-Tuning for Nexus Applications",
+        "type": "Medium",
+        "desc": "Fine-tune existing language models (LLMs) within the SovereignNexus to enhance their performance and tailor them for specific applications. This could involve fine-tuning LLMs on internal datasets or targeting industry-specific domains like medical diagnostics or legal document analysis.",
+        "value": 500
+    },
+    {
+        "id": "AI-Security-Audit-1000",
+        "type": "Medium/Heavy",
+        "desc": "Conduct a security audit of the SovereignNexus's AI infrastructure for vulnerabilities and compliance risks. Focus on key areas such as data privacy, bias mitigation, and adversarial attacks.",
+        "value": 150.0
+    },
+    {
+        "id": "LLM-Fine-Tuning-2000",
+        "type": "Medium/Heavy",
+        "desc": "Fine-tune a custom LLM for specific business needs, such as automating customer service responses or generating tailored marketing content. Conduct A/B testing to measure ROI.",
+        "value": 400.0
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-2",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM fine-tuning project for a specific industry application (e.g., legal contracts, medical diagnosis). This involves training on specific datasets relevant to the chosen industry and tailoring the model's capabilities for that purpose.",
+        "value": 2.0
+    },
+    {
+        "id": "LLM-Fine-Tuning-for-Specific-Use-Case",
+        "type": "Heavy",
+        "desc": "Allocate resources to fine-tune a specialized LLM for a specific use case, such as optimizing customer support chatbots or automating legal document review. This will require advanced data annotation and deep learning expertise.",
+        "value": 2500.0
+    },
+    {
+        "id": "AI Security Audit - Project Alpha",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive security audit of the SovereignNexus's core AI systems, focusing on potential vulnerabilities and bias mitigation strategies. This includes analyzing training data for bias and developing recommendations for mitigating risks.\n  Estimated Cost: $500",
+        "value": 0.5
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Project Beta",
+        "type": "Heavy",
+        "desc": "Fine-tune an existing LLM for specific use cases within the SovereignNexus, such as data extraction from complex documents or personalized content generation.  This requires expert input on fine-tuning parameters and a dedicated testing environment.\n Estimated Cost: $3000",
+        "value": 2.5
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure Analysis",
+        "type": "Sovereign",
+        "desc": "Analyze the current state of the SovereignNexus's agency infrastructure to identify areas for improvement in scalability, efficiency, and security. This involves assessing existing systems and mapping out future needs.\n Estimated Cost: $10,000+",
+        "value": 5.0
+    },
+    {
+        "id": "AI-Security-Audit-Foundation-Project",
+        "type": "Medium",
+        "desc": "Conduct a security audit of existing AI systems within the Nexus, focusing on identifying vulnerabilities and potential attack vectors. This will establish baseline protections and guide future development efforts.",
+        "value": 0.25
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-Pilot",
+        "type": "Heavy",
+        "desc": "Pilot a custom LLM fine-tuning project for specific tasks within the Nexus, such as automating data analysis or generating personalized content recommendations. This will allow us to assess the feasibility and impact of customized AI models.",
+        "value": 0.5
+    },
+    {
+        "id": "AI Security Audit - Launchpad",
+        "type": "Medium",
+        "desc": "Secure the Sovereign Nexus by conducting a comprehensive AI security audit of our launchpads and deployed AI models. This includes analyzing potential vulnerabilities, identifying critical risks, and recommending mitigation strategies to ensure data privacy and operational integrity.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM Fine-tuning for Niche Industries",
+        "type": "Heavy",
+        "desc": "Develop and deploy custom LLMs tailored to specific industry needs, focusing on sectors like healthcare diagnostics or sustainable agriculture. This involves collaborating with sector-specific partners and integrating their data sets into the AI models.",
+        "value": 2.0
+    },
+    {
+        "id": "AI Security Audit 1",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the Sovereign Nexus' AI systems, focusing on identifying potential vulnerabilities and weaknesses in data privacy, model bias, and access control.  This includes analyzing existing safeguards and proposing recommendations for improving overall risk management.",
+        "value": 500
+    },
+    {
+        "id": "LLM Fine-tuning Project",
+        "type": "Heavy",
+        "desc": "Develop a tailored LLM fine-tuning project for the Sovereign Nexus. This involves training on specialized datasets relevant to Ironwood's key business sectors (e.g., manufacturing, logistics) to optimize specific AI models for enhanced productivity and accuracy in areas like data analysis, process automation, and customer support applications.",
+        "value": 3000
+    },
+    {
+        "id": "Custom-LLM-Fine-tuning-2",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) tailored to meet specific industry needs for a client's use case, fine-tuning it with data and addressing AI privacy concerns.",
+        "value": 3.0
+    },
+    {
+        "id": "B2B-AI-Security-Audit-1",
+        "type": "Medium",
+        "desc": "Perform a security audit of existing AI systems used for B2B applications within the Nexus. This includes assessing data privacy, bias mitigation, and adversarial attacks on algorithms.",
+        "value": 0.5
+    },
+    {
+        "id": "Sovereign-Enterprise-Infrastructure-Audit-1",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the Sovereign Nexus's Enterprise Agentic Infrastructure, focusing on compliance with established protocols and identifying potential vulnerabilities. This includes analyzing data flow management, communication security, and regulatory adherence.",
+        "value": 9.0
+    },
+    {
+        "id": "Enterprise-Agentic-Assessment",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the SovereignNexus's current Agentic infrastructure for scalability, interoperability, and alignment with B2B industry standards. This will include assessing AI agent performance, security protocols, and integration with existing systems.",
+        "value": 5.0
+    },
+    {
+        "id": "LLM Fine-Tune - Niche Content Generation",
+        "type": "Heavy",
+        "desc": "Develop customized LLM models tailored to specific content needs within the Nexus. This involves fine-tuning existing LLMs on datasets relevant to the following: 1) Legal Documents, 2) Technical Specifications (e.g., for AI Toolsets), and 3) Business proposals. These models will facilitate targeted content creation and analysis.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM-Fine-Tune-1",
+        "type": "Heavy",
+        "desc": "Develop custom LLM models tailored to specific user needs within the SovereignNexus ecosystem. Fine-tune existing models for improved performance in areas like document summarization, personalized recommendations, and regulatory compliance.",
+        "value": 3.0
+    },
+    {
+        "id": "Enterprise-Agent-Infrastructure-1",
+        "type": "Sovereign",
+        "desc": "Perform a detailed analysis of existing enterprise agent infrastructure. Build blueprints for scalable, secure, and autonomous agent networks to streamline B2B interactions and enhance operational efficiency.",
+        "value": 9.5
+    },
+    {
+        "id": "Custom-LLM-Fine-tuning-1",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM for use in the Ironwood Nexus's internal workflow automation, addressing specific industry-unique needs.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-Audit-1",
+        "type": "Sovereign",
+        "desc": "Perform a comprehensive audit of the existing Enterprise Agentic Infrastructure, identifying potential risks and opportunities for improvement.",
+        "value": 0.75
+    },
+    {
+        "id": "LLM-Fine-tuning-For-Industry-Specific-Tasks",
+        "type": "Heavy",
+        "desc": "Invest in fine-tuning existing Large Language Model (LLMs) to perform specific tasks within a chosen industry domain, such as legal document analysis or financial forecasting. This will require collaborating with a specialized team of engineers and data scientists to adapt the LLM's capabilities while maintaining alignment with the Sovereign Nexus's ethical framework. Successful outcomes will build trust and attract clients in that sector.",
+        "value": 1.25
+    },
+    {
+        "id": "Enterprise-Agentic-Infrastructure-Evaluation",
+        "type": "Sovereign",
+        "desc": "Evaluate the feasibility and potential for implementing an autonomous enterprise agent infrastructure within the SovereignNexus.",
+        "value": 5.0
+    },
+    {
+        "id": "AI Security Audit - Tier 1",
+        "type": "Medium",
+        "desc": "Perform a preliminary security audit of the AI-powered applications within the SovereignNexus, focusing on identifying vulnerabilities common to large language models. This will involve analyzing code, data flows, and potential attack vectors.",
+        "value": 0.3
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Tier 2",
+        "type": "Heavy",
+        "desc": "Implement a pilot fine-tuning program for existing custom LLMs within the SovereignNexus to enhance their performance for specific use cases like customer interactions and internal communication. This requires expert level programming and AI model engineering skills.",
+        "value": 0.5
+    },
+    {
+        "id": "L1-LLM-Fine-tuning",
+        "type": "Heavy",
+        "desc": "Custom fine-tune LLM models for specific sectors within the Nexus. This will involve analyzing data sets and refining model architectures to optimize performance on relevant tasks, like customer relationship management or contract analysis.",
+        "value": 10.0
+    },
+    {
+        "id": "AI-Audit-PilotProgram",
+        "type": "Medium/Heavy",
+        "desc": "Launch a pilot program for an AI security audit of a specific department's AI systems (e.g., Finance or Marketing). This will involve collaborating with the Sovereign Nexus team on data analysis and risk assessment, followed by recommendations for policy updates and implementation.",
+        "value": 0.25
+    },
+    {
+        "id": "LLM-Fine-tune-Pilot",
+        "type": "Heavy/Sovereign",
+        "desc": "Develop a pilot project to fine-tune the Sovereign Nexus's custom LLM for specific tasks related to B2B collaboration. This involves input from various departments (e.g., Sales, Marketing) and will require significant customization and testing before deployment.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise-Agent-Infrastructure",
+        "type": "Sovereign",
+        "desc": "Conduct a strategic audit of the current Enterprise-Agentic infrastructure for the Sovereign Nexus. This involves analyzing existing deployments, identifying gaps and potential risks, and creating recommendations for upgrading or streamlining processes.",
+        "value": 0.75
+    },
+    {
+        "id": "AI Security Audit-Tier1",
+        "type": "Medium",
+        "desc": "Conduct a baseline security audit of internal AI systems for vulnerabilities and potential attack vectors. Focus on identifying weaknesses in data encryption, access control measures, and model bias detection.",
+        "value": 0.25
+    },
+    {
+        "id": "Custom LLM Fine-Tuning - Niche Industry",
+        "type": "Heavy",
+        "desc": "Fine-tune SovereignNexus's LLMs for specific niche industries (e.g., healthcare, legal, finance) based on in-depth domain knowledge and data analysis. This will allow for more targeted and accurate responses to inquiries from those sectors.",
+        "value": 1.5
+    },
+    {
+        "id": "Enterprise Agent Infrastructure Assessment",
+        "type": "Sovereign",
+        "desc": "Analyze the existing infrastructure of a specific enterprise client (e.g., Fortune 500 company) for their Sovereign Nexus implementation, identifying potential bottlenecks and areas for optimization. This assessment will provide recommendations for an optimal agent deployment strategy.",
+        "value": 10.0
+    },
+    {
+        "id": "AI-Security Audit - Mid-Range",
+        "type": "Medium",
+        "desc": "Conduct a comprehensive AI security audit for select departmental systems using pre-trained anomaly detection models. Focus on identifying potential vulnerabilities in data privacy, bias, and adversarial attacks.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM Fine-Tuning - Heavy",
+        "type": "Heavy",
+        "desc": "Fine-tune a large language model (LLM) to specialize in the creation of targeted marketing materials for B2B solutions. This would involve developing custom prompts, training datasets specific to industry trends, and implementing an A/B testing strategy.",
+        "value": 3.0
+    },
+    {
+        "id": "MS-AI-audit-1",
+        "type": "Medium",
+        "desc": "Conduct a basic AI Security Audit for the Sovereign Nexus's internal systems.",
+        "value": 0.25
+    },
+    {
+        "id": "HL-LLM-fine-tuning-1",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM for specific use cases within the Nexus, such as streamlining internal communication or automating document generation.",
+        "value": 0.5
+    },
+    {
+        "id": "SO-EA-audit-1",
+        "type": "Sovereign",
+        "desc": "Perform an enterprise-wide audit of the Agentic Infrastructure to identify and optimize resource allocation for enhanced efficiency.",
+        "value": 2.0
+    },
+    {
+        "id": "Custom-LLM-Fine-Tuning-Proposal",
+        "type": "Heavy",
+        "desc": "Develop a detailed proposal for fine-tuning existing LLMs (Large Language Models) to specifically address the unique challenges faced by the SovereignNexus. This will involve tasks like data curation, model architecture selection, and hyperparameter optimization to ensure optimal performance and alignment with Sovereign objectives.",
+        "value": 2.0
+    },
+    {
+        "id": "AI Security Audit - Project Launchpad",
+        "type": "Medium",
+        "desc": "Conduct a security audit of the SovereignNexus's AI systems, focusing on potential vulnerabilities in data access, model bias, and adversarial attacks. The project will involve workshops with internal teams and external experts to identify risk areas and recommend mitigation strategies. ",
+        "value": 250.0
+    },
+    {
+        "id": "LLM Fine-tuning for Business Applications",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM (Large Language Model) on specific business applications within the SovereignNexus, improving its performance for tasks like document summarization, knowledge management, and automated support. This involves data collection, model training, and evaluation using metrics aligned with business goals.",
+        "value": 3000.0
+    },
+    {
+        "id": "Custom LLM Fine-tuning for Market Research",
+        "type": "Heavy",
+        "desc": "Develop and train a custom Large Language Model (LLM) to analyze market trends, customer feedback, and competitor activity. This can optimize the SovereignNexus's B2B outreach strategy.",
+        "value": 3.0
+    },
+    {
+        "id": "LLM-Fine-tuning-Workshop",
+        "type": "Medium",
+        "desc": "Organize a workshop for Sovereign Nexus staff and strategic partners to explore customized LLM fine-tuning as an opportunity for enhanced application functionality. The workshop will leverage existing resources and partnerships to foster collaborative development of specialized LLMs.",
+        "value": 250.0
+    },
+    {
+        "id": "AI Security Audit - Pilot Project",
+        "type": "Medium",
+        "desc": "Develop a pilot program for AI security audit using the Sovereign Nexus's vast knowledge base and curated datasets of past attacks. This program will focus on assessing the vulnerabilities of existing AI systems in various industries (e.g., healthcare, finance). ",
+        "value": 0.01
+    },
+    {
+        "id": "Custom LLM Fine-Tuning - Industry Specialization",
+        "type": "Heavy",
+        "desc": "Fine-tune a pre-trained LLM (e.g., GPT-3) to specialize in a specific industry's needs and language (e.g., legal, manufacturing). This fine-tuning will require collaboration with relevant experts from that industry, focusing on data gathering and model adaptation for optimal performance.",
+        "value": 0.15
+    },
+    {
+        "id": "H2-LLM-FineTune",
+        "type": "Heavy",
+        "desc": "Fine-tune a custom LLM to perform a targeted task with specific requirements for one of the Sovereign Nexus's core functions, such as document analysis or automated report generation.",
+        "value": 1.0
+    },
+    {
+        "id": "S3-Agentic-Infra",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of existing enterprise infrastructure to identify potential gaps in the Agentic Infrastructure framework and recommend best practices for implementation.",
+        "value": 5.0
+    },
+    {
+        "id": "AI Security Audit Phase 1",
+        "type": "Medium",
+        "desc": "Begin a pilot AI security audit for our existing customer base. This will involve gathering data on their AI systems and identifying potential vulnerabilities. Initial findings will be used to develop tailored recommendations for improvement.",
+        "value": 0.75
+    },
+    {
+        "id": "LLM Fine-tuning Project - Customer-Specific Solutions",
+        "type": "Heavy",
+        "desc": "Develop custom LLM fine-tune models based on specific customer needs and use cases across three industries. This involves data collection, model training, and deployment for each target sector.",
+        "value": 2.0
+    },
+    {
+        "id": "Sovereign Nexus Enterprise Agentic Infrastructure Assessment",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive assessment of the Sovereign Nexus's enterprise agentic infrastructure. This includes analyzing existing architecture, identifying potential risks and opportunities, proposing improvements to enhance governance and security.",
+        "value": 50.0
+    },
+    {
+        "id": "1",
+        "type": "Medium",
+        "desc": " **AI Security Audit for Existing Nexus Systems.**\n\nConduct a security audit of existing AI systems within the Ironwood Nexus. Focus on identifying vulnerabilities in data collection, algorithm design, and potential biases.\n\n**Value:** $250 - $500",
+        "value": 1.0
+    },
+    {
+        "id": "2",
+        "type": "Heavy",
+        "desc": " **Custom LLM Fine-Tuning for Niche Applications.**\n\nLeverage the Sovereign Nexus's advanced AI capabilities to fine-tune existing Large Language Models (LLMs) for specific business needs.\n\n**Value:** $2,500 - $5,000",
+        "value": 1.0
+    },
+    {
+        "id": "3",
+        "type": "Sovereign",
+        "desc": " **Enterprise Agentic Infrastructure Audit and Optimization.**\n\nAnalyze the current state of agentic infrastructure for potential optimization opportunities, ensuring alignment with Sovereign Nexus governance standards. This includes assessing existing frameworks, resource allocation, and data management protocols.\n\n**Value:** $10,000+ ",
+        "value": 1.0
+    },
+    {
+        "id": "AI-Security Audit Pilot Program",
+        "type": "Medium",
+        "desc": "Launch a pilot program for an AI security audit across a select number of SovereignNexus clients' applications and platforms.",
+        "value": 0.25
+    },
+    {
+        "id": "Custom LLM Fine-tuning for Industry Partnership",
+        "type": "Heavy",
+        "desc": "Partner with leading industry players to fine-tune our LLMs for specific use cases in niche sectors like healthcare, finance, or legal compliance.  This requires substantial engineering resource and data sharing.",
+        "value": 0.5
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure Assessment & Proposal",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the existing Enterprise Agentic infrastructure for our B2B clients, identifying strengths, vulnerabilities, and potential improvement pathways.  Develop tailored proposal documents with cost estimates and implementation plans based on identified needs.",
+        "value": 1.0
+    },
+    {
+        "id": "LLM-Fine-tune-B2B",
+        "type": "Medium/Heavy",
+        "desc": "Develop a custom LLM fine-tuning program for specific B2B customer needs (e.g., lead generation, market research, product documentation). This will enhance existing AI models' performance in targeted tasks within the B2B ecosystem.",
+        "value": 0.2
+    },
+    {
+        "id": "AI Security Audit - Partner Integration",
+        "type": "Medium",
+        "desc": "Conduct an initial security audit of the AI model integrations with partner platforms, focusing on data protection and potential vulnerabilities. This will involve reviewing API protocols, access control mechanisms, and data storage practices.",
+        "value": 0.25
+    },
+    {
+        "id": "Custom LLM Fine-tuning - Industry Focus",
+        "type": "Heavy",
+        "desc": "Initiate a customization of the SovereignNexus's LLMs to address specific industry needs. Conduct research and consultation with key stakeholders in the [Industry X] sector to identify their unique language challenges and develop tailored fine-tuned models with optimal performance for that domain.",
+        "value": 0.5
+    },
+    {
+        "id": "AI-Security-Audit-Low-Hanging-Fruit",
+        "type": "Medium",
+        "desc": "Conduct a basic audit of the SovereignNexus's AI security protocols. Analyze current safeguards for potential vulnerabilities, implement quick fixes, and propose long-term mitigation strategies based on industry best practices.",
+        "value": 0.4
+    },
+    {
+        "id": "LLM-Customization-Framework",
+        "type": "Medium",
+        "desc": "Build a framework for custom LLM fine-tuning tailored for specific internal sectors within the SovereignNexus. This will allow for efficient and cost-effective deployment of customized language models to automate tasks and enhance decision-making.",
+        "value": 300
+    },
+    {
+        "id": "AI Audit and Training Initiative",
+        "type": "Medium/Heavy",
+        "desc": "Conduct a comprehensive AI security audit across the Sovereign Nexus's existing systems, focusing on identifying potential vulnerabilities exposed by advanced technologies. Tailor recommendations to be implemented via custom LLM fine-tuning for improved security protocols. ",
+        "value": 0.75
+    },
+    {
+        "id": "Custom LLM Fine-Tuning Project",
+        "type": "Heavy/Sovereign",
+        "desc": "Develop a customized Large Language Model (LLM) tailored to improve the efficiency and effectiveness of key Sovereign Nexus operations. This includes fine-tuning LLMs for tasks like:  Automated data analysis, policy management, and AI-assisted decision making.",
+        "value": 2.5
+    },
+    {
+        "id": "AI_Security_Audit_Pilot_Program",
+        "type": "Medium",
+        "desc": "Conduct a pilot program for an AI Security Audit across a limited number of key applications within the SovereignNexus. This will involve identifying potential vulnerabilities, testing existing safeguards, and formulating preliminary recommendations for improvement.",
+        "value": 0.5
+    },
+    {
+        "id": "LLM_Fine_Tuning_For_Specific_Task",
+        "type": "Heavy",
+        "desc": "Invest in fine-tuning a specialized Large Language Model (LLM) to perform a high-demand task with specific parameters. This will require collaboration between the Engineering and Research divisions, focusing on tasks like content generation for an internal knowledge base or enhanced query processing.",
+        "value": 2.0
+    },
+    {
+        "id": "Custom LLM Fine-tuning for Specific Use Cases",
+        "type": "Heavy",
+        "desc": "Develop a custom Large Language Model (LLM) for the Ironwood Nexus, tailored to specific business functions such as customer relationship management or internal knowledge sharing. This involves fine-tuning existing LLMs on data relevant to those functionalities.",
+        "value": 2.0
+    },
+    {
+        "id": "Enterprise Agentic Infrastructure Audit and Proposal",
+        "type": "Sovereign",
+        "desc": "Conduct a comprehensive audit of the existing Enterprise Agentic Infrastructure. Evaluate its current capabilities, identify areas for improvement, and propose strategic adjustments to enhance efficiency, security, and scalability. This will include an assessment of key components like human-machine collaboration (HMC), autonomous task execution, and decision support systems.",
+        "value": 5.0
+    },
+    {
+        "id": "B2B-LLM-Fine-Tune-2",
+        "type": "Heavy",
+        "desc": "**Custom LLM Fine-Tuning for Client Y:** Develop a custom LLM fine-tuned model for Client Y's specific needs. This will require extensive data collection, analysis and preprocessing, as well as integration with Client Y's existing systems. The focus should be on achieving higher accuracy, efficiency, and personalization for their task.",
+        "value": 2500
+    },
+    {
+        "id": "Sovereign-Agentic-Infra-3",
+        "type": "Sovereign",
+        "desc": " **Enterprise Agentic Infrastructure Assessment:** Conduct a comprehensive review of the SovereignNexus's enterprise agentic infrastructure across all departments. Assess existing protocols, identify potential risks and vulnerabilities, and propose recommendations for optimized architecture and resource management for maximum efficiency.",
+        "value": 10000
+    },
+    {
+        "id": "Audit-Basic-AI-Security",
+        "type": "Medium",
+        "desc": "Conduct a basic security audit of current AI models, focusing on data privacy and bias detection. This involves analyzing datasets used for training, identifying potential vulnerabilities in the algorithms themselves, and recommending mitigation strategies.",
+        "value": 0.5
+    },
+    {
+        "id": "Fine-Tuned-LLM",
+        "type": "Heavy",
+        "desc": "Develop a custom LLM tailored to specific needs of a B2B client in the healthcare sector (e.g., personalized treatment recommendations for patients). This requires extensive data collection, model architecture design, training and fine-tuning on relevant datasets.",
+        "value": 10
+    },
+    {
+        "id": "Custom_LLM_Fine_Tuning_250",
+        "type": "Heavy",
+        "desc": "Develop custom LLM fine-tuning for specific business needs within the Ironwood Nexus domain, such as automating internal processes or generating personalized customer interactions. This requires a deep understanding of our core functions and data.",
+        "value": 2500.0
+    },
+    {
+        "id": "Enterprise_Agentic_Infrastructure_10K",
+        "type": "Sovereign",
+        "desc": "Conduct an in-depth analysis of the existing enterprise agentic infrastructure to identify potential bottlenecks and opportunities for optimization. This includes assessing AI performance integration, data pipelines, and resource allocation within various departments.",
+        "value": 10000.0
+    },
+    {
+        "id": "AI-Security-Audit-Phase-1",
+        "type": "Medium",
+        "desc": "Conduct a preliminary AI security audit for the SovereignNexus's core AI systems. This involves analyzing system architecture, data flow patterns, and potential vulnerabilities to adversarial attacks or biased outputs. The output will include prioritized recommendations for immediate improvements and further investigation.",
+        "value": 250
+    },
+    {
+        "id": "LLM-Fine-tune-for-Industry-Specificity",
+        "type": "Heavy",
+        "desc": "Leverage the SovereignNexus's LLM platform to develop customized functionalities tailored for specific B2B industries. This includes fine-tuning the LLM on datasets relevant to sectors like manufacturing, retail, or logistics. The focus is on improving accuracy and relevance across these niche applications.",
+        "value": 3500
+    },
+    {
+        "id": "LLM-Fine-tuning-1",
+        "type": "Heavy",
+        "desc": "Develop custom LLM functionalities for the SovereignNexus by fine-tuning existing models to address specific business needs, such as automating customer support or generating customized reports. This would require a detailed analysis of target use cases and data requirements.",
+        "value": 2.0
+    },
+    {
+        "id": "AI-Security-Audit-StarterKit",
+        "type": "Medium",
+        "desc": "Deploy a basic AI security audit framework for the SovereignNexus, focusing on common vulnerabilities in models like bias detection and adversarial attacks. The framework will be used to assess and improve security across various projects and datasets.",
+        "value": 0.25
+    }
+]

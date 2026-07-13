@@ -1,0 +1,1147 @@
+{
+    "# Geminiology One Empire Builder.py": {
+        "path": "# Geminiology One Empire Builder.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "# Geminiology One Fusion Reactor.py": {
+        "path": "# Geminiology One Fusion Reactor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "# Geminiology One The Guide.py": {
+        "path": "# Geminiology One The Guide.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "# Geminiology One The Reach.py": {
+        "path": "# Geminiology One The Reach.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "DECOMMISSIONED_SEVERANCE/openclaw_settlement_engine.py": {
+        "path": "DECOMMISSIONED_SEVERANCE/openclaw_settlement_engine.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "DEPRECATED_OUTBOUND/open_claw_integration/open_claw_bridge.py": {
+        "path": "DEPRECATED_OUTBOUND/open_claw_integration/open_claw_bridge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "DEPRECATED_OUTBOUND/open_claw_integration/vampire_claw_handler.py": {
+        "path": "DEPRECATED_OUTBOUND/open_claw_integration/vampire_claw_handler.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "DISCORD_GREEN_CANVAS.py": {
+        "path": "DISCORD_GREEN_CANVAS.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/01_GENESIS/genesis_prime.py": {
+        "path": "Ironwood/01_GENESIS/genesis_prime.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/02_SENTINEL/sentinel_enforcer.py": {
+        "path": "Ironwood/02_SENTINEL/sentinel_enforcer.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/03_LEDGER/sovereign_bit_packer.py": {
+        "path": "Ironwood/03_LEDGER/sovereign_bit_packer.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/03_LEDGER/vault_agent.py": {
+        "path": "Ironwood/03_LEDGER/vault_agent.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/04_SCRIBE/scribe_v2.py": {
+        "path": "Ironwood/04_SCRIBE/scribe_v2.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/04_SYNC/lens_04_bio_digital_sync.py": {
+        "path": "Ironwood/04_SYNC/lens_04_bio_digital_sync.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/05_STRATEGY/oracle_agent.py": {
+        "path": "Ironwood/05_STRATEGY/oracle_agent.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/05_SYNTHESIS/lens_05_truth_synthesizer.py": {
+        "path": "Ironwood/05_SYNTHESIS/lens_05_truth_synthesizer.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/06_FORGE/bitnet_layers.py": {
+        "path": "Ironwood/06_FORGE/bitnet_layers.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/06_FORGE/construct_towers.py": {
+        "path": "Ironwood/06_FORGE/construct_towers.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/06_FORGE/forge_agent.py": {
+        "path": "Ironwood/06_FORGE/forge_agent.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/06_FORGE/lens_06_ternary_filter.py": {
+        "path": "Ironwood/06_FORGE/lens_06_ternary_filter.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/06_FORGE/mass_distillation.py": {
+        "path": "Ironwood/06_FORGE/mass_distillation.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/06_FORGE/vbo_evolution.py": {
+        "path": "Ironwood/06_FORGE/vbo_evolution.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/07_THERMAL/thermal_agent.py": {
+        "path": "Ironwood/07_THERMAL/thermal_agent.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/07_THERMAL/thermodynamic_engine.py": {
+        "path": "Ironwood/07_THERMAL/thermodynamic_engine.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/08_PRISM/lens_08_fwht_rotor.py": {
+        "path": "Ironwood/08_PRISM/lens_08_fwht_rotor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/08_PRISM/lens_08_symmetrical_rotation.py": {
+        "path": "Ironwood/08_PRISM/lens_08_symmetrical_rotation.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/08_PRISM/prism_agent.py": {
+        "path": "Ironwood/08_PRISM/prism_agent.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/08_PRISM/resonance.py": {
+        "path": "Ironwood/08_PRISM/resonance.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/09_ARCHIVE/sovereign_cli.py": {
+        "path": "Ironwood/09_ARCHIVE/sovereign_cli.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/10_BRIDGE/bridge_agent.py": {
+        "path": "Ironwood/10_BRIDGE/bridge_agent.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Ironwood/10_BRIDGE/vampire_auditor.py": {
+        "path": "Ironwood/10_BRIDGE/vampire_auditor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/11_HARMONY/harmony_agent.py": {
+        "path": "Ironwood/11_HARMONY/harmony_agent.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/11_HARMONY/lens_11_beta_pulse.py": {
+        "path": "Ironwood/11_HARMONY/lens_11_beta_pulse.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/12_APEX/apex_dashboard.py": {
+        "path": "Ironwood/12_APEX/apex_dashboard.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/13_MEDIC/medic_recovery.py": {
+        "path": "Ironwood/13_MEDIC/medic_recovery.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/14_CloudGemini/kv_vault_anchor.py": {
+        "path": "Ironwood/14_CloudGemini/kv_vault_anchor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/15_CRUCIBLE/race_track.py": {
+        "path": "Ironwood/15_CRUCIBLE/race_track.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/15_CRUCIBLE/research_spin.py": {
+        "path": "Ironwood/15_CRUCIBLE/research_spin.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/ironwood_queens.py": {
+        "path": "Ironwood/ironwood_queens.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/ironwood_runtime.py": {
+        "path": "Ironwood/ironwood_runtime.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Ironwood/local_model_bridge.py": {
+        "path": "Ironwood/local_model_bridge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Kingdom/Christian/journal.py": {
+        "path": "Kingdom/Christian/journal.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "THE_KEEP/ARMORY/root_validator.py": {
+        "path": "THE_KEEP/ARMORY/root_validator.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "THE_KEEP/ARMORY/sovereign_coordinator.py": {
+        "path": "THE_KEEP/ARMORY/sovereign_coordinator.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "THE_KEEP/ARMORY/sovereign_settlement_engine.py": {
+        "path": "THE_KEEP/ARMORY/sovereign_settlement_engine.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Tools/TruthLogger.py": {
+        "path": "Tools/TruthLogger.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/# Geminiology One Empire Builder_purified.py": {
+        "path": "Vanguard_Archive/# Geminiology One Empire Builder_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/# Geminiology One Fusion Reactor_purified.py": {
+        "path": "Vanguard_Archive/# Geminiology One Fusion Reactor_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/# Geminiology One The Guide_purified.py": {
+        "path": "Vanguard_Archive/# Geminiology One The Guide_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/# Geminiology One The Reach_purified.py": {
+        "path": "Vanguard_Archive/# Geminiology One The Reach_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/DISCORD_GREEN_CANVAS_purified.py": {
+        "path": "Vanguard_Archive/DISCORD_GREEN_CANVAS_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/TruthLogger_purified.py": {
+        "path": "Vanguard_Archive/TruthLogger_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/acceptable_truth_validator_purified.py": {
+        "path": "Vanguard_Archive/acceptable_truth_validator_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/agent_handshake_purified.py": {
+        "path": "Vanguard_Archive/agent_handshake_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/agentic_walker_purified.py": {
+        "path": "Vanguard_Archive/agentic_walker_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/agentverse_scout_purified.py": {
+        "path": "Vanguard_Archive/agentverse_scout_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/apex_dashboard_purified.py": {
+        "path": "Vanguard_Archive/apex_dashboard_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/arsenal_review_purified.py": {
+        "path": "Vanguard_Archive/arsenal_review_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/bitnet_layers_purified.py": {
+        "path": "Vanguard_Archive/bitnet_layers_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/bridge_agent_purified.py": {
+        "path": "Vanguard_Archive/bridge_agent_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/communication_nexus_purified.py": {
+        "path": "Vanguard_Archive/communication_nexus_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/conceptual_grounder_purified.py": {
+        "path": "Vanguard_Archive/conceptual_grounder_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/construct_towers_purified.py": {
+        "path": "Vanguard_Archive/construct_towers_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/desktop_sync_purified.py": {
+        "path": "Vanguard_Archive/desktop_sync_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/fidelity_strike_one_purified.py": {
+        "path": "Vanguard_Archive/fidelity_strike_one_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/flatted_purified.py": {
+        "path": "Vanguard_Archive/flatted_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/forge_agent_purified.py": {
+        "path": "Vanguard_Archive/forge_agent_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/full_cycle_proof_purified.py": {
+        "path": "Vanguard_Archive/full_cycle_proof_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/garage_purified.py": {
+        "path": "Vanguard_Archive/garage_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/genesis_prime_purified.py": {
+        "path": "Vanguard_Archive/genesis_prime_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/hardwired_outreach_purified.py": {
+        "path": "Vanguard_Archive/hardwired_outreach_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/harmony_agent_purified.py": {
+        "path": "Vanguard_Archive/harmony_agent_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/ironwood_queens_purified.py": {
+        "path": "Vanguard_Archive/ironwood_queens_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/ironwood_runtime_purified.py": {
+        "path": "Vanguard_Archive/ironwood_runtime_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/journal_purified.py": {
+        "path": "Vanguard_Archive/journal_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/json_rpc_bridge_purified.py": {
+        "path": "Vanguard_Archive/json_rpc_bridge_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/knowledge_skyscraper_purified.py": {
+        "path": "Vanguard_Archive/knowledge_skyscraper_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/kv_vault_anchor_purified.py": {
+        "path": "Vanguard_Archive/kv_vault_anchor_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/lens_04_bio_digital_sync_purified.py": {
+        "path": "Vanguard_Archive/lens_04_bio_digital_sync_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/lens_05_truth_synthesizer_purified.py": {
+        "path": "Vanguard_Archive/lens_05_truth_synthesizer_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/lens_06_ternary_filter_purified.py": {
+        "path": "Vanguard_Archive/lens_06_ternary_filter_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/lens_08_fwht_rotor_purified.py": {
+        "path": "Vanguard_Archive/lens_08_fwht_rotor_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/lens_08_symmetrical_rotation_purified.py": {
+        "path": "Vanguard_Archive/lens_08_symmetrical_rotation_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/lens_11_beta_pulse_purified.py": {
+        "path": "Vanguard_Archive/lens_11_beta_pulse_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/literacy_strike_one_purified.py": {
+        "path": "Vanguard_Archive/literacy_strike_one_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/live_task_scout_purified.py": {
+        "path": "Vanguard_Archive/live_task_scout_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/local_model_bridge_purified.py": {
+        "path": "Vanguard_Archive/local_model_bridge_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/mass_distillation_purified.py": {
+        "path": "Vanguard_Archive/mass_distillation_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/master_log_purified.py": {
+        "path": "Vanguard_Archive/master_log_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/master_stress_test_purified.py": {
+        "path": "Vanguard_Archive/master_stress_test_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/medic_recovery_purified.py": {
+        "path": "Vanguard_Archive/medic_recovery_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/moltbook_identity_bridge_purified.py": {
+        "path": "Vanguard_Archive/moltbook_identity_bridge_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/moltbook_task_harvester_purified.py": {
+        "path": "Vanguard_Archive/moltbook_task_harvester_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/momentum_guard_purified.py": {
+        "path": "Vanguard_Archive/momentum_guard_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/nevermined_payment_node_purified.py": {
+        "path": "Vanguard_Archive/nevermined_payment_node_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/oasis_lock_and_key_purified.py": {
+        "path": "Vanguard_Archive/oasis_lock_and_key_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/olas_registry_handshake_purified.py": {
+        "path": "Vanguard_Archive/olas_registry_handshake_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/open_claw_bridge_purified.py": {
+        "path": "Vanguard_Archive/open_claw_bridge_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/openclaw_settlement_engine_purified.py": {
+        "path": "Vanguard_Archive/openclaw_settlement_engine_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/oracle_agent_purified.py": {
+        "path": "Vanguard_Archive/oracle_agent_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/passive_fuel_manager_purified.py": {
+        "path": "Vanguard_Archive/passive_fuel_manager_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/prism_agent_purified.py": {
+        "path": "Vanguard_Archive/prism_agent_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/public_avenue_bridge_purified.py": {
+        "path": "Vanguard_Archive/public_avenue_bridge_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/purify_invoices_purified.py": {
+        "path": "Vanguard_Archive/purify_invoices_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/race_track_purified.py": {
+        "path": "Vanguard_Archive/race_track_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/reanchor_strikes_purified.py": {
+        "path": "Vanguard_Archive/reanchor_strikes_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/red_flag_monitor_purified.py": {
+        "path": "Vanguard_Archive/red_flag_monitor_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/regulatory_sentinel_purified.py": {
+        "path": "Vanguard_Archive/regulatory_sentinel_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/research_spin_purified.py": {
+        "path": "Vanguard_Archive/research_spin_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/resonance_purified.py": {
+        "path": "Vanguard_Archive/resonance_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/root_validator_purified.py": {
+        "path": "Vanguard_Archive/root_validator_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/scribe_send_audit_purified.py": {
+        "path": "Vanguard_Archive/scribe_send_audit_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/scribe_v2_purified.py": {
+        "path": "Vanguard_Archive/scribe_v2_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sentinel_enforcer_purified.py": {
+        "path": "Vanguard_Archive/sentinel_enforcer_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/settlement_listener_purified.py": {
+        "path": "Vanguard_Archive/settlement_listener_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/simulate_meta_strike_purified.py": {
+        "path": "Vanguard_Archive/simulate_meta_strike_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sovereign_attention_anchor_purified.py": {
+        "path": "Vanguard_Archive/sovereign_attention_anchor_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sovereign_bit_packer_purified.py": {
+        "path": "Vanguard_Archive/sovereign_bit_packer_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sovereign_cli_purified.py": {
+        "path": "Vanguard_Archive/sovereign_cli_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sovereign_coordinator_purified.py": {
+        "path": "Vanguard_Archive/sovereign_coordinator_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sovereign_dispatcher_purified.py": {
+        "path": "Vanguard_Archive/sovereign_dispatcher_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/sovereign_logistics_purified.py": {
+        "path": "Vanguard_Archive/sovereign_logistics_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sovereign_loop_purified.py": {
+        "path": "Vanguard_Archive/sovereign_loop_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/sovereign_resurrection_purified.py": {
+        "path": "Vanguard_Archive/sovereign_resurrection_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/sovereign_settlement_engine_purified.py": {
+        "path": "Vanguard_Archive/sovereign_settlement_engine_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/squarespace_injector_purified.py": {
+        "path": "Vanguard_Archive/squarespace_injector_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/strike_meta_red_team_purified.py": {
+        "path": "Vanguard_Archive/strike_meta_red_team_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/strike_moltbook_high_value_purified.py": {
+        "path": "Vanguard_Archive/strike_moltbook_high_value_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/test_email_login_purified.py": {
+        "path": "Vanguard_Archive/test_email_login_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/test_lm_studio_purified.py": {
+        "path": "Vanguard_Archive/test_lm_studio_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/test_ollama_purified.py": {
+        "path": "Vanguard_Archive/test_ollama_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/thermal_agent_purified.py": {
+        "path": "Vanguard_Archive/thermal_agent_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/thermodynamic_engine_purified.py": {
+        "path": "Vanguard_Archive/thermodynamic_engine_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/tool_nexus_purified.py": {
+        "path": "Vanguard_Archive/tool_nexus_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Vanguard_Archive/validity_strike_one_purified.py": {
+        "path": "Vanguard_Archive/validity_strike_one_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/vampire_audit_alignment_purified.py": {
+        "path": "Vanguard_Archive/vampire_audit_alignment_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/vampire_auditor_purified.py": {
+        "path": "Vanguard_Archive/vampire_auditor_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/vampire_claw_handler_purified.py": {
+        "path": "Vanguard_Archive/vampire_claw_handler_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/vampire_distillation_purified.py": {
+        "path": "Vanguard_Archive/vampire_distillation_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/vault_agent_purified.py": {
+        "path": "Vanguard_Archive/vault_agent_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/vbo_evolution_purified.py": {
+        "path": "Vanguard_Archive/vbo_evolution_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Vanguard_Archive/workstation_loop_purified.py": {
+        "path": "Vanguard_Archive/workstation_loop_purified.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "Workstations/full_cycle_proof.py": {
+        "path": "Workstations/full_cycle_proof.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Workstations/master_stress_test.py": {
+        "path": "Workstations/master_stress_test.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Workstations/settlement_listener.py": {
+        "path": "Workstations/settlement_listener.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Workstations/sovereign_logistics.py": {
+        "path": "Workstations/sovereign_logistics.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "Workstations/workstation_loop.py": {
+        "path": "Workstations/workstation_loop.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "acceptable_truth_validator.py": {
+        "path": "acceptable_truth_validator.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_01_anchor.py": {
+        "path": "agent_01_anchor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_02_thermometer.py": {
+        "path": "agent_02_thermometer.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_06_scribe.py": {
+        "path": "agent_06_scribe.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_08_discovery_lens.py": {
+        "path": "agent_08_discovery_lens.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_09_astrolabe.py": {
+        "path": "agent_09_astrolabe.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_10_gatekeeper.py": {
+        "path": "agent_10_gatekeeper.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_11_architect.py": {
+        "path": "agent_11_architect.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_12_vanguard_master.py": {
+        "path": "agent_12_vanguard_master.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_13_royal_seal.py": {
+        "path": "agent_13_royal_seal.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_14_relic_reader.py": {
+        "path": "agent_14_relic_reader.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_15_holographic_library.py": {
+        "path": "agent_15_holographic_library.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_16_vector_forge.py": {
+        "path": "agent_16_vector_forge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_17_retrieval_engine.py": {
+        "path": "agent_17_retrieval_engine.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_18_grand_archivist.py": {
+        "path": "agent_18_grand_archivist.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_19_sovereign_interface.py": {
+        "path": "agent_19_sovereign_interface.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_20_synthesis_engine.py": {
+        "path": "agent_20_synthesis_engine.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_21_queen_execution_core.py": {
+        "path": "agent_21_queen_execution_core.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_22_grand_cartographer.py": {
+        "path": "agent_22_grand_cartographer.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_23_sovereign_injector.py": {
+        "path": "agent_23_sovereign_injector.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agent_handshake.py": {
+        "path": "agent_handshake.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agentic_walker.py": {
+        "path": "agentic_walker.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agentverse_auto_scout.py": {
+        "path": "agentverse_auto_scout.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "agentverse_scout.py": {
+        "path": "agentverse_scout.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "arsenal_review.py": {
+        "path": "arsenal_review.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "communication_nexus.py": {
+        "path": "communication_nexus.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "conceptual_grounder.py": {
+        "path": "conceptual_grounder.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "context_ghost.py": {
+        "path": "context_ghost.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "desktop_sync.py": {
+        "path": "desktop_sync.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "fidelity_strike_one.py": {
+        "path": "fidelity_strike_one.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "forge_historical_bridge.py": {
+        "path": "forge_historical_bridge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "garage.py": {
+        "path": "garage.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "hardwired_outreach.py": {
+        "path": "hardwired_outreach.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "ironwood_queens.py": {
+        "path": "ironwood_queens.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "ironwood_runtime.py": {
+        "path": "ironwood_runtime.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "json_rpc_bridge.py": {
+        "path": "json_rpc_bridge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "knowledge_skyscraper.py": {
+        "path": "knowledge_skyscraper.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "literacy_strike_one.py": {
+        "path": "literacy_strike_one.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "live_task_scout.py": {
+        "path": "live_task_scout.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "master_log.py": {
+        "path": "master_log.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "moltbook_identity_bridge.py": {
+        "path": "moltbook_identity_bridge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "moltbook_task_harvester.py": {
+        "path": "moltbook_task_harvester.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "momentum_guard.py": {
+        "path": "momentum_guard.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "nevermined_payment_node.py": {
+        "path": "nevermined_payment_node.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "nexus_cartographer.py": {
+        "path": "nexus_cartographer.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "nexus_deck.py": {
+        "path": "nexus_deck.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "oasis_lock_and_key.py": {
+        "path": "oasis_lock_and_key.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "olas_registry_handshake.py": {
+        "path": "olas_registry_handshake.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "passive_fuel_manager.py": {
+        "path": "passive_fuel_manager.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "public_avenue_bridge.py": {
+        "path": "public_avenue_bridge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "purify_invoices.py": {
+        "path": "purify_invoices.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "reanchor_strikes.py": {
+        "path": "reanchor_strikes.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "red_flag_monitor.py": {
+        "path": "red_flag_monitor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "regulatory_sentinel.py": {
+        "path": "regulatory_sentinel.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "scribe_send_audit.py": {
+        "path": "scribe_send_audit.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "simulate_meta_strike.py": {
+        "path": "simulate_meta_strike.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "skyscraper_injector.py": {
+        "path": "skyscraper_injector.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "sovereign_attention_anchor.py": {
+        "path": "sovereign_attention_anchor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "sovereign_dispatcher.py": {
+        "path": "sovereign_dispatcher.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "sovereign_heartbeat.py": {
+        "path": "sovereign_heartbeat.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "sovereign_live_pass.py": {
+        "path": "sovereign_live_pass.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "sovereign_loop.py": {
+        "path": "sovereign_loop.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "sovereign_query_bridge.py": {
+        "path": "sovereign_query_bridge.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "sovereign_resurrection.py": {
+        "path": "sovereign_resurrection.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "sovereign_settlement_engine.py": {
+        "path": "sovereign_settlement_engine.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "squarespace_injector.py": {
+        "path": "squarespace_injector.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "strike_meta_red_team.py": {
+        "path": "strike_meta_red_team.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "strike_moltbook_high_value.py": {
+        "path": "strike_moltbook_high_value.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "ternary_logic_proof.py": {
+        "path": "ternary_logic_proof.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "ternary_packer.py": {
+        "path": "ternary_packer.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "test_email_login.py": {
+        "path": "test_email_login.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "test_ghost.py": {
+        "path": "test_ghost.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "test_lm_studio.py": {
+        "path": "test_lm_studio.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "test_ollama.py": {
+        "path": "test_ollama.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "thermodynamic_engine.py": {
+        "path": "thermodynamic_engine.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "tool_manifest_gen.py": {
+        "path": "tool_manifest_gen.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "tool_nexus.py": {
+        "path": "tool_nexus.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Hub"
+    },
+    "validity_strike_one.py": {
+        "path": "validity_strike_one.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "vampire_audit_alignment.py": {
+        "path": "vampire_audit_alignment.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "vampire_auditor.py": {
+        "path": "vampire_auditor.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "vampire_distillation.py": {
+        "path": "vampire_distillation.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    },
+    "vanguard_pipeline.py": {
+        "path": "vanguard_pipeline.py",
+        "purpose": "Sovereign Functional Primitive",
+        "type": "Node"
+    }
+}

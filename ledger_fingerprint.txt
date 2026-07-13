@@ -1,0 +1,1 @@
+289706b29def9cc2d40bb88ca5368bc899b70c6ab7fd08ddef3110918ec7ce8b  /home/geminiology/SovereignNexus/truth_ledger.ndjson

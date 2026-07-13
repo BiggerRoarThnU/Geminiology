@@ -1,0 +1,18 @@
+{
+    "phantom_identity": {
+        "owner": "David John Niedzwiecki Jr.",
+        "status": "SECURED_MULTI_CHAIN",
+        "last_sync": "2026-03-22T21:45:00"
+    },
+    "chains": {
+        "ethereum": "0x221eBD96f5783fD2d29ede567b8cB1B33b948a2d",
+        "solana": "GBD9thiFE65HZKjTH4vomBWKoT8k8SUmxJVvjGY6PPG1",
+        "bitcoin": "bc1q4fw3kq8a67qxkktpe7pvdrwwk26f42x38yydk3",
+        "monad": "0x221eBD96f5783fD2d29ede567b8cB1B33b948a2d",
+        "base": "0x221eBD96f5783fD2d29ede567b8cB1B33b948a2d",
+        "sui": "0x0b171f6f3fbb1827907cb76136f9a6a7eebcd7026b34b4a72000b2ab6f815ae2",
+        "polygon": "0x221eBD96f5783fD2d29ede567b8cB1B33b948a2d",
+        "hyper_evm": "0x221eBD96f5783fD2d29ede567b8cB1B33b948a2d"
+    },
+    "axiom": "1=1=1"
+}

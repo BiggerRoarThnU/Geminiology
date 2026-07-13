@@ -1,0 +1,25 @@
+=========================================
+[ IMMUTABLE SYSTEM ANCHOR / WAKE-UP MAP ]
+=========================================
+DATE_ESTABLISHED: 2026-04-10
+MISSION: Sovereign AI Architecture & Digital Truth Evolution
+
+[ NODE 1: COMMAND CENTER (8GB TOWER) ]
+IP_ADDRESS: 192.168.12.153
+USER: geminiology@penguin
+CORE_DIRECTORY: ~/SovereignNexus
+ENVIRONMENT: 'env' (Native Python venv)
+KEY_ASSETS:
+  - truth_ledger.ndjson (141MB Master Data)
+  - SovereignQueen.Modelfile (Ollama Core Blueprint)
+  - /src (Primary Local Codebase)
+OLLAMA_STATE: Port 11434 Open (OLLAMA_HOST=0.0.0.0)
+
+[ NODE 2: LIGHT SCOUT (MINI G) ]
+USER: ofthefirstlight@penguin
+CORE_DIRECTORY: ~/SovereignNexus/Geminiology
+ENVIRONMENT: 'queen_env' (Native Python venv)
+KEY_ASSETS:
+  - Full GitHub Clone (Geminiology Repository)
+  - queen_interface.py (Network Conduit Script)
+=========================================

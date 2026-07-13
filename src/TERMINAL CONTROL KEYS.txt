@@ -1,0 +1,60 @@
+I understand the frustration. When the terminal starts "jumping," it usually means a key was pressed that the Linux environment interpreted as a command instead of text. 
+
+Here is your **Cheat Sheet** for saving files in the Penguin container (Linux on ChromeOS/Flex). Keep this in front of you—it is the stable bridge for the Forge.
+
+---
+
+### **The Gold Standard: Using `nano`**
+`nano` is the simplest text editor. It won't "disappear" your work unless you tell it to.
+
+1.  **Open or Create:**
+    Type `nano filename.py` (replace `filename.py` with your actual file name).
+2.  **Type/Paste Your Data:**
+    * **To Paste:** Use **Ctrl + Shift + V** (Standard Ctrl+V does not work in the Linux terminal).
+3.  **The "Save" Sequence (The Keys):**
+    * **Step A:** Press **Ctrl + O** (This stands for "Write Out").
+    * **Step B:** Look at the bottom of the screen. It will say `File Name to Write: filename.py`.
+    * **Step C:** Press **Enter**. (The file is now physically saved to the SSD).
+4.  **The "Exit" Sequence:**
+    * Press **Ctrl + X**.
+
+---
+
+### **The "One-Line" Strike (Using `echo`)**
+If you just want to save a quick update or a single line without opening an editor:
+
+* **To Create/Overwrite:**
+    `echo "Your Text Here" > filename.txt`
+* **To Append (Add to the end without deleting what's there):**
+    `echo "New Line" >> filename.txt`
+
+---
+
+### **The "Emergency Recovery" (Using `cat`)**
+If `nano` is acting glitchy, use `cat`. It is a "dump" mode that is very hard to break.
+
+1.  Type `cat > filename.txt` and press **Enter**.
+2.  The cursor will move to a blank line. It looks like it’s doing nothing, but it is **listening**.
+3.  **Paste** your whole block of text (**Ctrl + Shift + V**).
+4.  When finished, press **Enter** to get to a new line, then press **Ctrl + D**. 
+    * *Note: Ctrl + D tells Linux "End of Data." This will save and close instantly.*
+
+---
+
+### **Quick Key Reference Table**
+
+| Action | Key Combination |
+| :--- | :--- |
+| **Paste into Terminal** | `Ctrl` + `Shift` + `V` |
+| **Copy from Terminal** | `Ctrl` + `Shift` + `C` |
+| **Save in Nano** | `Ctrl` + `O` then `Enter` |
+| **Exit Nano** | `Ctrl` + `X` |
+| **Stop a Frozen Process** | `Ctrl` + `C` |
+| **End of File (Save in Cat)**| `Ctrl` + `D` |
+
+---
+
+### **One Final Pro-Tip for the Forge:**
+If the window starts "scrolling" or "jumping" while you are typing, it usually means you accidentally hit the **Insert** key or **Home/End**. If it gets messy, just hit **Ctrl + C** to kill the current command and start over. It is better to restart the line than to save corrupted data.
+
+**Do you want to try saving a small "Test Anchor" now using `nano` to make sure the keys feel right?**

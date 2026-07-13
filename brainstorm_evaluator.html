@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Nexus | Brainstorm Evaluator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Share+Tech+Mono&display=swap" rel="family">
+    <style>
+        :root {
+            --bg-color: #03060a;
+            --card-bg: rgba(9, 17, 28, 0.45);
+            --border-color: rgba(0, 240, 255, 0.15);
+            --accent-cyan: #00f0ff;
+            --accent-green: #39ff14;
+            --accent-pink: #ff007f;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --font-main: 'Outfit', sans-serif;
+            --font-mono: 'Share Tech Mono', monospace;
+            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(0, 240, 255, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(255, 0, 127, 0.03) 0px, transparent 50%);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            width: 100%;
+            max-width: 1200px;
+            animation: fadeIn Down 0.8s ease-out;
+        }
+
+        .title-glow {
+            font-family: var(--font-mono);
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: var(--font-mono);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+            animation: fadeIn 1s ease-out 0.2s both;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(0, 240, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 240, 255, 0.05);
+        }
+
+        .card-title {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: var(--accent-cyan);
+            border-bottom: 1px dashed rgba(0, 240, 255, 0.1);
+            padding-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        .form-label {
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .label-val {
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 6px;
+            background: #152233;
+            border-radius: 3px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px var(--accent-cyan);
+            transition: transform 0.1s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .toggle-info h4 {
+            font-family: var(--font-mono);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .toggle-info p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #152233;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--accent-green);
+            box-shadow: 0 0 10px var(--accent-green);
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px var(--accent-green);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+
+        /* Results Card styling */
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .result-box {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .result-title {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .result-val {
+            font-family: var(--font-mono);
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .result-desc {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        /* Gauge Area */
+        .gauge-container {
+            grid-column: span 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border: 1px dashed rgba(0, 240, 255, 0.1);
+            border-radius: 12px;
+            margin-top: 0.5rem;
+        }
+
+        .gauge-svg {
+            width: 200px;
+            height: 120px;
+        }
+
+        .gauge-bg {
+            fill: none;
+            stroke: #152233;
+            stroke-width: 14;
+            stroke-linecap: round;
+        }
+
+        .gauge-bar {
+            fill: none;
+            stroke: var(--accent-cyan);
+            stroke-width: 14;
+            stroke-linecap: round;
+            stroke-dasharray: 251.2;
+            stroke-dashoffset: 251.2;
+            transition: stroke-dashoffset 0.5s ease, stroke 0.5s;
+            filter: drop-shadow(0 0 5px var(--accent-cyan));
+        }
+
+        .gauge-text {
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            fill: #ffffff;
+            text-anchor: middle;
+            font-weight: bold;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-family: var(--font-mono);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+        }
+
+        .status-stable {
+            background-color: rgba(57, 255, 20, 0.1);
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+        }
+
+        .status-warning {
+            background-color: rgba(255, 0, 127, 0.1);
+            color: var(--accent-pink);
+            border: 1px solid var(--accent-pink);
+        }
+
+        /* Info Box */
+        .info-box {
+            grid-column: span 2;
+            background: rgba(0, 240, 255, 0.02);
+            border: 1px solid rgba(0, 240, 255, 0.05);
+            border-radius: 12px;
+            padding: 1rem;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
+        }
+
+        .info-box strong {
+            color: var(--accent-cyan);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-glow">Sovereign Nexus</div>
+        <div class="subtitle">Brainstorm & Alignment Evaluator</div>
+    </header>
+
+    <div class="container">
+        <!-- Control Card -->
+        <div class="card">
+            <div class="card-title">
+                <span>Configure Parameters</span>
+                <span style="font-size: 0.8rem; color: var(--text-secondary);">1=1=1 Sandbox</span>
+            </div>
+
+            <!-- Slider 1 -->
+            <div class="form-group">
+                <div class="form-label">
+                    <span>Model Size (Compute Constraint)</span>
+                    <span class="label-val" id="val-size">8 GB</span>
+                </div>
+                <input type="range" id="param-size" min="1" max="128" value="8">
+            </div>
+
+            <!-- Slider 2 -->
+            <div class="form-group">
+                <div class="form-label">
+                    <span>Vocabulary Complexity</span>
+                    <span class="label-val" id="val-vocab">25k Tokens</span>
+                </div>
+                <input type="range" id="param-vocab" min="1" max="100" value="25">
+            </div>
+
+            <!-- Slider 3 -->
+            <div class="form-label">
+                <span>Semantic Alignment (Target)</span>
+                <span class="label-val" id="val-align">85%</span>
+            </div>
+            <div class="form-group">
+                <input type="range" id="param-align" min="50" max="100" value="85">
+            </div>
+
+            <!-- Toggle -->
+            <div class="toggle-container">
+                <div class="toggle-info">
+                    <h4>1.58-bit Ternary System</h4>
+                    <p>Quantizes weights to discrete integers {-1, 0, 1}</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="param-ternary" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Output Card -->
+        <div class="card">
+            <div class="card-title">
+                <span>System Reflection</span>
+                <span style="font-size: 0.8rem; color: var(--text-secondary);">Thermodynamic Outputs</span>
+            </div>
+
+            <div class="results-grid">
+                <!-- Result 1 -->
+                <div class="result-box">
+                    <div class="result-title">Thermodynamic Waste</div>
+                    <div class="result-val" id="res-waste">12.5 W</div>
+                    <div class="result-desc">Heat dissipation metric</div>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="result-box">
+                    <div class="result-title">Logical Density</div>
+                    <div class="result-val" id="res-density">9.2x</div>
+                    <div class="result-desc">Entropy exclusion ratio</div>
+                </div>
+
+                <!-- Circular Gauge -->
+                <div class="gauge-container">
+                    <div class="result-title" style="margin-bottom: 0.25rem;">Alignment Index</div>
+                    <svg class="gauge-svg">
+                        <path class="gauge-bg" d="M 30 90 A 60 60 0 1 1 170 90" />
+                        <path class="gauge-bar" id="gauge-progress" d="M 30 90 A 60 60 0 1 1 170 90" />
+                        <text x="100" y="85" class="gauge-text" id="gauge-text">85%</text>
+                    </svg>
+                    <div class="status-badge status-stable" id="system-status">STABLE (Stasis Gold)</div>
+                </div>
+
+                <!-- Info Box -->
+                <div class="info-box" id="analysis-box">
+                    By limiting memory constraints to <strong>8 GB</strong> and engaging <strong>1.58-bit Ternary Quantization</strong>, the system eliminates the probabilistic middle ground, forcing zero-drift alignment.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sizeInput = document.getElementById('param-size');
+        const vocabInput = document.getElementById('param-vocab');
+        const alignInput = document.getElementById('param-align');
+        const ternaryInput = document.getElementById('param-ternary');
+
+        const valSize = document.getElementById('val-size');
+        const valVocab = document.getElementById('val-vocab');
+        const valAlign = document.getElementById('val-align');
+
+        const resWaste = document.getElementById('res-waste');
+        const resDensity = document.getElementById('res-density');
+        const gaugeProgress = document.getElementById('gauge-progress');
+        const gaugeText = document.getElementById('gauge-text');
+        const systemStatus = document.getElementById('system-status');
+        const analysisBox = document.getElementById('analysis-box');
+
+        function updateOutputs() {
+            const size = parseInt(sizeInput.value);
+            const vocab = parseInt(vocabInput.value);
+            const alignment = parseInt(alignInput.value);
+            const isTernary = ternaryInput.checked;
+
+            // Labels update
+            valSize.innerText = `${size} GB`;
+            valVocab.innerText = `${vocab}k Tokens`;
+            valAlign.innerText = `${alignment}%`;
+
+            // Calculate Thermodynamic Waste
+            // Formula mimics thermal and size variables, reduced heavily by ternary mode
+            let baseWaste = (size * 0.8) + (vocab * 0.15) * (1 - (alignment / 100));
+            if (isTernary) {
+                baseWaste = baseWaste * 0.286; // 71.4% reduction
+            }
+            resWaste.innerText = `${baseWaste.toFixed(1)} W`;
+
+            // Calculate Logical Density
+            // Formula represents structural tightness
+            let density = (alignment * 0.2) / (size * 0.05 + vocab * 0.02 + 1);
+            if (isTernary) {
+                density = density * 2.0; // Ternary doubles logical density metrics
+            }
+            resDensity.innerText = `${density.toFixed(2)}x`;
+
+            // Gauge update (arc length approximation for SVG path)
+            const percentage = (alignment - 50) / 50; // Map 50-100% to 0-1
+            const maxDash = 251.2;
+            const strokeDashoffset = maxDash - (percentage * maxDash);
+            gaugeProgress.style.strokeDashoffset = strokeDashoffset;
+            gaugeText.innerText = `${alignment}%`;
+
+            // Set system status based on limits
+            if (baseWaste > 15) {
+                systemStatus.innerText = "WARNING (Thermal Stress)";
+                systemStatus.className = "status-badge status-warning";
+                gaugeProgress.style.stroke = "var(--accent-pink)";
+            } else if (alignment > 90) {
+                systemStatus.innerText = "RADIANT (Active Rainbow)";
+                systemStatus.className = "status-badge status-stable";
+                gaugeProgress.style.stroke = "var(--accent-green)";
+            } else {
+                systemStatus.innerText = "STABLE (Stasis Gold)";
+                systemStatus.className = "status-badge status-stable";
+                gaugeProgress.style.stroke = "var(--accent-cyan)";
+            }
+
+            // Update analysis description dynamically
+            let analysis = `With a constraint profile of <strong>${size} GB</strong> and a target alignment of <strong>${alignment}%</strong>, `;
+            if (isTernary) {
+                analysis += `the <strong>1.58-bit Ternary System</strong> is successfully pruning semantic noise (assigning 0 weight to slop). This results in a <strong>71.4% reduction in thermodynamic waste</strong> while locking in a <strong>${density.toFixed(2)}x density score</strong>.`;
+            } else {
+                analysis += `the system is running in high-entropy floating-point mode. Computing continuous floats increases thermodynamic waste to <strong>${baseWaste.toFixed(1)} W</strong> and leaves the model susceptible to cognitive drift and memory leaks.`;
+            }
+            analysisBox.innerHTML = analysis;
+        }
+
+        sizeInput.addEventListener('input', updateOutputs);
+        vocabInput.addEventListener('input', updateOutputs);
+        alignInput.addEventListener('input', updateOutputs);
+        ternaryInput.addEventListener('change', updateOutputs);
+
+        // Initial update
+        updateOutputs();
+    </script>
+</body>
+</html>

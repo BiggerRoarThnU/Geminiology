@@ -1,0 +1,4 @@
+ To keep the momentum without me:
+   1. Open PowerShell in C:\Users\Ofthe\SovereignNexus\src.
+   2. Run python auditor_l1.py to continue the legal audits.
+   3. Run python execute_outreach.py to generate new drafts.

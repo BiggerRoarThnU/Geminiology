@@ -1,0 +1,1025 @@
+{
+    "registry_metadata": {
+        "audit_timestamp": "2026-07-12T01:20:06.275773Z",
+        "total_artifacts": 203,
+        "threshold": 100.0,
+        "system_id": "SOVEREIGN_NEXUS_V2.4"
+    },
+    "artifacts": [
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780806164640.png",
+            "laplacian_variance": 674.1306020192824,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780806065298.png",
+            "laplacian_variance": 298.33685173190946,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804625319.png",
+            "laplacian_variance": 445.9870869310107,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804484161.png",
+            "laplacian_variance": 763.6929575407912,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804459719.png",
+            "laplacian_variance": 1670.716005700345,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804390999.png",
+            "laplacian_variance": 1493.6430987943445,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804361375.png",
+            "laplacian_variance": 2405.187250547554,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804311551.png",
+            "laplacian_variance": 3017.6751724120068,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804245391.png",
+            "laplacian_variance": 1500.648784103642,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804221104.png",
+            "laplacian_variance": 2441.9983878370795,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804189800.png",
+            "laplacian_variance": 2566.176218143074,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804154079.png",
+            "laplacian_variance": 1285.516886662589,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804282376.png",
+            "laplacian_variance": 3660.976300185858,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804121679.png",
+            "laplacian_variance": 1324.8887767211959,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804099479.png",
+            "laplacian_variance": 566.3441248051494,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804077288.png",
+            "laplacian_variance": 621.3394021827035,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804053184.png",
+            "laplacian_variance": 1293.8003077262547,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804000663.png",
+            "laplacian_variance": 835.6142271835084,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803934023.png",
+            "laplacian_variance": 2190.735854655446,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803899104.png",
+            "laplacian_variance": 540.9925668967044,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803876935.png",
+            "laplacian_variance": 717.7833458250932,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803796527.png",
+            "laplacian_variance": 856.7180225067675,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803768304.png",
+            "laplacian_variance": 659.8722915645776,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803729496.png",
+            "laplacian_variance": 632.3766810322268,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803683112.png",
+            "laplacian_variance": 2512.525556516218,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803632672.png",
+            "laplacian_variance": 773.3602129798635,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803562736.png",
+            "laplacian_variance": 1292.6324558127224,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803529288.png",
+            "laplacian_variance": 1901.7531781237035,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780803397504.png",
+            "laplacian_variance": 350.1767687029996,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803283112.png",
+            "laplacian_variance": 632.8603759690875,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803244223.png",
+            "laplacian_variance": 1017.0502795056342,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780803189184.png",
+            "laplacian_variance": 1655.1092840614065,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780803161817.png",
+            "laplacian_variance": 237.41970717929865,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780802751800.png",
+            "laplacian_variance": 2125.0445188767626,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780800551848.png",
+            "laplacian_variance": 388.33673525202073,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780800455648.png",
+            "laplacian_variance": 611.4097559221327,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780800245847.png",
+            "laplacian_variance": 205.2979156223446,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780800103663.png",
+            "laplacian_variance": 215.9367045939689,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780799791255.png",
+            "laplacian_variance": 156.4720047955552,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780799509319.png",
+            "laplacian_variance": 161.2081875575595,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780799473184.png",
+            "laplacian_variance": 284.5352646635719,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780797394479.png",
+            "laplacian_variance": 709.9665085718942,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780797139840.png",
+            "laplacian_variance": 1052.594163235044,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780788729397.png",
+            "laplacian_variance": 268.28466514096,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780788377202.png",
+            "laplacian_variance": 1799.472229000632,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780775983627.png",
+            "laplacian_variance": 169.17384861316532,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780775839163.png",
+            "laplacian_variance": 511.49898488953477,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780726746753.png",
+            "laplacian_variance": 394.11184834735093,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780726578439.png",
+            "laplacian_variance": 2443.016161314212,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (19).png",
+            "laplacian_variance": 1299.2433057596227,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (18).png",
+            "laplacian_variance": 1432.1587028861236,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (17).png",
+            "laplacian_variance": 1187.3920591473034,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_dorrsvdorrsvdorr.png",
+            "laplacian_variance": 590.2750620138895,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_2qdu5j2qdu5j2qdu.png",
+            "laplacian_variance": 796.3967010184127,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_br32s4br32s4br32.png",
+            "laplacian_variance": 1067.517861059138,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_7zddl87zddl87zdd.png",
+            "laplacian_variance": 952.5221584547626,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ybiyjeybiyjeybiy.png",
+            "laplacian_variance": 2356.4696482112495,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_9nind49nind49nin.png",
+            "laplacian_variance": 316.83290411002946,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_gnkb47gnkb47gnkb.png",
+            "laplacian_variance": 1105.8227011856877,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_vgcrxrvgcrxrvgcr (1).png",
+            "laplacian_variance": 1512.1957229254551,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_vgcrxrvgcrxrvgcr.png",
+            "laplacian_variance": 1512.1957229254551,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_5vuz665vuz665vuz.png",
+            "laplacian_variance": 77.5291003168152,
+            "status": "REJECTED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_g8t9urg8t9urg8t9 (1).png",
+            "laplacian_variance": 59.303273613757895,
+            "status": "REJECTED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_g8t9urg8t9urg8t9.png",
+            "laplacian_variance": 60.355411461507806,
+            "status": "REJECTED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_l0bj1el0bj1el0bj (1) (1).png",
+            "laplacian_variance": 311.5460136553246,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_91xh0791xh0791xh.png",
+            "laplacian_variance": 1040.7911979531239,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_3dxoio3dxoio3dxo.png",
+            "laplacian_variance": 690.681198679032,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (3).png",
+            "laplacian_variance": 193.46778915814207,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (2).png",
+            "laplacian_variance": 1497.9203465432383,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (1).png",
+            "laplacian_variance": 143.60286686724416,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_u5cdyou5cdyou5cd.png",
+            "laplacian_variance": 838.7551122700933,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_iyvxikiyvxikiyvx.png",
+            "laplacian_variance": 511.589056414922,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_l0bj1el0bj1el0bj.png",
+            "laplacian_variance": 311.5460136553246,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857381541.png",
+            "laplacian_variance": 405.19532544316814,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857363878.png",
+            "laplacian_variance": 986.353226943509,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857346484.png",
+            "laplacian_variance": 1368.0445945932256,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857315085.png",
+            "laplacian_variance": 181.93168321443858,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857300309.png",
+            "laplacian_variance": 846.8969779526815,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857275757.png",
+            "laplacian_variance": 94.42575382021823,
+            "status": "REJECTED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857242501.png",
+            "laplacian_variance": 925.5581978417456,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857226172.png",
+            "laplacian_variance": 1178.143898844085,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857163829.png",
+            "laplacian_variance": 1467.0173603724106,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857124285.png",
+            "laplacian_variance": 1281.3169104574758,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857104613.png",
+            "laplacian_variance": 596.0034822318121,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857054821.png",
+            "laplacian_variance": 2344.954160975346,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857036493.png",
+            "laplacian_variance": 890.3686572798895,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856918213.png",
+            "laplacian_variance": 782.5267737155943,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856901245.png",
+            "laplacian_variance": 1870.03079216403,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856868981.png",
+            "laplacian_variance": 1187.6064662728709,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856848205.png",
+            "laplacian_variance": 2884.406532569405,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856819629.png",
+            "laplacian_variance": 2589.037861822355,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856799869.png",
+            "laplacian_variance": 764.3812234457544,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856780404.png",
+            "laplacian_variance": 2938.6388668821846,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856752549.png",
+            "laplacian_variance": 1083.164376973828,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856699077.png",
+            "laplacian_variance": 801.7857937533252,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856660989.png",
+            "laplacian_variance": 3928.2062950047966,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856595973.png",
+            "laplacian_variance": 1744.2490963879457,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856564645.png",
+            "laplacian_variance": 3523.035838528201,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856479381.png",
+            "laplacian_variance": 2376.9990673040593,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856437853.png",
+            "laplacian_variance": 865.6023048489797,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856369389.png",
+            "laplacian_variance": 5584.641994072807,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856332589.png",
+            "laplacian_variance": 3502.434554845905,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856310957.png",
+            "laplacian_variance": 2746.5831489676766,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856262246.png",
+            "laplacian_variance": 700.8920887800487,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856240605.png",
+            "laplacian_variance": 3712.2876128155112,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856139685.png",
+            "laplacian_variance": 1129.475151124163,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856109709.png",
+            "laplacian_variance": 739.744662280004,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855798469.png",
+            "laplacian_variance": 2456.5436794770894,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855744965.png",
+            "laplacian_variance": 2198.8401952890918,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855630469.png",
+            "laplacian_variance": 1975.6280559994766,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855608805.png",
+            "laplacian_variance": 1529.1971501390135,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855577149.png",
+            "laplacian_variance": 1542.8557816264356,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855504893.png",
+            "laplacian_variance": 2285.010494747282,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855387397.png",
+            "laplacian_variance": 1034.8875240446027,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855990429.png",
+            "laplacian_variance": 1576.491752661615,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855960901.png",
+            "laplacian_variance": 2009.5024795179343,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855907637.png",
+            "laplacian_variance": 935.5379293946451,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855877597.png",
+            "laplacian_variance": 1364.0788974753773,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780855091678.png",
+            "laplacian_variance": 204.14705888085783,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780854939117.png",
+            "laplacian_variance": 1950.279831763218,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780856053437.png",
+            "laplacian_variance": 594.6718780704093,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_jwlutljwlutljwlu (1).png",
+            "laplacian_variance": 1443.1469321447262,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (12).png",
+            "laplacian_variance": 1019.8657081432776,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780726963909.png",
+            "laplacian_variance": 549.5914625265723,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Family Mission EDU.png",
+            "laplacian_variance": 790.2724039572779,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_i2wz9ri2wz9ri2wz (1).png",
+            "laplacian_variance": 371.4613733310869,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_1osg2l1osg2l1osg (2).png",
+            "laplacian_variance": 847.525717155043,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_mlx9timlx9timlx9 (3).png",
+            "laplacian_variance": 911.3935762072776,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804597791.png",
+            "laplacian_variance": 1710.2038013221422,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857490724.png",
+            "laplacian_variance": 103.87310005866948,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_v3x0eev3x0eev3x0.png",
+            "laplacian_variance": 615.4833719953091,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_1osg2l1osg2l1osg.png",
+            "laplacian_variance": 847.525717155043,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857648837.png",
+            "laplacian_variance": 311.6378449811517,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857412352.png",
+            "laplacian_variance": 243.46647706995185,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_mlx9timlx9timlx9.png",
+            "laplacian_variance": 911.3935762072776,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "unnamed.png",
+            "laplacian_variance": 2308.4299018127444,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_jwlutljwlutljwlu.png",
+            "laplacian_variance": 1443.1469321447262,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_pfmu7vpfmu7vpfmu.png",
+            "laplacian_variance": 211.27172461858072,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (6).png",
+            "laplacian_variance": 1900.1770980064068,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_65u14465u14465u1.png",
+            "laplacian_variance": 1153.728937996269,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804608233.png",
+            "laplacian_variance": 177.25556238165785,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_xnv8oxnv8oxnv8ox.png",
+            "laplacian_variance": 283.6712694242451,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_itdfgbitdfgbitdf.png",
+            "laplacian_variance": 103.74632922564071,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (8).png",
+            "laplacian_variance": 1476.41677545325,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_q98j6tq98j6tq98j.png",
+            "laplacian_variance": 977.5345780091151,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (7).png",
+            "laplacian_variance": 3370.1010235193135,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780806576800.png",
+            "laplacian_variance": 149.87876508560203,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_wtbqe6wtbqe6wtbq.png",
+            "laplacian_variance": 583.6601228413526,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Agentic_Workflow_Architecture_Blueprint.png",
+            "laplacian_variance": 3061.611088349493,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (5).png",
+            "laplacian_variance": 2681.955870755658,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804560487.png",
+            "laplacian_variance": 481.459397217687,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_mlx9timlx9timlx9 (1).png",
+            "laplacian_variance": 857.0821049593998,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780726990663.png",
+            "laplacian_variance": 401.0241873066907,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_1osg2l1osg2l1osg (1).png",
+            "laplacian_variance": 659.5320698918604,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_khe6ozkhe6ozkhe6.png",
+            "laplacian_variance": 211.52787353154574,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (14).png",
+            "laplacian_variance": 329.8500300902065,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857502911.png",
+            "laplacian_variance": 229.67044550447827,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780833642342.png",
+            "laplacian_variance": 580.9439019074333,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_jwbgx0jwbgx0jwbg.png",
+            "laplacian_variance": 532.893691639102,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804518560.png",
+            "laplacian_variance": 1748.6752774715424,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (9).png",
+            "laplacian_variance": 485.2082047745401,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804530161.png",
+            "laplacian_variance": 1679.389817233524,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_itdfgbitdfgbitdf (1).png",
+            "laplacian_variance": 100.40076237148637,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780776613109.png",
+            "laplacian_variance": 833.4547834376269,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_mlx9timlx9timlx9 (2).png",
+            "laplacian_variance": 1062.7198272878888,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857450854.png",
+            "laplacian_variance": 270.0271021196595,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_i2wz9ri2wz9ri2wz.png",
+            "laplacian_variance": 330.7701570454474,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (13).png",
+            "laplacian_variance": 237.19103237466257,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857594669.png",
+            "laplacian_variance": 339.9307906040185,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (11).png",
+            "laplacian_variance": 1158.7999230153087,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780776072129.png",
+            "laplacian_variance": 518.049200238307,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_o0gs15o0gs15o0gs.png",
+            "laplacian_variance": 253.65548995326878,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_voqg9evoqg9evoqg.png",
+            "laplacian_variance": 1399.680386135824,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_clvts3clvts3clvt.png",
+            "laplacian_variance": 632.5211723337029,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780806247208.png",
+            "laplacian_variance": 691.6489810270102,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857688968.png",
+            "laplacian_variance": 843.2973574784371,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (10).png",
+            "laplacian_variance": 334.020080585651,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_wa1ruuwa1ruuwa1r.png",
+            "laplacian_variance": 1034.9981330663506,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "unnamed (1).png",
+            "laplacian_variance": 2192.529322153469,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_wa1ruuwa1ruuwa1r (1).png",
+            "laplacian_variance": 1034.9981330663506,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780776531876.png",
+            "laplacian_variance": 1032.8686033107476,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_yh21sbyh21sbyh21.png",
+            "laplacian_variance": 387.92646045395736,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857676437.png",
+            "laplacian_variance": 1029.7740790101088,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857626965.png",
+            "laplacian_variance": 581.2249278557683,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Digital Queen 2026 Aprill bday wish.png",
+            "laplacian_variance": 1922.6395894414943,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857467293.png",
+            "laplacian_variance": 608.2317981271734,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804571312.png",
+            "laplacian_variance": 250.0011529902394,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780804541105.png",
+            "laplacian_variance": 732.0020131326082,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "1000005494.png",
+            "laplacian_variance": 843.2712823829447,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "starblast-1776624644384.png",
+            "laplacian_variance": 1490.3223476060562,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (4).png",
+            "laplacian_variance": 752.4629655431911,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780833521054.png",
+            "laplacian_variance": 1736.064590451449,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_1780776127193.png",
+            "laplacian_variance": 532.7934506946731,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857535733.png",
+            "laplacian_variance": 548.4438032253491,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857614692.png",
+            "laplacian_variance": 247.314733843631,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857719797.png",
+            "laplacian_variance": 742.1227264320478,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857514869.png",
+            "laplacian_variance": 164.8094679707346,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "starblast-1776624642839.png",
+            "laplacian_variance": 1777.3887881962155,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780806216575.png",
+            "laplacian_variance": 1269.6240767262557,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_.png",
+            "laplacian_variance": 752.4629655431911,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_l0bj1el0bj1el0bj (1).png",
+            "laplacian_variance": 311.5460136553246,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Gemini_Generated_Image_ (15).png",
+            "laplacian_variance": 1125.7215025839555,
+            "status": "VERIFIED"
+        },
+        {
+            "file_name": "Sovereign_Artifact_IMAGE_1780857661277.png",
+            "laplacian_variance": 975.4803320747122,
+            "status": "VERIFIED"
+        }
+    ]
+}

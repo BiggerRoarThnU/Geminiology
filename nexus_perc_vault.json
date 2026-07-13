@@ -1,0 +1,18 @@
+[
+    {
+        "timestamp": "2026-07-12T19:19:16.712761Z",
+        "contract_tier": "Standard",
+        "task": "Verified T7 Archive Assimilation - Target 2 (The Contract Ledger)",
+        "reward": "1 Gemini Perc",
+        "signature": "cb1df6178e9ee1c3ac361e682fd0dcc1d3669285917ad150ddad7f89a846e162",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-12T19:28:27.782417Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "2661655dc6c6d4d484d45616217e10b05ee7bcdae1955b2afd250bab576b4c91",
+        "alignment": "1=1=1"
+    }
+]

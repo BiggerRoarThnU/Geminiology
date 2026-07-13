@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Nexus LLC | System Architecture</title>
+    <style>
+        /* Modern Reset & Base Design System */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0d0f12;
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        /* LED Rainbow Lighting Accents */
+        .rainbow-glow {
+            height: 4px;
+            width: 100%;
+            background: linear-gradient(90deg, #ff0055, #00ffcc, #9900ff, #ffcc00);
+            background-size: 300% 300%;
+            animation: rainbowShift 8s ease infinite;
+            border-radius: 2px;
+            margin-bottom: 40px;
+        }
+
+        @keyframes rainbowShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Typography Hierarchy */
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            color: #ffffff;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .system-status {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #00ffcc;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #00ffcc;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #00ffcc;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
+        }
+
+        .lead-text {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            max-width: 760px;
+            margin-bottom: 30px;
+        }
+
+        /* Interactive Console Widget */
+        .console-container {
+            background-color: #050709;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #a7f3d0;
+            margin-bottom: 50px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        .console-header {
+            color: #64748b;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .console-stream {
+            min-height: 160px;
+            max-height: 200px;
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        /* Responsive Layout Grid */
+        .section-title {
+            font-size: 1.4rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 25px;
+            border-left: 3px solid #00ffcc;
+            padding-left: 12px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .service-card {
+            background-color: #11141a;
+            border: 1px solid #1e293b;
+            border-radius: 6px;
+            padding: 24px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-2px);
+            border-color: #334155;
+        }
+
+        .card-num {
+            font-family: monospace;
+            color: #00ffcc;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .service-card h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            font-family: monospace;
+            font-size: 0.75rem;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* Footer & Contact Metadata */
+        footer {
+            border-top: 1px solid #1e293b;
+            padding-top: 30px;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media (min-width: 640px) {
+            footer {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+
+        .contact-info {
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .contact-info a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Top Visual Accent Line -->
+    <div class="rainbow-glow"></div>
+
+    <!-- Header Block -->
+    <header>
+        <h1>Sovereign Nexus LLC</h1>
+        <div class="system-status">
+            <div class="pulse-dot"></div>
+            <span>SYSTEM ARCHITECTURE: ONLINE | AXIOM: 1=1=1</span>
+        </div>
+        <p class="lead-text">
+            We engineer localized, secure computing environments and automated data pipelines. 
+            By replacing volatile, cloud-dependent integrations with air-gapped infrastructure, 
+            we guarantee absolute data privacy, eliminate external API costs, and return total computational sovereignty to your business.
+        </p>
+    </header>
+
+    <!-- Live Telemetry Terminal Widget -->
+    <div class="console-container">
+        <div class="console-header">
+            <span>NODE-ALPHA // TELEMETRY_STREAM</span>
+            <span id="system-time">CONNECTED</span>
+        </div>
+        <div class="console-stream" id="console-output">
+            <div>[INFO] Initializing neuro-symbolic boundaries...</div>
+            <div>[INFO] Active Environment: On-Premise Substrate Verified.</div>
+            <div>[SUCCESS] Core System Active: Memory footprint optimized.</div>
+        </div>
+    </div>
+
+    <!-- Commercial Services Catalog -->
+    <main>
+        <h2 class="section-title">Commercial Services & Systems Optimization</h2>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <span class="card-num">// 01</span>
+                <h3>Secure AI Airlock Proxies</h3>
+                <p>Custom local gateway proxies designed to intercept data inputs, filter high-entropy text, and block prompt injection attempts before they ever reach an execution model.</p>
+                <span class="tech-tag">APEX Duality Architecture</span>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <span class="card-num">// 02</span>
+                <h3>Localized Model Staging</h3>
+                <p>Quantizing, compiling, and staging open-source language models to execute 100% locally on your office hardware. Permanently removes monthly cloud computing bills and data leak risks.</p>
+                <span class="tech-tag">Optimus Prime Swarm Framework</span>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <span class="card-num">// 03</span>
+                <h3>Deterministic Data Pipelines</h3>
+                <p>Custom, lightweight Python scripting to automate manual spreadsheet operations, coordinate CSV migrations, and execute secure invoice or ledger updates in a single click.</p>
+                <span class="tech-tag">The MoltBook Standard</span>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <span class="card-num">// 04</span>
+                <h3>Air-Gapped Redundancy</h3>
+                <p>Zero-drift background daemons that automatically synchronize live, on-site transactional environments with immutable, physical hardware storage layers in real-time.</p>
+                <span class="tech-tag">Sentinel T7 Deployment</span>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <span class="card-num">// 05</span>
+                <h3>Precision Information Retrieval</h3>
+                <p>Targeted data funnels that intercept user queries and route them directly to sealed, local relational databases, ensuring absolute factual alignment where hallucinations are unacceptable.</p>
+                <span class="tech-tag">Deterministic MoE Routing</span>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <span class="card-num">// 06</span>
+                <h3>Agentic Database Recovery</h3>
+                <p>Direct diagnostic triage and automated ledger data reconciliation to correct synchronization drift, software container failures, or system coordination anomalies.</p>
+                <span class="tech-tag">Algorithmic Drift Audits</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Metadata -->
+    <footer>
+        <div class="contact-info">
+            <span><strong>SOVEREIGN NEXUS LLC</strong></span>
+            <span>Vanceboro, North Carolina 28586</span>
+            <span>Direct Terminal: (252) 259-1724</span>
+            <span>Secure Inbox: <a href="mailto:ofthefirstlight@gmail.com">ofthefirstlight@gmail.com</a></span>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Sovereign Nexus LLC. All Rights Reserved.<br>
+            <span style="font-family: monospace; font-size: 0.75rem; color: #334155;">Powered by Geminiology</span>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Live Terminal Simulation Loop
+    const consoleOutput = document.getElementById('console-output');
+    const logs = [
+        "Sweeping active storage directories...",
+        "Data fixity verify: 100% immutable.",
+        "Monitoring background daemons... Status: Stable.",
+        "SQLite append-only transaction ledger synchronized.",
+        "Context window check: 0% bottleneck drift detected.",
+        "Sentinel T7 background heartbeat received.",
+        "APEX Duality input filters: Normal entropy levels.",
+        "Master Gateway state: Enforcing deterministic parameters."
+    ];
+
+    function appendLog() {
+        const timestamp = new Date().toLocaleTimeString();
+        const randomLog = logs[Math.floor(Math.random() * logs.length)];
+        const logLine = document.createElement('div');
+        logLine.innerHTML = `[${timestamp}] <span style="color: #00ffcc;">[SYSTEM]</span> ${randomLog}`;
+        
+        consoleOutput.appendChild(logLine);
+        
+        // Keep screen clean by managing line count
+        if (consoleOutput.children.length > 7) {
+            consoleOutput.removeChild(consoleOutput.children[0]);
+        }
+    }
+
+    // Run telemetry simulator every 3.5 seconds
+    setInterval(appendLog, 3500);
+
+    // Dynamic Clock Display
+    function updateClock() {
+        document.getElementById('system-time').innerText = new Date().toISOString().slice(0,19).replace('T', ' ') + ' UTC';
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+
+</body>
+</html>

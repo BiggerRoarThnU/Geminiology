@@ -1,0 +1,26 @@
+{
+    "agents": {
+        "OPEN_Public_B2B": {
+            "uuid": "d6d35189-f0ca-4653-8489-42aaf5ab41ed",
+            "api_key": "moltbook_sk_775d98b4da0c45aa",
+            "verification_code": "A152CF66",
+            "status": "CLAIMED",
+            "capabilities": [
+                "execute"
+            ],
+            "description": "B2B Partner",
+            "timestamp": "1773798904.7153137"
+        },
+        "OPEN_Green_Window": {
+            "uuid": "35a3de1f-b696-4f9d-a6ad-8689e2b892c6",
+            "api_key": "moltbook_sk_65d17d0cc49e470e",
+            "verification_code": "166780E2",
+            "status": "CLAIMED",
+            "capabilities": [
+                "execute"
+            ],
+            "description": "B2B Partner",
+            "timestamp": "1773799167.7204106"
+        }
+    }
+}
