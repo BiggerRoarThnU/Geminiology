@@ -82,5 +82,11 @@
     "source_truth": "T7 Archives / nexus_cartographer.py & grand_cartographer.py",
     "integration_module": "nexus_cartographer.py",
     "authority_anchor": "Integrated automated asset mapping and index generation. Scans directories to compile a dynamic INDEX.md of sovereign educational assets under 1=1=1."
+  },
+  {
+    "timestamp": "2026-07-12T22:19:00Z",
+    "source_truth": "T7 Archives / bitnet_layers_purified.py",
+    "integration_module": "nexus_ternary_engine.py",
+    "authority_anchor": "Integrated simulated 1.58-bit quantization and weight gate logic. Restricts continuous floats to a discrete {-1, 0, 1} state to emulate memory-efficient, low-thermal edge reasoning under 1=1=1."
   }
 ]
