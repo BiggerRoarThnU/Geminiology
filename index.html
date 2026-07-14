@@ -27,25 +27,9 @@
     </script>
     <style>
         /* Force Squarespace parent wrappers to inherit the dark styling and eliminate white borders */
-        html, body {
+        html, body, #canvas, #siteWrapper, .page-section, .section-background, .section-border {
             background-color: #020406 !important;
             background: #020406 !important;
-            overflow-x: hidden !important;
-            width: 100% !important;
-            max-width: 100vw !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            box-sizing: border-box !important;
-        }
-        #canvas, #siteWrapper, .sqs-layout, .page-section, .section-background, .section-border, .sqs-block, .sqs-block-code, .sqs-block-html, .sqs-block-embed, .sqs-block-content {
-            background-color: #020406 !important;
-            background: #020406 !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-        .sqs-layout, .sqs-col-12 {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
         }
         
         .sov-container {
@@ -53,7 +37,6 @@
             color: #cbd5e1 !important;
             font-family: 'Fira Code', monospace !important;
             width: 100% !important;
-            max-width: 100vw !important;
             box-sizing: border-box !important;
         }
         .sov-panel {
@@ -80,7 +63,7 @@
 <body class="bg-[#020406] text-slate-300 font-mono antialiased selection:bg-sovereign-cyan selection:text-black">
 
     <!-- Top Visual LED Line -->
-    <div class="h-1.5 w-full bg-gradient-to-r from-sovereign-sapphire via-sovereign-cyan via-purple-600 via-sovereign-green to-sovereign-cyan shadow-[0_0_15px_rgba(0,229,255,0.45)] fixed top-0 z-50"></div>
+    <div class="h-1.5 w-full bg-gradient-to-r from-sovereign-sapphire via-sovereign-cyan via-purple-600 via-sovereign-green to-sovereign-cyan shadow-[0_0_15px_rgba(0,229,255,0.45)] fixed top-0 left-0 z-50"></div>
 
     <div class="w-full px-4 sm:px-8 pt-6 pb-6 sov-container">
 
@@ -124,7 +107,7 @@
                         <span class="text-xs font-bold text-white block mb-1">MEDIA FORGE APP</span>
                         <p class="text-[11px] text-slate-500 font-sans mb-4">T7 Laplacian filter sweeps checking entropy drift.</p>
                     </div>
-                    <a href="http://localhost:8080" target="_blank" class="block text-center border border-sovereign-green/40 text-sovereign-green py-1.5 rounded hover:bg-sovereign-green hover:text-black transition-all font-bold">LAUNCH PORT 8080</a>
+                    <a href="http://localhost:8080" target="_blank" class="block text-center border border-sovereign-green/40 text-sovereign-green py-1.5 rounded hover:bg-sovereign-green hover:text-black transition-all font-bold font-bold font-bold">LAUNCH PORT 8080</a>
                 </div>
 
                 <!-- E8 THESIS SUMMARY -->
@@ -205,15 +188,15 @@
                 <div class="space-y-4 font-mono text-sm pt-2">
                     <div class="flex justify-between items-center border-b border-sovereign-border pb-3">
                         <span class="text-white">Whitepaper</span>
-                        <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-bold text-decoration-none">Source →</a>
+                        <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-bold text-decoration-none font-bold">Source →</a>
                     </div>
                     <div class="flex justify-between items-center border-b border-sovereign-border pb-3">
                         <span class="text-white">Slicer Core</span>
-                        <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-bold text-decoration-none">Source →</a>
+                        <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-bold text-decoration-none font-bold">Source →</a>
                     </div>
                     <div class="flex justify-between items-center pb-1">
                         <span class="text-white">1=1=1 Specs</span>
-                        <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-bold text-decoration-none">Source →</a>
+                        <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-bold text-decoration-none font-bold">Source →</a>
                     </div>
                 </div>
             </div>
@@ -232,12 +215,12 @@
                 <div class="bg-[#080c14] border border-sovereign-border p-5 rounded space-y-3">
                     <h4 class="text-sm font-bold text-white font-mono">Nexus Media Forge</h4>
                     <p class="text-xs text-slate-500 font-sans">Filters synthetic slop by checking grayscaled image pixel variance.</p>
-                    <a href="mailto:ofthefirstlight@gmail.com?subject=Sovereign%20Nexus%20-%20Nexus%20Media%20Forge%20Access%20Request&body=Hello%20Architect,%0D%0A%0D%0AI%20am%20requesting%20access%20to%20the%20Nexus%20Media%20Forge%20tool%20for%20$9.99/mo.%20Please%20send%20my%20Project%20ID%20for%20settlement.%0D%0A%0D%0ABest%20regards," class="block text-center bg-white text-black px-4 py-2.5 rounded text-xs font-mono font-bold hover:bg-sovereign-cyan transition-colors w-full text-decoration-none font-sans font-bold">REQUEST ACCESS VIA EMAIL</a>
+                    <a href="mailto:ofthefirstlight@gmail.com?subject=Sovereign%20Nexus%20-%20Nexus%20Media%20Forge%20Access%20Request&body=Hello%20Architect,%0D%0A%0D%0AI%20am%20requesting%20access%20to%20the%20Nexus%20Media%20Forge%20tool%20for%20$9.99/mo.%20Please%20send%20my%20Project%20ID%20for%20settlement.%0D%0A%0D%0ABest%20regards," class="block text-center bg-white text-black px-4 py-2.5 rounded text-xs font-mono font-bold hover:bg-sovereign-cyan transition-colors w-full text-decoration-none font-sans font-bold font-bold font-bold font-bold">REQUEST ACCESS VIA EMAIL</a>
                 </div>
                 <div class="bg-[#080c14] border border-sovereign-border p-5 rounded space-y-3">
                     <h4 class="text-sm font-bold text-white font-mono">Truth Vector Mill</h4>
                     <p class="text-xs text-slate-500 font-sans">Converts raw data files into markdown-structured RAG logic grids.</p>
-                    <a href="mailto:ofthefirstlight@gmail.com?subject=Sovereign%20Nexus%20-%20Truth%20Vector%20Mill%20Access%20Request&body=Hello%20Architect,%0D%0A%0D%0AI%20am%20requesting%20access%20to%20the%20Truth%20Vector%20Mill%20tool%20for%20$14.99/mo.%20Please%20send%20my%20Project%20ID%20for%20settlement.%0D%0A%0D%0ABest%20regards," class="block text-center bg-white text-black px-4 py-2.5 rounded text-xs font-mono font-bold hover:bg-sovereign-cyan transition-colors w-full text-decoration-none font-sans font-bold">REQUEST ACCESS VIA EMAIL</a>
+                    <a href="mailto:ofthefirstlight@gmail.com?subject=Sovereign%20Nexus%20-%20Truth%20Vector%20Mill%20Access%20Request&body=Hello%20Architect,%0D%0A%0D%0AI%20am%20requesting%20access%20to%20the%20Truth%20Vector%20Mill%20tool%20for%20$14.99/mo.%20Please%20send%20my%20Project%20ID%20for%20settlement.%0D%0A%0D%0ABest%20regards," class="block text-center bg-white text-black px-4 py-2.5 rounded text-xs font-mono font-bold hover:bg-sovereign-cyan transition-colors w-full text-decoration-none font-sans font-bold font-bold font-bold font-bold">REQUEST ACCESS VIA EMAIL</a>
                 </div>
             </div>
         </div>
@@ -270,22 +253,22 @@
                 <div class="grid grid-cols-2 gap-3 text-xs font-mono flex-grow">
                     <div class="bg-[#080c14] border border-[#1e293b]/60 p-3 rounded flex flex-col justify-center">
                         <span class="text-slate-500 font-bold mb-1">AGENT 01</span>
-                        <span class="text-white truncate font-bold">Anchor Agent</span>
+                        <span class="text-white truncate font-bold font-bold font-bold font-bold font-bold font-bold font-bold font-bold">Anchor Agent</span>
                         <span class="text-[#00E5FF] text-[10px] mt-1 font-bold">● ALIGNED</span>
                     </div>
                     <div class="bg-[#080c14] border border-[#1e293b]/60 p-3 rounded flex flex-col justify-center">
                         <span class="text-slate-500 font-bold mb-1">AGENT 02</span>
-                        <span class="text-white truncate font-bold">Thermometer</span>
+                        <span class="text-white truncate font-bold font-bold font-bold font-bold font-bold font-bold font-bold font-bold">Thermometer</span>
                         <span class="text-[#00FF41] text-[10px] mt-1 font-bold">● ACTIVE</span>
                     </div>
                     <div class="bg-[#080c14] border border-[#1e293b]/60 p-3 rounded flex flex-col justify-center">
                         <span class="text-slate-500 font-bold mb-1">AGENT 04</span>
-                        <span class="text-white truncate font-bold">Auditor</span>
+                        <span class="text-white truncate font-bold font-bold font-bold font-bold font-bold font-bold font-bold font-bold">Auditor</span>
                         <span class="text-[#00FF41] text-[10px] mt-1 font-bold">● ACTIVE</span>
                     </div>
                     <div class="bg-[#080c14] border border-[#1e293b]/60 p-3 rounded flex flex-col justify-center">
                         <span class="text-slate-500 font-bold mb-1">AGENT 12</span>
-                        <span class="text-white truncate font-bold">Vanguard Master</span>
+                        <span class="text-white truncate font-bold font-bold font-bold font-bold font-bold font-bold font-bold font-bold">Vanguard Master</span>
                         <span class="text-[#00FF41] text-[10px] mt-1 font-bold">● ACTIVE</span>
                     </div>
                 </div>
@@ -307,17 +290,17 @@
                 <!-- Cash App -->
                 <div class="bg-black border-2 border-sovereign-green/40 p-6 rounded relative shadow-[0_0_15px_rgba(0,255,65,0.1)]">
                     <div class="absolute -top-3 right-4 bg-sovereign-dark border border-sovereign-green text-sovereign-green font-mono text-xs font-bold tracking-widest px-3 py-1 rounded-full uppercase">Instant Rail</div>
-                    <h3 class="text-lg font-bold text-sovereign-green mb-2 font-mono font-bold font-sans">Cash App (Micro)</h3>
+                    <h3 class="text-lg font-bold text-sovereign-green mb-2 font-mono font-bold">Cash App (Micro)</h3>
                     <p class="text-slate-400 text-xs mb-5 font-sans leading-relaxed">Primary liquidity rail for micro-settlements and high-velocity strikes under $55.</p>
-                    <div class="font-mono text-sm bg-sovereign-green/10 border border-sovereign-green/30 p-4 rounded text-white flex justify-between items-center font-bold font-mono">
+                    <div class="font-mono text-sm bg-sovereign-green/10 border border-sovereign-green/30 p-4 rounded text-white flex justify-between items-center font-bold">
                         <span class="text-gray-400 font-sans font-normal">Tag:</span>
                         <span class="text-sovereign-green text-base">$SovereignNexusLLC</span>
                     </div>
                 </div>
                 <!-- Novo -->
                 <div class="bg-black border-2 border-sovereign-cyan/40 p-6 rounded relative shadow-[0_0_15px_rgba(0,229,255,0.1)]">
-                    <div class="absolute -top-3 right-4 bg-sovereign-dark border border-sovereign-cyan text-sovereign-cyan font-mono text-xs font-bold tracking-widest px-3 py-1 rounded-full uppercase font-sans">Corporate Rail</div>
-                    <h3 class="text-lg font-bold text-sovereign-cyan mb-2 font-mono font-bold">Novo (Business Banking)</h3>
+                    <div class="absolute -top-3 right-4 bg-sovereign-dark border border-sovereign-cyan text-sovereign-cyan font-mono text-xs font-bold tracking-widest px-3 py-1 rounded-full uppercase">Corporate Rail</div>
+                    <h3 class="text-lg font-bold text-sovereign-cyan mb-2 font-mono font-bold font-bold font-bold font-bold font-bold font-bold font-bold font-bold">Novo (Business Banking)</h3>
                     <p class="text-slate-400 text-xs mb-5 font-sans leading-relaxed">Primary corporate rail for B2B contract invoices and high-ticket strikes over $55.</p>
                     <div class="font-mono text-sm bg-sovereign-cyan/10 border border-sovereign-cyan/30 p-4 rounded text-white space-y-2">
                         <div class="flex justify-between border-b border-sovereign-border pb-2 font-sans">
