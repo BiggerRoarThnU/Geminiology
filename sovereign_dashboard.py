@@ -16,9 +16,12 @@ import time
 import sqlite3
 import hashlib
 import subprocess
+import base64
+import tempfile
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from socketserver import ThreadingTCPServer
 from nexus_swarm_router import NexusSwarmRouter
+from nexus_media_forge import NexusMediaForge
 
 swarm_router = NexusSwarmRouter()
 
@@ -340,7 +343,34 @@ class DashboardHandler(BaseHTTPRequestHandler):
             self.send_error(404, 'Path not found')
 
     def do_POST(self):
-        if self.path == '/api/swarm':
+        if self.path == '/api/media-forge':
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            try:
+                payload = json.loads(post_data.decode('utf-8'))
+                image_data = payload.get("image_data", "")
+                if not image_data:
+                    self.send_json({"error": "Missing 'image_data' parameter"})
+                    return
+                if "," in image_data:
+                    image_data = image_data.split(",")[1]
+                decoded_bytes = base64.b64decode(image_data)
+                with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as temp_file:
+                    temp_file.write(decoded_bytes)
+                    temp_file_path = temp_file.name
+                try:
+                    forge = NexusMediaForge(blur_threshold=100.0)
+                    result = forge.analyze_visual_truth(temp_file_path)
+                finally:
+                    if os.path.exists(temp_file_path):
+                        os.remove(temp_file_path)
+                self.send_json({
+                    "status": "SUCCESS",
+                    "result": result
+                })
+            except Exception as e:
+                self.send_json({"error": f"Internal Server Error: {str(e)}"})
+        elif self.path == '/api/swarm':
             content_length = int(self.headers['Content-Length'])
             post_data = self.rfile.read(content_length)
             try:
