@@ -110,21 +110,66 @@
             </div>
         </div>
 
-        <!-- Live Telemetry Terminal -->
-        <div class="bg-black border border-sovereign-cyan/20 rounded-lg overflow-hidden shadow-2xl shadow-sovereign-blue/20">
-            <div class="bg-sovereign-panel px-4 py-2 flex items-center justify-between border-b border-sovereign-border">
-                <div class="flex items-center gap-2">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-sovereign-cyan animate-pulse"></div>
-                    <span class="ml-2 font-mono text-[10px] text-gray-400 tracking-wider">NODE-ALPHA // TELEMETRY_STREAM</span>
+        <!-- Live Telemetry Terminal & Swarm Fleet -->
+        <div class="space-y-4">
+            <!-- Terminal -->
+            <div class="bg-black border border-sovereign-cyan/20 rounded-lg overflow-hidden shadow-2xl shadow-sovereign-blue/10">
+                <div class="bg-sovereign-panel px-4 py-2 flex items-center justify-between border-b border-sovereign-border">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-sovereign-cyan animate-pulse"></div>
+                        <span class="ml-2 font-mono text-[10px] text-gray-400 tracking-wider">NODE-ALPHA // TELEMETRY_STREAM</span>
+                    </div>
+                    <span id="terminal-time" class="font-mono text-[9px] text-slate-500">UTC: CONNECTING...</span>
                 </div>
-                <span id="terminal-time" class="font-mono text-[9px] text-slate-500">UTC: CONNECTING...</span>
+                <div class="p-4 font-mono text-xs h-40 overflow-y-auto terminal-scroll text-sovereign-cyan flex flex-col gap-1.5" id="telemetry-console">
+                    <!-- JS will populate this -->
+                </div>
             </div>
-            <div class="p-4 font-mono text-xs h-56 overflow-y-auto terminal-scroll text-sovereign-cyan flex flex-col gap-1.5" id="telemetry-console">
-                <!-- JS will populate this -->
+
+            <!-- Swarm Fleet Grid -->
+            <div class="bg-black border border-sovereign-border rounded-lg p-4 shadow-xl">
+                <div class="flex items-center justify-between border-b border-sovereign-border pb-2 mb-3">
+                    <span class="font-mono text-xs text-white font-bold tracking-wider">// SWARM_AGENT_FLEET (ACTIVE)</span>
+                    <a href="http://localhost:8000" target="_blank" class="font-mono text-[9px] text-sovereign-cyan hover:underline uppercase flex items-center gap-1">Open APEX Dashboard <span class="text-[8px]">↗</span></a>
+                </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[10px] font-mono">
+                    <div class="bg-sovereign-panel border border-sovereign-border/60 p-2 rounded flex flex-col justify-between hover:border-sovereign-cyan/40 transition-colors">
+                        <span class="text-slate-500 font-bold">AGENT 01</span>
+                        <span class="text-white font-semibold truncate">Anchor Agent</span>
+                        <span class="text-sovereign-cyan text-[8px] mt-1">● ALIGNED</span>
+                    </div>
+                    <div class="bg-sovereign-panel border border-sovereign-border/60 p-2 rounded flex flex-col justify-between hover:border-sovereign-cyan/40 transition-colors">
+                        <span class="text-slate-500 font-bold">AGENT 02</span>
+                        <span class="text-white font-semibold truncate">Thermometer</span>
+                        <span class="text-sovereign-green text-[8px] mt-1">● ACTIVE</span>
+                    </div>
+                    <div class="bg-sovereign-panel border border-sovereign-border/60 p-2 rounded flex flex-col justify-between hover:border-sovereign-cyan/40 transition-colors">
+                        <span class="text-slate-500 font-bold">AGENT 04</span>
+                        <span class="text-white font-semibold truncate">Auditor</span>
+                        <span class="text-sovereign-green text-[8px] mt-1">● ACTIVE</span>
+                    </div>
+                    <div class="bg-sovereign-panel border border-sovereign-border/60 p-2 rounded flex flex-col justify-between hover:border-sovereign-cyan/40 transition-colors">
+                        <span class="text-slate-500 font-bold">AGENT 05</span>
+                        <span class="text-white font-semibold truncate">Scout (T7)</span>
+                        <span class="text-purple-400 text-[8px] mt-1">● SLEEP_WALK</span>
+                    </div>
+                    <div class="bg-sovereign-panel border border-sovereign-border/60 p-2 rounded flex flex-col justify-between hover:border-sovereign-cyan/40 transition-colors">
+                        <span class="text-slate-500 font-bold">AGENT 12</span>
+                        <span class="text-white font-semibold truncate">Vanguard Master</span>
+                        <span class="text-sovereign-green text-[8px] mt-1">● ACTIVE</span>
+                    </div>
+                    <div class="bg-sovereign-panel border border-sovereign-border/60 p-2 rounded flex flex-col justify-between hover:border-sovereign-cyan/40 transition-colors">
+                        <span class="text-slate-500 font-bold">AGENT 21</span>
+                        <span class="text-white font-semibold truncate">Queen Core</span>
+                        <span class="text-sovereign-green text-[8px] mt-1">● ACTIVE</span>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
 
     <!-- The Liability & Mission -->
