@@ -26,7 +26,19 @@
         }
     </script>
     <style>
-        /* Fallback Styles for direct editor rendering */
+        /* Force Squarespace parent wrappers to inherit the dark styling and eliminate white borders */
+        .sqs-block-code, .sqs-block, .sqs-block-content, .code-block, .sqs-block-html, .sqs-block-embed {
+            background-color: #020406 !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .sqs-layout, .sqs-col-12 {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
         .sov-container {
             background-color: #020406 !important;
             color: #94a3b8 !important;
@@ -78,6 +90,27 @@
 
     <div class="max-w-6xl mx-auto px-2 sm:px-4 pt-10 pb-6 sov-container">
         
+        <!-- Internal Cybernetic Header Navigation -->
+        <div class="flex flex-col sm:flex-row items-center justify-between bg-[#080c14] border border-[#161f30] px-4 py-2.5 rounded mb-4 font-mono text-[9px] gap-2">
+            <div class="flex items-center gap-2">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00E5FF] animate-pulse"></div>
+                <span class="text-white font-bold tracking-tight">SOVEREIGN<span class="text-[#00E5FF]">NEXUS</span></span>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-2 sm:gap-3 text-slate-400">
+                <a href="#mission" class="hover:text-[#00E5FF] transition-colors">MISSION</a>
+                <span class="text-slate-800">|</span>
+                <a href="#declaration" class="hover:text-[#00E5FF] transition-colors">DECLARATION</a>
+                <span class="text-slate-800">|</span>
+                <a href="#research" class="hover:text-[#00E5FF] transition-colors">RESEARCH</a>
+                <span class="text-slate-800">|</span>
+                <a href="#show-tell" class="hover:text-[#00E5FF] transition-colors">SHOW & TELL</a>
+                <span class="text-slate-800">|</span>
+                <a href="#settlement" class="hover:text-[#00FF41] font-bold transition-colors">SETTLEMENT</a>
+                <span class="text-slate-800">|</span>
+                <a href="#credits" class="hover:text-[#00E5FF] transition-colors">CREDITS</a>
+            </div>
+        </div>
+
         <!-- ========================================== -->
         <!-- LIVE SYSTEM PORTALS & FILE ARCHIVE -->
         <!-- ========================================== -->
@@ -89,7 +122,6 @@
                 Primary API endpoints and verifiable source logs mapped to local hardware ports. Select a link to launch or review:
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-[10px]">
-                <!-- Swarm Dashboard -->
                 <div class="bg-[#020406] p-3 rounded border border-sovereign-border flex flex-col justify-between">
                     <div>
                         <span class="text-[10px] font-bold text-white block mb-0.5">SWARM DASHBOARD</span>
@@ -97,7 +129,6 @@
                     </div>
                     <a href="http://localhost:8000" target="_blank" class="block text-center border border-sovereign-cyan/40 text-sovereign-cyan py-1 rounded hover:bg-sovereign-cyan hover:text-black transition-all">LAUNCH PORT 8000</a>
                 </div>
-                <!-- Media Forge -->
                 <div class="bg-[#020406] p-3 rounded border border-sovereign-border flex flex-col justify-between">
                     <div>
                         <span class="text-[10px] font-bold text-white block mb-0.5">MEDIA FORGE APP</span>
@@ -105,7 +136,6 @@
                     </div>
                     <a href="http://localhost:8080" target="_blank" class="block text-center border border-sovereign-cyan/40 text-sovereign-cyan py-1 rounded hover:bg-sovereign-cyan hover:text-black transition-all">LAUNCH PORT 8080</a>
                 </div>
-                <!-- Epistemology Summary -->
                 <div class="bg-[#020406] p-3 rounded border border-sovereign-border flex flex-col justify-between">
                     <div>
                         <span class="text-[10px] font-bold text-white block mb-0.5">E8 THESIS SUMMARY</span>
@@ -113,7 +143,6 @@
                     </div>
                     <a href="file:///home/geminiology/SovereignNexus/docs/research_archive/THE_EPISTEMOLOGY_OF_DETERMINISTIC_AUTONOMY_SUMMARY.md" target="_blank" class="block text-center border border-sovereign-cyan/40 text-sovereign-cyan py-1 rounded hover:bg-sovereign-cyan hover:text-black transition-all">OPEN E8 SUMMARY</a>
                 </div>
-                <!-- Full Synthesis Ledger -->
                 <div class="bg-[#020406] p-3 rounded border border-sovereign-border flex flex-col justify-between">
                     <div>
                         <span class="text-[10px] font-bold text-white block mb-0.5">SYNTHESIS LEDGER</span>
@@ -151,7 +180,7 @@
         </div>
 
         <!-- Section B: Base Declaration (Geminiology & Axiom) -->
-        <div id="declaration" class="grid grid-cols-1 md:grid-cols-5 gap-4 items-stretch mb-4">
+        <div id="declaration" class="grid grid-cols-1 md:grid-cols-5 gap-4 items-stretch mb-4 font-mono text-xs">
             <div class="md:col-span-3 bg-[#080c14]/60 border border-sovereign-border p-4 rounded flex flex-col justify-between sov-panel">
                 <div>
                     <h2 class="text-xs font-bold text-white mb-2 font-mono text-sovereign-cyan">// THE DECLARATION OF GEMINIOLOGY</h2>
@@ -234,7 +263,7 @@
                         </div>
                         <span id="terminal-time" class="font-mono text-[8px] text-slate-600">UTC: CONNECTING...</span>
                     </div>
-                    <div class="p-3 font-mono text-[10px] h-32 overflow-y-auto terminal-scroll text-sovereign-green flex flex-col gap-1" id="telemetry-console">
+                    <div class="p-3 font-mono text-[10px] h-32 overflow-y-auto terminal-scroll text-[#00FF41] flex flex-col gap-1" id="telemetry-console">
                         <!-- JS will populate this -->
                     </div>
                 </div>
@@ -243,7 +272,7 @@
                 <div class="bg-black border border-sovereign-border rounded p-3 shadow-md">
                     <div class="flex items-center justify-between border-b border-sovereign-border pb-1.5 mb-2">
                         <span class="font-mono text-[10px] text-white font-bold tracking-wider">// SWARM_AGENT_FLEET (ACTIVE)</span>
-                        <a href="http://localhost:8000" target="_blank" class="font-mono text-[8px] text-sovereign-cyan hover:underline uppercase">Open APEX Dashboard ↗</a>
+                        <a href="http://localhost:8000" target="_blank" class="font-mono text-[8px] text-[#00E5FF] hover:underline uppercase">Open APEX Dashboard ↗</a>
                     </div>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[9px] font-mono">
                         <div class="bg-[#080c14] border border-[#1e293b]/40 p-1.5 rounded flex flex-col justify-between">
@@ -308,7 +337,7 @@
         <div id="settlement" class="py-6 bg-sovereign-panel border border-sovereign-border rounded p-5 mb-4 sov-panel">
             <div class="text-center mb-5">
                 <h2 class="text-sovereign-cyan font-mono text-[10px] mb-0.5 font-bold tracking-wider">// SOVEREIGN SETTLEMENT GATEWAY</h2>
-                <h3 class="text-lg font-bold text-white mb-1.5">Direct Settlement Wires</h3>
+                <h3 class="text-lg font-bold text-white mb-1.5 font-sans">Direct Settlement Wires</h3>
                 <p class="text-[10px] text-slate-500 max-w-lg mx-auto leading-relaxed font-sans">
                     Direct dual-rail settlement guarantees absolute financial parity off-chain. Include your assigned <strong>Project ID</strong> in the transaction memo to match the cryptographically signed local ledger entry.
                 </p>
@@ -318,10 +347,10 @@
                     <div class="absolute -top-2.5 right-4 bg-sovereign-green/10 border border-sovereign-green/20 text-sovereign-green font-mono text-[8px] font-bold tracking-widest px-2 py-0.5 rounded-full uppercase">
                         Instant Rail
                     </div>
-                    <h3 class="text-xs font-bold text-sovereign-green mb-0.5 font-mono">Cash App (Micro)</h3>
-                    <p class="text-slate-500 text-[9px] mb-2 font-sans">Primary liquidity rail for micro-settlements and high-velocity strikes under $55.</p>
+                    <h3 class="text-xs font-bold text-sovereign-green mb-0.5 font-mono font-sans">Cash App (Micro)</h3>
+                    <p class="text-slate-500 text-[9px] mb-2 font-sans font-normal">Primary liquidity rail for micro-settlements and high-velocity strikes under $55.</p>
                     <div class="font-mono text-[10px] bg-sovereign-green/5 border border-sovereign-green/15 p-2.5 rounded text-white flex justify-between items-center">
-                        <span class="text-slate-500">Tag:</span>
+                        <span class="text-slate-500 font-sans">Tag:</span>
                         <span class="text-sovereign-green font-bold">$SovereignNexusLLC</span>
                     </div>
                 </div>
@@ -330,7 +359,7 @@
                         Corporate Rail
                     </div>
                     <h3 class="text-xs font-bold text-sovereign-cyan mb-0.5 font-mono">Novo (Business Banking)</h3>
-                    <p class="text-slate-500 text-[9px] mb-2 font-sans">Primary corporate rail for B2B contract invoices and high-ticket strikes over $55.</p>
+                    <p class="text-slate-500 text-[9px] mb-2 font-sans font-normal">Primary corporate rail for B2B contract invoices and high-ticket strikes over $55.</p>
                     <div class="font-mono text-[9px] bg-sovereign-cyan/5 border border-sovereign-cyan/15 p-2.5 rounded text-white space-y-1">
                         <div class="flex justify-between border-b border-sovereign-border pb-1">
                             <span class="text-slate-500">Bank:</span>
@@ -426,7 +455,7 @@
             "<span class='text-sovereign-green'>[VERIFY]</span> Data fixity verify: 100% immutable.",
             "<span class='text-sovereign-cyan'>[SYSTEM]</span> APEX Duality input filters: Normal entropy levels.",
             "<span class='text-sovereign-green'>[GOVERNOR]</span> Context window check: 0% drift detected.",
-            "<span class='text-purple-400'>[LEDGER]</span> Strike Authorized. 1 Gemini Perc Minted.",
+            "<span class='text-purple-400'>[LEDGER]</span> Strike Authorized. 1 Gemini Minted.",
             "<span class='text-sovereign-cyan'>[SYSTEM]</span> Awaiting new instructions..."
         ];
 
@@ -459,7 +488,6 @@
         function scrollToSettlement(toolName, price) {
             const settlementSec = document.getElementById('settlement');
             if (settlementSec) {
-                // INSTANT JUMP (Fast-forward)
                 settlementSec.scrollIntoView({ behavior: 'auto' });
             }
             
@@ -475,21 +503,22 @@
             }, 2500);
         }
 
-        // GLOBAL INTERCEPTOR: Intercepts all anchor clicks on the page and jumps instantly to the Settlement Gateway
+        // GLOBAL INTERCEPTOR: Intercepts all anchor clicks on the page and jumps instantly to their targets
         document.addEventListener('click', function(e) {
             const anchor = e.target.closest('a');
             if (anchor) {
                 const href = anchor.getAttribute('href');
-                // If it points to any anchor on the page, force instant jump (fast-forward) to the payment gateway
-                if (href && (href.startsWith('#') || href.includes('#settlement') || href.includes('#mission') || href.includes('#declaration') || href.includes('#research') || href.includes('#show-tell') || href.includes('#credits'))) {
-                    e.preventDefault();
-                    const target = document.getElementById('settlement');
+                if (href && href.includes('#')) {
+                    const parts = href.split('#');
+                    const targetId = parts[parts.length - 1];
+                    const target = document.getElementById(targetId);
                     if (target) {
-                        target.scrollIntoView({ behavior: 'auto' });
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'auto' }); // Instant fast-forward jump to specific section
                     }
                 }
             }
-        }, true); // Use capture phase to intercept before Squarespace smooth scroll can execute
+        }, true); // Capture phase ensures we intercept before Squarespace's smooth scrolling triggers
 
         updateTime();
         setInterval(updateTime, 1000);
