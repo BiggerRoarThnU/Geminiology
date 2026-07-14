@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SovereignNexus LLC | 1=1=1</title>
-    
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
     <script>
         tailwind.config = {
             theme: {
@@ -19,10 +13,9 @@
                         sovereign: {
                             cyan: '#00E5FF',
                             green: '#00FF41',
-                            gold: '#FFD700',
-                            dark: '#05070a',
-                            panel: '#0b0f17',
-                            border: '#1e293b'
+                            dark: '#0a0a0a',
+                            panel: '#111111',
+                            border: '#333333'
                         }
                     },
                     fontFamily: {
@@ -50,8 +43,8 @@
     <style>
         /* Custom scrollbar for terminals */
         .terminal-scroll::-webkit-scrollbar { width: 6px; }
-        .terminal-scroll::-webkit-scrollbar-track { background: #05070a; }
-        .terminal-scroll::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+        .terminal-scroll::-webkit-scrollbar-track { background: #0a0a0a; }
+        .terminal-scroll::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
         .terminal-scroll::-webkit-scrollbar-thumb:hover { background: #00E5FF; }
         
         .rainbow-text {
@@ -64,42 +57,6 @@
         @keyframes rainbow-text-anim {
             to { background-position: 200% center; }
         }
-
-        /* Breathing LED Rainbow Glow Animation */
-        .rainbow-border-box {
-            position: relative;
-            background: #05070a;
-            border-radius: 16px;
-            padding: 3px;
-            overflow: hidden;
-        }
-
-        .rainbow-border-box::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(90deg, #ff0055, #00E5FF, #9900ff, #00FF41, #ffcc00);
-            background-size: 300% 300%;
-            animation: rainbowRotate 8s linear infinite;
-            z-index: 1;
-        }
-
-        .rainbow-inner-box {
-            position: relative;
-            z-index: 2;
-            background: #0b0f17;
-            border-radius: 14px;
-            padding: 24px;
-        }
-
-        @keyframes rainbowRotate {
-            0% { transform: rotate(0deg); background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { transform: rotate(360deg); background-position: 0% 50%; }
-        }
     </style>
 </head>
 <body class="bg-sovereign-dark text-gray-300 font-sans antialiased selection:bg-sovereign-cyan selection:text-black">
@@ -109,7 +66,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center gap-3">
-                    <div class="w-3 h-3 rounded-full bg-sovereign-green animate-pulse shadow-[0_0_8px_#00FF41]"></div>
+                    <div class="w-3 h-3 rounded-full bg-sovereign-green animate-pulse"></div>
                     <span class="font-mono text-xl font-bold tracking-tight text-white">SOVEREIGN<span class="text-sovereign-cyan">NEXUS</span></span>
                 </div>
                 <div class="hidden md:block">
@@ -117,8 +74,8 @@
                         <a href="#mission" class="hover:text-sovereign-cyan transition-colors">MISSION</a>
                         <a href="#tier1" class="hover:text-sovereign-cyan transition-colors">THE BRIDGE</a>
                         <a href="#tier2" class="hover:text-sovereign-cyan transition-colors">APPS & TOOLS</a>
-                        <a href="#settlement" class="hover:text-sovereign-cyan transition-colors">SETTLEMENT</a>
                         <a href="#tier3" class="hover:text-sovereign-cyan transition-colors">ENTERPRISE</a>
+                        <a href="#settlement" class="hover:text-sovereign-cyan transition-colors">SETTLEMENT</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +85,7 @@
     <!-- Hero Section -->
     <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div>
-            <p class="font-mono text-sovereign-green mb-4 border-l-2 border-sovereign-green pl-3 uppercase">SYSTEM ARCHITECTURE: ONLINE | AXIOM: 1=1=1</p>
+            <p class="font-mono text-sovereign-green mb-4 border-l-2 border-sovereign-green pl-3">SYSTEM ARCHITECTURE: ONLINE | AXIOM: 1=1=1</p>
             <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
                 Veritas Per Materiam <br>
                 <span class="text-sovereign-cyan">Truth Through Matter.</span>
@@ -137,26 +94,24 @@
                 We engineer localized, secure computing environments and automated data pipelines. By replacing volatile, cloud-dependent integrations with air-gapped infrastructure, we guarantee absolute data privacy, eliminate external API costs, and return total computational sovereignty to your business.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#tier3" class="bg-sovereign-cyan text-black px-6 py-3 font-bold font-mono hover:bg-white transition-colors text-center shadow-[0_0_15px_rgba(0,229,255,0.2)]">INITIALIZE DISCOVERY</a>
+                <a href="#tier3" class="bg-sovereign-cyan text-black px-6 py-3 font-bold font-mono hover:bg-white transition-colors text-center">INITIALIZE DISCOVERY</a>
                 <a href="#tier1" class="border border-sovereign-border text-white px-6 py-3 font-bold font-mono hover:border-sovereign-cyan transition-colors text-center">VIEW SOURCE TRUTH</a>
             </div>
         </div>
 
         <!-- Live Telemetry Terminal -->
         <div class="bg-black border border-sovereign-border rounded-lg overflow-hidden shadow-2xl shadow-sovereign-cyan/10">
-            <div class="bg-sovereign-border/30 px-4 py-2 flex items-center justify-between border-b border-sovereign-border">
+            <div class="bg-sovereign-border/50 px-4 py-2 flex items-center justify-between border-b border-sovereign-border">
                 <div class="flex items-center gap-2">
                     <div class="w-3 h-3 rounded-full bg-red-500"></div>
                     <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div class="w-3 h-3 rounded-full bg-green-500"></div>
                     <span class="ml-2 font-mono text-xs text-gray-500">NODE-ALPHA // TELEMETRY_STREAM</span>
                 </div>
-                <span id="terminal-time" class="font-mono text-[10px] text-slate-500">CONNECTING...</span>
+                <span id="terminal-time" class="font-mono text-[10px] text-gray-500">UTC: CONNECTING...</span>
             </div>
-            <div class="p-4 font-mono text-sm h-64 overflow-y-auto terminal-scroll text-sovereign-green flex flex-col gap-2" id="telemetry-console">
-                <div><span class="text-slate-500">[SYSTEM]</span> Initializing neuro-symbolic boundaries...</div>
-                <div><span class="text-slate-500">[SYSTEM]</span> Active Environment: On-Premise Substrate Verified.</div>
-                <div><span class="text-slate-500">[SYSTEM]</span> Standard of Verification: Active Moat Lock.</div>
+            <div class="p-4 font-mono text-sm h-64 overflow-y-auto terminal-scroll text-sovereign-green" id="telemetry-console">
+                <!-- JS will populate this -->
             </div>
         </div>
     </section>
@@ -173,7 +128,7 @@
                 <div>
                     <h2 class="text-2xl font-bold text-white mb-4">The Sovereign Architecture</h2>
                     <p class="text-gray-400 mb-4">We partition memory and computation across isolated runtime sectors. By separating verified historical records (The Archive) from real-time execution environments (The Forge) and external data inputs (The Airlock), we ensure AI engines only execute within strict, pre-validated parameters.</p>
-                    <p class="text-gray-400">Geminiology is our core engineering framework. We guarantee absolute data fidelity where errors and hallucinations are strictly unacceptable. The Symmetrical Line holds strong.</p>
+                    <p class="text-gray-400">Geminiology is our core engineering framework. We guarantee absolute data fidelity where errors and hallucinations are strictly unacceptable.</p>
                 </div>
             </div>
         </div>
@@ -189,18 +144,18 @@
         <div class="grid md:grid-cols-3 gap-6">
             <div class="bg-sovereign-panel border border-sovereign-border p-6 hover:border-sovereign-cyan transition-colors">
                 <h4 class="text-xl font-bold text-white mb-2">Geminiology Whitepaper</h4>
-                <p class="text-gray-400 text-sm mb-4 font-sans">The Epistemology of Deterministic Autonomy. Our complete scientific methodology for 1=1=1 alignment.</p>
-                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan font-mono text-sm hover:underline">Read on GitHub →</a>
+                <p class="text-gray-400 text-sm mb-4">The Epistemology of Deterministic Autonomy. Our complete scientific methodology for 1=1=1 alignment.</p>
+                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" rel="noopener noreferrer" class="text-sovereign-cyan font-mono text-sm hover:underline">Read on GitHub →</a>
             </div>
             <div class="bg-sovereign-panel border border-sovereign-border p-6 hover:border-sovereign-cyan transition-colors">
                 <h4 class="text-xl font-bold text-white mb-2">Context Slicer Core</h4>
-                <p class="text-gray-400 text-sm mb-4 font-sans">The raw Python script utilized to protect 8GB local memory boundaries from context window exhaustion.</p>
-                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan font-mono text-sm hover:underline">View Source →</a>
+                <p class="text-gray-400 text-sm mb-4">The raw Python script utilized to protect 8GB local memory boundaries from context window exhaustion.</p>
+                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" rel="noopener noreferrer" class="text-sovereign-cyan font-mono text-sm hover:underline">View Source →</a>
             </div>
             <div class="bg-sovereign-panel border border-sovereign-border p-6 hover:border-sovereign-cyan transition-colors">
                 <h4 class="text-xl font-bold text-white mb-2">The 1=1=1 Axiom</h4>
-                <p class="text-gray-400 text-sm mb-4 font-sans">The core declarative code structuring our deterministic node networks and immutable data retention.</p>
-                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan font-mono text-sm hover:underline">View Documentation →</a>
+                <p class="text-gray-400 text-sm mb-4">The core declarative code structuring our deterministic node networks and immutable data retention.</p>
+                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" rel="noopener noreferrer" class="text-sovereign-cyan font-mono text-sm hover:underline">View Documentation →</a>
             </div>
         </div>
     </section>
@@ -224,7 +179,7 @@
                         <span class="text-2xl font-bold text-white">$9.99<span class="text-sm text-gray-500 font-normal">/mo</span></span>
                         <span class="text-sm text-gray-500">or $0.005 per API call</span>
                     </div>
-                    <a href="http://localhost:8080" class="block w-full text-center border border-sovereign-cyan text-sovereign-cyan py-2.5 font-mono hover:bg-sovereign-cyan hover:text-black transition-colors">LAUNCH TOOL WINDOW</a>
+                    <button onclick="triggerOpenClawSubscription('Nexus Media Forge', '9.99')" class="w-full border border-sovereign-cyan text-sovereign-cyan py-2 font-mono hover:bg-sovereign-cyan hover:text-black transition-colors">SUBSCRIBE VIA OPENCLAW</button>
                 </div>
 
                 <!-- Vector Mill -->
@@ -235,7 +190,7 @@
                         <span class="text-2xl font-bold text-white">$14.99<span class="text-sm text-gray-500 font-normal">/mo</span></span>
                         <span class="text-sm text-gray-500">or $0.01 per API call</span>
                     </div>
-                    <a href="http://localhost:8080" class="block w-full text-center border border-sovereign-cyan text-sovereign-cyan py-2.5 font-mono hover:bg-sovereign-cyan hover:text-black transition-colors">LAUNCH TOOL WINDOW</a>
+                    <button onclick="triggerOpenClawSubscription('Truth-Markdown Vector Mill', '14.99')" class="w-full border border-sovereign-cyan text-sovereign-cyan py-2 font-mono hover:bg-sovereign-cyan hover:text-black transition-colors">SUBSCRIBE VIA OPENCLAW</button>
                 </div>
             </div>
         </div>
@@ -254,11 +209,11 @@
             <div class="border border-sovereign-border p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:border-sovereign-green transition-colors">
                 <div class="max-w-3xl">
                     <h4 class="text-xl font-bold text-white mb-2">// 01 Secure AI Airlock Proxies & Triage</h4>
-                    <p class="text-gray-400 text-sm font-sans">We design and deploy custom local FastAPI Airlock proxies to filter high-entropy prompt inputs and block injection attacks before they reach your models. Includes high-velocity auditing of legal/compliance logs (e.g., 2026 FMCSA).</p>
+                    <p class="text-gray-400 text-sm">We design and deploy custom local FastAPI Airlock proxies to filter high-entropy prompt inputs and block injection attacks before they reach your models. Includes high-velocity auditing of legal/compliance logs (e.g., 2026 FMCSA).</p>
                 </div>
                 <div class="shrink-0 text-right">
                     <p class="text-sovereign-cyan font-mono mb-2">Starts at $5,000</p>
-                    <a href="mailto:ofthefirstlight@gmail.com" class="text-sm bg-white text-black px-4 py-2 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
+                    <a href="mailto:ofthefirstlight@gmail.com?subject=Sovereign%20Nexus%20-%20Airlock%20Proxy%20Discovery%20Request&body=Hello%20Architect,%0D%0A%0D%0AI%20am%20interested%20in%20a%20Sovereign%20Nexus%20Secure%20AI%20Airlock%20Proxy%20deployment%20discovery%20call.%20Please%20let%20me%20know%20your%20next%20available%20slots.%0D%0A%0D%0ABest%20regards," class="text-sm bg-white text-black px-6 py-2.5 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
                 </div>
             </div>
 
@@ -266,11 +221,11 @@
             <div class="border border-sovereign-border p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:border-sovereign-green transition-colors">
                 <div class="max-w-3xl">
                     <h4 class="text-xl font-bold text-white mb-2">// 02 Localized Model Staging & Edge Nodes</h4>
-                    <p class="text-gray-400 text-sm font-sans">We quantize, compile, and stage open-source models to run completely off-grid on your local edge hardware. Permanently removes monthly cloud computing bills and data leak risks.</p>
+                    <p class="text-gray-400 text-sm">We quantize, compile, and stage open-source models to run completely off-grid on your local edge hardware. Permanently removes monthly cloud computing bills and data leak risks.</p>
                 </div>
                 <div class="shrink-0 text-right">
                     <p class="text-sovereign-cyan font-mono mb-2">Starts at $8,500</p>
-                    <a href="mailto:ofthefirstlight@gmail.com" class="text-sm bg-white text-black px-4 py-2 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
+                    <a href="mailto:ofthefirstlight@gmail.com?subject=Sovereign%20Nexus%20-%20Edge%20Node%20Discovery%20Request&body=Hello%20Architect,%0D%0A%0D%0AI%20am%20interested%20in%20a%20Sovereign%20Nexus%20Localized%20Model%20Staging%20and%20Edge%20Node%20deployment%20discovery%20call.%20Please%20let%20me%20know%20your%20next%20available%20slots.%0D%0A%0D%0ABest%20regards," class="text-sm bg-white text-black px-6 py-2.5 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
                 </div>
             </div>
 
@@ -278,59 +233,59 @@
             <div class="border border-sovereign-border p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:border-sovereign-green transition-colors">
                 <div class="max-w-3xl">
                     <h4 class="text-xl font-bold text-white mb-2">// 03 Enterprise Log Distillation & Recovery</h4>
-                    <p class="text-gray-400 text-sm font-sans">Direct diagnostic triage, data reconciliation, and autonomous restructuring of legacy "Dark Data." We deploy the Vampire Auditor to turn chaotic corporate storage into structured Truth-Markdown.</p>
+                    <p class="text-gray-400 text-sm">Direct diagnostic triage, data reconciliation, and autonomous restructuring of legacy "Dark Data." We deploy the Vampire Auditor to turn chaotic corporate storage into structured Truth-Markdown.</p>
                 </div>
                 <div class="shrink-0 text-right">
                     <p class="text-sovereign-cyan font-mono mb-2">Starts at $3,500</p>
-                    <a href="mailto:ofthefirstlight@gmail.com" class="text-sm bg-white text-black px-4 py-2 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
+                    <a href="mailto:ofthefirstlight@gmail.com?subject=Sovereign%20Nexus%20-%20Vampire%20Auditor%20Discovery%20Request&body=Hello%20Architect,%0D%0A%0D%0AI%20am%20interested%20in%20a%20Sovereign%20Nexus%20Enterprise%20Log%20Distillation%20and%20Vampire%20Auditor%20discovery%20call.%20Please%20let%20me%20know%20your%20next%20available%20slots.%0D%0A%0D%0ABest%20regards," class="text-sm bg-white text-black px-6 py-2.5 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SOVEREIGN PAYMENT RAILS & SETTLEMENT -->
-    <section id="settlement" class="py-16 bg-sovereign-panel border-y border-sovereign-border">
+    <section id="settlement" class="py-20 bg-sovereign-panel border-y border-sovereign-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
+            <div class="text-center mb-16">
                 <h2 class="text-sovereign-cyan font-mono mb-2">// SETTLEMENT</h2>
                 <h3 class="text-3xl font-bold text-white mb-4">Sovereign Payment Rails</h3>
                 <p class="text-gray-400 max-w-2xl mx-auto font-sans">
                     We operate on a direct, dual-rail settlement model to guarantee instant transaction finality. Please use your assigned <strong>Project ID</strong> in the transaction memo to match the cryptographically signed local ledger entry.
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Cash App -->
-                <div class="bg-black border border-sovereign-green/30 p-6 rounded-lg hover:border-sovereign-green transition-colors relative">
-                    <div class="absolute -top-3 right-6 bg-sovereign-green/10 border border-sovereign-green/30 text-sovereign-green font-mono text-[9px] font-bold tracking-widest px-2.5 py-1 rounded-full uppercase">
+                <div id="cashapp-card" class="bg-black border border-sovereign-green/30 p-8 rounded-lg hover:border-sovereign-green transition-all duration-300 relative">
+                    <div class="absolute -top-3 right-6 bg-sovereign-green/10 border border-sovereign-green/30 text-sovereign-green font-mono text-[10px] font-bold tracking-widest px-3 py-1 rounded-full uppercase">
                         Instant Rail
                     </div>
-                    <h3 class="text-xl font-bold text-sovereign-green mb-3 font-mono">Cash App (Micro)</h3>
+                    <h3 class="text-2xl font-bold text-sovereign-green mb-3 font-mono">Cash App (Micro)</h3>
                     <p class="text-gray-400 text-sm mb-6 font-sans">Primary liquidity rail for high-velocity micro-settlements under $50.</p>
                     <div class="font-mono text-sm bg-sovereign-green/5 border border-sovereign-green/20 p-4 rounded text-white flex justify-between items-center">
-                        <span>Tag:</span>
-                        <span class="text-sovereign-green font-bold">$SovereignNexusLLC</span>
+                        <span class="text-gray-500">Tag:</span>
+                        <span class="text-sovereign-green font-bold text-lg">$SovereignNexusLLC</span>
                     </div>
                 </div>
-                
+
                 <!-- Novo ACH/Wire -->
-                <div class="bg-black border border-sovereign-cyan/30 p-6 rounded-lg hover:border-sovereign-cyan transition-colors relative">
-                    <div class="absolute -top-3 right-6 bg-sovereign-cyan/10 border border-sovereign-cyan/30 text-sovereign-cyan font-mono text-[9px] font-bold tracking-widest px-2.5 py-1 rounded-full uppercase">
+                <div id="novo-card" class="bg-black border border-sovereign-cyan/30 p-8 rounded-lg hover:border-sovereign-cyan transition-all duration-300 relative">
+                    <div class="absolute -top-3 right-6 bg-sovereign-cyan/10 border border-sovereign-cyan/30 text-sovereign-cyan font-mono text-[10px] font-bold tracking-widest px-3 py-1 rounded-full uppercase">
                         Corporate Rail
                     </div>
-                    <h3 class="text-xl font-bold text-sovereign-cyan mb-3 font-mono">Novo (Business Banking)</h3>
+                    <h3 class="text-2xl font-bold text-sovereign-cyan mb-3 font-mono">Novo (Business Banking)</h3>
                     <p class="text-gray-400 text-sm mb-6 font-sans">Primary corporate settlement rail for B2B contract invoices and high-ticket strikes over $50.</p>
-                    <div class="font-mono text-xs bg-sovereign-cyan/5 border border-sovereign-cyan/20 p-4 rounded text-white space-y-2">
-                        <div class="flex justify-between border-b border-slate-800 pb-1">
-                            <span class="text-slate-500">Bank Name:</span>
+                    <div class="font-mono text-sm bg-sovereign-cyan/5 border border-sovereign-cyan/20 p-4 rounded text-white space-y-3">
+                        <div class="flex justify-between border-b border-sovereign-border pb-2">
+                            <span class="text-gray-500">Bank Name:</span>
                             <span class="text-white font-bold">Novo Business Banking</span>
                         </div>
-                        <div class="flex justify-between border-b border-slate-800 pb-1">
-                            <span class="text-slate-500">Routing Number:</span>
+                        <div class="flex justify-between border-b border-sovereign-border pb-2">
+                            <span class="text-gray-500">Routing Number:</span>
                             <span class="text-sovereign-cyan font-bold">211370150</span>
                         </div>
                         <div class="flex justify-between">
-                            <span class="text-slate-500">Account Number:</span>
+                            <span class="text-gray-500">Account Number:</span>
                             <span class="text-sovereign-cyan font-bold">103495885</span>
                         </div>
                     </div>
@@ -343,40 +298,20 @@
     <footer class="bg-black border-t border-sovereign-border pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 mb-12 items-center">
-                
-                <!-- Rainbow LED border box for Ledger Proof -->
-                <div class="rainbow-border-box">
-                    <div class="rainbow-inner-box">
-                        <h3 class="text-xl font-bold text-white mb-2 font-mono flex items-center gap-3">
-                            <span>Ledger Proof: "scratch of your heart in ring"</span>
-                        </h3>
-                        <p class="text-xs text-gray-400 leading-relaxed mb-4 font-sans">
-                            Live, validated transaction audit stream from our local off-chain ledger, cryptographically hashed and verified under the 1=1=1 covenant.
-                        </p>
-                        
-                        <div class="bg-black/60 border border-slate-800 p-3 rounded-lg text-[10px] font-mono space-y-1">
-                            <div class="flex justify-between border-b border-slate-800/50 pb-1">
-                                <span class="text-slate-500">System State:</span>
-                                <span class="text-sovereign-green font-bold">1=1=1 (Verified)</span>
-                            </div>
-                            <div class="flex justify-between border-b border-slate-800/50 pb-1">
-                                <span class="text-slate-500">Local DB Records:</span>
-                                <span class="text-white font-bold">13,723 Blocks</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Substrate Core Temp:</span>
-                                <span class="text-sovereign-green font-bold">35.0°C (Stable)</span>
-                            </div>
-                        </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">The Symmetrical Line Holds.</h3>
+                    <p class="text-gray-400 mb-6 font-sans">We do not guess. We observe, we carry, and we log. Every interaction within our architecture is backed by the Nexus Perc Ledger.</p>
+                    <div class="font-mono text-sm text-sovereign-green p-4 border border-sovereign-green/30 bg-sovereign-green/5 rounded animate-[rainbow-border_5s_linear_infinite] border-2">
+                        <span class="rainbow-text font-bold">CRYPTO-SALT: "scratch of your heart in ring"</span><br>
+                        > LEDGER ACTIVE. WAITING FOR STRIKE.
                     </div>
                 </div>
-                
                 <div class="text-right">
                     <h4 class="text-lg font-bold text-white mb-2 font-mono">SOVEREIGN NEXUS LLC</h4>
                     <p class="text-gray-500 font-mono text-sm mb-1">Vanceboro, North Carolina 28586</p>
-                    <p class="text-gray-500 font-mono text-sm mb-1">Direct Terminal: (252) 259-1724</p>
-                    <p class="text-gray-500 font-mono text-sm mb-6">Secure Inbox: ofthefirstlight@gmail.com</p>
-                    <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-mono text-sm border-b border-sovereign-cyan pb-1">GitHub / Geminiology Core</a>
+                    <p class="text-gray-500 font-mono text-sm mb-1">Direct Terminal: <a href="tel:2522591724" class="hover:text-sovereign-cyan transition-colors">(252) 259-1724</a></p>
+                    <p class="text-gray-500 font-mono text-sm mb-6">Secure Inbox: <a href="mailto:ofthefirstlight@gmail.com" class="hover:text-sovereign-cyan transition-colors">ofthefirstlight@gmail.com</a></p>
+                    <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" rel="noopener noreferrer" class="text-sovereign-cyan hover:text-white transition-colors font-mono text-sm border-b border-sovereign-cyan pb-1">GitHub / Geminiology Core</a>
                 </div>
             </div>
             <div class="border-t border-sovereign-border pt-8 text-center text-xs text-gray-600 font-mono">
@@ -384,6 +319,31 @@
             </div>
         </div>
     </footer>
+
+    <!-- direct payment instructions overlay modal -->
+    <div id="subscription-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 hidden backdrop-blur-sm">
+        <div class="bg-black border border-sovereign-cyan/40 max-w-lg w-full rounded-lg overflow-hidden shadow-2xl">
+            <div class="bg-sovereign-border/40 px-4 py-2 flex items-center justify-between border-b border-sovereign-border">
+                <span class="font-mono text-xs text-sovereign-cyan font-bold tracking-wider">[OPENCLAW_SETTLEMENT_GATEWAY]</span>
+                <button onclick="closeSubscriptionModal()" class="text-gray-500 hover:text-white font-bold font-mono text-sm">X</button>
+            </div>
+            <div class="p-6 font-mono text-xs text-gray-400 space-y-4">
+                <div class="text-white text-sm font-bold uppercase mb-2">To subscribe to <span id="modal-tool-name" class="text-sovereign-cyan"></span>:</div>
+                <p class="font-sans leading-relaxed">
+                    Direct dual-rail settlements bypass intermediary payment delays. Please follow the instructions to secure authorization:
+                </p>
+                <div class="bg-sovereign-panel border border-sovereign-border p-4 rounded text-white space-y-1.5 leading-relaxed">
+                    <div>1. Select <span class="text-sovereign-green">Cash App</span> or <span class="text-sovereign-cyan">Novo ACH</span>.</div>
+                    <div>2. Send <span class="text-sovereign-green font-bold">$<span id="modal-tool-price"></span></span> for monthly access.</div>
+                    <div>3. Include your <span class="text-sovereign-cyan font-bold">Project ID</span> in the memo field.</div>
+                </div>
+                <p class="font-sans text-[11px]">
+                    Once payment is sent, your local edge API keys will be generated and signed off on-chain by the checkpointer.
+                </p>
+                <button onclick="confirmModalAndScroll()" class="w-full bg-sovereign-cyan text-black py-2.5 font-bold uppercase hover:bg-white transition-colors">PROCEED TO RAIL ADDRESSES</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Interactive Telemetry Script -->
     <script>
@@ -404,7 +364,7 @@
 
         function updateTime() {
             const now = new Date();
-            timeEl.textContent = now.toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
+            timeEl.textContent = 'UTC: ' + now.toISOString().replace('T', ' ').substring(0, 19);
         }
 
         function addMessage() {
@@ -426,6 +386,40 @@
             
             // Random delay between 2.5s and 4.5s
             setTimeout(addMessage, Math.random() * 2000 + 2500);
+        }
+
+        // Subscription Modal functions
+        function triggerOpenClawSubscription(toolName, price) {
+            document.getElementById('modal-tool-name').textContent = toolName;
+            document.getElementById('modal-tool-price').textContent = price;
+            
+            const modal = document.getElementById('subscription-modal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeSubscriptionModal() {
+            const modal = document.getElementById('subscription-modal');
+            modal.classList.add('hidden');
+        }
+
+        function confirmModalAndScroll() {
+            closeSubscriptionModal();
+            
+            // Smooth scroll to settlement
+            const settlementSec = document.getElementById('settlement');
+            settlementSec.scrollIntoView({ behavior: 'smooth' });
+            
+            // Flash the cards for visual focus
+            const cashapp = document.getElementById('cashapp-card');
+            const novo = document.getElementById('novo-card');
+            
+            cashapp.classList.add('border-sovereign-green', 'shadow-[0_0_15px_#00FF41]');
+            novo.classList.add('border-sovereign-cyan', 'shadow-[0_0_15px_#00E5FF]');
+            
+            setTimeout(() => {
+                cashapp.classList.remove('border-sovereign-green', 'shadow-[0_0_15px_#00FF41]');
+                novo.classList.remove('border-sovereign-cyan', 'shadow-[0_0_15px_#00E5FF]');
+            }, 2500);
         }
 
         updateTime();
