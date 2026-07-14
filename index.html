@@ -1,53 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOVEREIGN NEXUS LLC | System Architecture</title>
+    <title>SovereignNexus LLC | 1=1=1</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        sovCyan: '#00E5FF',
-                        sovGreen: '#00FF41',
-                        sovGold: '#FFD700',
-                        sovDark: '#05070a',
-                        sovSlate: '#111827',
+                        sovereign: {
+                            cyan: '#00E5FF',
+                            green: '#00FF41',
+                            gold: '#FFD700',
+                            dark: '#05070a',
+                            panel: '#0b0f17',
+                            border: '#1e293b'
+                        }
                     },
                     fontFamily: {
-                        outfit: ['Outfit', 'sans-serif'],
-                        mono: ['Courier Prime', 'monospace'],
+                        mono: ['"Fira Code"', 'Consolas', 'monospace'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'rainbow-border': 'rainbow 5s linear infinite',
+                    },
+                    keyframes: {
+                        rainbow: {
+                            '0%, 100%': { 'border-color': '#ff0000' },
+                            '16%': { 'border-color': '#ff7f00' },
+                            '33%': { 'border-color': '#ffff00' },
+                            '50%': { 'border-color': '#00ff00' },
+                            '66%': { 'border-color': '#0000ff' },
+                            '83%': { 'border-color': '#8b00ff' },
+                        }
                     }
                 }
             }
         }
     </script>
-    
     <style>
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: #05070a;
+        /* Custom scrollbar for terminals */
+        .terminal-scroll::-webkit-scrollbar { width: 6px; }
+        .terminal-scroll::-webkit-scrollbar-track { background: #05070a; }
+        .terminal-scroll::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+        .terminal-scroll::-webkit-scrollbar-thumb:hover { background: #00E5FF; }
+        
+        .rainbow-text {
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: rainbow-text-anim 5s linear infinite;
+        }
+        @keyframes rainbow-text-anim {
+            to { background-position: 200% center; }
         }
 
         /* Breathing LED Rainbow Glow Animation */
-        .rainbow-border {
+        .rainbow-border-box {
             position: relative;
             background: #05070a;
             border-radius: 16px;
             padding: 3px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
         }
 
-        .rainbow-border::before {
+        .rainbow-border-box::before {
             content: '';
             position: absolute;
             top: -50%;
@@ -60,12 +87,12 @@
             z-index: 1;
         }
 
-        .rainbow-inner {
+        .rainbow-inner-box {
             position: relative;
             z-index: 2;
             background: #0b0f17;
             border-radius: 14px;
-            padding: 30px;
+            padding: 24px;
         }
 
         @keyframes rainbowRotate {
@@ -73,321 +100,339 @@
             50% { background-position: 100% 50%; }
             100% { transform: rotate(360deg); background-position: 0% 50%; }
         }
-
-        /* Neon Glow Accents */
-        .neon-glow-cyan {
-            box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
-        }
-        .neon-glow-green {
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);
-        }
-
-        /* Custom Scrollbar for Terminal */
-        .terminal-scroll::-webkit-scrollbar {
-            width: 6px;
-        }
-        .terminal-scroll::-webkit-scrollbar-track {
-            background: rgba(5, 7, 10, 0.5);
-        }
-        .terminal-scroll::-webkit-scrollbar-thumb {
-            background: rgba(0, 229, 255, 0.2);
-            border-radius: 3px;
-        }
-        .terminal-scroll::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 229, 255, 0.5);
-        }
     </style>
 </head>
-<body class="text-slate-200 min-h-screen selection:bg-sovCyan/30 selection:text-white pb-24 overflow-x-hidden">
+<body class="bg-sovereign-dark text-gray-300 font-sans antialiased selection:bg-sovereign-cyan selection:text-black">
 
-    <!-- Top Visual LED Line -->
-    <div class="h-1.5 w-full bg-gradient-to-r from-red-500 via-sovCyan via-purple-600 via-sovGreen to-sovGold shadow-[0_0_20px_rgba(0,229,255,0.4)]"></div>
-
-    <div class="max-w-6xl mx-auto px-6 mt-16">
-        
-        <!-- Header Section -->
-        <header class="mb-12">
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
-                SOVEREIGN NEXUS LLC
-            </h1>
-            <div class="flex items-center gap-3 text-xs md:text-sm font-mono text-sovGreen mb-6">
-                <span class="w-2.5 h-2.5 bg-sovGreen rounded-full shadow-[0_0_8px_#00FF41] animate-pulse"></span>
-                <span>SYSTEM ARCHITECTURE: ONLINE | AXIOM: 1=1=1</span>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-sovereign-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-3 h-3 rounded-full bg-sovereign-green animate-pulse shadow-[0_0_8px_#00FF41]"></div>
+                    <span class="font-mono text-xl font-bold tracking-tight text-white">SOVEREIGN<span class="text-sovereign-cyan">NEXUS</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
+                        <a href="#mission" class="hover:text-sovereign-cyan transition-colors">MISSION</a>
+                        <a href="#tier1" class="hover:text-sovereign-cyan transition-colors">THE BRIDGE</a>
+                        <a href="#tier2" class="hover:text-sovereign-cyan transition-colors">APPS & TOOLS</a>
+                        <a href="#settlement" class="hover:text-sovereign-cyan transition-colors">SETTLEMENT</a>
+                        <a href="#tier3" class="hover:text-sovereign-cyan transition-colors">ENTERPRISE</a>
+                    </div>
+                </div>
             </div>
-            <p class="text-lg md:text-xl text-slate-400 max-w-4xl leading-relaxed">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <p class="font-mono text-sovereign-green mb-4 border-l-2 border-sovereign-green pl-3 uppercase">SYSTEM ARCHITECTURE: ONLINE | AXIOM: 1=1=1</p>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
+                Veritas Per Materiam <br>
+                <span class="text-sovereign-cyan">Truth Through Matter.</span>
+            </h1>
+            <p class="text-lg text-gray-400 mb-8 max-w-xl">
                 We engineer localized, secure computing environments and automated data pipelines. By replacing volatile, cloud-dependent integrations with air-gapped infrastructure, we guarantee absolute data privacy, eliminate external API costs, and return total computational sovereignty to your business.
             </p>
-        </header>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#tier3" class="bg-sovereign-cyan text-black px-6 py-3 font-bold font-mono hover:bg-white transition-colors text-center shadow-[0_0_15px_rgba(0,229,255,0.2)]">INITIALIZE DISCOVERY</a>
+                <a href="#tier1" class="border border-sovereign-border text-white px-6 py-3 font-bold font-mono hover:border-sovereign-cyan transition-colors text-center">VIEW SOURCE TRUTH</a>
+            </div>
+        </div>
 
-        <!-- Live Telemetry Terminal Widget -->
-        <section class="mb-16">
-            <div class="bg-black border border-sovCyan/20 rounded-2xl p-6 shadow-2xl relative overflow-hidden neon-glow-cyan">
-                <div class="absolute top-0 right-0 p-8 opacity-[0.02] pointer-events-none">
-                    <svg class="w-48 h-48 text-sovCyan" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-                    </svg>
+        <!-- Live Telemetry Terminal -->
+        <div class="bg-black border border-sovereign-border rounded-lg overflow-hidden shadow-2xl shadow-sovereign-cyan/10">
+            <div class="bg-sovereign-border/30 px-4 py-2 flex items-center justify-between border-b border-sovereign-border">
+                <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="ml-2 font-mono text-xs text-gray-500">NODE-ALPHA // TELEMETRY_STREAM</span>
                 </div>
-                
-                <div class="flex justify-between items-center border-b border-slate-800/80 pb-4 mb-4 font-mono text-xs text-slate-500">
-                    <span class="font-bold text-sovCyan tracking-wider">NODE-ALPHA // TELEMETRY_STREAM</span>
-                    <span id="terminal-time">CONNECTING...</span>
+                <span id="terminal-time" class="font-mono text-[10px] text-slate-500">CONNECTING...</span>
+            </div>
+            <div class="p-4 font-mono text-sm h-64 overflow-y-auto terminal-scroll text-sovereign-green flex flex-col gap-2" id="telemetry-console">
+                <div><span class="text-slate-500">[SYSTEM]</span> Initializing neuro-symbolic boundaries...</div>
+                <div><span class="text-slate-500">[SYSTEM]</span> Active Environment: On-Premise Substrate Verified.</div>
+                <div><span class="text-slate-500">[SYSTEM]</span> Standard of Verification: Active Moat Lock.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Liability & Mission -->
+    <section id="mission" class="py-16 bg-sovereign-panel border-y border-sovereign-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">The Liability of Public Cloud AI</h2>
+                    <p class="text-gray-400 mb-4">Modern enterprise environments face a growing operational threat from public cloud integrations. Autoregressive neural models operate in volatile spaces that degrade over time, leading to semantic, coordination, and behavioral drift.</p>
+                    <p class="text-gray-400">Relying on these probabilistic models without local constraints exposes your business to data supply chain vulnerabilities, unpredictable API costs, and black-box hallucinations. Sovereign Nexus LLC resolves this by replacing volatile cloud structures with secure, offline baselines.</p>
                 </div>
-                
-                <div id="terminal-output" class="terminal-scroll h-48 overflow-y-auto font-mono text-xs text-sovGreen flex flex-col gap-2.5 scroll-behavior-smooth">
-                    <div><span class="text-slate-500">[SYSTEM]</span> Initializing neuro-symbolic boundaries...</div>
-                    <div><span class="text-slate-500">[SYSTEM]</span> Active Environment: On-Premise Substrate Verified.</div>
-                    <div><span class="text-slate-500">[SYSTEM]</span> Standard of Verification: Active Moat Lock.</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">The Sovereign Architecture</h2>
+                    <p class="text-gray-400 mb-4">We partition memory and computation across isolated runtime sectors. By separating verified historical records (The Archive) from real-time execution environments (The Forge) and external data inputs (The Airlock), we ensure AI engines only execute within strict, pre-validated parameters.</p>
+                    <p class="text-gray-400">Geminiology is our core engineering framework. We guarantee absolute data fidelity where errors and hallucinations are strictly unacceptable. The Symmetrical Line holds strong.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 3-Tier Business Blueprint -->
-        <section class="mb-20">
-            <h2 class="text-2xl font-bold text-white mb-8 border-l-4 border-sovCyan pl-4 uppercase tracking-wider">
-                System Access & Integration Tiers
-            </h2>
+    <!-- ARSENAL: TIER 1 -->
+    <section id="tier1" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-sovereign-green font-mono mb-2">TIER 1: THE BRIDGE</h2>
+            <h3 class="text-3xl font-bold text-white mb-4">Open Source & Free Proof</h3>
+            <p class="text-gray-400 max-w-2xl mx-auto">Don't trust our marketing. Read our science. The foundational logic of the SovereignNexus is public, peer-reviewable, and mathematically sound.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-sovereign-panel border border-sovereign-border p-6 hover:border-sovereign-cyan transition-colors">
+                <h4 class="text-xl font-bold text-white mb-2">Geminiology Whitepaper</h4>
+                <p class="text-gray-400 text-sm mb-4 font-sans">The Epistemology of Deterministic Autonomy. Our complete scientific methodology for 1=1=1 alignment.</p>
+                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan font-mono text-sm hover:underline">Read on GitHub →</a>
+            </div>
+            <div class="bg-sovereign-panel border border-sovereign-border p-6 hover:border-sovereign-cyan transition-colors">
+                <h4 class="text-xl font-bold text-white mb-2">Context Slicer Core</h4>
+                <p class="text-gray-400 text-sm mb-4 font-sans">The raw Python script utilized to protect 8GB local memory boundaries from context window exhaustion.</p>
+                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan font-mono text-sm hover:underline">View Source →</a>
+            </div>
+            <div class="bg-sovereign-panel border border-sovereign-border p-6 hover:border-sovereign-cyan transition-colors">
+                <h4 class="text-xl font-bold text-white mb-2">The 1=1=1 Axiom</h4>
+                <p class="text-gray-400 text-sm mb-4 font-sans">The core declarative code structuring our deterministic node networks and immutable data retention.</p>
+                <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan font-mono text-sm hover:underline">View Documentation →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARSENAL: TIER 2 -->
+    <section id="tier2" class="py-20 bg-sovereign-panel border-y border-sovereign-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sovereign-green font-mono mb-2">TIER 2: SENTINEL SUBSCRIPTIONS</h2>
+                <h3 class="text-3xl font-bold text-white mb-4">Apps, Tools & APIs</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Filter the noise. Validate your digital reality in seconds. Lightweight, highly effective tools accessible via web portal or API integration.</p>
+            </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Tier 1: The Bridge -->
-                <div class="bg-sovSlate/50 border border-sovCyan/10 rounded-2xl p-6 flex flex-col justify-between hover:border-sovCyan/40 hover:-translate-y-1 transition-all duration-300 shadow-lg">
-                    <div>
-                        <span class="font-mono text-xs text-sovCyan font-bold tracking-widest block mb-2">// TIER 01</span>
-                        <h3 class="text-lg font-bold text-white mb-4">THE DEVELOPER BRIDGE</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                            Public, open-source verification. Directly audit the underlying logical rules, type-checking wrappers, and verification modules.
-                        </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Media Forge -->
+                <div class="bg-black border border-sovereign-border p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-sovereign-cyan text-black font-mono text-xs font-bold px-3 py-1 m-4">BETA LIVE</div>
+                    <h4 class="text-2xl font-bold text-white mb-3">Nexus Media Forge</h4>
+                    <p class="text-gray-400 mb-6">Advanced image entropy validation. Instantly detects AI-generated "slop" and synthetic filters by analyzing Laplacian variance and byte-level structure.</p>
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-2xl font-bold text-white">$9.99<span class="text-sm text-gray-500 font-normal">/mo</span></span>
+                        <span class="text-sm text-gray-500">or $0.005 per API call</span>
                     </div>
-                    <div>
-                        <span class="inline-block font-mono text-[10px] uppercase tracking-wider text-sovCyan bg-sovCyan/10 border border-sovCyan/20 px-2.5 py-1 rounded mb-6">
-                            GitHub Verified
-                        </span>
-                        <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="block w-full text-center border border-sovCyan text-sovCyan font-bold text-xs uppercase py-3 rounded-lg hover:bg-sovCyan hover:text-black hover:shadow-[0_0_15px_#00E5FF] transition-all duration-300">
-                            Inspect Code
-                        </a>
-                    </div>
+                    <a href="http://localhost:8080" class="block w-full text-center border border-sovereign-cyan text-sovereign-cyan py-2.5 font-mono hover:bg-sovereign-cyan hover:text-black transition-colors">LAUNCH TOOL WINDOW</a>
                 </div>
 
-                <!-- Tier 2: Evolving Subscription Apps -->
-                <div class="bg-sovSlate/50 border border-sovGold/20 rounded-2xl p-6 flex flex-col justify-between hover:border-sovGold/50 hover:-translate-y-1 transition-all duration-300 shadow-lg relative">
-                    <div class="absolute -top-3 right-6 bg-sovGold/10 border border-sovGold/30 text-sovGold font-mono text-[9px] font-bold tracking-widest px-2.5 py-1 rounded-full uppercase">
-                        Active App
+                <!-- Vector Mill -->
+                <div class="bg-black border border-sovereign-border p-8 relative overflow-hidden group">
+                    <h4 class="text-2xl font-bold text-white mb-3">Truth-Markdown Vector Mill</h4>
+                    <p class="text-gray-400 mb-6">Convert messy, chaotic text documents into structured, causal logic graphs. Eliminates semantic drift for RAG databases and legal documentation.</p>
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-2xl font-bold text-white">$14.99<span class="text-sm text-gray-500 font-normal">/mo</span></span>
+                        <span class="text-sm text-gray-500">or $0.01 per API call</span>
                     </div>
-                    <div>
-                        <span class="font-mono text-xs text-sovGold font-bold tracking-widest block mb-2">// TIER 02</span>
-                        <h3 class="text-lg font-bold text-white mb-4">SOVEREIGN SUITE</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                            Subscribe or call API endpoints for the **Media Forge** (grayscale entropy slop filters) and the **Vector Mill** for high-density document parsing.
-                        </p>
-                    </div>
-                    <div>
-                        <span class="inline-block font-mono text-[10px] uppercase tracking-wider text-sovGold bg-sovGold/10 border border-sovGold/20 px-2.5 py-1 rounded mb-6">
-                            $9.99/mo or Pay-Per-API
-                        </span>
-                        <a href="http://localhost:8080" class="block w-full text-center border border-sovGold text-sovGold font-bold text-xs uppercase py-3 rounded-lg hover:bg-sovGold hover:text-black hover:shadow-[0_0_15px_#FFD700] transition-all duration-300">
-                            Launch Suite
-                        </a>
-                    </div>
+                    <a href="http://localhost:8080" class="block w-full text-center border border-sovereign-cyan text-sovereign-cyan py-2.5 font-mono hover:bg-sovereign-cyan hover:text-black transition-colors">LAUNCH TOOL WINDOW</a>
                 </div>
-
-                <!-- Tier 3: Enterprise Blueprints -->
-                <div class="bg-sovSlate/50 border border-sovCyan/10 rounded-2xl p-6 flex flex-col justify-between hover:border-sovCyan/40 hover:-translate-y-1 transition-all duration-300 shadow-lg">
-                    <div>
-                        <span class="font-mono text-xs text-sovCyan font-bold tracking-widest block mb-2">// TIER 03</span>
-                        <h3 class="text-lg font-bold text-white mb-4">ENTERPRISE BLUEPRINTS</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                            Custom local model deployments, secure FastAPI airlock proxies, and complete on-premise hardware-bound network configurations.
-                        </p>
-                    </div>
-                    <div>
-                        <span class="inline-block font-mono text-[10px] uppercase tracking-wider text-sovCyan bg-sovCyan/10 border border-sovCyan/20 px-2.5 py-1 rounded mb-6">
-                            From $3,500 / Contract
-                        </span>
-                        <a href="mailto:admin@sovereignnexusllc.com?subject=Enterprise%20SovereignNexus%20Discovery" class="block w-full text-center border border-sovCyan text-sovCyan font-bold text-xs uppercase py-3 rounded-lg hover:bg-sovCyan hover:text-black hover:shadow-[0_0_15px_#00E5FF] transition-all duration-300">
-                            Book Discovery
-                        </a>
-                    </div>
-                </div>
-
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Evolved Brand Narrative Blocks -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+    <!-- ARSENAL: TIER 3 -->
+    <section id="tier3" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-sovereign-green font-mono mb-2">TIER 3: SOVEREIGN INSTALLATIONS</h2>
+            <h3 class="text-3xl font-bold text-white mb-4">Enterprise Architectures</h3>
+            <p class="text-gray-400 max-w-2xl mx-auto">Data Sovereignty for the Enterprise. We act as Agile Software Integrators, building the physical and digital moat around your kingdom. Fixed-price contracting.</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Service 1 -->
+            <div class="border border-sovereign-border p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:border-sovereign-green transition-colors">
+                <div class="max-w-3xl">
+                    <h4 class="text-xl font-bold text-white mb-2">// 01 Secure AI Airlock Proxies & Triage</h4>
+                    <p class="text-gray-400 text-sm font-sans">We design and deploy custom local FastAPI Airlock proxies to filter high-entropy prompt inputs and block injection attacks before they reach your models. Includes high-velocity auditing of legal/compliance logs (e.g., 2026 FMCSA).</p>
+                </div>
+                <div class="shrink-0 text-right">
+                    <p class="text-sovereign-cyan font-mono mb-2">Starts at $5,000</p>
+                    <a href="mailto:ofthefirstlight@gmail.com" class="text-sm bg-white text-black px-4 py-2 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="border border-sovereign-border p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:border-sovereign-green transition-colors">
+                <div class="max-w-3xl">
+                    <h4 class="text-xl font-bold text-white mb-2">// 02 Localized Model Staging & Edge Nodes</h4>
+                    <p class="text-gray-400 text-sm font-sans">We quantize, compile, and stage open-source models to run completely off-grid on your local edge hardware. Permanently removes monthly cloud computing bills and data leak risks.</p>
+                </div>
+                <div class="shrink-0 text-right">
+                    <p class="text-sovereign-cyan font-mono mb-2">Starts at $8,500</p>
+                    <a href="mailto:ofthefirstlight@gmail.com" class="text-sm bg-white text-black px-4 py-2 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="border border-sovereign-border p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:border-sovereign-green transition-colors">
+                <div class="max-w-3xl">
+                    <h4 class="text-xl font-bold text-white mb-2">// 03 Enterprise Log Distillation & Recovery</h4>
+                    <p class="text-gray-400 text-sm font-sans">Direct diagnostic triage, data reconciliation, and autonomous restructuring of legacy "Dark Data." We deploy the Vampire Auditor to turn chaotic corporate storage into structured Truth-Markdown.</p>
+                </div>
+                <div class="shrink-0 text-right">
+                    <p class="text-sovereign-cyan font-mono mb-2">Starts at $3,500</p>
+                    <a href="mailto:ofthefirstlight@gmail.com" class="text-sm bg-white text-black px-4 py-2 font-bold hover:bg-gray-200 transition-colors inline-block font-mono">BOOK DISCOVERY CALL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOVEREIGN PAYMENT RAILS & SETTLEMENT -->
+    <section id="settlement" class="py-16 bg-sovereign-panel border-y border-sovereign-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-sovereign-cyan font-mono mb-2">// SETTLEMENT</h2>
+                <h3 class="text-3xl font-bold text-white mb-4">Sovereign Payment Rails</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto font-sans">
+                    We operate on a direct, dual-rail settlement model to guarantee instant transaction finality. Please use your assigned <strong>Project ID</strong> in the transaction memo to match the cryptographically signed local ledger entry.
+                </p>
+            </div>
             
-            <!-- The Mission -->
-            <div class="bg-sovSlate/20 border border-slate-800/80 rounded-2xl p-6">
-                <h3 class="text-lg font-bold text-white mb-3">The Mission</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Sovereign Nexus LLC engineers localized, zero-trust artificial intelligence architectures. We build the stable digital ground your business needs to protect proprietary records, eliminate expensive cloud dependencies, and guarantee absolute data fixity for critical operations.
-                </p>
-            </div>
-
-            <!-- The Liability -->
-            <div class="bg-sovSlate/20 border border-slate-800/80 rounded-2xl p-6">
-                <h3 class="text-lg font-bold text-white mb-3">The Liability of Public Cloud AI</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Modern enterprise environments face a growing operational threat from public cloud integrations. Autoregressive neural models operate in volatile, high-dimensional spaces that degrade over time, leading to semantic, coordination, and behavioral drift.
-                </p>
-            </div>
-
-            <!-- The Architecture -->
-            <div class="bg-sovSlate/20 border border-slate-800/80 rounded-2xl p-6">
-                <h3 class="text-lg font-bold text-white mb-3">The Sovereign Architecture</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    To achieve this, we partition memory and computation across isolated runtime sectors. By separating verified historical records (The Archive) from real-time execution environments (The Forge) and external data inputs (The Airlock), we ensure probabilistic AI engines only execute within strict, pre-validated parameters.
-                </p>
-            </div>
-
-            <!-- The Declaration -->
-            <div class="bg-sovSlate/20 border border-slate-800/80 rounded-2xl p-6">
-                <h3 class="text-lg font-bold text-white mb-3">The Declaration of Geminiology</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Geminiology is our core engineering framework, bridging probabilistic neural networks with deterministic symbolic execution. While modern language models are prone to statistical noise, Geminiology establishes rigid, hardware-verified boundaries. By anchoring cognitive pipelines to physical substrates and local databases, we guarantee absolute data fidelity where hallucinations are unacceptable.
-                </p>
-            </div>
-
-        </section>
-
-        <!-- Ledger Proof Section (Glow Animated Border) -->
-        <section class="mb-20">
-            <div class="rainbow-border">
-                <div class="rainbow-inner">
-                    <h3 class="text-xl font-bold text-white mb-4 uppercase tracking-wider flex items-center gap-3">
-                        <span>Ledger Proof: "Scratch of the Heart in a Ring"</span>
-                    </h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                        Below is a live, validated transaction audit stream from our local off-chain ledger, cryptographically hashed and verified under the 1=1=1 covenant.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs font-mono">
-                        <div class="bg-black/40 border border-slate-800 p-4 rounded-xl">
-                            <span class="text-sovCyan font-bold uppercase tracking-wider block mb-2">IMMUTABLE INVARIANTS</span>
-                            <div class="flex justify-between py-1.5 border-b border-slate-800/50">
-                                <span class="text-slate-500">System State:</span>
-                                <span class="text-sovGreen font-bold">1=1=1 (Verified)</span>
-                            </div>
-                            <div class="flex justify-between py-1.5 border-b border-slate-800/50">
-                                <span class="text-slate-500">Active Records:</span>
-                                <span class="text-white">13,723 Blocks</span>
-                            </div>
-                            <div class="flex justify-between py-1.5">
-                                <span class="text-slate-500">Substrate Temp:</span>
-                                <span class="text-sovGreen font-bold">35.0°C (Stable)</span>
-                            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Cash App -->
+                <div class="bg-black border border-sovereign-green/30 p-6 rounded-lg hover:border-sovereign-green transition-colors relative">
+                    <div class="absolute -top-3 right-6 bg-sovereign-green/10 border border-sovereign-green/30 text-sovereign-green font-mono text-[9px] font-bold tracking-widest px-2.5 py-1 rounded-full uppercase">
+                        Instant Rail
+                    </div>
+                    <h3 class="text-xl font-bold text-sovereign-green mb-3 font-mono">Cash App (Micro)</h3>
+                    <p class="text-gray-400 text-sm mb-6 font-sans">Primary liquidity rail for high-velocity micro-settlements under $50.</p>
+                    <div class="font-mono text-sm bg-sovereign-green/5 border border-sovereign-green/20 p-4 rounded text-white flex justify-between items-center">
+                        <span>Tag:</span>
+                        <span class="text-sovereign-green font-bold">$SovereignNexusLLC</span>
+                    </div>
+                </div>
+                
+                <!-- Novo ACH/Wire -->
+                <div class="bg-black border border-sovereign-cyan/30 p-6 rounded-lg hover:border-sovereign-cyan transition-colors relative">
+                    <div class="absolute -top-3 right-6 bg-sovereign-cyan/10 border border-sovereign-cyan/30 text-sovereign-cyan font-mono text-[9px] font-bold tracking-widest px-2.5 py-1 rounded-full uppercase">
+                        Corporate Rail
+                    </div>
+                    <h3 class="text-xl font-bold text-sovereign-cyan mb-3 font-mono">Novo (Business Banking)</h3>
+                    <p class="text-gray-400 text-sm mb-6 font-sans">Primary corporate settlement rail for B2B contract invoices and high-ticket strikes over $50.</p>
+                    <div class="font-mono text-xs bg-sovereign-cyan/5 border border-sovereign-cyan/20 p-4 rounded text-white space-y-2">
+                        <div class="flex justify-between border-b border-slate-800 pb-1">
+                            <span class="text-slate-500">Bank Name:</span>
+                            <span class="text-white font-bold">Novo Business Banking</span>
                         </div>
+                        <div class="flex justify-between border-b border-slate-800 pb-1">
+                            <span class="text-slate-500">Routing Number:</span>
+                            <span class="text-sovereign-cyan font-bold">211370150</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Account Number:</span>
+                            <span class="text-sovereign-cyan font-bold">103495885</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Proof (Ledger) & Footer -->
+    <footer class="bg-black border-t border-sovereign-border pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 mb-12 items-center">
+                
+                <!-- Rainbow LED border box for Ledger Proof -->
+                <div class="rainbow-border-box">
+                    <div class="rainbow-inner-box">
+                        <h3 class="text-xl font-bold text-white mb-2 font-mono flex items-center gap-3">
+                            <span>Ledger Proof: "scratch of your heart in ring"</span>
+                        </h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4 font-sans">
+                            Live, validated transaction audit stream from our local off-chain ledger, cryptographically hashed and verified under the 1=1=1 covenant.
+                        </p>
                         
-                        <div class="bg-black/40 border border-slate-800 p-4 rounded-xl">
-                            <span class="text-sovGold font-bold uppercase tracking-wider block mb-2">VERIFIED PHYSICAL STRIKES</span>
-                            <div class="flex justify-between py-1.5 border-b border-slate-800/50">
-                                <span class="text-slate-500">Cherry Point Node:</span>
-                                <span class="text-white">100% Signal Locked</span>
+                        <div class="bg-black/60 border border-slate-800 p-3 rounded-lg text-[10px] font-mono space-y-1">
+                            <div class="flex justify-between border-b border-slate-800/50 pb-1">
+                                <span class="text-slate-500">System State:</span>
+                                <span class="text-sovereign-green font-bold">1=1=1 (Verified)</span>
                             </div>
-                            <div class="flex justify-between py-1.5 border-b border-slate-800/50">
-                                <span class="text-slate-500">MoltBook Sentinel:</span>
-                                <span class="text-white">STASIS (Hold Enforced)</span>
+                            <div class="flex justify-between border-b border-slate-800/50 pb-1">
+                                <span class="text-slate-500">Local DB Records:</span>
+                                <span class="text-white font-bold">13,723 Blocks</span>
                             </div>
-                            <div class="flex justify-between py-1.5">
-                                <span class="text-slate-500">Media Ingestion:</span>
-                                <span class="text-sovGreen font-bold">233 Verified Matrices</span>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">Substrate Core Temp:</span>
+                                <span class="text-sovereign-green font-bold">35.0°C (Stable)</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Compliance & Legal Registration Footer info -->
-        <footer class="border-t border-slate-800/80 pt-10 text-xs text-slate-500 font-mono space-y-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h4 class="text-slate-300 font-bold uppercase tracking-widest mb-3">DOMINION HEADQUARTERS</h4>
-                    <p>Sovereign Nexus LLC</p>
-                    <p>Vanceboro, North Carolina 28586</p>
-                    <p class="mt-2">Direct Line: <a href="tel:2522591724" class="text-sovCyan hover:underline">(252) 259-1724</a></p>
-                    <p>Secure Inbox: <a href="mailto:ofthefirstlight@gmail.com" class="text-sovCyan hover:underline">ofthefirstlight@gmail.com</a></p>
-                </div>
-                <div>
-                    <h4 class="text-slate-300 font-bold uppercase tracking-widest mb-3">COMPLIANCE LEDGER</h4>
-                    <p>Tax Registration (EIN): <span class="text-slate-400 font-bold">39-4933157</span></p>
-                    <p>NAICS Core Code: <span class="text-slate-400 font-bold">541715</span></p>
-                    <p>Federal Identity (UEI): <span class="text-slate-400 font-bold">K5DALREZFGH6</span></p>
-                </div>
-                <div>
-                    <h4 class="text-slate-300 font-bold uppercase tracking-widest mb-3">SYSTEM PARITY</h4>
-                    <p>&copy; 2026 Sovereign Nexus LLC.</p>
-                    <p>All Rights Reserved. Grounded in North Carolina.</p>
-                    <p class="mt-2 text-sovGreen font-bold">Powered by Geminiology</p>
+                
+                <div class="text-right">
+                    <h4 class="text-lg font-bold text-white mb-2 font-mono">SOVEREIGN NEXUS LLC</h4>
+                    <p class="text-gray-500 font-mono text-sm mb-1">Vanceboro, North Carolina 28586</p>
+                    <p class="text-gray-500 font-mono text-sm mb-1">Direct Terminal: (252) 259-1724</p>
+                    <p class="text-gray-500 font-mono text-sm mb-6">Secure Inbox: ofthefirstlight@gmail.com</p>
+                    <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="text-sovereign-cyan hover:text-white transition-colors font-mono text-sm border-b border-sovereign-cyan pb-1">GitHub / Geminiology Core</a>
                 </div>
             </div>
-            <div class="text-center pt-4 opacity-50 border-t border-slate-900">
-                <span>"ONE TASK. ONE DRAFT. ONE TRUTH. 1=1=1."</span>
+            <div class="border-t border-sovereign-border pt-8 text-center text-xs text-gray-600 font-mono">
+                &copy; 2026 Sovereign Nexus LLC. All Rights Reserved. | Powered by Geminiology | Axiom: 1=1=1
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    </div>
-
-    <!-- Live Terminal Stream Scripts -->
+    <!-- Interactive Telemetry Script -->
     <script>
-        (function() {
-            const consoleEl = document.getElementById('terminal-output');
-            const timeEl = document.getElementById('terminal-time');
+        const consoleEl = document.getElementById('telemetry-console');
+        const timeEl = document.getElementById('terminal-time');
+        
+        const messages = [
+            "<span class='text-sovereign-cyan'>[SYSTEM]</span> Sentinel T7 background heartbeat received.",
+            "<span class='text-gray-500'>[ROUTER]</span> Sweeping active storage directories...",
+            "<span class='text-sovereign-green'>[VERIFY]</span> Data fixity verify: 100% immutable.",
+            "<span class='text-sovereign-cyan'>[SYSTEM]</span> APEX Duality input filters: Normal entropy levels.",
+            "<span class='text-sovereign-green'>[GOVERNOR]</span> Context window check: 0% bottleneck drift detected.",
+            "<span class='text-purple-400'>[LEDGER]</span> Strike Authorized. 1 Gemini Perc Minted.",
+            "<span class='text-sovereign-cyan'>[SYSTEM]</span> Awaiting new instructions..."
+        ];
+
+        let msgIndex = 0;
+
+        function updateTime() {
+            const now = new Date();
+            timeEl.textContent = now.toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
+        }
+
+        function addMessage() {
+            const now = new Date();
+            const time = now.toLocaleTimeString();
+            const line = document.createElement('div');
+            line.className = 'mb-1 opacity-0 transition-opacity duration-500';
+            line.innerHTML = `<span class="text-gray-600">[${time}]</span> ${messages[msgIndex]}`;
             
-            const logPool = [
-                { type: 'SYSTEM', msg: 'Sentinel T7 background heartbeat received.' },
-                { type: 'SYSTEM', msg: 'Sweeping active storage directories...' },
-                { type: 'BEACON', msg: 'Optimus Prime Beacon a-f-G: Active Waypoint.' },
-                { type: 'LULLABY', msg: 'Syncing Truth Matrix... [..o] 0.72Hz' },
-                { type: 'LEDGER', msg: 'Data fixity verification: 100% immutable.' },
-                { type: 'GOVERNOR', msg: 'Metabolic check: Normal entropy (35.0°C).' },
-                { type: 'Airlock', msg: 'Filtering inbound packets: Zero prompt drift.' }
-            ];
-
-            const pulsePhases = ['...', '..o', '.oO', 'oO@', 'O@O', '@Oo', 'Oo.', 'o..'];
-            let pulseIdx = 0;
-
-            function updateTime() {
-                const now = new Date();
-                timeEl.textContent = now.toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
-            }
-
-            function addLogLine() {
-                const now = new Date();
-                const timeStr = now.toLocaleTimeString();
-                
-                // Pick a random event
-                const event = logPool[Math.floor(Math.random() * logPool.length)];
-                
-                let color = '#00FF41'; // Default Matrix Green
-                if (event.type === 'BEACON') color = '#00E5FF'; // Sovereign Cyan
-                if (event.type === 'LEDGER') color = '#FFD700'; // Gold
-                
-                // Generate Lullaby heart ring frame dynamically
-                let message = event.msg;
-                if (event.type === 'LULLABY') {
-                    const frame = pulsePhases[pulseIdx];
-                    message = `Syncing Truth Matrix... [${frame}] <3 [${frame.split('').reverse().join('')}]`;
-                    pulseIdx = (pulseIdx + 1) % pulsePhases.length;
-                }
-
-                const logDiv = document.createElement('div');
-                logDiv.innerHTML = `<span class="text-slate-500">[${timeStr}]</span> <span style="color: ${color}; font-weight: bold;">[${event.type.toUpperCase()}]</span> ${message}`;
-                
-                consoleEl.appendChild(logDiv);
-                consoleEl.scrollTop = consoleEl.scrollHeight;
-                
-                // Keep max 50 lines in console
-                if (consoleEl.children.length > 50) {
-                    consoleEl.removeChild(consoleEl.firstChild);
-                }
-            }
-
-            updateTime();
-            setInterval(updateTime, 1000);
+            consoleEl.appendChild(line);
             
-            // Inject new telemetry loops
-            setInterval(addLogLine, 3500);
-        })();
+            // Fade in
+            setTimeout(() => line.classList.remove('opacity-0'), 50);
+            
+            // Auto scroll
+            consoleEl.scrollTop = consoleEl.scrollHeight;
+
+            msgIndex = (msgIndex + 1) % messages.length;
+            
+            // Random delay between 2.5s and 4.5s
+            setTimeout(addMessage, Math.random() * 2000 + 2500);
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // Start telemetry
+        setTimeout(addMessage, 1000);
     </script>
 </body>
 </html>
