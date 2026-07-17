@@ -624,43 +624,38 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto font-mono text-xs">
-                <!-- Cash App -->
-                <div id="cashapp-card" class="bg-black border border-sovereign-green/20 p-6 rounded hover:border-sovereign-green transition-all duration-500 relative">
-                    <div class="absolute -top-3 right-6 bg-sovereign-green/10 border border-sovereign-green/20 text-sovereign-green font-mono text-[9px] font-bold tracking-widest px-2.5 py-0.5 rounded-full uppercase">
-                        Instant Rail
-                    </div>
-                    <h3 class="text-lg font-bold text-sovereign-green mb-2 font-mono flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-sovereign-green animate-pulse"></span> Cash App (Micro)
+                <!-- Stripe / Primary Rail -->
+                <div id="stripe-card" class="bg-black border-2 border-sovereign-cyan/40 p-6 rounded relative shadow-[0_0_15px_rgba(0,229,255,0.1)]">
+                    <div class="absolute -top-3 right-4 bg-sovereign-dark border border-sovereign-cyan text-sovereign-cyan font-mono text-xs font-bold tracking-widest px-3 py-1 rounded-full uppercase">Corporate Rail</div>
+                    <h3 class="text-lg font-bold text-sovereign-cyan mb-2 font-mono flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 rounded-full bg-sovereign-cyan animate-pulse"></span> Stripe (Sovereign Nexus LLC)
                     </h3>
-                    <p class="text-gray-400 text-xs mb-4 font-sans font-normal">Primary liquidity rail for micro-settlements and high-velocity strikes under $50.</p>
-                    <div class="font-mono text-sm bg-sovereign-green/5 border border-sovereign-green/15 p-3 rounded text-white flex justify-between items-center font-bold">
-                        <span class="text-gray-500 font-sans font-normal">Tag:</span>
-                        <span class="text-sovereign-green font-bold text-base">$SovereignNexusLLC</span>
+                    <p class="text-slate-400 text-xs mb-5 font-sans leading-relaxed">Primary settlement rail for corporate invoices and high-ticket enterprise integrations.</p>
+                    <div class="font-mono text-xs bg-sovereign-cyan/10 border border-sovereign-cyan/30 p-4 rounded text-white space-y-2">
+                        <div class="flex justify-between border-b border-sovereign-border pb-2 font-sans">
+                            <span class="text-gray-400">Entity:</span>
+                            <span class="text-white font-bold">Sovereign Nexus LLC</span>
+                        </div>
+                        <div class="flex justify-between font-sans pt-1">
+                            <span class="text-gray-400">Status:</span>
+                            <span class="text-sovereign-cyan font-bold tracking-widest flex items-center gap-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                SECURE GATEWAY
+                            </span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Novo ACH/Wire -->
-                <div id="novo-card" class="bg-black border border-sovereign-cyan/20 p-6 rounded hover:border-sovereign-cyan transition-all duration-500 relative">
-                    <div class="absolute -top-3 right-6 bg-sovereign-cyan/10 border border-sovereign-cyan/20 text-sovereign-cyan font-mono text-[9px] font-bold tracking-widest px-2.5 py-0.5 rounded-full uppercase">
-                        Corporate Rail
-                    </div>
-                    <h3 class="text-lg font-bold text-sovereign-cyan mb-2 font-mono flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-sovereign-cyan animate-pulse"></span> Novo (Business Banking)
+                <!-- Cash App / Micro Rail -->
+                <div id="cashapp-card" class="bg-black border-2 border-sovereign-green/40 p-6 rounded relative shadow-[0_0_15px_rgba(0,255,65,0.1)]">
+                    <div class="absolute -top-3 right-4 bg-sovereign-dark border border-sovereign-green text-sovereign-green font-mono text-xs font-bold tracking-widest px-3 py-1 rounded-full uppercase">Instant Rail</div>
+                    <h3 class="text-lg font-bold text-sovereign-green mb-2 font-mono flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 rounded-full bg-sovereign-green animate-pulse"></span> Cash App (Micro)
                     </h3>
-                    <p class="text-gray-400 text-xs mb-4 font-sans font-normal">Primary settlement rail for corporate invoices and high-ticket strikes over $50.</p>
-                    <div class="font-mono text-xs bg-sovereign-cyan/5 border border-sovereign-cyan/15 p-3 rounded text-white space-y-2">
-                        <div class="flex justify-between border-b border-sovereign-border pb-1 font-sans">
-                            <span class="text-gray-500">Bank:</span>
-                            <span class="text-white font-bold">Novo Business Banking</span>
-                        </div>
-                        <div class="flex justify-between border-b border-sovereign-border pb-1 font-sans">
-                            <span class="text-gray-500">Routing Number:</span>
-                            <span class="text-sovereign-cyan font-bold tracking-widest">211370150</span>
-                        </div>
-                        <div class="flex justify-between font-sans pt-1">
-                            <span class="text-gray-500">Account Number:</span>
-                            <span class="text-sovereign-cyan font-bold tracking-widest">103495885</span>
-                        </div>
+                    <p class="text-slate-400 text-xs mb-5 font-sans leading-relaxed">Secondary liquidity rail for rapid micro-settlements and hardware component reimbursement.</p>
+                    <div class="font-mono text-sm bg-sovereign-green/10 border border-sovereign-green/30 p-4 rounded text-white flex justify-between items-center font-bold">
+                        <span class="text-gray-400 font-sans font-normal">Tag:</span>
+                        <span class="text-sovereign-green text-base">$SovereignNexusLLC</span>
                     </div>
                 </div>
             </div>
@@ -714,7 +709,7 @@
                     Direct dual-rail settlements bypass intermediary payment delays. Please follow the instructions to secure authorization:
                 </p>
                 <div class="bg-sovereign-panel border border-sovereign-border p-3.5 rounded text-white space-y-1 leading-relaxed">
-                    <div>1. Select <span class="text-sovereign-green">Cash App</span> or <span class="text-sovereign-cyan">Novo ACH</span>.</div>
+                    <div>1. Select <span class="text-sovereign-green">Cash App</span> or <span class="text-sovereign-cyan">Stripe Invoice</span>.</div>
                     <div>2. Send <span class="text-sovereign-green font-bold">$<span id="modal-tool-price"></span></span> for monthly access.</div>
                     <div>3. Include your <span class="text-sovereign-cyan font-bold">Project ID</span> in the memo field.</div>
                 </div>
@@ -800,14 +795,14 @@
             
             // Flash the cards for visual focus
             const cashapp = document.getElementById('cashapp-card');
-            const novo = document.getElementById('novo-card');
+            const stripe = document.getElementById('stripe-card');
             
-            cashapp.classList.add('border-sovereign-green', 'shadow-[0_0_15px_#00FF41]');
-            novo.classList.add('border-sovereign-cyan', 'shadow-[0_0_15px_#00E5FF]');
+            if (cashapp) cashapp.classList.add('border-sovereign-green', 'shadow-[0_0_15px_#00FF41]');
+            if (stripe) stripe.classList.add('border-sovereign-cyan', 'shadow-[0_0_15px_#00E5FF]');
             
             setTimeout(() => {
-                cashapp.classList.remove('border-sovereign-green', 'shadow-[0_0_15px_#00FF41]');
-                novo.classList.remove('border-sovereign-cyan', 'shadow-[0_0_15px_#00E5FF]');
+                if (cashapp) cashapp.classList.remove('border-sovereign-green', 'shadow-[0_0_15px_#00FF41]');
+                if (stripe) stripe.classList.remove('border-sovereign-cyan', 'shadow-[0_0_15px_#00E5FF]');
             }, 2500);
         }
 

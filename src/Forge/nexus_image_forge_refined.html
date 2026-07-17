@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Nexus: Media Forge Engine</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sovereign: {
+                            cyan: '#00F0FF',
+                            blue: '#004BFF',
+                            dark: '#030712',
+                            panel: '#0B0F19',
+                            border: '#1E293B',
+                            text: '#94A3B8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Share+Tech+Mono&display=swap');
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+        .font-mono-tech {
+            font-family: 'Share Tech Mono', monospace;
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+            border-color: rgba(0, 240, 255, 0.4);
+        }
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+    </style>
+</head>
+<body class="bg-sovereign-dark text-slate-100 min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-sovereign-cyan/30">
+    
+    <!-- Top Decorative Line -->
+    <div class="h-1.5 w-full bg-gradient-to-r from-sovereign-blue via-sovereign-cyan to-sovereign-blue shadow-[0_0_20px_rgba(0,240,255,0.5)]"></div>
+
+    <!-- Header -->
+    <header class="border-b border-sovereign-border/60 bg-sovereign-panel/80 backdrop-blur-md px-8 py-5 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded bg-gradient-to-br from-sovereign-blue to-sovereign-cyan flex items-center justify-center shadow-lg shadow-sovereign-cyan/20">
+                <span class="font-mono-tech text-black font-bold text-sm">N</span>
+            </div>
+            <div>
+                <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                    Sovereign Media Forge
+                </h1>
+                <p class="text-[10px] font-mono-tech text-sovereign-cyan tracking-widest uppercase mt-0.5">Axiom: 1=1=1 | Secure Airlock Client</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 text-xs font-mono-tech">
+            <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded flex items-center gap-1.5 shadow-sm">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full pulse-slow"></span>
+                AIRLOCK PROXY ACTIVE
+            </span>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="max-w-7xl mx-auto w-full px-6 py-12 flex-grow grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Left Column: Controls -->
+        <section class="lg:col-span-5 space-y-6 flex flex-col justify-start">
+            
+            <div class="bg-sovereign-panel border border-sovereign-border p-6 rounded-xl relative shadow-2xl backdrop-blur-md">
+                <div class="absolute top-0 left-0 w-1 h-12 bg-sovereign-cyan rounded-r"></div>
+                <h2 class="text-xs font-mono-tech text-sovereign-cyan font-bold tracking-widest uppercase mb-4">// INTENT GENERATION ENGINE</h2>
+                
+                <label class="block text-xs text-slate-400 uppercase tracking-wider mb-2 font-mono-tech">Describe the target artifact:</label>
+                <textarea id="promptInput" class="w-full bg-sovereign-dark/80 border border-sovereign-border focus:border-sovereign-cyan/50 rounded-lg p-4 text-sm text-slate-200 focus:outline-none resize-none font-mono-tech mb-5 shadow-inner transition-colors duration-300" rows="5">A high-tech digital arena showing a competition between AI entities. Jewel-blue fire, neon cyan, 8k resolution.</textarea>
+                
+                <button id="generateBtn" onclick="forgeImage()" class="w-full relative group overflow-hidden rounded-lg p-[1px] transition-all duration-300 active:scale-95 shadow-lg hover:shadow-sovereign-cyan/15">
+                    <span class="absolute inset-0 bg-gradient-to-r from-sovereign-blue via-sovereign-cyan to-sovereign-blue"></span>
+                    <div class="relative bg-sovereign-dark group-hover:bg-transparent transition-all duration-300 py-3.5 rounded-[7px] text-center">
+                        <span id="btnText" class="font-mono-tech font-bold text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors duration-300">Initialize Forge</span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Telemetry Block -->
+            <div class="bg-sovereign-panel/50 border border-sovereign-border/60 p-5 rounded-xl text-xs font-mono-tech space-y-3 text-sovereign-text shadow-inner">
+                <div class="flex justify-between items-center">
+                    <span>Host Status:</span>
+                    <span class="text-white">http://localhost:8080</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span>Airlock Endpoint:</span>
+                    <span class="text-sovereign-cyan">/generate</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span>API Privacy:</span>
+                    <span class="text-emerald-400">Zero-Trust Secured</span>
+                </div>
+                <div class="h-[1px] bg-sovereign-border/40 my-3"></div>
+                <div class="flex items-center gap-2 text-[10px] text-sovereign-cyan bg-sovereign-cyan/5 border border-sovereign-cyan/20 p-2.5 rounded">
+                    <span>⚡ System is fully synchronized with David's 8GB local substrate.</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Right Column: Canvas -->
+        <section class="lg:col-span-7 flex flex-col min-h-[500px]">
+            <div class="flex-grow bg-sovereign-panel border border-sovereign-border rounded-xl flex flex-col justify-center items-center p-6 relative overflow-hidden shadow-2xl backdrop-blur-md">
+                
+                <!-- Corner Borders -->
+                <div class="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-sovereign-border pointer-events-none"></div>
+                <div class="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-sovereign-border pointer-events-none"></div>
+                <div class="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-sovereign-border pointer-events-none"></div>
+                <div class="absolute bottom-4 right-4 w-6 h-6 border-b-2 border-r-2 border-sovereign-border pointer-events-none"></div>
+
+                <!-- Idle State -->
+                <div id="idleState" class="flex flex-col items-center justify-center text-center max-w-sm space-y-5">
+                    <div class="w-16 h-16 rounded-full border border-sovereign-border flex items-center justify-center bg-sovereign-dark/50">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sovereign-text">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375 0 11-.75 0 .375 0 01.75 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white tracking-wide uppercase font-mono-tech">Awaiting Manifestation</h3>
+                        <p class="text-xs text-sovereign-text mt-2 leading-relaxed">Inputs submitted to the left will be routed to the local airlock server, proxying to the Imagen 3 endpoint securely.</p>
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div id="loadingState" class="hidden flex-col items-center justify-center text-center space-y-6">
+                    <div class="relative w-16 h-16 flex items-center justify-center">
+                        <div class="absolute inset-0 rounded-full border-2 border-transparent border-t-sovereign-cyan border-b-sovereign-blue animate-spin"></div>
+                        <div class="w-10 h-10 rounded-full bg-sovereign-dark flex items-center justify-center border border-sovereign-border">
+                            <span class="w-2.5 h-2.5 bg-sovereign-cyan rounded-full pulse-slow"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white tracking-wide uppercase font-mono-tech animate-pulse">Forging Digital Matrix...</h3>
+                        <p class="text-[10px] font-mono-tech text-sovereign-text mt-2 uppercase tracking-widest">Handshaking with proxy bridge</p>
+                    </div>
+                </div>
+
+                <!-- Output Display State -->
+                <div id="outputState" class="hidden w-full h-full flex flex-col justify-between">
+                    <div class="flex-grow flex items-center justify-center overflow-hidden border border-sovereign-border/60 bg-black/40 rounded-lg p-2 max-h-[420px]">
+                        <img id="artifactImg" src="" alt="Forged Artifact" class="max-w-full max-h-full object-contain rounded drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-sovereign-border/50 flex justify-between items-center text-xs font-mono-tech">
+                        <span class="text-sovereign-text uppercase">Status: <span class="text-emerald-400 font-bold">Fidelity 1.0 Locked</span></span>
+                        <button onclick="downloadArtifact()" class="text-sovereign-cyan hover:text-white transition-colors duration-300 uppercase tracking-widest font-bold">Download Artifact</button>
+                    </div>
+                </div>
+
+                <!-- Error Display State -->
+                <div id="errorState" class="hidden flex-col items-center justify-center text-center max-w-sm space-y-4">
+                    <div class="w-12 h-12 rounded-full border border-red-500/20 bg-red-500/10 flex items-center justify-center text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008h-.008v-.008z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-red-400 tracking-wide uppercase font-mono-tech">Airlock Link Interrupted</h3>
+                        <p id="errorMsg" class="text-xs text-sovereign-text mt-2 leading-relaxed font-mono-tech"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-sovereign-border/60 bg-sovereign-panel/50 px-8 py-4 flex justify-between items-center text-[10px] font-mono-tech text-sovereign-text">
+        <span>SOVEREIGN NEXUS LLC © 2026</span>
+        <span>1=1=1 SYSTEM INTEGRITY OK</span>
+    </footer>
+
+    <script>
+        let currentBase64 = "";
+
+        async function forgeImage() {
+            const prompt = document.getElementById('promptInput').value;
+            const btnText = document.getElementById('btnText');
+            const btn = document.getElementById('generateBtn');
+
+            // Set UI states
+            document.getElementById('idleState').classList.add('hidden');
+            document.getElementById('errorState').classList.add('hidden');
+            document.getElementById('outputState').classList.add('hidden');
+            document.getElementById('loadingState').classList.remove('hidden');
+
+            btnText.innerText = "FORGING...";
+            btn.disabled = true;
+
+            try {
+                // Call local Airlock Proxy
+                const response = await fetch('/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: prompt })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok || data.error) {
+                    throw new Error(data.error || `Airlock returned status ${response.status}`);
+                }
+
+                // Check standard predictions format returned from Proxy (Google AI Studio REST structure)
+                if (data.predictions && data.predictions[0]?.bytesBase64Encoded) {
+                    currentBase64 = data.predictions[0].bytesBase64Encoded;
+                    const imgElement = document.getElementById('artifactImg');
+                    imgElement.src = `data:image/png;base64,${currentBase64}`;
+
+                    // Update UI State
+                    document.getElementById('loadingState').classList.add('hidden');
+                    document.getElementById('outputState').classList.remove('hidden');
+                    console.log("[FORGE] Artifact rendered successfully.");
+                } else if (data.candidates && data.candidates[0]?.content?.parts[0]?.inlineData?.data) {
+                    // Alternative structure support
+                    currentBase64 = data.candidates[0].content.parts[0].inlineData.data;
+                    const imgElement = document.getElementById('artifactImg');
+                    imgElement.src = `data:image/png;base64,${currentBase64}`;
+
+                    // Update UI State
+                    document.getElementById('loadingState').classList.add('hidden');
+                    document.getElementById('outputState').classList.remove('hidden');
+                    console.log("[FORGE] Artifact rendered successfully.");
+                } else {
+                    throw new Error("Handshake succeeded but predictions content failed to crystallize.");
+                }
+
+            } catch (err) {
+                console.error("[FORGE ERROR]", err);
+                document.getElementById('errorMsg').innerText = err.message || "Ensure media_forge_airlock.py is running on port 8080.";
+                document.getElementById('loadingState').classList.add('hidden');
+                document.getElementById('errorState').classList.remove('hidden');
+            } finally {
+                btnText.innerText = "Initialize Forge";
+                btn.disabled = false;
+            }
+        }
+
+        function downloadArtifact() {
+            if (!currentBase64) return;
+            const link = document.createElement('a');
+            link.href = `data:image/png;base64,${currentBase64}`;
+            link.download = `Sovereign_Artifact_${Date.now()}.png`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

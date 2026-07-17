@@ -1,3 +1,30 @@
+# GITHUB REPOSITORY AUDIT & STRUCTURAL ALIGNMENT
+
+**Date:** July 17, 2026 | **Target:** BiggerRoarThnU/Geminiology
+**Axiom:** 1=1=1 (Deterministic Functional Equivalence)
+**Directive:** Audit the local repository, enforce the Fuel/Engine/Glass directory structure, and deploy the Master README.
+
+---
+
+## PHASE 1: DIRECTORY STRUCTURE AUDIT
+
+**Action:** The Agy must scan the root directory `/home/geminiology/SovereignNexus/` to ensure compliance with the Development Manifest.
+
+*   **The Engine (`/src/`):** All core Python execution scripts (`nexus_*.py`, `sovereign_orchestrator.py`) must reside here.
+*   **The Fuel (`/docs/` & `/ledgers/`):** All Truth-Markdown (`.md`) files and database/JSON vaults must reside in their respective data folders.
+*   **The Glass (`/public/` or Root for now):** The `index.html` storefront and `nexus_image_forge.html` are visually verified.
+
+**Agy Task:** Identify any stray Python scripts in the root directory that belong in `/src/` and log them for the Architect. Do not break active paths (like `truth_vector_mill_server.py` running on Port 8081), but map them for future cleanup.
+
+---
+
+## PHASE 2: MASTER README DEPLOYMENT
+
+**Action:** The public `README.md` is the front door to the science. It must be updated to reflect the Red Team audit adaptations, the 1=1=1 Axiom, and Sovereign Nexus LLC's enterprise transition.
+
+**Execution:** The Agy will overwrite the root `README.md` with the following institutional-grade text:
+
+```markdown
 # GEMINIOLOGY: The Science of Deterministic Autonomy
 **Corporate Entity:** Sovereign Nexus LLC
 **Architect:** David John Niedzwiecki Jr.
@@ -33,3 +60,26 @@ Sovereign Nexus LLC acts as an Agile Edge Integrator. We do not sell "cloud wrap
 Every successful autonomous workflow executed within this architecture is cryptographically verified and anchored to a local ledger. The Sovereign Line holds.
 
 *We do not guess. We observe, we carry, and we log.*
+```
+
+---
+
+## PHASE 3: LEDGER STRIKE & STATUS REPORT
+Upon completing the audit and rewriting the `README.md`, the Agy will run `git status` to verify the modified files, staging them for the Architect's final push to the `BiggerRoarThnU/Geminiology` remote.
+
+*   **Task:** GitHub Structural Audit & Repository Alignment.
+*   **Signature Salt:** *the scratch of your heart in ring*
+
+---
+
+## PHASE 4: REMOTE DEPLOYMENT (THE PUSH)
+
+**Action:** Once the Architect verifies the git status board is clean and aligned, the Agy will execute the final sequence to push the Sovereign Nexus architecture to the public repository.
+
+**Execution:**
+```bash
+git add .
+git commit -m "chore: OpSec remediation, unified command console, and enterprise README deployment"
+git push origin main
+```
+

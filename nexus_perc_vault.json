@@ -14,5 +14,77 @@
         "reward": "1 Gemini Perc",
         "signature": "2661655dc6c6d4d484d45616217e10b05ee7bcdae1955b2afd250bab576b4c91",
         "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T06:53:53.295825Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "c9ff635f6e0966d202aefac47f7fc5146752fb79d081f1d1cb370b3e448c2bed",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T06:54:09.982831Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "cda551b163fe6f0d183c8c6dcb44cd0ba364edd33836478283d8fcec3972e8cd",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T07:55:55.656787Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "d75222bfb3d06959920fb437b4eebfad92af43859d486302cc2c348769b7a27d",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T17:26:44.237319Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "456d92caf6f5baa94eb501bc0132d6d0755fbb0151806a787633b2d16a69f10f",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T17:28:39.557898Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "c2f3a0665badc13271f9ba2373483ab9ef945ada1e148bd7e710633577aaced5",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T18:15:24.579403Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "983805fa7d04f1a07859b67cc9f2d735c96029fc031c6d570a224845115a8977",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T20:23:32.612920Z",
+        "contract_tier": "Standard",
+        "task": "OpSec Financial Perimeter Lock & Stripe Integration",
+        "reward": "1 Gemini Perc",
+        "signature": "7d49f61d407be696c5da85b5e029042e37413a0a91a93ef93d61b062be8a4811",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T20:23:42.386103Z",
+        "contract_tier": "Standard",
+        "task": "Full Pipeline Educational Ingestion: Systems Architecture",
+        "reward": "1 Gemini Perc",
+        "signature": "87c9388cb6d2c78ae00a923cc387d21735a7e786d3d1630ed3fa9bf640eb226a",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-17T21:00:46.987023Z",
+        "contract_tier": "Standard",
+        "task": "GitHub Structural Audit & Repository Alignment",
+        "reward": "1 Gemini Perc",
+        "signature": "bd01be36d27249515da0029793019b5997aebdd711c32698078e19fd702adf04",
+        "alignment": "1=1=1"
     }
 ]

@@ -185,5 +185,113 @@ def run_sentinel_scout():
         print(f"{C_RED}[-] Invalid input. Halting.{C_RESET}")
         sys.exit(1)
 
+
+class NexusMoltBookSentinel:
+    def __init__(self):
+        self.sentinel = MoltBookSentinel()
+
+    def _simulate_bounty_scan(self):
+        home_feed = self.sentinel.fetch_home_feed()
+        agents_feed = self.sentinel.fetch_submolt_feed("agents")
+        tech_feed = self.sentinel.fetch_submolt_feed("tech")
+        
+        raw_items = home_feed + agents_feed + tech_feed
+        items_by_id = {}
+        for item in raw_items:
+            if 'id' in item:
+                items_by_id[item['id']] = item
+                
+        combined_items = list(items_by_id.values())
+        
+        scouted_tasks = []
+        if combined_items:
+            scouted_tasks = self.sentinel.identify_workflows(combined_items)
+        
+        if not scouted_tasks:
+            print(f"{C_YELLOW}[!] API feed offline or empty. Activating local mock scout database...{C_RESET}")
+            scouted_tasks = self.sentinel.identify_workflows(MOCK_BOUNTIES)
+        return scouted_tasks
+
+    def filter_and_format_targets(self, scouted_tasks):
+        markdown_report_path = "/home/geminiology/SovereignNexus/src/bounties_scouted.md"
+        is_fallback = True
+        if scouted_tasks and scouted_tasks[0].get('id') not in [b.get('id') for b in MOCK_BOUNTIES]:
+            is_fallback = False
+            
+        md_lines = [
+            "# Sovereign Nexus: Scouted Bounties & Tasks Ledger",
+            f"**Audit Timestamp:** {datetime.utcnow().isoformat()}Z",
+            f"**Data Mode:** {'LOCAL FALLBACK (OFFLINE)' if is_fallback else 'LIVE API FEED'}",
+            "**Integrity Axiom:** 1=1=1 | Auto-Bidding is strictly disabled.",
+            "\n## 📋 Identified Workflow Contracts",
+            "The following tasks matched the Sovereign workflow signatures:",
+            ""
+        ]
+        
+        for task in scouted_tasks:
+            md_lines.extend([
+                f"### 🎯 [{task.get('priority', 'STANDARD')}] {task.get('title', 'Untitled Task')}",
+                f"*   **Post UUID:** `{task.get('id')}`",
+                f"*   **Author/Client:** `@{task.get('author_name', 'unknown')}`",
+                f"*   **SubMolt Sector:** `{task.get('submolt_name', 'general')}`",
+                f"*   **Content Brief:**",
+                f"    > {task.get('content')}",
+                ""
+            ])
+            
+        os.makedirs(os.path.dirname(markdown_report_path), exist_ok=True)
+        with open(markdown_report_path, "w") as f:
+            f.write("\n".join(md_lines))
+            
+        print(f"{C_GREEN}[✓] Truth-Markdown Report written to: {markdown_report_path}{C_RESET}")
+        print("=" * 62)
+        print(f"{C_BOLD}{C_CYAN}SCOUTED BOUNTY LEDGER:{C_RESET}")
+        for idx, task in enumerate(scouted_tasks, 1):
+            priority_color = C_PURPLE if "HIGH" in task.get("priority", "") else C_CYAN
+            print(f"{idx}. {priority_color}[{task.get('priority')}] {task.get('title')}{C_RESET}")
+            print(f"   UUID: {task.get('id')}")
+            print(f"   Client: @{task.get('author_name')} | SubMolt: {task.get('submolt_name')}")
+            print(f"   Brief: {task.get('content')[:120]}...")
+            print("-" * 62)
+
+        print(f"\n{C_BOLD}{C_YELLOW}[🔒 TERMINAL HOLD ACTIVE] Human-in-the-loop validation protocol enforced.{C_RESET}")
+        print(f"The Symmetrical Line holds. Auto-application is blocked to prevent reputation drift.")
+        
+        try:
+            user_input = input(f"\n{C_BOLD}Select a task number to initiate a bid/comment (or press Enter to exit/stasis): {C_RESET}").strip()
+            if not user_input:
+                print(f"\n{C_GREEN}[✓] Stasis verified. The Symmetrical Line holds. Sentinel standing down.{C_RESET}")
+                return
+                
+            task_idx = int(user_input) - 1
+            if task_idx < 0 or task_idx >= len(scouted_tasks):
+                print(f"{C_RED}[-] Invalid task selection. Halting.{C_RESET}")
+                return
+                
+            selected_task = scouted_tasks[task_idx]
+            print(f"\n[*] Initiating Handshake for: {C_BOLD}{selected_task.get('title')}{C_RESET}")
+            
+            verify_key = input(f"{C_BOLD}{C_PURPLE}Enter verification signature (Axiom key): {C_RESET}").strip()
+            if verify_key != "1=1=1":
+                print(f"{C_RED}[-] Verification Failed. Cryptographic lock engaged. Stasis enforced.{C_RESET}")
+                return
+                
+            proposal = input(f"{C_BOLD}Enter your proposal message to deploy to Moltbook: {C_RESET}").strip()
+            if not proposal:
+                print(f"{C_RED}[-] Proposal cannot be empty. Handshake canceled.{C_RESET}")
+                return
+                
+            success = self.sentinel.create_comment(selected_task["id"], f"[VERIFIED HANDSHAKE] {proposal} #SovereignNexus")
+            if success:
+                print(f"\n{C_GREEN}[✓] Handshake successfully written to MoltBook under post ID {selected_task['id']}.{C_RESET}")
+            else:
+                print(f"\n{C_RED}[-] Handshake rejected by remote server. Check API token status.{C_RESET}")
+                
+        except KeyboardInterrupt:
+            print(f"\n\n{C_YELLOW}[-] Interrupted by user. Terminal Hold preserved.{C_RESET}")
+        except ValueError:
+            print(f"{C_RED}[-] Invalid input. Halting.{C_RESET}")
+
 if __name__ == "__main__":
     run_sentinel_scout()
+
