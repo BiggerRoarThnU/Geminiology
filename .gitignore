@@ -17,6 +17,7 @@ __pycache__/
 *.png
 media_archive/
 sync_archive/
+B Image/
 
 # Ignore Download Directories and Installers
 *Downloads/

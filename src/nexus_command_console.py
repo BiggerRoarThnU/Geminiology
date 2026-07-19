@@ -6,6 +6,7 @@ import sys
 import time
 import os
 import readline  # Ensures backspace and arrow keys work perfectly in the terminal
+import subprocess
 
 # Dynamic path adjustment for running from src/ or root
 root_dir = os.path.dirname(os.path.abspath(__file__))
@@ -25,6 +26,8 @@ from nexus_vampire_auditor import NexusVampireAuditor
 from nexus_agentic_walker import NexusAgenticWalker
 from nexus_context_slicer import NexusContextSlicer
 from nexus_moltbook_sentinel import NexusMoltBookSentinel  # The Bounty Scout
+from nexus_deep_synthesis import NexusDeepSynthesis
+from nexus_inventory_ingester import NexusInventoryIngester
 
 class NexusCommandConsole:
     def __init__(self):
@@ -34,6 +37,8 @@ class NexusCommandConsole:
         self.walker = NexusAgenticWalker()
         self.slicer = NexusContextSlicer()
         self.sentinel = NexusMoltBookSentinel()
+        self.deep_synth = NexusDeepSynthesis()
+        self.ingester = NexusInventoryIngester()
         self.axiom = "1=1=1 (Deterministic Functional Equivalence)"
         
     def display_header(self):
@@ -132,7 +137,64 @@ class NexusCommandConsole:
                             print(f"[-] PIPELINE FAILED at Walker stage: {data}")
                     else:
                         print("[-] ERROR: Please provide a URL (e.g., 'run pipeline: https://example.com')")
+
+                elif command.lower().startswith('run deep synthesis:'):
+                    url = command[19:].strip()
+                    if url:
+                        self.deep_synth.run_synthesis(url)
+                    else:
+                        print("[-] ERROR: Please provide a URL (e.g., 'run deep synthesis: https://en.wikipedia.org/wiki/Systems_engineering')")
                         
+                elif command.lower() == 'run ingester':
+                    self.ingester.run_ingestion_loop()
+                    self._mint_perc("Sovereign Inventory Ingestion Protocol")
+                    
+                elif command.lower().startswith('run bulk:'):
+                    args = command[9:].strip()
+                    if '|' in args:
+                        folder_path, category = [arg.strip() for arg in args.split('|', 1)]
+                        if folder_path and category:
+                            # Resolve the correct path to the bulk ingester script
+                            script_path = os.path.join(root_dir, 'nexus_bulk_ingester.py')
+                            if not os.path.exists(script_path):
+                                if os.path.basename(root_dir) == 'src':
+                                    script_path = os.path.join(parent_dir, 'src', 'nexus_bulk_ingester.py')
+                                else:
+                                    script_path = os.path.join(root_dir, 'src', 'nexus_bulk_ingester.py')
+                            
+                            subprocess.run([sys.executable, script_path, folder_path, category])
+                            self._mint_perc(f"Bulk Ingestion: {folder_path} -> Category {category}")
+                        else:
+                            print("[-] ERROR: Format must be: run bulk: [folder_path] | [category]")
+                    else:
+                        print("[-] ERROR: Format must be: run bulk: [folder_path] | [category]")
+
+                elif command.lower().startswith('run enhance:'):
+                    target_folder = command[12:].strip()
+                    if target_folder:
+                        script_path = os.path.join(root_dir, 'nexus_artifact_enhancer.py')
+                        if not os.path.exists(script_path):
+                            if os.path.basename(root_dir) == 'src':
+                                script_path = os.path.join(parent_dir, 'src', 'nexus_artifact_enhancer.py')
+                            else:
+                                script_path = os.path.join(root_dir, 'src', 'nexus_artifact_enhancer.py')
+                        
+                        subprocess.run([sys.executable, script_path, target_folder])
+                        self._mint_perc(f"Artifact Enhancement: {target_folder}")
+                    else:
+                        print("[-] ERROR: Format must be: run enhance: [target_folder_path]")
+
+                elif command.lower() in ['run beast mode', 'cross examine']:
+                    script_path = os.path.join(root_dir, 'nexus_multi_model_examiner.py')
+                    if not os.path.exists(script_path):
+                        if os.path.basename(root_dir) == 'src':
+                            script_path = os.path.join(parent_dir, 'src', 'nexus_multi_model_examiner.py')
+                        else:
+                            script_path = os.path.join(root_dir, 'src', 'nexus_multi_model_examiner.py')
+                    
+                    subprocess.run([sys.executable, script_path])
+                    self._mint_perc("T7 Beast Mode Extraction & Multi-Model Cross-Examination")
+
                 elif command.lower() == 'help':
                     print("\n--- AVAILABLE COMMANDS ---")
                     print("simulate image: [prompt]  -> Runs a zero-trust visual generation simulation")
@@ -142,6 +204,11 @@ class NexusCommandConsole:
                     print("run walker: [url]         -> Fetches and purifies text from a web page")
                     print("run slicer                -> Segment custom payload into hardware-safe chunks")
                     print("run pipeline: [url]       -> Runs Walker + Slicer in a unified relay")
+                    print("run deep synthesis: [url] -> Executes the ultimate 8GB data compression and extraction pipeline")
+                    print("run ingester              -> Deploys the Human-in-the-Loop staging ingester for raw artifacts")
+                    print("run bulk: [path] | [cat]  -> Runs the bulk ingester on pre-sorted folders (e.g. B Image/K | K)")
+                    print("run enhance: [folder]     -> Executes deterministic CV brightness and saturation boosts (Ghost copies)")
+                    print("run beast mode            -> Run multi-model cross-examinations against physical T7 archives")
                     print("exit / 0                  -> Securely closes the terminal\n")
                     
                 else:

@@ -1,0 +1,1982 @@
+[
+    {
+        "timestamp": "2026-07-19T06:09:54.224638Z",
+        "original_file": "e3fe9479-7f95-4901-a0c9-175d291f571c.jpeg",
+        "original_hash": "03551b04a15a8f57e108a9759c370a77",
+        "ghost_file": "e3fe9479-7f95-4901-a0c9-175d291f571c_ghost.jpeg",
+        "ghost_hash": "1b324aaf97ffa5c23ed2aea6e4296dfb",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.303377Z",
+        "original_file": "5ba6e43d-052f-4c42-af8e-da298113d103.jpeg",
+        "original_hash": "3e45d95a913939d26ed8157aa8f0a706",
+        "ghost_file": "5ba6e43d-052f-4c42-af8e-da298113d103_ghost.jpeg",
+        "ghost_hash": "95fd548404a7983d252fc02b7e88becb",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.403558Z",
+        "original_file": "acbee4ae-4afe-4c69-a1ac-5350e9b4db62.jpeg",
+        "original_hash": "b005ecb29edb6761c00668a1ba0bd882",
+        "ghost_file": "acbee4ae-4afe-4c69-a1ac-5350e9b4db62_ghost.jpeg",
+        "ghost_hash": "44ac162e290fda7acf9d63272d74d123",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.523140Z",
+        "original_file": "523705ae-46d9-40c6-8936-186963db703b.jpeg",
+        "original_hash": "f443255c5e3acc638db2df16ee23652d",
+        "ghost_file": "523705ae-46d9-40c6-8936-186963db703b_ghost.jpeg",
+        "ghost_hash": "2f01c8aed6422fe7f1eed470fb96a9a9",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.649991Z",
+        "original_file": "ddb2f3e9-6485-4a62-836e-e82a30b9fe6e.jpeg",
+        "original_hash": "079eaeb9c36498d05b19e645b0aded6b",
+        "ghost_file": "ddb2f3e9-6485-4a62-836e-e82a30b9fe6e_ghost.jpeg",
+        "ghost_hash": "70c494ca0a0e227a0d01ca9ca8bb3254",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.736636Z",
+        "original_file": "43049ea3-81b9-4ba6-8baa-be64abb78734.jpeg",
+        "original_hash": "456690bff3f441605dcd3afe2d477f03",
+        "ghost_file": "43049ea3-81b9-4ba6-8baa-be64abb78734_ghost.jpeg",
+        "ghost_hash": "945e4c79a04bc168e8c3ee89fc028575",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.800051Z",
+        "original_file": "8ab77fa8-e190-43ae-9cf3-8d4c98aec9a5.jpeg",
+        "original_hash": "54194d78065110fa8f863da766fb54a4",
+        "ghost_file": "8ab77fa8-e190-43ae-9cf3-8d4c98aec9a5_ghost.jpeg",
+        "ghost_hash": "30bb69253e6019b8d36f87658042f201",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.895444Z",
+        "original_file": "68e3071a-6e90-461e-a6b0-6367bd7807d4.jpeg",
+        "original_hash": "13188704fa5f87c447c30b2f3a11cd6b",
+        "ghost_file": "68e3071a-6e90-461e-a6b0-6367bd7807d4_ghost.jpeg",
+        "ghost_hash": "4e080bf420b5e7b05c54ef801069329a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:54.976190Z",
+        "original_file": "6b9c180d-197b-4fee-b105-73813617ede2.jpeg",
+        "original_hash": "b1d2a4114938f8aeba400c40169929b5",
+        "ghost_file": "6b9c180d-197b-4fee-b105-73813617ede2_ghost.jpeg",
+        "ghost_hash": "a6dbb22415877a278081edd21b3ca5b1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.062390Z",
+        "original_file": "ef5bdd85-1dd5-4fd2-add3-d0fc8c32186c.jpeg",
+        "original_hash": "c7f8e365db3ad545b67f2f2d98f6edc0",
+        "ghost_file": "ef5bdd85-1dd5-4fd2-add3-d0fc8c32186c_ghost.jpeg",
+        "ghost_hash": "81fd8091be610612c8ec71ec922ded1d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.136144Z",
+        "original_file": "7d4e3e8e-75ea-490f-9f5b-26b316f16a8b.jpeg",
+        "original_hash": "657a74fe841312a2190f86f3bb386739",
+        "ghost_file": "7d4e3e8e-75ea-490f-9f5b-26b316f16a8b_ghost.jpeg",
+        "ghost_hash": "cd62727413325080c5fcb1c9018aae7f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.213603Z",
+        "original_file": "12828084-2948-4ae1-b538-c2af56482c3f.jpeg",
+        "original_hash": "23b91fe6ae37dbe556bdf12ffabd5500",
+        "ghost_file": "12828084-2948-4ae1-b538-c2af56482c3f_ghost.jpeg",
+        "ghost_hash": "424e3662f4b0c461465d5629c9dec741",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.295970Z",
+        "original_file": "b1044053-0e5e-4674-917d-8e5b10c5768d.jpeg",
+        "original_hash": "14f07b0fef8adfafb53e84cb774c7828",
+        "ghost_file": "b1044053-0e5e-4674-917d-8e5b10c5768d_ghost.jpeg",
+        "ghost_hash": "6fdf4be3a37545b1433bf4a9f792f33c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.376004Z",
+        "original_file": "b436f03d-f46e-4808-b452-8178dd21bcd2.jpeg",
+        "original_hash": "a13c6ce5d716fa99815712546995ac37",
+        "ghost_file": "b436f03d-f46e-4808-b452-8178dd21bcd2_ghost.jpeg",
+        "ghost_hash": "b4d9296c4c375bfbdba12640ee2a92c1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.438246Z",
+        "original_file": "50cdece2-70ee-4518-b70f-cd321195c337.jpeg",
+        "original_hash": "f9f8fb79237b7d39bcb008b7dce7490f",
+        "ghost_file": "50cdece2-70ee-4518-b70f-cd321195c337_ghost.jpeg",
+        "ghost_hash": "44f3ef7a64e00fb8c3b4b2eafafe36b6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.519051Z",
+        "original_file": "5c646f0b-b02f-4b36-b7e5-722c0f84e3f4.jpeg",
+        "original_hash": "7354775aa69255c60a50245b9dd1a7aa",
+        "ghost_file": "5c646f0b-b02f-4b36-b7e5-722c0f84e3f4_ghost.jpeg",
+        "ghost_hash": "fc7730623b85a80d5ed70e17ac7785c5",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.585296Z",
+        "original_file": "3ca500b0-96bb-4a5a-b03a-fb7663f6be40.jpeg",
+        "original_hash": "9609477d2691d968ad06e6579c520117",
+        "ghost_file": "3ca500b0-96bb-4a5a-b03a-fb7663f6be40_ghost.jpeg",
+        "ghost_hash": "07743a938d5b4f1f3b7787e4a5a2aea3",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.677674Z",
+        "original_file": "aba8f2a0-e4d8-4fd0-8cb3-08921b670673.jpeg",
+        "original_hash": "a570f81ec0506295f77da20d026098e4",
+        "ghost_file": "aba8f2a0-e4d8-4fd0-8cb3-08921b670673_ghost.jpeg",
+        "ghost_hash": "afc31dde9739f99ddb6ab6e48452a0c9",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:55.761290Z",
+        "original_file": "7a0747c2-11dc-4dfa-be91-763b56c2750e.jpeg",
+        "original_hash": "1cf34c1e81a091056f8dd723a1f8bc16",
+        "ghost_file": "7a0747c2-11dc-4dfa-be91-763b56c2750e_ghost.jpeg",
+        "ghost_hash": "1023d35878cde1bbce2b581e023fc12e",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/K ",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.113375Z",
+        "original_file": "54520a23-a066-4991-b76c-fb82778f99c3.jpeg",
+        "original_hash": "ad79fde52d4d823ae90d4be249562a3b",
+        "ghost_file": "54520a23-a066-4991-b76c-fb82778f99c3_ghost.jpeg",
+        "ghost_hash": "1be499d41020c12c2acd43110cfdccc1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.187818Z",
+        "original_file": "02d52589-cf11-4014-8002-aa2ce9e83dda.jpeg",
+        "original_hash": "fa65db7ab65438ace77fc61621ff5629",
+        "ghost_file": "02d52589-cf11-4014-8002-aa2ce9e83dda_ghost.jpeg",
+        "ghost_hash": "e329b952081465fa129b97e64f2edfcc",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.265520Z",
+        "original_file": "af30968d-62ba-4f3c-b6dc-cd659d606d9d.jpeg",
+        "original_hash": "05c3476d2323f078b580f16eae11c8c7",
+        "ghost_file": "af30968d-62ba-4f3c-b6dc-cd659d606d9d_ghost.jpeg",
+        "ghost_hash": "c0d5d6f79b699554b712eee4d672d6a0",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.329391Z",
+        "original_file": "98b7b44c-54dd-412b-9423-e650c82593f3.jpeg",
+        "original_hash": "f1e2dfdd72df49890a3aae9668866dc5",
+        "ghost_file": "98b7b44c-54dd-412b-9423-e650c82593f3_ghost.jpeg",
+        "ghost_hash": "1b3761dbf293e812e8993c1b94f6e76a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.409407Z",
+        "original_file": "5f3092db-fbae-4e53-be5c-0ec6553ac340.jpeg",
+        "original_hash": "33ba9255e746c106eab8f8c1d7da1178",
+        "ghost_file": "5f3092db-fbae-4e53-be5c-0ec6553ac340_ghost.jpeg",
+        "ghost_hash": "bcec21de765d1588a418d6ccf0aa6d86",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.463443Z",
+        "original_file": "773b9b65-daef-4743-aa14-e73c281f273a.jpeg",
+        "original_hash": "dcfdb3e4a8ec129186c06f5017498bf2",
+        "ghost_file": "773b9b65-daef-4743-aa14-e73c281f273a_ghost.jpeg",
+        "ghost_hash": "2fac13a1d12553a95a7fe8c8fdf63b6b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.541753Z",
+        "original_file": "203d30c8-ffa5-4c13-8d9c-c2496bba488c.jpeg",
+        "original_hash": "e0a8af89acb97979e1987354f8524c3f",
+        "ghost_file": "203d30c8-ffa5-4c13-8d9c-c2496bba488c_ghost.jpeg",
+        "ghost_hash": "af2e3c03c149c335414c660e9eca2944",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.597429Z",
+        "original_file": "e160240c-9e03-486e-be75-da2c175ae9d7.jpeg",
+        "original_hash": "b25adf84bee56d864d0d6eed3c7920d9",
+        "ghost_file": "e160240c-9e03-486e-be75-da2c175ae9d7_ghost.jpeg",
+        "ghost_hash": "bfbf72a282c08ededa15aa33af318ac1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.697989Z",
+        "original_file": "ba642e49-ad19-4ab4-83f8-e5b4c7c89b11.jpeg",
+        "original_hash": "20cd991355d7a98dd8e1fca5e90d7de4",
+        "ghost_file": "ba642e49-ad19-4ab4-83f8-e5b4c7c89b11_ghost.jpeg",
+        "ghost_hash": "50b39cd496b8935195ddacf882beba4c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.762407Z",
+        "original_file": "3fe800e5-e691-472d-b18b-f2419461964b.jpeg",
+        "original_hash": "4c496686dbe7ec1cbec709f495e13eae",
+        "ghost_file": "3fe800e5-e691-472d-b18b-f2419461964b_ghost.jpeg",
+        "ghost_hash": "0af474a38888b837c331b64750b9e56d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.835756Z",
+        "original_file": "a62d9680-17ec-42d1-9208-6c1f4af41e0c.jpeg",
+        "original_hash": "f9693740433b6fbd0ee54e5717e304cf",
+        "ghost_file": "a62d9680-17ec-42d1-9208-6c1f4af41e0c_ghost.jpeg",
+        "ghost_hash": "a51bd2454fa41b075fe414aaa1468872",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.893066Z",
+        "original_file": "76e68468-fbd9-4a43-9d6a-66f66d787382.jpeg",
+        "original_hash": "d1ce42bcc62a6a1b1053905a155e4b21",
+        "ghost_file": "76e68468-fbd9-4a43-9d6a-66f66d787382_ghost.jpeg",
+        "ghost_hash": "9912971e6dca5e785e08055a33580b52",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:56.960086Z",
+        "original_file": "cc7a7a80-6dbf-49e3-9302-813354b8cf35.jpeg",
+        "original_hash": "67a61fdf2b2176c6ef0b724fb3a32f5b",
+        "ghost_file": "cc7a7a80-6dbf-49e3-9302-813354b8cf35_ghost.jpeg",
+        "ghost_hash": "8eab4ec3cffa428c8cb89dae67d3a740",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.014672Z",
+        "original_file": "fe528d06-73f9-4c16-a925-2073dc553868.jpeg",
+        "original_hash": "22dc143074f329e3e3692fe906b86f44",
+        "ghost_file": "fe528d06-73f9-4c16-a925-2073dc553868_ghost.jpeg",
+        "ghost_hash": "1131e2aae2908ee887ddc80b4a12d142",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.098401Z",
+        "original_file": "9e6b3e0e-364e-42be-add1-352fb0b3bdb7.jpeg",
+        "original_hash": "786c7fdc3649d00ce09608fe1854cea7",
+        "ghost_file": "9e6b3e0e-364e-42be-add1-352fb0b3bdb7_ghost.jpeg",
+        "ghost_hash": "0a5b35f2ba4c84144f9694f7921ef42b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.162032Z",
+        "original_file": "c45c8edb-aaac-4cec-883e-6157698d3b17.jpeg",
+        "original_hash": "19d177893a3f3b905c67866af1ee5565",
+        "ghost_file": "c45c8edb-aaac-4cec-883e-6157698d3b17_ghost.jpeg",
+        "ghost_hash": "8ce7ea25044124042378bdfa3df7e2b5",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.246561Z",
+        "original_file": "8b06a6db-17b3-4306-8242-d22c669bcbd1.jpeg",
+        "original_hash": "05af07de476d0989734fff1044491486",
+        "ghost_file": "8b06a6db-17b3-4306-8242-d22c669bcbd1_ghost.jpeg",
+        "ghost_hash": "67dda69569f3d7647fee63206d7f57e2",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.306415Z",
+        "original_file": "2d4a88d2-5bea-470a-8b45-167bb71c133c.jpeg",
+        "original_hash": "d69a118237ec45572ca7b27232cd59db",
+        "ghost_file": "2d4a88d2-5bea-470a-8b45-167bb71c133c_ghost.jpeg",
+        "ghost_hash": "a1b0246a1682946f8d64eb3defa855c6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.369598Z",
+        "original_file": "d326a3bc-b233-4528-939b-a7b30738cf6b.jpeg",
+        "original_hash": "bf5b36cd5dc8155f954c9c6be242c034",
+        "ghost_file": "d326a3bc-b233-4528-939b-a7b30738cf6b_ghost.jpeg",
+        "ghost_hash": "ff5b3335865f980eb845313e0535ac60",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.436888Z",
+        "original_file": "13d12f1a-0903-4411-9dd1-ef983f35508f.jpeg",
+        "original_hash": "30d70a313d988f5c6806a0fba006babd",
+        "ghost_file": "13d12f1a-0903-4411-9dd1-ef983f35508f_ghost.jpeg",
+        "ghost_hash": "1176b85462a8c13bfdccaa2ecb00fef0",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.514272Z",
+        "original_file": "ee6ad4e1-d6fe-4ac3-a7b7-3c17c421281b.jpeg",
+        "original_hash": "5e680556897f344a30ca3082f68b3b66",
+        "ghost_file": "ee6ad4e1-d6fe-4ac3-a7b7-3c17c421281b_ghost.jpeg",
+        "ghost_hash": "f398688711435dfc08305be0e1105f41",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.583291Z",
+        "original_file": "fbc92bdb-6d92-4971-bf37-130cfb84bb72.jpeg",
+        "original_hash": "d6ca1ee2e82cf8bd9353e061e10c0a2c",
+        "ghost_file": "fbc92bdb-6d92-4971-bf37-130cfb84bb72_ghost.jpeg",
+        "ghost_hash": "cc590b5d238ec5600314aa0ab48a70a7",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.653487Z",
+        "original_file": "72b3c0e7-7980-4e55-b0df-1b60652c5e08.jpeg",
+        "original_hash": "8075b0799404a7b91f8de8e9c5c5c1e9",
+        "ghost_file": "72b3c0e7-7980-4e55-b0df-1b60652c5e08_ghost.jpeg",
+        "ghost_hash": "3f58a2abe03bcdf071beb0b8eeeedf05",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.735831Z",
+        "original_file": "694cf2cd-d62e-4f35-8f04-8241f1e54cfd.jpeg",
+        "original_hash": "0fef030d92607249ce078d88be6ebcf3",
+        "ghost_file": "694cf2cd-d62e-4f35-8f04-8241f1e54cfd_ghost.jpeg",
+        "ghost_hash": "40b2d7edf7bf1cb0f340cc6607a9cf22",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.808366Z",
+        "original_file": "515dc760-157e-47cf-8e0d-cc9f35746902.jpeg",
+        "original_hash": "77fd8b4da493b9b14895516226d7dab9",
+        "ghost_file": "515dc760-157e-47cf-8e0d-cc9f35746902_ghost.jpeg",
+        "ghost_hash": "1f657d66b44c2f02c8e14e05a9fabef2",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.867718Z",
+        "original_file": "27d88ee8-4e1b-4a90-b370-aca308aa9451.jpeg",
+        "original_hash": "d9bac6dce13974c6cb6e1db2148cf82a",
+        "ghost_file": "27d88ee8-4e1b-4a90-b370-aca308aa9451_ghost.jpeg",
+        "ghost_hash": "785d1f81600f857029990e7399300a75",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.929420Z",
+        "original_file": "96208925-decc-4ad6-ab87-2312a5ee1065.jpeg",
+        "original_hash": "dcb09470f70b5495c4578d16f37715d5",
+        "ghost_file": "96208925-decc-4ad6-ab87-2312a5ee1065_ghost.jpeg",
+        "ghost_hash": "56a3918d03f4b18e1d3baf171f8b6440",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:57.995040Z",
+        "original_file": "413f3116-89b2-4ea0-b3e3-35e99097a951.jpeg",
+        "original_hash": "8d597203a77f17a137f958768223f422",
+        "ghost_file": "413f3116-89b2-4ea0-b3e3-35e99097a951_ghost.jpeg",
+        "ghost_hash": "02adcfd808fc834ab744d5722b121c1e",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.054881Z",
+        "original_file": "89ca2a50-8574-417e-956a-2fb5ad12f8f2.jpeg",
+        "original_hash": "bf1e95483be8cf0dbcdd9538424b7a37",
+        "ghost_file": "89ca2a50-8574-417e-956a-2fb5ad12f8f2_ghost.jpeg",
+        "ghost_hash": "097fa2900dd397ef198692606c3e13e6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.133177Z",
+        "original_file": "9c922363-6327-464d-91e7-f738d947f8aa.jpeg",
+        "original_hash": "687053238c70d9d8bd89bcff4811f380",
+        "ghost_file": "9c922363-6327-464d-91e7-f738d947f8aa_ghost.jpeg",
+        "ghost_hash": "4c628c9f5501cee35e135ec7b3026e46",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.217066Z",
+        "original_file": "e77d2dad-959c-4305-a30e-8e5bbb011b6b.jpeg",
+        "original_hash": "6f15c58907dae7b5f12564d927e59110",
+        "ghost_file": "e77d2dad-959c-4305-a30e-8e5bbb011b6b_ghost.jpeg",
+        "ghost_hash": "9a5fe8c4dbdad63b2469d8339e49b15b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.276450Z",
+        "original_file": "422d8b1e-e969-4657-ac9c-9e735494b737.jpeg",
+        "original_hash": "b9c9a3e97418f68e67a693216f2605bb",
+        "ghost_file": "422d8b1e-e969-4657-ac9c-9e735494b737_ghost.jpeg",
+        "ghost_hash": "44180f73f3694053ae66a60347134c6f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.356082Z",
+        "original_file": "8d0a1d2c-58e0-4a49-b3bd-1ac6b970068a.jpeg",
+        "original_hash": "89715cd0b5de5cf3d7525b211718f453",
+        "ghost_file": "8d0a1d2c-58e0-4a49-b3bd-1ac6b970068a_ghost.jpeg",
+        "ghost_hash": "b5c5f7bfcf1af80623133da86d9da1bd",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.418417Z",
+        "original_file": "e12285b6-39cc-4496-8f5a-2d4a76962dd9.jpeg",
+        "original_hash": "d1da416eda88e3c6467c904044439212",
+        "ghost_file": "e12285b6-39cc-4496-8f5a-2d4a76962dd9_ghost.jpeg",
+        "ghost_hash": "66eeb7ba473b92c68bee837d0adfa23f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.490704Z",
+        "original_file": "a441d14b-94eb-41cf-b408-4ec102b37313.jpeg",
+        "original_hash": "70a761aeca5fb7633e3536e1c01f0483",
+        "ghost_file": "a441d14b-94eb-41cf-b408-4ec102b37313_ghost.jpeg",
+        "ghost_hash": "31ea3eb55147d78d5b153fcede08dd39",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.554819Z",
+        "original_file": "95cd6011-7e81-4564-8dc4-95cca5588fa2.jpeg",
+        "original_hash": "0fcfecfde97c3dc24812803fb5c4b7e4",
+        "ghost_file": "95cd6011-7e81-4564-8dc4-95cca5588fa2_ghost.jpeg",
+        "ghost_hash": "7326a02a0c71ba4225c89458c41bb96a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.645693Z",
+        "original_file": "45cd21a4-d209-4cd6-8be0-51180e857033.jpeg",
+        "original_hash": "d193e70e421651dc320a3d75fd592618",
+        "ghost_file": "45cd21a4-d209-4cd6-8be0-51180e857033_ghost.jpeg",
+        "ghost_hash": "1af07b4d7bb91a34e6220c3620ccf00a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.721205Z",
+        "original_file": "c3369363-ea67-4511-83ec-f9644600b8a0.jpeg",
+        "original_hash": "7c6b7c3f9147b049f3d94c8c27364a51",
+        "ghost_file": "c3369363-ea67-4511-83ec-f9644600b8a0_ghost.jpeg",
+        "ghost_hash": "46829e3967d4abb47d0e137ec59e3979",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.788325Z",
+        "original_file": "795173c8-3445-47f6-8bce-b23f2abf09cb.jpeg",
+        "original_hash": "f9bda150d9065fd2b61c776a715c42a9",
+        "ghost_file": "795173c8-3445-47f6-8bce-b23f2abf09cb_ghost.jpeg",
+        "ghost_hash": "ea43b4afd4e1c8e63272c61870a71725",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.863513Z",
+        "original_file": "beabd04b-10d2-4044-bbf7-9808087e69ac.jpeg",
+        "original_hash": "f219e409c464e2461b276b28c9d1105d",
+        "ghost_file": "beabd04b-10d2-4044-bbf7-9808087e69ac_ghost.jpeg",
+        "ghost_hash": "86668c63ccd0ef079719e217c3f53403",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:58.937653Z",
+        "original_file": "e6446155-adc5-48ee-82f1-b7336909e469.jpeg",
+        "original_hash": "7c5d41e7613d60ff20aa7b78ea9306f8",
+        "ghost_file": "e6446155-adc5-48ee-82f1-b7336909e469_ghost.jpeg",
+        "ghost_hash": "0ae737f7efb015849a22af5decdf6061",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.007472Z",
+        "original_file": "fde7172a-2851-4b38-a1da-7630d4538f92.jpeg",
+        "original_hash": "ed2f33ef413056670b2e59ca80efec36",
+        "ghost_file": "fde7172a-2851-4b38-a1da-7630d4538f92_ghost.jpeg",
+        "ghost_hash": "271f0dbdcc853dd98b2da834c2ddaeca",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.078153Z",
+        "original_file": "bde5c713-9a7d-46c0-baf3-5db5f9f08530.jpeg",
+        "original_hash": "e75fc92060a3e0d7e402c3a8e3f8f372",
+        "ghost_file": "bde5c713-9a7d-46c0-baf3-5db5f9f08530_ghost.jpeg",
+        "ghost_hash": "2fc1305ff530af19dd4580f10586e9fe",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.132168Z",
+        "original_file": "4f326a77-685f-484e-aa84-387be3afc248.jpeg",
+        "original_hash": "456b1adc99dd187a60f20f326176f1d1",
+        "ghost_file": "4f326a77-685f-484e-aa84-387be3afc248_ghost.jpeg",
+        "ghost_hash": "b1b83a795d88aa621dc50f2f068b6a48",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.217954Z",
+        "original_file": "62ee81ff-6e7a-44dd-8064-fcc0bfece588.jpeg",
+        "original_hash": "c03bfcc7d97e90f60dcf4114f0dbc5f8",
+        "ghost_file": "62ee81ff-6e7a-44dd-8064-fcc0bfece588_ghost.jpeg",
+        "ghost_hash": "6d486a1c146e2973fac041a093854eed",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.277931Z",
+        "original_file": "cef7fac6-4fd5-417d-af02-f3d8781d4340.jpeg",
+        "original_hash": "8dc98b2692a54ef39c6118d012a0ad88",
+        "ghost_file": "cef7fac6-4fd5-417d-af02-f3d8781d4340_ghost.jpeg",
+        "ghost_hash": "82d5255d9967dacc53533bd238fbaf09",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.359115Z",
+        "original_file": "88cae76f-51fb-4e4a-9308-fe2096730664.jpeg",
+        "original_hash": "a58f2e25c19e3f3cd4e3269dd16777ed",
+        "ghost_file": "88cae76f-51fb-4e4a-9308-fe2096730664_ghost.jpeg",
+        "ghost_hash": "2a0314438916aae26476ee9d2be4eed0",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.432918Z",
+        "original_file": "fd240909-5529-47dc-9646-f4713c0161bb.jpeg",
+        "original_hash": "1ae0a3e0e63905551ea736de971c6c10",
+        "ghost_file": "fd240909-5529-47dc-9646-f4713c0161bb_ghost.jpeg",
+        "ghost_hash": "e2794db26505c2489c40299d8439d9c1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.507329Z",
+        "original_file": "2b448fd9-f836-4101-b2fa-47590d1be9dd.jpeg",
+        "original_hash": "41411846eae3039401e255f535990da9",
+        "ghost_file": "2b448fd9-f836-4101-b2fa-47590d1be9dd_ghost.jpeg",
+        "ghost_hash": "005fb3c0b507e323abbb0565e6da9cab",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.575888Z",
+        "original_file": "27f812d8-7abe-431b-b6e2-da1ac799825d.jpeg",
+        "original_hash": "21ac4a7e09a32e3bcd5541afa90532dd",
+        "ghost_file": "27f812d8-7abe-431b-b6e2-da1ac799825d_ghost.jpeg",
+        "ghost_hash": "65b1f2c80d30e68f01d3e0587b9a887d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.643742Z",
+        "original_file": "6abb9aa9-7e47-41ef-b145-fed4e34923d3.jpeg",
+        "original_hash": "ad99797b14b27d2f42706fc598e72f81",
+        "ghost_file": "6abb9aa9-7e47-41ef-b145-fed4e34923d3_ghost.jpeg",
+        "ghost_hash": "547168f13bafc6164fe145d32ddd604a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.717830Z",
+        "original_file": "b51b43fb-7ad7-4c1c-b43b-f153db5a4d6c.jpeg",
+        "original_hash": "3f42c1593a55f8213e6aa94e7e613f85",
+        "ghost_file": "b51b43fb-7ad7-4c1c-b43b-f153db5a4d6c_ghost.jpeg",
+        "ghost_hash": "66c087503294d5991d3b919aca92225c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.787358Z",
+        "original_file": "1f06c834-01d7-4f0f-99fa-f5ca3bcd914a.jpeg",
+        "original_hash": "37034387bdefa78b09ca6721d41f976c",
+        "ghost_file": "1f06c834-01d7-4f0f-99fa-f5ca3bcd914a_ghost.jpeg",
+        "ghost_hash": "dc73f2a4c7df1ff6228faaf7648153b8",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.859420Z",
+        "original_file": "355b5069-1f2c-45cb-89ae-094fa3ae0ab1.jpeg",
+        "original_hash": "2d0f54b0e1fdfb8da0d8b45e47d8ad34",
+        "ghost_file": "355b5069-1f2c-45cb-89ae-094fa3ae0ab1_ghost.jpeg",
+        "ghost_hash": "7e1ac755f7bfed174cfb739b4409f5f1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.917138Z",
+        "original_file": "0c841017-706b-48fe-ad7f-fe2b1f560712.jpeg",
+        "original_hash": "9ae383f825a095068ead0ab8e25953d1",
+        "ghost_file": "0c841017-706b-48fe-ad7f-fe2b1f560712_ghost.jpeg",
+        "ghost_hash": "2c9c1b659d29056635e64990c95c6378",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:09:59.989230Z",
+        "original_file": "13a1827c-4026-4bfb-a187-5fbe8e77d085.jpeg",
+        "original_hash": "a541b55048ab4105e602eb8ab3b1a975",
+        "ghost_file": "13a1827c-4026-4bfb-a187-5fbe8e77d085_ghost.jpeg",
+        "ghost_hash": "98357d89ea06235e2cd2d9f4f8b965fa",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.057463Z",
+        "original_file": "c28279f4-ecf6-4b49-a23f-e5c2737b66a2.jpeg",
+        "original_hash": "c8dcae67a2924daf5d952e1250891881",
+        "ghost_file": "c28279f4-ecf6-4b49-a23f-e5c2737b66a2_ghost.jpeg",
+        "ghost_hash": "3a3f8aa38ba46c0bae53f6fa2dc0a3b4",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.138447Z",
+        "original_file": "bd0bf3cc-1c96-4453-a920-f2255035fc4d.jpeg",
+        "original_hash": "365127d4d4cafb81c7a4ad890b2f7b0b",
+        "ghost_file": "bd0bf3cc-1c96-4453-a920-f2255035fc4d_ghost.jpeg",
+        "ghost_hash": "659b8943fb93f2b6f5b31678a7032293",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.200679Z",
+        "original_file": "c746b466-4c16-40dd-a381-ae7b29256eea.jpeg",
+        "original_hash": "0648362d604ea21f05f7a33b8fc537fd",
+        "ghost_file": "c746b466-4c16-40dd-a381-ae7b29256eea_ghost.jpeg",
+        "ghost_hash": "9f6a6c4ca09b1ac9860cc33303d36e0d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.273930Z",
+        "original_file": "a7fc38ef-baaa-46db-b64b-c385685da631.jpeg",
+        "original_hash": "64e300db76561b081e702a0ebe215b0a",
+        "ghost_file": "a7fc38ef-baaa-46db-b64b-c385685da631_ghost.jpeg",
+        "ghost_hash": "8abced219fa352109905afe5dfa9da51",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.330670Z",
+        "original_file": "49a58660-8697-4272-9313-047b66759bbd.jpeg",
+        "original_hash": "db5af014d72341815b794feaf563e4ae",
+        "ghost_file": "49a58660-8697-4272-9313-047b66759bbd_ghost.jpeg",
+        "ghost_hash": "282cc660f9bea2138bb658f95a9e1b9a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.408546Z",
+        "original_file": "6fb79282-1b49-4165-b108-e80b9b4623a8.jpeg",
+        "original_hash": "67e2f1dc48d8eef2053b83367fb08c62",
+        "ghost_file": "6fb79282-1b49-4165-b108-e80b9b4623a8_ghost.jpeg",
+        "ghost_hash": "756cf73cf215dbb869ff401f7ea9009d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.476190Z",
+        "original_file": "c9fa01ff-34ce-42b1-abc0-97ecb187a9b3.jpeg",
+        "original_hash": "b9fb4958045d75d781f89623573d663e",
+        "ghost_file": "c9fa01ff-34ce-42b1-abc0-97ecb187a9b3_ghost.jpeg",
+        "ghost_hash": "8122712841c194322e80d419c50bbbaf",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.567010Z",
+        "original_file": "1a6e34ca-d661-44b1-803a-4765440fa832.jpeg",
+        "original_hash": "0815e07c5d868658d681a2a1af540be0",
+        "ghost_file": "1a6e34ca-d661-44b1-803a-4765440fa832_ghost.jpeg",
+        "ghost_hash": "473f6a99fc6e90e0a757dc15dcad6a86",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.635773Z",
+        "original_file": "81e67901-2279-44d0-8157-1d4d31cdbe45.jpeg",
+        "original_hash": "475dc2ab81824ae470c0da04ee0f44ff",
+        "ghost_file": "81e67901-2279-44d0-8157-1d4d31cdbe45_ghost.jpeg",
+        "ghost_hash": "64f78b5142e8ae8bd3050860bc4dc14c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.719443Z",
+        "original_file": "373d50a7-6532-4426-991b-fcbd57dd2f7c.jpeg",
+        "original_hash": "a7df3b8d29946e2ed0ab68fad0c84d21",
+        "ghost_file": "373d50a7-6532-4426-991b-fcbd57dd2f7c_ghost.jpeg",
+        "ghost_hash": "6a38ada68abe0d52e736a35c011e271d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.780823Z",
+        "original_file": "355d15ca-96d1-4b3b-aff6-797769a78a89.jpeg",
+        "original_hash": "20224731c5c735054c77df8cc67a1115",
+        "ghost_file": "355d15ca-96d1-4b3b-aff6-797769a78a89_ghost.jpeg",
+        "ghost_hash": "653763dcec3239e4880b62bad17bd415",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.851657Z",
+        "original_file": "f61e19dd-7fe2-42fd-a866-f472d2fc32e8.jpeg",
+        "original_hash": "55b19454b70bae01296ebf421a6bda5c",
+        "ghost_file": "f61e19dd-7fe2-42fd-a866-f472d2fc32e8_ghost.jpeg",
+        "ghost_hash": "1cfd3a9c6cd73363e61fdd7ec4dcd48c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.909025Z",
+        "original_file": "c33ddfd0-906d-41c1-9df2-5d11c7eda199.jpeg",
+        "original_hash": "df65007bf6a96261255942777006acf0",
+        "ghost_file": "c33ddfd0-906d-41c1-9df2-5d11c7eda199_ghost.jpeg",
+        "ghost_hash": "1366654974afb4bbd1413d22e04d3fe7",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:00.978400Z",
+        "original_file": "9a5dc933-4bc1-4d65-9f1a-60858c39ddb2.jpeg",
+        "original_hash": "a4e7c71fa9a3276c4fe2f7f301b802f2",
+        "ghost_file": "9a5dc933-4bc1-4d65-9f1a-60858c39ddb2_ghost.jpeg",
+        "ghost_hash": "78dbd3714f7d88df294dfa7aeac80498",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.033210Z",
+        "original_file": "85443fa6-3e5f-460f-bc1d-ff03bd1d6e7b.jpeg",
+        "original_hash": "6f084043660cddda26171be78765ef0b",
+        "ghost_file": "85443fa6-3e5f-460f-bc1d-ff03bd1d6e7b_ghost.jpeg",
+        "ghost_hash": "35f847ff7d66bc97963ed46611d47b35",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.106262Z",
+        "original_file": "a54fa62a-1cf5-4b70-82e0-d22d1473d5b0.jpeg",
+        "original_hash": "0449bf99d0dfffa8acf65afe9b49575f",
+        "ghost_file": "a54fa62a-1cf5-4b70-82e0-d22d1473d5b0_ghost.jpeg",
+        "ghost_hash": "a4797471da3e9b8dda77b4409e95cbb8",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.178363Z",
+        "original_file": "6aac2bf8-38a0-46d1-af10-6f78b171daab.jpeg",
+        "original_hash": "22bf79bb86f3e1c9559d568b772b9150",
+        "ghost_file": "6aac2bf8-38a0-46d1-af10-6f78b171daab_ghost.jpeg",
+        "ghost_hash": "f00647873a324c06eb643ef0afa0c928",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.247136Z",
+        "original_file": "042683c5-4ece-457e-963e-de5fb4740b96 (1).jpeg",
+        "original_hash": "72bff2ba152f7140036292f2d64a1ab5",
+        "ghost_file": "042683c5-4ece-457e-963e-de5fb4740b96 (1)_ghost.jpeg",
+        "ghost_hash": "dfecac37a4dc29dbbd76d906a69e278d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.305627Z",
+        "original_file": "042683c5-4ece-457e-963e-de5fb4740b96.jpeg",
+        "original_hash": "72bff2ba152f7140036292f2d64a1ab5",
+        "ghost_file": "042683c5-4ece-457e-963e-de5fb4740b96_ghost.jpeg",
+        "ghost_hash": "dfecac37a4dc29dbbd76d906a69e278d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.374052Z",
+        "original_file": "28bafa22-4c5e-46b1-ae26-ffb0533bb628.jpeg",
+        "original_hash": "77e8e1865dbf0bac38c034e38d352fa1",
+        "ghost_file": "28bafa22-4c5e-46b1-ae26-ffb0533bb628_ghost.jpeg",
+        "ghost_hash": "a2b8f8607e3e5401879dcd66fd70b361",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.436437Z",
+        "original_file": "f6894ed7-e15e-4266-b4a2-075296832d0e.jpeg",
+        "original_hash": "348fb574cddcdebb10b4fa88d6a475ec",
+        "ghost_file": "f6894ed7-e15e-4266-b4a2-075296832d0e_ghost.jpeg",
+        "ghost_hash": "ca8299f4de0849fdce90f33ffb1ce42a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.526699Z",
+        "original_file": "fd9ef7c5-2b19-465a-bdb1-f07abca37ae3.jpeg",
+        "original_hash": "393b822b9b748b20df34a4261cf84dff",
+        "ghost_file": "fd9ef7c5-2b19-465a-bdb1-f07abca37ae3_ghost.jpeg",
+        "ghost_hash": "fee7b24729d9a42c11b63c08f54ee972",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.592551Z",
+        "original_file": "ef0f9f33-5428-4f1a-8508-8d3adee3364f.jpeg",
+        "original_hash": "c78929270e41ac11f8b8bbbf6ff8b41e",
+        "ghost_file": "ef0f9f33-5428-4f1a-8508-8d3adee3364f_ghost.jpeg",
+        "ghost_hash": "5ba3e5d9202346dc834c3cb39fad538b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.667837Z",
+        "original_file": "7d75a824-7ec3-4809-a366-63901d4178bd.jpeg",
+        "original_hash": "02c37cacdc5bf481f332b22bd11bf874",
+        "ghost_file": "7d75a824-7ec3-4809-a366-63901d4178bd_ghost.jpeg",
+        "ghost_hash": "cc99e8d4cbba70260446c3b7d17fb67d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.745091Z",
+        "original_file": "a2bf0597-7187-4337-9654-9b366ba9ac3d.jpeg",
+        "original_hash": "83bfbd33b28cc8cd25facb1596b84bd1",
+        "ghost_file": "a2bf0597-7187-4337-9654-9b366ba9ac3d_ghost.jpeg",
+        "ghost_hash": "c2baf07757d6c1d84100a6bdfc108395",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.803460Z",
+        "original_file": "c58f033b-2b09-40a7-bcf9-645d9ed19af6.jpeg",
+        "original_hash": "4f8236e75642a4ebe201f4ad037826c7",
+        "ghost_file": "c58f033b-2b09-40a7-bcf9-645d9ed19af6_ghost.jpeg",
+        "ghost_hash": "fca4eea37500f73f4b1217ff10695e8b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.869739Z",
+        "original_file": "9f1c2ed7-8d2f-4859-9179-9d901d5f6f44.jpeg",
+        "original_hash": "0d50650829f1e220912e91c6cc5fab61",
+        "ghost_file": "9f1c2ed7-8d2f-4859-9179-9d901d5f6f44_ghost.jpeg",
+        "ghost_hash": "23d00045a043acb6f7c24ae6dcf3867c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.926184Z",
+        "original_file": "e15e5bc5-966f-4f8b-aeed-f22bb6eb3949.jpeg",
+        "original_hash": "b5db0649107fa94b64c78c29e6a5eecf",
+        "ghost_file": "e15e5bc5-966f-4f8b-aeed-f22bb6eb3949_ghost.jpeg",
+        "ghost_hash": "e9d5758a85bab38a1730547bfc4d561a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:01.994930Z",
+        "original_file": "5c37ce3b-8d6f-456c-bba1-cdd5fad2fcf2.jpeg",
+        "original_hash": "5ba90124ef6f26414ee5a261c801cd70",
+        "ghost_file": "5c37ce3b-8d6f-456c-bba1-cdd5fad2fcf2_ghost.jpeg",
+        "ghost_hash": "1d0bee100061c15e4fe73e975a89148b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.071405Z",
+        "original_file": "697cdccd-5688-4ab3-bf94-554d875d27fb.jpeg",
+        "original_hash": "3e63f60c8bd8ae7325653a127a6a04b3",
+        "ghost_file": "697cdccd-5688-4ab3-bf94-554d875d27fb_ghost.jpeg",
+        "ghost_hash": "44a733deb933645113b070d3edbbc212",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.140388Z",
+        "original_file": "bf59d460-206e-4755-8eba-051bc48c1b2f.jpeg",
+        "original_hash": "0242c7da3d07c4d36e0a16ca16232fda",
+        "ghost_file": "bf59d460-206e-4755-8eba-051bc48c1b2f_ghost.jpeg",
+        "ghost_hash": "8f0c7c3508b4dbc28b7dae43107cc728",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.203384Z",
+        "original_file": "6a6b89ce-c46e-4d59-92a7-acd196e2555d.jpeg",
+        "original_hash": "a2f831e8464c0030a01e5f8cd2ff452e",
+        "ghost_file": "6a6b89ce-c46e-4d59-92a7-acd196e2555d_ghost.jpeg",
+        "ghost_hash": "509351fce7567c8f9bb70b47fd804268",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.274409Z",
+        "original_file": "cfed05f8-9d78-4523-a0c9-29532f100648.jpeg",
+        "original_hash": "c66fed8f64dbe4fb9cfe610291834ec1",
+        "ghost_file": "cfed05f8-9d78-4523-a0c9-29532f100648_ghost.jpeg",
+        "ghost_hash": "d50a2f1a651c8ac2f5afb85c72bc87be",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.337954Z",
+        "original_file": "c6924bbe-3060-4b24-8d0a-5c19b4bde8f5.jpeg",
+        "original_hash": "8c977a39a56a99b2ac39fffaaadc506c",
+        "ghost_file": "c6924bbe-3060-4b24-8d0a-5c19b4bde8f5_ghost.jpeg",
+        "ghost_hash": "40e25c126436bfbac28b4c340e3023df",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.400246Z",
+        "original_file": "367b5d4d-4c50-47fc-9973-d56c72e2faa7.jpeg",
+        "original_hash": "56f0e71f00bde3e9af3f81af27300bab",
+        "ghost_file": "367b5d4d-4c50-47fc-9973-d56c72e2faa7_ghost.jpeg",
+        "ghost_hash": "ac853ffe1f758808b008e59d7f739d4c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.469802Z",
+        "original_file": "d3180f0f-82f6-43bf-a7eb-a48cf06eb488.jpeg",
+        "original_hash": "86918169391440b3a55485c7ebd60bb4",
+        "ghost_file": "d3180f0f-82f6-43bf-a7eb-a48cf06eb488_ghost.jpeg",
+        "ghost_hash": "721cc888055f55a3bf098baa3a4f5378",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.543950Z",
+        "original_file": "f93882f6-c799-4d68-8bfb-b83965c16db6.jpeg",
+        "original_hash": "00da372403b48c0f7ded8f5c5bb5f823",
+        "ghost_file": "f93882f6-c799-4d68-8bfb-b83965c16db6_ghost.jpeg",
+        "ghost_hash": "04be5ff5b5a0f98ce919f4663904fc91",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.612178Z",
+        "original_file": "2a53c457-1cf1-463c-8051-cf74e7820193.jpeg",
+        "original_hash": "0b9be1768676c19251ded70e4722207f",
+        "ghost_file": "2a53c457-1cf1-463c-8051-cf74e7820193_ghost.jpeg",
+        "ghost_hash": "5e20fb2733535a3466dbdba1fcce0463",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.662631Z",
+        "original_file": "0886aaa3-deca-4182-85f4-23668edfa98d.jpeg",
+        "original_hash": "5469802bd5698b716480daff788712a4",
+        "ghost_file": "0886aaa3-deca-4182-85f4-23668edfa98d_ghost.jpeg",
+        "ghost_hash": "cd058eacce15532de027e117ae16a5e6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.737811Z",
+        "original_file": "6b2dd3df-e0a6-48ca-b2c1-dfe81103dc45.jpeg",
+        "original_hash": "a0eea54c278d8b0e92f0d7b083bd2038",
+        "ghost_file": "6b2dd3df-e0a6-48ca-b2c1-dfe81103dc45_ghost.jpeg",
+        "ghost_hash": "23d5e1567dc1a7b1e6e2f8422c52d1c6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.816561Z",
+        "original_file": "d4fdc0e1-716a-4455-8b28-08b0553047c4.jpeg",
+        "original_hash": "435b53b66793874546376a444760754b",
+        "ghost_file": "d4fdc0e1-716a-4455-8b28-08b0553047c4_ghost.jpeg",
+        "ghost_hash": "26a97e395f31870fa50560d8634828cb",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.882710Z",
+        "original_file": "b0006681-1859-4100-ab6d-3a1c9e8e2671.jpeg",
+        "original_hash": "d09196881d7d175ad2697abdae97221e",
+        "ghost_file": "b0006681-1859-4100-ab6d-3a1c9e8e2671_ghost.jpeg",
+        "ghost_hash": "c5f832eab0680e0f2758c859e1a14671",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:02.947269Z",
+        "original_file": "25d8c65b-c688-4d88-a9db-9a680897532a.jpeg",
+        "original_hash": "d4194033daf2cf17e48bd4cb33650ef3",
+        "ghost_file": "25d8c65b-c688-4d88-a9db-9a680897532a_ghost.jpeg",
+        "ghost_hash": "9d33b86c584bbb6b9233b071440b2f3c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.005690Z",
+        "original_file": "a3932e2d-9c73-4aa7-813e-ac3fa0d10c67.jpeg",
+        "original_hash": "6568901d96f7f4889b020d877a699bbe",
+        "ghost_file": "a3932e2d-9c73-4aa7-813e-ac3fa0d10c67_ghost.jpeg",
+        "ghost_hash": "fea39dc30e6c9deaf3c370afb8f4dd7f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.095855Z",
+        "original_file": "b1b06ee9-f2c3-48c9-a449-a393c9c0db0a.jpeg",
+        "original_hash": "2668d6155bbc56a6e4d97a41306e13dc",
+        "ghost_file": "b1b06ee9-f2c3-48c9-a449-a393c9c0db0a_ghost.jpeg",
+        "ghost_hash": "ad147f2d7fc46aae6a96edb8d7bb1198",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.149927Z",
+        "original_file": "58156bec-9111-46c7-9f49-e8d87e1cff32.jpeg",
+        "original_hash": "4ff799b16b6224d746b795594bf7bf79",
+        "ghost_file": "58156bec-9111-46c7-9f49-e8d87e1cff32_ghost.jpeg",
+        "ghost_hash": "153a28ec06104c6fc240d873b74a230c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.224792Z",
+        "original_file": "50119582-8e40-46b3-bed3-856c7bda9a6c.jpeg",
+        "original_hash": "45b1c9862a85a92ba38121b97e4aaafa",
+        "ghost_file": "50119582-8e40-46b3-bed3-856c7bda9a6c_ghost.jpeg",
+        "ghost_hash": "cd21ea03f324567cd7d5fc443adcda3b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.275388Z",
+        "original_file": "83e0ae64-cf10-4f6a-87e1-8a266d2332f4.jpeg",
+        "original_hash": "914c01406ef1e444171a39c74e537a68",
+        "ghost_file": "83e0ae64-cf10-4f6a-87e1-8a266d2332f4_ghost.jpeg",
+        "ghost_hash": "f20d3127ae73718296ccf4b0106f55e6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.340523Z",
+        "original_file": "8ae47a5c-07b0-4539-8f51-0065d1b3550f.jpeg",
+        "original_hash": "e45b068bf3d3e46e7035567359ed98c8",
+        "ghost_file": "8ae47a5c-07b0-4539-8f51-0065d1b3550f_ghost.jpeg",
+        "ghost_hash": "9538db3a199d5893521f7608ad030c3d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.410912Z",
+        "original_file": "4f460af7-b170-45ff-bb8d-5f2947504a82.jpeg",
+        "original_hash": "30290e98260ccc635c5d7952d7291c55",
+        "ghost_file": "4f460af7-b170-45ff-bb8d-5f2947504a82_ghost.jpeg",
+        "ghost_hash": "a9eb21d6aa305fab5ab5068d9e8637d0",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.494984Z",
+        "original_file": "f6b1191a-5f19-4fa4-94c3-6492bf76d367.jpeg",
+        "original_hash": "abf5383c232664a24188c094db235424",
+        "ghost_file": "f6b1191a-5f19-4fa4-94c3-6492bf76d367_ghost.jpeg",
+        "ghost_hash": "fc6ede860fbff2a20e9019f6ad0df69b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.571820Z",
+        "original_file": "bf155ca5-a647-4a8b-a453-befada13a488.jpeg",
+        "original_hash": "29afe49cad141ab8d50b160b25ad1870",
+        "ghost_file": "bf155ca5-a647-4a8b-a453-befada13a488_ghost.jpeg",
+        "ghost_hash": "c21fc2173dd032aa699b70e58496fb63",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.657652Z",
+        "original_file": "1f5c8ed0-86b7-4983-8c9d-b4d9dae634d4.jpeg",
+        "original_hash": "3cd7f28c6373a229171c02e09a088e3e",
+        "ghost_file": "1f5c8ed0-86b7-4983-8c9d-b4d9dae634d4_ghost.jpeg",
+        "ghost_hash": "277e61ddd4792a40638737a759419cb1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.818036Z",
+        "original_file": "f7614b8d-7443-459d-a8e2-3b6763a8a359.jpeg",
+        "original_hash": "c8f0c4a529816564489dc5168efdeaf7",
+        "ghost_file": "f7614b8d-7443-459d-a8e2-3b6763a8a359_ghost.jpeg",
+        "ghost_hash": "9582244af1c0d05174f8686870f49761",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.889344Z",
+        "original_file": "4d46d0f3-b2d3-4426-8644-18f7f0624368.jpeg",
+        "original_hash": "bb1098597117d6e4465f4ea529c2d975",
+        "ghost_file": "4d46d0f3-b2d3-4426-8644-18f7f0624368_ghost.jpeg",
+        "ghost_hash": "1460b4860c673eac41b7f4c784f64a3a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:03.954903Z",
+        "original_file": "da5dda4f-c12c-4171-9359-dc1b631bd91e.jpeg",
+        "original_hash": "a6cf12cb1c8b47fc84ce56211814a3a2",
+        "ghost_file": "da5dda4f-c12c-4171-9359-dc1b631bd91e_ghost.jpeg",
+        "ghost_hash": "45352a73efac2d882375047352412b62",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.046028Z",
+        "original_file": "6c223514-37c4-44c3-bb0a-9af99bad03f2.jpeg",
+        "original_hash": "bd10064242e1cf053b177a8f99af8698",
+        "ghost_file": "6c223514-37c4-44c3-bb0a-9af99bad03f2_ghost.jpeg",
+        "ghost_hash": "a81d6a4c6aec5915a2d5c05f2cdf4095",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.113401Z",
+        "original_file": "dcd65d2c-1470-4719-a208-6dacf8716f5e.jpeg",
+        "original_hash": "e83c877cb05b502ac61bd6add233d8af",
+        "ghost_file": "dcd65d2c-1470-4719-a208-6dacf8716f5e_ghost.jpeg",
+        "ghost_hash": "9907217809177df79c3c88a635c01783",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.198520Z",
+        "original_file": "90900c71-68cf-4d7d-a4a1-9cad8e650441.jpeg",
+        "original_hash": "1acc1f221fb02a147b74bf61a8399611",
+        "ghost_file": "90900c71-68cf-4d7d-a4a1-9cad8e650441_ghost.jpeg",
+        "ghost_hash": "71aec2e9b517b3ce6266a2a0e7540c2d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.275238Z",
+        "original_file": "41a7e8c4-fa8f-497d-b2e3-3100e4b8c822.jpeg",
+        "original_hash": "e63c369364272807ffaf799802a81395",
+        "ghost_file": "41a7e8c4-fa8f-497d-b2e3-3100e4b8c822_ghost.jpeg",
+        "ghost_hash": "88c55ed48d020cd2c19fbbdc4e5b8425",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.337466Z",
+        "original_file": "a22b308d-6908-4d0c-943f-958009cd3281.jpeg",
+        "original_hash": "028673f8c5243367335b10f9ae592d27",
+        "ghost_file": "a22b308d-6908-4d0c-943f-958009cd3281_ghost.jpeg",
+        "ghost_hash": "6be03bd43879fba2c35bd7af7d85d95a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.416374Z",
+        "original_file": "9c094e91-75bc-42bf-a001-ed329d59a458.jpeg",
+        "original_hash": "6e1c39888115c192a3228719dcea1ac3",
+        "ghost_file": "9c094e91-75bc-42bf-a001-ed329d59a458_ghost.jpeg",
+        "ghost_hash": "14ee6547c7b59c89e82cfbe3f030f19d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.487133Z",
+        "original_file": "1cab7993-063f-4152-8f0d-c456c96bdc0d.jpeg",
+        "original_hash": "11ebb4a052cc1518acd9aecd61e65be0",
+        "ghost_file": "1cab7993-063f-4152-8f0d-c456c96bdc0d_ghost.jpeg",
+        "ghost_hash": "e186e429fac2f011ab86b4be890497fc",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.556304Z",
+        "original_file": "4820bc1d-c47e-435f-8a41-dd7bed47c5b1.jpeg",
+        "original_hash": "291ea5567296c410c0753b0e71adb49e",
+        "ghost_file": "4820bc1d-c47e-435f-8a41-dd7bed47c5b1_ghost.jpeg",
+        "ghost_hash": "ec7491a5e073abfcd35a040c2fcdf219",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.621369Z",
+        "original_file": "845cd1ac-5c18-45a3-be86-a48f15404592.jpeg",
+        "original_hash": "057736075f517670dd666c94808df5ba",
+        "ghost_file": "845cd1ac-5c18-45a3-be86-a48f15404592_ghost.jpeg",
+        "ghost_hash": "1665cc8afddcc7f28cc4cd847d48ea0b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.688271Z",
+        "original_file": "5e1cbf0c-ae4e-44dc-873d-cff22b8438bf.jpeg",
+        "original_hash": "c191f841893c27c99098af8d22202d8a",
+        "ghost_file": "5e1cbf0c-ae4e-44dc-873d-cff22b8438bf_ghost.jpeg",
+        "ghost_hash": "e6a386a23dcf354e30f3375d5bc09477",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.748808Z",
+        "original_file": "a21c3100-96d3-4cfb-a6a3-c1b9011cfa1c.jpeg",
+        "original_hash": "794117ea7d980ae7737d704a6e57dbcf",
+        "ghost_file": "a21c3100-96d3-4cfb-a6a3-c1b9011cfa1c_ghost.jpeg",
+        "ghost_hash": "4dc03d03007a19583d52d893a50dc7ba",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.822455Z",
+        "original_file": "9b665b77-7cff-4963-8863-f74386487ec8.jpeg",
+        "original_hash": "997261ff758929a0d33046999d33d8fb",
+        "ghost_file": "9b665b77-7cff-4963-8863-f74386487ec8_ghost.jpeg",
+        "ghost_hash": "4cb9d9ce853fc4070a03a4397445ce23",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.902366Z",
+        "original_file": "a141be40-fa20-4e81-ba30-b4824e9a48fe.jpeg",
+        "original_hash": "64a5fa6c089897a97a51a5540a411c5b",
+        "ghost_file": "a141be40-fa20-4e81-ba30-b4824e9a48fe_ghost.jpeg",
+        "ghost_hash": "7c59b959badf18e2a86ead8b4566302d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:04.994872Z",
+        "original_file": "c8964dbb-3b9e-4316-ae06-51f62cdd8d2a.jpeg",
+        "original_hash": "5c4e8eb3a8842559c0920e1be8e92a60",
+        "ghost_file": "c8964dbb-3b9e-4316-ae06-51f62cdd8d2a_ghost.jpeg",
+        "ghost_hash": "5d4fc53e44231d60c619af1b3357f62c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.085074Z",
+        "original_file": "6fa9f1bc-8ee4-4f97-a6e7-2fc75ea460ef.jpeg",
+        "original_hash": "b41bfce37a0c3ae1722eac863efa949c",
+        "ghost_file": "6fa9f1bc-8ee4-4f97-a6e7-2fc75ea460ef_ghost.jpeg",
+        "ghost_hash": "98b265cb1cfe47648b6009e10fe3c097",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.142873Z",
+        "original_file": "3c7b187c-108a-4226-ab8b-bf2a442303f6.jpeg",
+        "original_hash": "0f7072c2f1c9221c11d9c7ed279d2af2",
+        "ghost_file": "3c7b187c-108a-4226-ab8b-bf2a442303f6_ghost.jpeg",
+        "ghost_hash": "f110de0c1bd730f7c3b062b92479cb63",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.208082Z",
+        "original_file": "9ff58979-cf79-4891-a1eb-46275196e730.jpeg",
+        "original_hash": "1714c50eeedd71e284065bb60d9bd96b",
+        "ghost_file": "9ff58979-cf79-4891-a1eb-46275196e730_ghost.jpeg",
+        "ghost_hash": "ed51be468bae88b20cce192dc0563c71",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.262971Z",
+        "original_file": "b42c6e8d-fa4a-4d17-9460-7d8af0f28a23.jpeg",
+        "original_hash": "93dcb5c29bc840fe1c4fe55d4e7e515a",
+        "ghost_file": "b42c6e8d-fa4a-4d17-9460-7d8af0f28a23_ghost.jpeg",
+        "ghost_hash": "2c04f8c90268e9bca91e08394ac7ab4a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.330957Z",
+        "original_file": "ee15b726-ed57-41a0-9aa3-e3c4a64b83ce.jpeg",
+        "original_hash": "42b79a415d646ec744fc019cbd40d1e5",
+        "ghost_file": "ee15b726-ed57-41a0-9aa3-e3c4a64b83ce_ghost.jpeg",
+        "ghost_hash": "ec3de55550f0b2890d298ddec725108d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.405891Z",
+        "original_file": "742f20b8-20a1-4ff0-b066-a8b3d2dfb93b.jpeg",
+        "original_hash": "8487924284ecb770bb94a990f7895d44",
+        "ghost_file": "742f20b8-20a1-4ff0-b066-a8b3d2dfb93b_ghost.jpeg",
+        "ghost_hash": "2025dbd24ee7f0345dca6ccade6f7a8e",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.475042Z",
+        "original_file": "0bd3da10-9dc2-41c0-aa90-b6000ec47327.jpeg",
+        "original_hash": "385e377f6422fe70ba9e773e659764f9",
+        "ghost_file": "0bd3da10-9dc2-41c0-aa90-b6000ec47327_ghost.jpeg",
+        "ghost_hash": "ab7d18c99ec96f5f5c79ee6fc40a933d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.526050Z",
+        "original_file": "1b8488c7-3065-4212-a1e5-c0164b2d2e4b.jpeg",
+        "original_hash": "a77f2ae326c66104f48f7489c7a70ca5",
+        "ghost_file": "1b8488c7-3065-4212-a1e5-c0164b2d2e4b_ghost.jpeg",
+        "ghost_hash": "58b5f72f545c0dd87099d1e5e135ecb3",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.599547Z",
+        "original_file": "cfbcd1cc-7c63-4a6c-adcd-71299678d60a.jpeg",
+        "original_hash": "b69361b737bca4c8a1190a21dc7f14da",
+        "ghost_file": "cfbcd1cc-7c63-4a6c-adcd-71299678d60a_ghost.jpeg",
+        "ghost_hash": "3aa72a53f20d780bc306be0ae8189797",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.660355Z",
+        "original_file": "9b0e5f27-d5e4-45ea-98b5-409fb2276a3e.jpeg",
+        "original_hash": "de7b5657ef227b56ae34c7f5926103c6",
+        "ghost_file": "9b0e5f27-d5e4-45ea-98b5-409fb2276a3e_ghost.jpeg",
+        "ghost_hash": "fc5268579506b660b94f36518f0112b6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.728975Z",
+        "original_file": "fb4dc184-72a9-451d-96c0-6cdb265d822c.jpeg",
+        "original_hash": "664baecb5f4a171d7af9b176733cd809",
+        "ghost_file": "fb4dc184-72a9-451d-96c0-6cdb265d822c_ghost.jpeg",
+        "ghost_hash": "06eb403e9b51a08cc1c6fcb8e95e997f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.802765Z",
+        "original_file": "65d7c778-ba08-48db-918b-24d3dde41138.jpeg",
+        "original_hash": "0ecafdf5e74548ef443cb19f86b4e7d9",
+        "ghost_file": "65d7c778-ba08-48db-918b-24d3dde41138_ghost.jpeg",
+        "ghost_hash": "52949c4e761720afb25241ac4cc85b51",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.861127Z",
+        "original_file": "519e350a-1610-4d76-989d-488a8fb64993.jpeg",
+        "original_hash": "c52a880fd91fa48c931e61b249526e02",
+        "ghost_file": "519e350a-1610-4d76-989d-488a8fb64993_ghost.jpeg",
+        "ghost_hash": "613264815acc46295c1e0f8ee58dcb2b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:05.939097Z",
+        "original_file": "a54c8ffd-01f8-410c-8885-3db508919fba.jpeg",
+        "original_hash": "d3e1cadd35074cfb0217b7da6c242035",
+        "ghost_file": "a54c8ffd-01f8-410c-8885-3db508919fba_ghost.jpeg",
+        "ghost_hash": "a1c4de6f889cb9a62bf22937bf71f725",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/20.00+",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.294956Z",
+        "original_file": "ed65860a-8bed-4702-a9b8-323ef9594419.jpeg",
+        "original_hash": "72d31f6e8b9e2a3d029ad42844b40ca2",
+        "ghost_file": "ed65860a-8bed-4702-a9b8-323ef9594419_ghost.jpeg",
+        "ghost_hash": "162c6df5e81c13054b3a88712b88294f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.376066Z",
+        "original_file": "2e795790-ce02-46f2-ae6d-6454fb2e8dee.jpeg",
+        "original_hash": "08a81019eaf06c60c420bc8fb634ee86",
+        "ghost_file": "2e795790-ce02-46f2-ae6d-6454fb2e8dee_ghost.jpeg",
+        "ghost_hash": "6854ed0c34b1d4b425f55a66e3e8c5d6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.455544Z",
+        "original_file": "182356d3-b7c1-4a30-88a0-b6f5d13cb8e9.jpeg",
+        "original_hash": "94baabf296459ad6c64a440425c7dea6",
+        "ghost_file": "182356d3-b7c1-4a30-88a0-b6f5d13cb8e9_ghost.jpeg",
+        "ghost_hash": "6f05a9d55fdb164f679f14894439e572",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.506366Z",
+        "original_file": "a89bed5e-d3cf-4452-b6b4-5468625c9fd8.jpeg",
+        "original_hash": "53122b2d1d41c0f2346a6a39bce90e9e",
+        "ghost_file": "a89bed5e-d3cf-4452-b6b4-5468625c9fd8_ghost.jpeg",
+        "ghost_hash": "5c7c35021ef4fc829a053bc202c3a092",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.575990Z",
+        "original_file": "fb917205-e557-4df7-8932-ac2385207d6c.jpeg",
+        "original_hash": "f3f440452d6f57e1946c0b89de6f3f37",
+        "ghost_file": "fb917205-e557-4df7-8932-ac2385207d6c_ghost.jpeg",
+        "ghost_hash": "9ba552cf5d4f2c42c7fb8867945faf9d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.699156Z",
+        "original_file": "41046de0-9151-4504-ada9-cd1ed9ebc541.jpeg",
+        "original_hash": "2d75eade2d1ee54fb62e9bd6b1bf34e2",
+        "ghost_file": "41046de0-9151-4504-ada9-cd1ed9ebc541_ghost.jpeg",
+        "ghost_hash": "2284ff348d2ed63c48492a4e199ff43b",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.827172Z",
+        "original_file": "9a1bf18c-c386-480c-aded-0a078a48547e.jpeg",
+        "original_hash": "3f4bcb8249ce2cf21dcff600fe1e0a13",
+        "ghost_file": "9a1bf18c-c386-480c-aded-0a078a48547e_ghost.jpeg",
+        "ghost_hash": "88687244e0d0c8edf8e9e3219c9037b3",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:06.983488Z",
+        "original_file": "98f31b79-9f5a-44f7-be44-9d735b4c2902.jpeg",
+        "original_hash": "1b4ac569f991f3f0e423f889cd6c8047",
+        "ghost_file": "98f31b79-9f5a-44f7-be44-9d735b4c2902_ghost.jpeg",
+        "ghost_hash": "e59376027b0e629d51a6412ee39fbf43",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.088589Z",
+        "original_file": "85334ea1-501e-4158-abe2-add8a1d7ceeb.jpeg",
+        "original_hash": "c36e394ffc3fb244a27058bbb81d80ca",
+        "ghost_file": "85334ea1-501e-4158-abe2-add8a1d7ceeb_ghost.jpeg",
+        "ghost_hash": "6dde29ab3665906894b44e980827584f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.171781Z",
+        "original_file": "c2eb4c05-293c-4b53-b8a0-7fef3e78cb6e.jpeg",
+        "original_hash": "49861173b7f27579ae1f7add24a031ec",
+        "ghost_file": "c2eb4c05-293c-4b53-b8a0-7fef3e78cb6e_ghost.jpeg",
+        "ghost_hash": "dc34cecb9adb46bc8d8f53b3f2c2c3ae",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.237320Z",
+        "original_file": "c5a668bd-b038-4090-9f2f-17ee121c2296.jpeg",
+        "original_hash": "f3c1b4e46cd69b3d8bf04d5265e29e33",
+        "ghost_file": "c5a668bd-b038-4090-9f2f-17ee121c2296_ghost.jpeg",
+        "ghost_hash": "dde9e0419f675bf1bbd5af11d1ec2920",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.320785Z",
+        "original_file": "9c525e3f-60c2-42d6-ad21-2c7ddf778b35.jpeg",
+        "original_hash": "201663f73fd3c20597f17490fb44cef7",
+        "ghost_file": "9c525e3f-60c2-42d6-ad21-2c7ddf778b35_ghost.jpeg",
+        "ghost_hash": "6def399b21f3599cbc2899774f41cdfe",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.401852Z",
+        "original_file": "2ad21013-e0f4-4dbb-ba28-dae607fee961.jpeg",
+        "original_hash": "4279b6673a259573774d2e74ee3d25fb",
+        "ghost_file": "2ad21013-e0f4-4dbb-ba28-dae607fee961_ghost.jpeg",
+        "ghost_hash": "9349e93d2137eac54b5fe2113fba6454",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.466739Z",
+        "original_file": "7ddb1ee5-26a2-4f4c-a9ae-c3354dc6468f.jpeg",
+        "original_hash": "56a499c230aad6841d27286d95fca7fb",
+        "ghost_file": "7ddb1ee5-26a2-4f4c-a9ae-c3354dc6468f_ghost.jpeg",
+        "ghost_hash": "a16a90b4a41b75a3ec77b6843a269fd1",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.531993Z",
+        "original_file": "e7e18e38-53cc-4130-9338-167bc1ebd1a1.jpeg",
+        "original_hash": "ea4bc3dbc84a9aa23ba5f2f9f987100c",
+        "ghost_file": "e7e18e38-53cc-4130-9338-167bc1ebd1a1_ghost.jpeg",
+        "ghost_hash": "affcfe00e5dd0b145201eb6ead2e3da7",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.594778Z",
+        "original_file": "5662f6f7-07dd-40dd-8336-486d052ea3ec.jpeg",
+        "original_hash": "9f72fc34e7a8deac7cd3d6ad0a9313b6",
+        "ghost_file": "5662f6f7-07dd-40dd-8336-486d052ea3ec_ghost.jpeg",
+        "ghost_hash": "72500bd8b26ae2a3950440a18428d537",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.665241Z",
+        "original_file": "5324555f-1212-4ef1-9e1d-1f15b8813a45.jpeg",
+        "original_hash": "a8dc7da64a66f39443b8cdf3ed924f74",
+        "ghost_file": "5324555f-1212-4ef1-9e1d-1f15b8813a45_ghost.jpeg",
+        "ghost_hash": "5cdc7d6fae3af29c24a30a7ee5655576",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.735408Z",
+        "original_file": "16bab7e7-3ad4-4dc8-ad4f-5f56541d8dd0.jpeg",
+        "original_hash": "461d091d4188cebccbfcc193ef558ec1",
+        "ghost_file": "16bab7e7-3ad4-4dc8-ad4f-5f56541d8dd0_ghost.jpeg",
+        "ghost_hash": "b65622657d69870ff09d7c833ef4a6c4",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.818171Z",
+        "original_file": "acf25dda-8f88-4dd5-8f9e-246bdc2649bd.jpeg",
+        "original_hash": "bfbb869ff48882b7a0d9e4b419387e65",
+        "ghost_file": "acf25dda-8f88-4dd5-8f9e-246bdc2649bd_ghost.jpeg",
+        "ghost_hash": "ed5774eec29cee7e21646fae90f98b7d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.896461Z",
+        "original_file": "c799e6b9-36b7-49d6-9630-b5fca9d9a57e.jpeg",
+        "original_hash": "b53b84147ad9fa1a314429c7745024d0",
+        "ghost_file": "c799e6b9-36b7-49d6-9630-b5fca9d9a57e_ghost.jpeg",
+        "ghost_hash": "178495ebb9bc574cc5708e910611675c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:07.962536Z",
+        "original_file": "d0de84d7-a846-469b-a74f-4477ee446e78.jpeg",
+        "original_hash": "a6f626f2f4532da59da453780439d634",
+        "ghost_file": "d0de84d7-a846-469b-a74f-4477ee446e78_ghost.jpeg",
+        "ghost_hash": "e8b07c7f41570458e17f7bc15935bf91",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.031572Z",
+        "original_file": "82379e37-c45d-43a1-9aaa-d4b111bc48d1.jpeg",
+        "original_hash": "2f100326d9b6f0fd982b81abf1ccc0db",
+        "ghost_file": "82379e37-c45d-43a1-9aaa-d4b111bc48d1_ghost.jpeg",
+        "ghost_hash": "14061d42b96ef2fcea51ac28506ecaf4",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.089891Z",
+        "original_file": "1292aed0-d0a1-4410-ae21-acdd25ed4455.jpeg",
+        "original_hash": "a98af0d1de8f88cacaac466815684164",
+        "ghost_file": "1292aed0-d0a1-4410-ae21-acdd25ed4455_ghost.jpeg",
+        "ghost_hash": "10702de5c1f699bac696daae480f7c3a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.164485Z",
+        "original_file": "2f3fb596-70f1-46c5-b803-99fe3af9e7cc.jpeg",
+        "original_hash": "494798cefce91007aacd5cd629ec9e43",
+        "ghost_file": "2f3fb596-70f1-46c5-b803-99fe3af9e7cc_ghost.jpeg",
+        "ghost_hash": "1023a2b6e263254a3d1acda2f43b7297",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.222875Z",
+        "original_file": "1596a17a-905a-4c94-8cbe-dffb5e4aecd5.jpeg",
+        "original_hash": "c151ca5905edde149f53cce56b88e87a",
+        "ghost_file": "1596a17a-905a-4c94-8cbe-dffb5e4aecd5_ghost.jpeg",
+        "ghost_hash": "23790e18792174cb7fa2a2b6c8c8cf8a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.289582Z",
+        "original_file": "466062c2-e2f0-4508-8e39-217f8dc956b6.jpeg",
+        "original_hash": "6a3acb2e346e02b60eaeec69986924c5",
+        "ghost_file": "466062c2-e2f0-4508-8e39-217f8dc956b6_ghost.jpeg",
+        "ghost_hash": "7e5f62f7f7bf4d24ad5b3b4204853993",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.353808Z",
+        "original_file": "bfd9a6c3-d4fd-40dc-8e3d-40441174e1c4.jpeg",
+        "original_hash": "4197dc88203721565c30c03a29a88fd5",
+        "ghost_file": "bfd9a6c3-d4fd-40dc-8e3d-40441174e1c4_ghost.jpeg",
+        "ghost_hash": "ec545ca41fb37904fa26f4558f1ee7e2",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.425780Z",
+        "original_file": "039f81fd-8b78-4017-9525-f1cb4b85a0ac.jpeg",
+        "original_hash": "4175e00d4a2c0a01ab65750466d73391",
+        "ghost_file": "039f81fd-8b78-4017-9525-f1cb4b85a0ac_ghost.jpeg",
+        "ghost_hash": "1dfc0427208e854271f9809ef87c2a5d",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.481797Z",
+        "original_file": "8eabad96-3845-4691-8fff-16b084699995.jpeg",
+        "original_hash": "5fb7331a61b39338d507dfb4e7f6e51f",
+        "ghost_file": "8eabad96-3845-4691-8fff-16b084699995_ghost.jpeg",
+        "ghost_hash": "cdd045af44602fff14d6d378539891b4",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.556433Z",
+        "original_file": "6d790bf0-38d0-4f58-aa62-4abb584c6815.jpeg",
+        "original_hash": "ef41a6517c5b9f151feb8fc4e23889be",
+        "ghost_file": "6d790bf0-38d0-4f58-aa62-4abb584c6815_ghost.jpeg",
+        "ghost_hash": "d9b1ed3e178b2a0c8cb8f5ab624c7eaf",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.603306Z",
+        "original_file": "81cb5cd1-560c-4310-89ea-3658b7151d02.jpeg",
+        "original_hash": "b69769232333ab4eb39248d1f0bf390f",
+        "ghost_file": "81cb5cd1-560c-4310-89ea-3658b7151d02_ghost.jpeg",
+        "ghost_hash": "7fda5d3e069c8dd0486aa5a993761758",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.680813Z",
+        "original_file": "16b87f22-49c6-407f-b229-897b736d4460.jpeg",
+        "original_hash": "1927698b41cd38cdd4dd1cd688d91504",
+        "ghost_file": "16b87f22-49c6-407f-b229-897b736d4460_ghost.jpeg",
+        "ghost_hash": "4618701df15e886392b229764cd7329e",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.768160Z",
+        "original_file": "34ca9a26-3375-41a3-9aea-5bba128adc08.jpeg",
+        "original_hash": "a6f544724fcfbbe270e5239ec09e144e",
+        "ghost_file": "34ca9a26-3375-41a3-9aea-5bba128adc08_ghost.jpeg",
+        "ghost_hash": "34d6a25fecd63d529216094e38e6579e",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.911097Z",
+        "original_file": "094c122c-e640-4f36-86b8-e99951b8c757.jpeg",
+        "original_hash": "a98706764b86b7c0b5f9eefa9d816f6e",
+        "ghost_file": "094c122c-e640-4f36-86b8-e99951b8c757_ghost.jpeg",
+        "ghost_hash": "7c4362255e6d2449ede46461def2b46f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:08.990529Z",
+        "original_file": "56412f72-10bf-49bf-9ecf-347505d18cc6.jpeg",
+        "original_hash": "fa000758ee436ff36d456bc7c3d89cf6",
+        "ghost_file": "56412f72-10bf-49bf-9ecf-347505d18cc6_ghost.jpeg",
+        "ghost_hash": "f33f117062b0d4b9ee0207da9aa35dd6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.093669Z",
+        "original_file": "87902cd5-c8d4-4b88-b80e-eb228771d63e.jpeg",
+        "original_hash": "9e198ae786df2c833c957e96e598cd3d",
+        "ghost_file": "87902cd5-c8d4-4b88-b80e-eb228771d63e_ghost.jpeg",
+        "ghost_hash": "ec58c52dacdd4257b4b874a5dae906b2",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.171943Z",
+        "original_file": "b0c66f64-2c6f-4770-a6fd-8e70c36c7a63.jpeg",
+        "original_hash": "391721422577273537ba4acd0fe73918",
+        "ghost_file": "b0c66f64-2c6f-4770-a6fd-8e70c36c7a63_ghost.jpeg",
+        "ghost_hash": "8527ab464525eec94d09820ec6900a8f",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.240136Z",
+        "original_file": "b6daec52-af13-4b96-86de-f03d55b4170f.jpeg",
+        "original_hash": "0141f5312a46644f2ce299e5528ed61b",
+        "ghost_file": "b6daec52-af13-4b96-86de-f03d55b4170f_ghost.jpeg",
+        "ghost_hash": "a60337c784cb60e92eb09e06a8fc6f28",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.318796Z",
+        "original_file": "f278f60c-a424-43ec-835b-7fcc6d0643ba.jpeg",
+        "original_hash": "f930767e5358b63955b6dbcbd0741e37",
+        "ghost_file": "f278f60c-a424-43ec-835b-7fcc6d0643ba_ghost.jpeg",
+        "ghost_hash": "fa290c3a2286d813b87a145755bcfb7e",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.388731Z",
+        "original_file": "0d15f677-6d0e-4e68-ba7c-bc5eb5a6df72.jpeg",
+        "original_hash": "d5031088edf00a27c99340bb033808d1",
+        "ghost_file": "0d15f677-6d0e-4e68-ba7c-bc5eb5a6df72_ghost.jpeg",
+        "ghost_hash": "e6531a818bf2e4f1738d4b91ebe25c2c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.462590Z",
+        "original_file": "0d23324b-0381-4c49-801a-e9ccd758bac8.jpeg",
+        "original_hash": "e3fa6a1fb8da8d6194d0275d78ac2b79",
+        "ghost_file": "0d23324b-0381-4c49-801a-e9ccd758bac8_ghost.jpeg",
+        "ghost_hash": "841cdfed94a82295e549af3264c8c927",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.514836Z",
+        "original_file": "5df0915d-e60f-4c96-abbd-3f5edf7ea2ec.jpeg",
+        "original_hash": "4cb205650f2758d0fcb7f534c6d16b9e",
+        "ghost_file": "5df0915d-e60f-4c96-abbd-3f5edf7ea2ec_ghost.jpeg",
+        "ghost_hash": "ccd3623b6560c3c0f82de606b5c8c40a",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.577120Z",
+        "original_file": "7065c1b8-5d6a-418e-a6bf-d067a40b0fa9.jpeg",
+        "original_hash": "f2b8d35615935adf4e2c7f5c1eb906f2",
+        "ghost_file": "7065c1b8-5d6a-418e-a6bf-d067a40b0fa9_ghost.jpeg",
+        "ghost_hash": "9c4b8a1103ca1127198864d751808f17",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.636692Z",
+        "original_file": "db751d1a-ab62-412f-9718-5ebf10aa976a.jpeg",
+        "original_hash": "2855d91d3735f7d3540c22d5c81c01f1",
+        "ghost_file": "db751d1a-ab62-412f-9718-5ebf10aa976a_ghost.jpeg",
+        "ghost_hash": "649cbba39ee4afc939fc205e986de30c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.706771Z",
+        "original_file": "60378f29-154a-4294-a883-668e8b5587fa.jpeg",
+        "original_hash": "f41618bbad6e5bd5b3e4a6c559a7e5e0",
+        "ghost_file": "60378f29-154a-4294-a883-668e8b5587fa_ghost.jpeg",
+        "ghost_hash": "a45bfa9bb95a3db47adfa63c721bccea",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.771648Z",
+        "original_file": "14896606-70fc-44be-a68e-43f5ba9d4b13.jpeg",
+        "original_hash": "7c9aaa95af4f407a401977d8082f34cd",
+        "ghost_file": "14896606-70fc-44be-a68e-43f5ba9d4b13_ghost.jpeg",
+        "ghost_hash": "dbb31d98533c9a45c672fca43b2ecd10",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.840684Z",
+        "original_file": "50782ca2-6964-4076-9ab3-16dce1698f54.jpeg",
+        "original_hash": "96a3a867cb9198e6e63da36429e7cc6c",
+        "ghost_file": "50782ca2-6964-4076-9ab3-16dce1698f54_ghost.jpeg",
+        "ghost_hash": "6f6681f0f02b4565c9b46a9043120e3c",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.907917Z",
+        "original_file": "63422a24-91c6-40c4-9660-0da31756eea8.jpeg",
+        "original_hash": "58586e3f36201ef26cf1cc98c86e6555",
+        "ghost_file": "63422a24-91c6-40c4-9660-0da31756eea8_ghost.jpeg",
+        "ghost_hash": "dc55a29d1fc86ab1d47526183798e0bf",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:09.969652Z",
+        "original_file": "a2c419af-999c-4c7b-9676-aa04b2a65544.jpeg",
+        "original_hash": "9ae3fe4e1fab1190cb0542df48bafbdf",
+        "ghost_file": "a2c419af-999c-4c7b-9676-aa04b2a65544_ghost.jpeg",
+        "ghost_hash": "0cff03cc7f489d0ecc0b8adf9b71f0e5",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.040649Z",
+        "original_file": "f9877e0a-d90d-4036-8469-7f0d7b060d4d.jpeg",
+        "original_hash": "89d31a6f813e786e54693fbe7f23af33",
+        "ghost_file": "f9877e0a-d90d-4036-8469-7f0d7b060d4d_ghost.jpeg",
+        "ghost_hash": "1c8297e0d56123d982ee1bd5222d7775",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.106984Z",
+        "original_file": "99644500-1565-4ff4-83e3-512fee73236c.jpeg",
+        "original_hash": "ef1e471390c95543019d021906bc38bb",
+        "ghost_file": "99644500-1565-4ff4-83e3-512fee73236c_ghost.jpeg",
+        "ghost_hash": "96a35f1ec8b7ed40615dc75ef9454f21",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.170650Z",
+        "original_file": "a7784090-65cd-41de-85f3-073e5b3e0790.jpeg",
+        "original_hash": "a80306f6df76261168b3fd1e54cf33cd",
+        "ghost_file": "a7784090-65cd-41de-85f3-073e5b3e0790_ghost.jpeg",
+        "ghost_hash": "c21ecf07ca901fa18f5122ad7eb29054",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.233378Z",
+        "original_file": "af4ac602-ee39-4f9b-bbd4-a1151e4c4f03.jpeg",
+        "original_hash": "211de2ab7a53f32fb0c02bc3f0518f5d",
+        "ghost_file": "af4ac602-ee39-4f9b-bbd4-a1151e4c4f03_ghost.jpeg",
+        "ghost_hash": "6a4500661d0ab0e4cd2e9099fa21ede9",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.310980Z",
+        "original_file": "a4d03539-53ca-49c5-b248-b3dcaf386387.jpeg",
+        "original_hash": "9dbe038a0b4499839dc33e3971086cc9",
+        "ghost_file": "a4d03539-53ca-49c5-b248-b3dcaf386387_ghost.jpeg",
+        "ghost_hash": "1fc1d4bc27cd3c07d4f54951ae7c7df6",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.379447Z",
+        "original_file": "b2256e74-061c-4a3e-acf9-5f743f02adfd.jpeg",
+        "original_hash": "b2da08b57a7e851e8dc120a25a2414d6",
+        "ghost_file": "b2256e74-061c-4a3e-acf9-5f743f02adfd_ghost.jpeg",
+        "ghost_hash": "89ac2f93083dc65ca8b34bd3d0692b24",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.438396Z",
+        "original_file": "088b986e-a1bb-4929-ac83-a0b036e04e0b.jpeg",
+        "original_hash": "fdd04412276f2d85d48c3a9c7229b33e",
+        "ghost_file": "088b986e-a1bb-4929-ac83-a0b036e04e0b_ghost.jpeg",
+        "ghost_hash": "dec2f9f32a7d2c6d0e1f0560d0178d18",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.501822Z",
+        "original_file": "8cb92d7d-f9ca-41d8-888a-0b2e671db4dd.jpeg",
+        "original_hash": "2e66124ac277d728ca138f3a8683054b",
+        "ghost_file": "8cb92d7d-f9ca-41d8-888a-0b2e671db4dd_ghost.jpeg",
+        "ghost_hash": "7303c4dd959fe26b3c5111b531d0c8b8",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.566927Z",
+        "original_file": "881a02b8-4da7-4544-8576-314d42def9b8.jpeg",
+        "original_hash": "2e937b7c1fac870ed834e290630de318",
+        "ghost_file": "881a02b8-4da7-4544-8576-314d42def9b8_ghost.jpeg",
+        "ghost_hash": "75d52f22fd9ce9f8cc5754c0bec00696",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.630135Z",
+        "original_file": "ce7382f7-5b9d-45b8-8bc9-8d1076a149f9.jpeg",
+        "original_hash": "b33b43a66479df3254e92b55f668b11d",
+        "ghost_file": "ce7382f7-5b9d-45b8-8bc9-8d1076a149f9_ghost.jpeg",
+        "ghost_hash": "53835ef2be9a2102128ba423a96d04e9",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.681917Z",
+        "original_file": "fd46ac36-4a47-46e6-9547-fa79215540ba.jpeg",
+        "original_hash": "89544eddb23d4a1a8d112284b5791922",
+        "ghost_file": "fd46ac36-4a47-46e6-9547-fa79215540ba_ghost.jpeg",
+        "ghost_hash": "db1df39486651cace02291d32d9f6aac",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    },
+    {
+        "timestamp": "2026-07-19T06:10:10.735662Z",
+        "original_file": "417c66c7-f4da-47fb-aa23-e4f9b5a0cc8e.jpeg",
+        "original_hash": "df8b07172591440e18b2c18510c30d09",
+        "ghost_file": "417c66c7-f4da-47fb-aa23-e4f9b5a0cc8e_ghost.jpeg",
+        "ghost_hash": "408c297cdc957b9c88e5fd0152f33ad5",
+        "folder_path": "/home/geminiology/SovereignNexus/B Image/10.00",
+        "enhancement_profile": "Brightness + Saturation + BG_Normalize"
+    }
+]

@@ -387,6 +387,39 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 })
             except Exception as e:
                 self.send_json({"error": f"Internal Server Error: {str(e)}"})
+        elif self.path == '/api/deep-synthesis':
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            try:
+                payload = json.loads(post_data.decode('utf-8'))
+                url = payload.get("url", "")
+                if not url:
+                    self.send_json({"error": "Missing 'url' parameter"})
+                    return
+                
+                # Import deep synthesis dynamically inside the path context
+                sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
+                from nexus_deep_synthesis import NexusDeepSynthesis
+                
+                # Capture standard output to stream console telemetry back to browser
+                import io
+                stdout_capture = io.StringIO()
+                original_stdout = sys.stdout
+                sys.stdout = stdout_capture
+                
+                try:
+                    engine = NexusDeepSynthesis()
+                    engine.run_synthesis(url)
+                finally:
+                    sys.stdout = original_stdout
+                
+                captured_text = stdout_capture.getvalue()
+                self.send_json({
+                    "status": "SUCCESS",
+                    "output": captured_text
+                })
+            except Exception as e:
+                self.send_json({"error": f"Synthesis Error: {str(e)}"})
         elif self.path == '/api/trinary':
             content_length = int(self.headers['Content-Length'])
             post_data = json.loads(self.rfile.read(content_length).decode('utf-8'))
@@ -1147,6 +1180,27 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
     </div>
 
+    <!-- Deep Synthesis V2 (Recursive Crucible) -->
+    <div class="card" style="border: 1px solid rgba(6, 182, 212, 0.1); background: linear-gradient(145deg, #131926 0%, #0d283c 100%);">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="logo-icon" style="background-color: var(--accent-cyan);"></div>
+                Deep Synthesis V2 (Recursive Crucible)
+            </div>
+            <div class="axiom-badge" style="background: rgba(6, 182, 212, 0.1); border-color: var(--accent-cyan); color: var(--accent-cyan);">8GB STRESS TEST (Again/again)</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+                Deploy the localized ETL pipeline.Walker scouts the web, Slicer chunks text, the Ternary engine evaluates sparsity, and the Recursive Crucible distills the Prime Invariant, anchored by <strong>Again/again</strong>.
+            </p>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <input type="text" id="deep-synthesis-url" placeholder="https://en.wikipedia.org/wiki/Systems_engineering" style="flex-grow: 1; background: #0b0f19; border: 1px solid rgba(255,255,255,0.1); color: white; padding: 0.75rem 1rem; font-size: 0.9rem; border-radius: 6px; font-family: monospace;">
+                <button onclick="triggerDeepSynthesis()" id="deep-synthesis-btn" style="background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple)); border: none; color: white; padding: 0.75rem 1.5rem; font-weight: bold; border-radius: 6px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em; transition: brightness 0.2s;">Execute</button>
+            </div>
+            <div id="deep-synthesis-output-container" style="display: none; background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255,255,255,0.05); border-radius: 6px; padding: 1rem; max-height: 300px; overflow-y: auto; font-family: 'Courier Prime', monospace; font-size: 0.8rem; white-space: pre-wrap; color: var(--accent-emerald);"></div>
+        </div>
+    </div>
+
     <!-- Trinary Logic Lab -->
     <div class="card">
         <div class="section-header">
@@ -1588,6 +1642,48 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             }
         } catch (err) {
             console.error("Ledger polling paused:", err);
+        }
+    }
+
+    async function triggerDeepSynthesis() {
+        const urlInput = document.getElementById('deep-synthesis-url');
+        const executeBtn = document.getElementById('deep-synthesis-btn');
+        const outputContainer = document.getElementById('deep-synthesis-output-container');
+        
+        const url = urlInput.value.strip ? urlInput.value.strip() : urlInput.value.trim();
+        if (!url) {
+            alert("Please enter a valid target URL.");
+            return;
+        }
+        
+        executeBtn.disabled = true;
+        executeBtn.innerText = "PROCESSING...";
+        outputContainer.style.display = "block";
+        outputContainer.innerHTML = "Initializing Deep Synthesis V2 (Recursive Crucible)...\nConnecting to edge modules...";
+        
+        try {
+            const response = await fetch('/api/deep-synthesis', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: url })
+            });
+            const data = await response.json();
+            
+            if (data.status === "SUCCESS") {
+                outputContainer.innerHTML = escapeHtml(data.output);
+                // Trigger quick dashboard metrics refresh
+                updateTelemetry();
+                updateLedgerFeed();
+                updateDbMetrics();
+            } else {
+                outputContainer.innerHTML = "ERROR:\n" + escapeHtml(data.error);
+            }
+        } catch (err) {
+            console.error("Deep synthesis run failed:", err);
+            outputContainer.innerHTML = "Network connection lost or request timeout.";
+        } finally {
+            executeBtn.disabled = false;
+            executeBtn.innerText = "EXECUTE";
         }
     }
 
