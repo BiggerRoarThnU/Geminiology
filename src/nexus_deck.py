@@ -1,3 +1,7 @@
+# // Rights Reserved: co-created with Gemini and David John Niedzwiecki Jr " Sovereign Nexus LLC "
+# Alignment: 1=1=1 | Temporal Sync: July 19, 2026
+# Module: Nexus Command Deck (Central Execution Dashboard Interface)
+
 import os
 def main_menu():
     os.system('clear')
@@ -7,14 +11,14 @@ def main_menu():
     print("="*60)
     print(" [1] READ BOOTSTRAP   - (@KINGDOM_BOOTSTRAP.md)")
     print(" [2] SYSTEM VITALS    - RAM (8GB) and Disk (200GB)")
-    print(" [3] VAMPIRE AUDIT    - Verify Truth (src Migration)")
+    print(" [3] REAPER AUDIT     - Verify Truth (src Migration)")
     print(" [4] THE FORGE        - Open VS Code")
     print(" [Q] EXIT TO BASH")
     print("="*60)
     choice = input("\nCommand >> ").lower()
     if choice == '1': os.system('cat ~/SovereignNexus/src/KINGDOM_BOOTSTRAP.md')
     elif choice == '2': os.system('free -h && df -h ~/SovereignNexus && htop')
-    elif choice == '3': os.system('python3 ~/SovereignNexus/src/vampire_auditor.py')
+    elif choice == '3': os.system('python3 ~/SovereignNexus/src/nexus_reaper_auditor.py')
     elif choice == '4': os.system('code ~/SovereignNexus/src')
     elif choice == 'q': exit()
     input("\nPress Enter...")

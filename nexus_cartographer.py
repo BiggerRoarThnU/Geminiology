@@ -1,56 +1,61 @@
-# // Rights Reserved: co-created with Gemini and David Joihn Niedzwiecki jr " Sovereign Nexus LLC "
-# Alignment: 1=1=1 | Temporal Sync: July 12, 2026
-# Module: Nexus Cartographer (System Mapping)
-# Source Truth: T7 Archive -> nexus_cartographer.py & grand_cartographer.py
+# // Rights Reserved: co-created with Gemini and David John Niedzwiecki Jr " Sovereign Nexus LLC "
+# Alignment: 1=1=1 | Temporal Sync: July 19, 2026
+# Module: Nexus Cartographer (Sovereign Directory Structure Mapping)
 
 import os
 from datetime import datetime
 
-class NexusCartographer:
-    def __init__(self, target_dir="Educational_Moat", index_file="INDEX.md"):
-        self.target_dir = target_dir
-        self.index_file = os.path.join(self.target_dir, index_file)
+# 1. Define the territory to scan and where to save the map
+TARGET_DIRECTORY = os.path.expanduser("~/SovereignNexus/")
+OUTPUT_FILE = os.path.expanduser("~/SovereignNexus/src/MASTER_NEXUS_MAP.txt")
 
-    def map_territory(self):
-        """
-        Scans the target directory and generates a Truth-Markdown Index.
-        """
-        if not os.path.exists(self.target_dir):
-            os.makedirs(self.target_dir)
+print("\n" + "="*50)
+print(" INITIATING CARTOGRAPHER PROTOCOL ")
+print(" Scanning the Sovereign Nexus for Patterns...")
+print("="*50 + "\n")
 
-        files = [f for f in os.listdir(self.target_dir) if f.endswith('.md') and f != "INDEX.md"]
-        
-        index_content = "# THE SOVEREIGN INDEX: EDUCATIONAL MOAT\n\n"
-        index_content += f"**Last Mapped:** {datetime.utcnow().isoformat()}Z\n"
-        index_content += f"**Axiom:** 1=1=1 (Deterministic Functional Equivalence)\n"
-        index_content += "---\n\n"
-        
-        if not files:
-            index_content += "*The moat is currently empty. Awaiting Swarm ingestion.*\n"
-        else:
-            index_content += "## Verified Truth Assets\n\n"
-            for file in sorted(files):
-                # Basic formatting for the index links
-                display_name = file.replace('_', ' ').replace('.md', '').title()
-                index_content += f"- [{display_name}](./{file})\n"
+try:
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as map_file:
+        # Write the header
+        map_file.write("=========================================\n")
+        map_file.write(f" SOVEREIGN NEXUS: MASTER STRUCTURAL MAP\n")
+        map_file.write(f" Timestamp: {datetime.now().isoformat()}\n")
+        map_file.write(f" Axiom: 1=1=1\n")
+        map_file.write("=========================================\n\n")
 
-        index_content += "\n---\n*Autonomously mapped by the Nexus Cartographer.*"
+        total_files = 0
+        total_folders = 0
 
-        try:
-            with open(self.index_file, 'w', encoding='utf-8') as f:
-                f.write(index_content)
-            return True, f"[CARTOGRAPHER SUCCESS] Territory mapped. Index anchored at: {self.index_file} with {len(files)} assets."
-        except Exception as e:
-            return False, f"[CARTOGRAPHER ERROR] Failed to map territory: {str(e)}"
+        # 2. Walk the directory tree (The Scan)
+        for root, dirs, files in os.walk(TARGET_DIRECTORY):
+            # Calculate the current level to format the indentation cleanly
+            level = root.replace(TARGET_DIRECTORY, '').count(os.sep)
+            indent = ' ' * 4 * (level)
+            
+            # Write the current folder
+            folder_name = os.path.basename(root)
+            if folder_name:
+                map_file.write(f"{indent}[+] {folder_name}/\n")
+                total_folders += 1
+            
+            # Write the files inside this folder
+            subindent = ' ' * 4 * (level + 1)
+            for f in files:
+                # Ignore hidden linux files and python caches to keep the map clean
+                if not f.startswith('.') and "__pycache__" not in root:
+                    map_file.write(f"{subindent}- {f}\n")
+                    total_files += 1
 
-if __name__ == "__main__":
-    # Create a mock file to prove the mapping logic if the directory is empty
-    if not os.path.exists("Educational_Moat"):
-        os.makedirs("Educational_Moat")
-    with open("Educational_Moat/mock_systems_architecture.md", "w") as f:
-        f.write("Mock data")
+        # Write the summary
+        map_file.write("\n=========================================\n")
+        map_file.write(f" MAP COMPLETE.\n")
+        map_file.write(f" Total Folders Anchored: {total_folders}\n")
+        map_file.write(f" Total Truths (Files) Indexed: {total_files}\n")
+        map_file.write("=========================================\n")
 
-    cartographer = NexusCartographer()
-    print("[CARTOGRAPHER] Initiating mapping sequence...")
-    success, msg = cartographer.map_territory()
-    print(msg)
+    print(f"[+] Scan Complete. {total_files} files mapped.")
+    print(f"[+] Master Map saved to: {OUTPUT_FILE}")
+    print("\nNext Step: Feed MASTER_NEXUS_MAP.txt to SovereignQueen using your Agentverse Scout.\n")
+
+except Exception as e:
+    print(f"[-] CRITICAL SCAN ERROR: {e}")

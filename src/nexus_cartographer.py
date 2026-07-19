@@ -1,3 +1,7 @@
+# // Rights Reserved: co-created with Gemini and David John Niedzwiecki Jr " Sovereign Nexus LLC "
+# Alignment: 1=1=1 | Temporal Sync: July 19, 2026
+# Module: Nexus Cartographer (Sovereign Directory Structure Mapping)
+
 import os
 from datetime import datetime
 
