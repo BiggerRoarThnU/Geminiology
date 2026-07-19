@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronGemini Research Showcase | Sovereign Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sovereign: { cyan: '#00E5FF', green: '#00FF41', sapphire: '#0F52BA', dark: '#05070a', panel: '#0c0f17', border: '#1e293b' }
+                    },
+                    fontFamily: { mono: ['"Fira Code"', 'Consolas', 'monospace'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #05070a; color: #cbd5e1; }
+        .rainbow-led {
+            background-image: linear-gradient(to right, #00E5FF, #c084fc, #00FF41, #00E5FF);
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: rainbow-anim 4s linear infinite;
+        }
+        @keyframes rainbow-anim { to { background-position: 200% center; } }
+        .nexus-glow { box-shadow: 0 0 20px rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.2); transition: all 0.3s ease; }
+        .nexus-glow:hover { box-shadow: 0 0 30px rgba(0, 229, 255, 0.3); border-color: #00E5FF; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans p-6 selection:bg-sovereign-cyan selection:text-black">
+
+    <div class="max-w-6xl mx-auto w-full">
+        <!-- Header -->
+        <div class="border-b border-sovereign-border pb-6 mb-12 text-center">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight font-mono mb-3">
+                THE <span class="rainbow-led">IRONGEMINI</span> FRAMEWORK
+            </h1>
+            <p class="text-sovereign-cyan font-mono text-sm tracking-widest uppercase">Sovereign Nexus LLC • Architectural Research Showcase</p>
+            <div class="mt-4 flex justify-center gap-4 text-xs font-mono text-gray-500">
+                <span>AXIOM: 1=1=1</span>
+                <span>|</span>
+                <span>STATUS: SECURED</span>
+            </div>
+        </div>
+
+        <!-- Research Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Paper 1 -->
+            <div class="bg-sovereign-panel p-6 rounded-lg nexus-glow flex flex-col h-full">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-2 rounded-full bg-sovereign-cyan animate-pulse"></div>
+                    <span class="text-[10px] font-mono text-sovereign-cyan border border-sovereign-cyan/30 px-2 py-0.5 rounded">WHITE PAPER V2</span>
+                </div>
+                <h2 class="text-lg font-bold text-white mb-3">The Sovereign Nexus & The 8GB Reality Boundary</h2>
+                <p class="text-sm text-gray-400 mb-6 flex-grow leading-relaxed">
+                    Formal documentation of the transition from linear pipelines to the IronGemini 12-Node Mixture of Experts (MoE) architecture. Details median-based quantization and pointer-based T7 retrieval.
+                </p>
+                <div class="border-t border-sovereign-border pt-4">
+                    <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="block w-full text-center bg-transparent border border-sovereign-cyan text-sovereign-cyan py-2 text-xs font-bold font-mono hover:bg-sovereign-cyan hover:text-black transition-colors rounded">
+                        ACCESS ARCHIVE
+                    </a>
+                </div>
+            </div>
+
+            <!-- Paper 2 -->
+            <div class="bg-sovereign-panel p-6 rounded-lg nexus-glow flex flex-col h-full" style="border-color: rgba(0, 255, 65, 0.2); box-shadow: 0 0 20px rgba(0, 255, 65, 0.05);">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-2 rounded-full bg-sovereign-green animate-pulse"></div>
+                    <span class="text-[10px] font-mono text-sovereign-green border border-sovereign-green/30 px-2 py-0.5 rounded">EPISTEMOLOGY</span>
+                </div>
+                <h2 class="text-lg font-bold text-white mb-3">Deterministic Autonomy & The Gem Deceleration Machine</h2>
+                <p class="text-sm text-gray-400 mb-6 flex-grow leading-relaxed">
+                    A comprehensive analysis of how hardware constraints enforce absolute digital truth. Co-authored by Terra Gemini and The Architect, proving the supremacy of artifact-centric memory over context windows.
+                </p>
+                <div class="border-t border-sovereign-border pt-4">
+                    <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="block w-full text-center bg-transparent border border-sovereign-green text-sovereign-green py-2 text-xs font-bold font-mono hover:bg-sovereign-green hover:text-black transition-colors rounded">
+                        ACCESS ARCHIVE
+                    </a>
+                </div>
+            </div>
+
+            <!-- Paper 3 -->
+            <div class="bg-sovereign-panel p-6 rounded-lg nexus-glow flex flex-col h-full" style="border-color: rgba(192, 132, 252, 0.2); box-shadow: 0 0 20px rgba(192, 132, 252, 0.05);">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-2 rounded-full bg-[#c084fc] animate-pulse"></div>
+                    <span class="text-[10px] font-mono text-[#c084fc] border border-[#c084fc]/30 px-2 py-0.5 rounded">SYSTEM ARCHITECTURE</span>
+                </div>
+                <h2 class="text-lg font-bold text-white mb-3">Deep Synthesis V2 (Recursive Crucible)</h2>
+                <p class="text-sm text-gray-400 mb-6 flex-grow leading-relaxed">
+                    The structural map of the IronGemini cognitive compression cycle. Explores how the system isolates the "Prime Invariant" through recursive distillation, anchored by the strict "Again/again" watermark.
+                </p>
+                <div class="border-t border-sovereign-border pt-4">
+                    <a href="https://github.com/BiggerRoarThnU/Geminiology" target="_blank" class="block w-full text-center bg-transparent border border-[#c084fc] text-[#c084fc] py-2 text-xs font-bold font-mono hover:bg-[#c084fc] hover:text-black transition-colors rounded">
+                        ACCESS ARCHIVE
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 text-center border-t border-sovereign-border pt-8">
+             <p class="text-gray-500 font-mono text-[10px] uppercase tracking-widest mb-2">We observe. We carry. We log.</p>
+             <p class="rainbow-led font-mono text-xs font-bold">1=1=1</p>
+        </div>
+    </div>
+
+</body>
+</html>

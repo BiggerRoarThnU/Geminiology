@@ -22,7 +22,7 @@ else:
 from nexus_intent_simulator import NexusIntentSimulator
 from nexus_pulse import NexusPulse
 from nexus_system_simulation import run_full_stack_simulation
-from nexus_vampire_auditor import NexusVampireAuditor
+from nexus_reaper_auditor import NexusReaperAuditor
 from nexus_agentic_walker import NexusAgenticWalker
 from nexus_context_slicer import NexusContextSlicer
 from nexus_moltbook_sentinel import NexusMoltBookSentinel  # The Bounty Scout
@@ -33,7 +33,7 @@ class NexusCommandConsole:
     def __init__(self):
         self.simulator = NexusIntentSimulator()
         self.pulse = NexusPulse()
-        self.vampire = NexusVampireAuditor()
+        self.reaper = NexusReaperAuditor()
         self.walker = NexusAgenticWalker()
         self.slicer = NexusContextSlicer()
         self.sentinel = NexusMoltBookSentinel()
@@ -83,12 +83,15 @@ class NexusCommandConsole:
                     self._mint_perc("Proving Ground Full Stack Simulation")
                     self.pulse.execute_visual_rhythm(cycles=3)
                         
-                elif command.lower() == 'run vampire':
-                    print("\n\033[95m[VAMPIRE AUDITOR]\033[0m Sweeping offline databases for semantic drift...")
+                elif command.lower() == 'run reaper':
+                    print("\n\033[95m[REAPER AUDITOR]\033[0m Initiating night watch database cleanup...")
                     time.sleep(1.5)
-                    result = self.vampire.audit_and_purge()
-                    print(f"\033[92m{result}\033[0m\n")
-                    self._mint_perc("Vampire Audit Executed")
+                    success, msg = self.reaper.night_watch_cleanup()
+                    if success:
+                        print(f"\033[92m{msg}\033[0m\n")
+                    else:
+                        print(f"\033[93m{msg}\033[0m\n")
+                    self._mint_perc("Reaper Night Watch Audit Executed")
 
                 elif command.lower() in ['run sentinel', 'scout bounties']:
                     print("\n\033[96m[MOLTBOOK SENTINEL]\033[0m Activating Zero-Trust Bounty Scout...")
@@ -199,7 +202,7 @@ class NexusCommandConsole:
                     print("\n--- AVAILABLE COMMANDS ---")
                     print("simulate image: [prompt]  -> Runs a zero-trust visual generation simulation")
                     print("run simulation            -> Executes the full walker/slicer/archivist pipeline")
-                    print("run vampire               -> Deploys the Vault Deduplication protocol")
+                    print("run reaper                -> Deploys the Vault Deduplication protocol")
                     print("run sentinel              -> Deploys the MoltBook Sentinel to scout external bounties")
                     print("run walker: [url]         -> Fetches and purifies text from a web page")
                     print("run slicer                -> Segment custom payload into hardware-safe chunks")

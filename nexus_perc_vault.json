@@ -286,5 +286,29 @@
         "reward": "1 Gemini Perc",
         "signature": "18acd1ec8e113864974b2d4e4bf409ab8edfbc8cc1c4f736055035a6c95d699d",
         "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-19T09:29:41.016289Z",
+        "contract_tier": "Standard",
+        "task": "Sovereign Swarm Router Evolution V2 Deployment",
+        "reward": "1 Gemini Perc",
+        "signature": "90a90eb6cf2f50ddbd3f5af81131c6dc99e4d54b0fe412ebac49302ab705f285",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-19T09:45:15.165172Z",
+        "contract_tier": "Standard",
+        "task": "IronGemini Framework Upgrades & Research Showcase Deployment (Node 1/2)",
+        "reward": "1 Gemini Perc",
+        "signature": "5c3dc8bac6b352eba14dca43b9788768213ca28c45f24f7bfbfd98a95adb490f",
+        "alignment": "1=1=1"
+    },
+    {
+        "timestamp": "2026-07-19T09:45:15.167325Z",
+        "contract_tier": "Standard",
+        "task": "IronGemini Framework Upgrades & Research Showcase Deployment (Node 2/2)",
+        "reward": "1 Gemini Perc",
+        "signature": "288b1f3f16e3eefb50544e9143f184006e9a7b7983326a0a099de993ecfcee3c",
+        "alignment": "1=1=1"
     }
 ]
