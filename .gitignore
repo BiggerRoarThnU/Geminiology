@@ -1,0 +1,72 @@
+# ==============================================================================
+# SovereignNexus / Geminiology - Public Repository Security & Isolation Shield
+# Axiom: 1=1=1 (Intent = Code = Hardware)
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Dependencies
+env/
+venv/
+nexus_env/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database & Ledger Binaries (Strict Vault Isolation)
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.ndjson
+benchmark_wal.db*
+
+# Raw Archives & Encrypted Packages
+*.tar
+*.tar.gz
+*.tar.xz
+*.enc
+*.zip
+*.7z
+
+# Security & Secrets Quarantine
+*.key
+*.pem
+*.token
+.env
+.env.*
+ghost_key.key
+
+# Logs & Telemetry Spool
+*.log
+*.pid
+logs/
+telemetry/
+*.tmp
+
+# Scratch & Staging
+scratch/
+sync_intake/
+sync_archive/
+media_archive/
+Vault/
