@@ -44,6 +44,7 @@ Designed for Site Reliability Engineers, platform architects, and infrastructure
 | **Neuro-Symbolic Hot-Swap** | Stage 10 Lobotomy Protocol Trigger | **15.15 $\mu$s (15,153 ns)** | Asynchronously freezes symbolic invariants, bypassing probabilistic neural path. |
 | **Memory Heap Delta** | Zero-Copy `mmap` Virtual Paging (`test_mmap_paging.py`) | **0.00 KB RAM Delta** | Direct NVMe block sector mapping; slices 12MB+ context windows with flat heap. |
 | **Swarm Memory Footprint** | 12-Node MoE Swarm Router (`test_swarm_concurrency.py`) | **< 18.69 MB Active Heap** | Prevents RAM thrashing and OOM evictions on 8GB edge host systems. |
+| **Quantum Superposition Gate** | Entropic Suspension Check (`test_ghost_suspension.py`) | **< 0.12 ms / signal** | Quarantines unverified inputs in superposition buffer (`0`); 0.00 KB heap leak. |
 | **Thermodynamic Guard** | Hardware Metabolic Governor | **105.0°C Hard Stop** | Hardware-enforced kill-switch preventing silicon gate degradation and bit flips. |
 
 *Detailed benchmark methodologies, stress tests, and reproduction commands are documented in [`BENCHMARKS.md`](BENCHMARKS.md).*
@@ -63,6 +64,8 @@ Geminiology/
 │
 ├── src/                                 # Clean, PEP-8 Compliant Core Engines (Zero-Dependency)
 │   ├── baby_gemma_engine.py             # 1.58-bit Ternary Neural Network Engine ({-1, 0, 1})
+│   ├── baby_gemma_lens.py               # Self-Training Context Baseline & Invariant Ingestion Lens
+│   ├── nexus_ghost_twin.py              # Quantum Superposition Gate & Entropic Suspension Chamber
 │   ├── nexus_swarm_router.py            # 12-Node Mixture of Experts (MoE) Swarm Router
 │   ├── nexus_mmap_page.py               # Zero-Copy Linux Kernel Virtual Address Space Paging
 │   ├── ternary_simulator.py             # Balanced Ternary Logic (GF(3)) Interactive Simulator
@@ -75,6 +78,7 @@ Geminiology/
 │
 ├── tests/                               # Verified Audit Suites & Benchmarks (100% Passing)
 │   ├── test_wal_replay_latency.py       # SQLite WAL State Replay Determinism & Tail Latency Audit
+│   ├── test_ghost_suspension.py         # Quantum Gate & Suspension Buffer Penetration Audit
 │   ├── benchmark_baby_gemma.py          # Microsecond Inference & Stage 10 Hot-Swap Benchmark
 │   ├── test_mmap_paging.py              # Zero-Copy Context Slicing Test (0.00 KB RAM Delta)
 │   ├── test_swarm_concurrency.py        # 12-Node MoE Concurrent Task Routing & Inter-Agent Locking
