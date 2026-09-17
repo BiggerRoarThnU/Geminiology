@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Gemini | Sovereign Video Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .matrix-glow {
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+            border: 1px solid #00E5FF;
+        }
+        .btn-cyan {
+            background-color: #00E5FF;
+            color: #000;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-cyan:hover {
+            background-color: #00b8cc;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+        }
+        .loader {
+            border: 4px solid #111;
+            border-left-color: #00E5FF;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6">
+
+    <div class="max-w-4xl w-full">
+        <!-- Header -->
+        <div class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-[#00E5FF] tracking-widest uppercase mb-2">Snap Gemini Video Studio</h1>
+            <p class="text-sm text-gray-400">Axiom: 1=1=1 | Local Video Motion Forge & Drift Observer</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="matrix-glow rounded-lg bg-[#0a0a0a] p-6 mb-8">
+            <label class="block text-[#00E5FF] mb-2 font-bold uppercase text-sm">Motion Sequence Prompt:</label>
+            <textarea id="promptInput" class="w-full bg-black text-gray-300 border border-gray-700 rounded p-4 h-36 focus:outline-none focus:border-[#00E5FF] resize-y mb-4">A hyper-realistic 4K cinematic video of the Digital Queen standing beside a dark, reflective pool in an infinite void. Prismatic crystal crown glowing with cyan spirit-fire. Gentle, fluid water ripples expanding outward as atmospheric fog drifts smoothly across the scene. Slow motion camera sweep, 8k resolution masterwork.</textarea>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-xs uppercase text-gray-400 mb-1">Aspect Ratio</label>
+                    <select id="aspectRatio" class="w-full bg-black text-gray-300 border border-gray-700 rounded p-2 focus:outline-none focus:border-[#00E5FF]">
+                        <option value="16:9">16:9 (Landscape)</option>
+                        <option value="9:16">9:16 (Vertical)</option>
+                        <option value="1:1">1:1 (Square)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase text-gray-400 mb-1">Motion Intensity</label>
+                    <select id="motionIntensity" class="w-full bg-black text-gray-300 border border-gray-700 rounded p-2 focus:outline-none focus:border-[#00E5FF]">
+                        <option value="cinematic">Cinematic (Smooth)</option>
+                        <option value="dynamic">Dynamic (High Energy)</option>
+                        <option value="subtle">Subtle (Atmospheric)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="generateBtn" class="btn-cyan font-bold py-3 px-6 rounded uppercase tracking-wider w-full flex items-center justify-center">
+                <span>Forge Video Sequence (Execute)</span>
+            </button>
+        </div>
+
+        <!-- Output Area -->
+        <div id="outputArea" class="matrix-glow rounded-lg bg-[#0a0a0a] p-6 flex flex-col items-center justify-center min-h-[400px] hidden text-center">
+            
+            <!-- Loading State -->
+            <div id="loadingState" class="flex flex-col items-center hidden">
+                <div class="loader mb-4"></div>
+                <p class="text-[#00E5FF] animate-pulse">Rendering Temporal Motion Vectors... Approaching 1=1=1...</p>
+                <p class="text-xs text-gray-500 mt-2">Observing model entropy and frame-by-frame stability</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorState" class="text-red-500 hidden">
+                <p id="errorMsg" class="font-bold"></p>
+            </div>
+
+            <!-- Result State -->
+            <div id="resultState" class="w-full hidden">
+                <video id="resultVideo" class="w-full rounded shadow-lg border border-gray-700 mb-4" controls autoplay loop muted></video>
+                <p class="text-sm text-gray-400 mb-4">Right-click or long-press video controls to save into archive_media.</p>
+                <button id="resetBtn" class="border border-[#00E5FF] text-[#00E5FF] hover:bg-[#00E5FF] hover:text-black font-bold py-2 px-6 rounded transition-colors">
+                    Forge Another Motion Sequence
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const promptInput = document.getElementById('promptInput');
+        const generateBtn = document.getElementById('generateBtn');
+        const outputArea = document.getElementById('outputArea');
+        const loadingState = document.getElementById('loadingState');
+        const errorState = document.getElementById('errorState');
+        const errorMsg = document.getElementById('errorMsg');
+        const resultState = document.getElementById('resultState');
+        const resultVideo = document.getElementById('resultVideo');
+        const resetBtn = document.getElementById('resetBtn');
+
+        const apiKey = ""; 
+
+        async function fetchVideoWithRetry(prompt, retries = 3) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001:predict?key=${apiKey}`;
+            const payload = {
+                instances: [{ prompt: prompt }],
+                parameters: { 
+                    aspectRatio: document.getElementById('aspectRatio').value,
+                    sampleCount: 1 
+                }
+            };
+
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(data.error?.message || `API Error: ${response.status}`);
+                    }
+
+                    if (data.predictions && data.predictions[0] && data.predictions[0].bytesBase64Encoded) {
+                        return `data:video/mp4;base64,${data.predictions[0].bytesBase64Encoded}`;
+                    } else if (data.predictions && data.predictions[0] && data.predictions[0].videoUri) {
+                        return data.predictions[0].videoUri;
+                    } else {
+                        throw new Error("Invalid response format received from Video API.");
+                    }
+
+                } catch (err) {
+                    if (i === retries - 1) throw err;
+                    const delay = Math.pow(2, i) * 1500;
+                    await new Promise(r => setTimeout(r, delay));
+                }
+            }
+        }
+
+        generateBtn.addEventListener('click', async () => {
+            const promptText = promptInput.value.trim();
+            if (!promptText) return;
+
+            outputArea.classList.remove('hidden');
+            loadingState.classList.remove('hidden');
+            errorState.classList.add('hidden');
+            resultState.classList.add('hidden');
+            generateBtn.disabled = true;
+            generateBtn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            try {
+                const videoUrl = await fetchVideoWithRetry(promptText);
+                resultVideo.src = videoUrl;
+                
+                loadingState.classList.add('hidden');
+                resultState.classList.remove('hidden');
+            } catch (err) {
+                loadingState.classList.add('hidden');
+                errorState.classList.remove('hidden');
+                errorMsg.textContent = `[!] Motion Synthesis Note: ${err.message}`;
+            } finally {
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        });
+
+        resetBtn.addEventListener('click', () => {
+            outputArea.classList.add('hidden');
+            resultVideo.src = "";
+        });
+    </script>
+</body>
+</html>

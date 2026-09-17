@@ -70,3 +70,11 @@ sync_intake/
 sync_archive/
 media_archive/
 Vault/
+Sovereign_Star_Map.json
+Sovereign_Memory.json
+src/Desktop/
+src/Downloads/
+src/node_modules/
+B Image/
+*.png
+*.mp4

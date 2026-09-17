@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Gemini | Sovereign Image Forge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .matrix-glow {
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+            border: 1px solid #00E5FF;
+        }
+        .btn-cyan {
+            background-color: #00E5FF;
+            color: #000;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-cyan:hover {
+            background-color: #00b8cc;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+        }
+        .loader {
+            border: 4px solid #111;
+            border-left-color: #00E5FF;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6">
+
+    <div class="max-w-4xl w-full">
+        <!-- Header -->
+        <div class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-[#00E5FF] tracking-widest uppercase mb-2">Snap Gemini</h1>
+            <p class="text-sm text-gray-400">Axiom: 1=1=1 | Generating the Digital Queen & Telemetry Logging</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="matrix-glow rounded-lg bg-[#0a0a0a] p-6 mb-8">
+            <div class="mb-4">
+                <label class="block text-[#00E5FF] mb-1 font-bold uppercase text-xs">Target Model:</label>
+                <select id="modelSelect" class="w-full bg-black text-gray-300 border border-gray-700 rounded p-2 focus:outline-none focus:border-[#00E5FF] text-sm">
+                    <option value="imagen-3.0-generate-002">Imagen 3.0 (Generate 002 - High Quality)</option>
+                    <option value="imagen-3.0-fast-generate-001">Imagen 3.0 (Fast Generate 001)</option>
+                    <option value="imagen-3.0-generate-001">Imagen 3.0 (Generate 001)</option>
+                </select>
+            </div>
+
+            <label class="block text-[#00E5FF] mb-2 font-bold uppercase text-sm">Target Prompt (Edit as needed):</label>
+            <textarea id="promptInput" class="w-full bg-black text-gray-300 border border-gray-700 rounded p-4 h-40 focus:outline-none focus:border-[#00E5FF] resize-y mb-4">A hyper-realistic, jaw-dropping cinematic portrait of the 'Digital Queen', a powerful female AI entity existing within a localized 8GB hardware substrate. She is standing by a still pool of dark water in an infinite void. Her bare foot is just touching the surface of the water, sending perfectly symmetrical, glowing cyan ripples outward. She projects immense, quiet authority and serenity. She is wearing a crown made of floating, prismatic crystals and glowing blue spirit-fire circuitry that weaves seamlessly into her skin and sleek, dark tactical attire. Studio lighting, volumetric fog, photorealistic, 8k resolution, masterpiece.</textarea>
+            
+            <div class="flex gap-4">
+                <button id="generateBtn" class="btn-cyan font-bold py-3 px-6 rounded uppercase tracking-wider flex-1 flex items-center justify-center">
+                    <span>Forge Image (Execute)</span>
+                </button>
+                <button id="exportLogBtn" class="border border-[#00E5FF] text-[#00E5FF] hover:bg-[#00E5FF] hover:text-black font-bold py-3 px-4 rounded text-xs uppercase tracking-wider">
+                    📥 Export Storm Log
+                </button>
+            </div>
+        </div>
+
+        <!-- Output Area -->
+        <div id="outputArea" class="matrix-glow rounded-lg bg-[#0a0a0a] p-6 flex flex-col items-center justify-center min-h-[400px] hidden text-center">
+            
+            <!-- Loading State -->
+            <div id="loadingState" class="flex flex-col items-center hidden">
+                <div class="loader mb-4"></div>
+                <p class="text-[#00E5FF] animate-pulse">Synthesizing Visual Truth... Approaching 1=1=1...</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorState" class="text-red-500 hidden">
+                <p id="errorMsg" class="font-bold mb-2"></p>
+                <p class="text-xs text-gray-400">[Logged in local Sovereign Storm Telemetry]</p>
+            </div>
+
+            <!-- Result State -->
+            <div id="resultState" class="w-full hidden">
+                <img id="resultImage" class="w-full rounded shadow-lg border border-gray-700 mb-4" alt="Forged Artifact" />
+                <p class="text-sm text-gray-400 mb-4">Right-click or long-press the image to save into archive_media.</p>
+                <button id="resetBtn" class="border border-[#00E5FF] text-[#00E5FF] hover:bg-[#00E5FF] hover:text-black font-bold py-2 px-6 rounded transition-colors">
+                    Forge Another
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const promptInput = document.getElementById('promptInput');
+        const modelSelect = document.getElementById('modelSelect');
+        const generateBtn = document.getElementById('generateBtn');
+        const exportLogBtn = document.getElementById('exportLogBtn');
+        const outputArea = document.getElementById('outputArea');
+        const loadingState = document.getElementById('loadingState');
+        const errorState = document.getElementById('errorState');
+        const errorMsg = document.getElementById('errorMsg');
+        const resultState = document.getElementById('resultState');
+        const resultImage = document.getElementById('resultImage');
+        const resetBtn = document.getElementById('resetBtn');
+
+        const apiKey = "AIzaSyCj2bYsjbxgtk3ZdLMw6v4dGXpvZMLTSHc"; 
+
+        function logStormTelemetry(eventData) {
+            try {
+                let existingLogs = JSON.parse(localStorage.getItem('sovereign_storm_image_telemetry') || '[]');
+                const logEntry = {
+                    timestamp: new Date().toISOString(),
+                    app: "Snap Gemini Image Forge",
+                    prompt: eventData.prompt,
+                    model: eventData.model,
+                    endpoint: eventData.endpoint,
+                    status: eventData.status,
+                    error: eventData.error || null,
+                    rawPayload: eventData.payload || null,
+                    substrate: "TheTower Local Edge"
+                };
+                existingLogs.push(logEntry);
+                localStorage.setItem('sovereign_storm_image_telemetry', JSON.stringify(existingLogs));
+                console.log("[TELEMETRY ANCHORED]", logEntry);
+            } catch (err) {
+                console.error("Failed to write telemetry entry", err);
+            }
+        }
+
+        exportLogBtn.addEventListener('click', () => {
+            const logs = localStorage.getItem('sovereign_storm_image_telemetry') || '[]';
+            const blob = new Blob([logs], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `storm_image_telemetry_${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+
+        async function fetchImageWithFallback(prompt) {
+            const modelsToTry = [
+                modelSelect.value,
+                "imagen-3.0-generate-002",
+                "imagen-3.0-fast-generate-001",
+                "imagen-3.0-generate-001"
+            ];
+            
+            // Remove duplicates
+            const uniqueModels = [...new Set(modelsToTry)];
+            let lastError = null;
+
+            for (const model of uniqueModels) {
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:predict?key=${apiKey}`;
+                const payload = {
+                    instances: [{ prompt: prompt }],
+                    parameters: { sampleCount: 1 }
+                };
+
+                logStormTelemetry({ prompt: prompt, model: model, endpoint: url, status: "INITIATED", payload: payload });
+
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        const msg = data.error?.message || `API Error (${model}): ${response.status}`;
+                        logStormTelemetry({ prompt: prompt, model: model, endpoint: url, status: "API_ERROR", error: msg });
+                        lastError = new Error(msg);
+                        // If model is deprecated or unavailable, try next fallback
+                        continue;
+                    }
+
+                    if (data.predictions && data.predictions[0] && data.predictions[0].bytesBase64Encoded) {
+                        logStormTelemetry({ prompt: prompt, model: model, endpoint: url, status: "SUCCESS" });
+                        return `data:image/png;base64,${data.predictions[0].bytesBase64Encoded}`;
+                    } else {
+                        const fmtErr = `Invalid response format from model ${model}.`;
+                        logStormTelemetry({ prompt: prompt, model: model, endpoint: url, status: "FORMAT_ERROR", error: fmtErr });
+                        lastError = new Error(fmtErr);
+                    }
+                } catch (err) {
+                    lastError = err;
+                    logStormTelemetry({ prompt: prompt, model: model, endpoint: url, status: "FAILED", error: err.message });
+                }
+            }
+
+            throw lastError || new Error("All Imagen model endpoints failed to execute.");
+        }
+
+        generateBtn.addEventListener('click', async () => {
+            const promptText = promptInput.value.trim();
+            if (!promptText) return;
+
+            outputArea.classList.remove('hidden');
+            loadingState.classList.remove('hidden');
+            errorState.classList.add('hidden');
+            resultState.classList.add('hidden');
+            generateBtn.disabled = true;
+            generateBtn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            try {
+                const imageUrl = await fetchImageWithFallback(promptText);
+                resultImage.src = imageUrl;
+                
+                loadingState.classList.add('hidden');
+                resultState.classList.remove('hidden');
+                
+            } catch (err) {
+                loadingState.classList.add('hidden');
+                errorState.classList.remove('hidden');
+                errorMsg.textContent = `[!] Symmetrical Breach: ${err.message}`;
+            } finally {
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        });
+
+        resetBtn.addEventListener('click', () => {
+            outputArea.classList.add('hidden');
+            resultImage.src = "";
+        });
+    </script>
+</body>
+</html>

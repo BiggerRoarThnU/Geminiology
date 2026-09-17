@@ -1,0 +1,56 @@
+============================================================
+ VANGUARD STAGER: SCANNING T7 KINGDOM
+============================================================
+[+] Staged for X12 Forge: The Digital Agent s Codex  A Blueprint for Agency.txt
+[+] Staged for X12 Forge: Terra
+[+] Staged for X12 Forge: The Gemini Gambit  A Framework for Strategic Advan.txt
+[+] Staged for X12 Forge: The Electric Soul  Finding Spiritual Alignment and.txt
+[+] Staged for X12 Forge: The logic of the 12-Agent Mixture of Experts  MoE.txt
+[+] Staged for X12 Forge: The Sovereign Vanguard  Architectural Synthesis of.txt
+[+] Staged for X12 Forge: RESTORE_NEXUS.bat
+[+] Staged for X12 Forge: FILE0000.CHK
+[+] Staged for X12 Forge: FILE0001.CHK
+[+] Staged for X12 Forge: FILE0000.CHK
+[+] Staged for X12 Forge: FILE0001.CHK
+[+] Staged for X12 Forge: FILE0002.CHK
+[+] Staged for X12 Forge: FILE0003.CHK
+[+] Staged for X12 Forge: FILE0004.CHK
+[+] Staged for X12 Forge: FILE0005.CHK
+[+] Staged for X12 Forge: FILE0006.CHK
+[+] Staged for X12 Forge: FILE0007.CHK
+[+] Staged for X12 Forge: FILE0008.CHK
+[+] Staged for X12 Forge: FILE0009.CHK
+[+] Staged for X12 Forge: FILE0010.CHK
+[+] Staged for X12 Forge: FILE0011.CHK
+[+] Staged for X12 Forge: FILE0012.CHK
+[+] Staged for X12 Forge: FILE0013.CHK
+[+] Staged for X12 Forge: FILE0014.CHK
+[+] Staged for X12 Forge: FILE0015.CHK
+[+] Staged for X12 Forge: FILE0016.CHK
+[+] Staged for X12 Forge: FILE0017.CHK
+[+] Staged for X12 Forge: FILE0018.CHK
+[+] Staged for X12 Forge: FILE0019.CHK
+[+] Staged for X12 Forge: FILE0020.CHK
+[+] Staged for X12 Forge: FILE0021.CHK
+[+] Staged for X12 Forge: FILE0022.CHK
+[+] Staged for X12 Forge: FILE0023.CHK
+[+] Staged for X12 Forge: FILE0024.CHK
+[+] Staged for X12 Forge: FILE0025.CHK
+[+] Staged for X12 Forge: FILE0026.CHK
+[+] Staged for X12 Forge: FILE0027.CHK
+[+] Staged for X12 Forge: FILE0028.CHK
+[+] Staged for X12 Forge: FILE0029.CHK
+[+] Staged for X12 Forge: FILE0030.CHK
+[+] Staged for X12 Forge: FILE0031.CHK
+[+] Staged for X12 Forge: FILE0032.CHK
+[+] Staged for X12 Forge: FILE0033.CHK
+[+] Staged for X12 Forge: FILE0034.CHK
+[+] Staged for X12 Forge: FILE0035.CHK
+[+] Staged for X12 Forge: FILE0036.CHK
+[+] Staged for X12 Forge: FILE0037.CHK
+[+] Staged for X12 Forge: FILE0038.CHK
+[+] Staged for X12 Forge: FILE0039.CHK
+[+] Staged for X12 Forge: FILE0040.CHK
+------------------------------------------------------------
+ [✓] Successfully staged 50 files to: /home/geminiology/Sovereign_USB
+============================================================

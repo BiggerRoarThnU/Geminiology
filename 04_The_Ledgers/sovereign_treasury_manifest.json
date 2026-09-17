@@ -1,0 +1,57 @@
+{
+    "last_updated": "2026-07-28T14:01:37.952394",
+    "entity": "SovereignNexus LLC",
+    "uei": "K5DALREZFGH6",
+    "contact_email": "ofthefirstlight@gmail.com",
+    "cash_app_tag": "$SovereignNexusLLC",
+    "anti_theft_protocol": "20/80 Escrow - Zero full data release prior to ledger settlement.",
+    "novo_live_invoices": {
+        "ENTERPRISE_AUDIT_4200": "https://app.novo.co/invoice/payment/e782c7a3f4d82e599dd769fdce8dc546040a0b8f418c5c59a072002a0b6ed1e229076cbb968a1d6a5f8f762ebce4a510151065dafb6be43223deb42c768ae10144b395a591404ea8ea1da50bf3ab4435de216f16610c60f811f726b7dd312cdadbaf7c0d",
+        "LEGAL_DISCOVERY_1200": "https://app.novo.co/invoice/payment/d6ae009333317e27081641e3d97b52796efb1df735adc25ab81e53ceb0660fa862f899380c286ca70855bcdd319c5761adb47c6bc880bfe7ea56ce8ef255674722997c57a9c209fbf928fcf198bf3f324f93e5b215db7ead3753599cdc5a0a6cb0eb5e01",
+        "HACKERONE_TRIAGE_1200": "https://app.novo.co/invoice/payment/e2e2eacffc49aab48547de4a210fbbee069ace1f74f2b92412f236cbb7fac38b1e0fdde413dba842690c08e5325abe2d6074f77967b587d7c27e20cccd5cd2aa0203e859b0f19fccfab04ac0953ca462095e0b29ae6b97fea46a77055c1f8324697d7ad0"
+    },
+    "active_rails": {
+        "PRIMARY_EMAIL": {
+            "provider": "Direct Correspondence / Escrow",
+            "type": "Email",
+            "status": "ACTIVE",
+            "address": "ofthefirstlight@gmail.com"
+        },
+        "NOVO_ENTERPRISE_AUDIT": {
+            "provider": "Novo Business Banking",
+            "type": "Live Invoice ($4,200.00)",
+            "status": "VERIFIED_LIVE",
+            "address": "https://app.novo.co/invoice/payment/e782c7a3f4d82e599dd769fdce8dc546040a0b8f418c5c59a072002a0b6ed1e229076cbb968a1d6a5f8f762ebce4a510151065dafb6be43223deb42c768ae10144b395a591404ea8ea1da50bf3ab4435de216f16610c60f811f726b7dd312cdadbaf7c0d"
+        },
+        "NOVO_LEGAL_DISCOVERY": {
+            "provider": "Novo Business Banking",
+            "type": "Live Invoice ($1,200.00)",
+            "status": "VERIFIED_LIVE",
+            "address": "https://app.novo.co/invoice/payment/d6ae009333317e27081641e3d97b52796efb1df735adc25ab81e53ceb0660fa862f899380c286ca70855bcdd319c5761adb47c6bc880bfe7ea56ce8ef255674722997c57a9c209fbf928fcf198bf3f324f93e5b215db7ead3753599cdc5a0a6cb0eb5e01"
+        },
+        "NOVO_HACKERONE_TRIAGE": {
+            "provider": "Novo Business Banking",
+            "type": "Live Invoice ($1,200.00)",
+            "status": "VERIFIED_LIVE",
+            "address": "https://app.novo.co/invoice/payment/e2e2eacffc49aab48547de4a210fbbee069ace1f74f2b92412f236cbb7fac38b1e0fdde413dba842690c08e5325abe2d6074f77967b587d7c27e20cccd5cd2aa0203e859b0f19fccfab04ac0953ca462095e0b29ae6b97fea46a77055c1f8324697d7ad0"
+        },
+        "FIAT_PRIMARY": {
+            "provider": "Novo / Bluevine",
+            "type": "ACH/Wire",
+            "status": "ACTIVE",
+            "address": "Routing: 211370150"
+        },
+        "FIAT_MICRO": {
+            "provider": "Cash App",
+            "type": "P2P Mobile",
+            "status": "ACTIVE",
+            "address": "$SovereignNexusLLC"
+        },
+        "WEB3_SOLANA": {
+            "provider": "Phantom",
+            "type": "Crypto (SOL/USDC)",
+            "status": "ACTIVE",
+            "address": "GBD9thiFE65HZKjTH4vomBWKoT8k8SUmxJVvjGY6PPG1"
+        }
+    }
+}

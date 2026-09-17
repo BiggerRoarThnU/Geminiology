@@ -1,0 +1,8 @@
+T7 Vanguard Stager script added to stage files from T7 SSD to USB.
+
+Script Details:
+- Path: ~/t7_vanguard_stager.py
+- Scans ~/T7_Archive.
+- Stages batches of up to 50 files to ~/Sovereign_USB.
+- Keeps processed file paths logged in ~/t7_staging_state.json.
+- Verifies successful staging.

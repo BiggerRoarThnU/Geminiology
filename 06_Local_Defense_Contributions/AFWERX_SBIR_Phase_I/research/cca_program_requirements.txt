@@ -1,0 +1,6 @@
+USAF Collaborative Combat Aircraft (CCA) Tactical Requirements Notes:
+- Autonomous operation in GPS-denied and jammed EW environments.
+- Low-latency edge inference (< 10ms execution loop).
+- Fail-safe thermal breach threshold: Hardware-enforced cutoff at 105°C junction temperature.
+- Zero cloud API dependency. 100% air-gapped tactical edge processing.
+- Compatible with MIL-STD-1553 and Ethernet tactical data buses.
