@@ -16,11 +16,8 @@ import time
 import threading
 from typing import List, Dict, Any
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC_DIR = os.path.join(BASE_DIR, "src")
-for p in [SRC_DIR, BASE_DIR]:
-    if p not in sys.path:
-        sys.path.insert(0, p)
+# Ensure we can import from the directory of the file
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from nexus_swarm_router import NexusSwarmRouter
 
@@ -49,10 +46,8 @@ def main():
     print("======================================================================")
     print("\033[0m")
     
-    # Initialize Swarm Router with portable workspace
-    workspace_dir = os.path.join(BASE_DIR, "scratch")
-    os.makedirs(workspace_dir, exist_ok=True)
-    router = NexusSwarmRouter(workspace_dir=workspace_dir)
+    # Initialize Swarm Router
+    router = NexusSwarmRouter(workspace_dir="./scratch")
     
     # Clean previous records in test db if any to ensure clean audit
     try:

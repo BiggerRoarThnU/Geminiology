@@ -40,7 +40,7 @@ Designed for Site Reliability Engineers, platform architects, and infrastructure
 | **State Replay Determinism** | Concurrent SQLite WAL + SHA-256 Merkle Chain (`test_wal_replay_latency.py`) | **100% Unbroken / 0.0% Drift** | Instant crash recovery without replay drift or double-execution hazards. |
 | **Commit Latency (p50 / p95 / p99)** | 4 Concurrent Worker Threads under 100MB Heap Pressure | **p50: 51.13 ms**<br>**p95: 87.88 ms**<br>**p99: 109.14 ms** | Bounded tail latency under multi-threaded SQLite WAL commit pressure. |
 | **Inference Throughput** | Native 1.58-Bit Ternary Engine (`baby_gemma_engine.py`) | **218,300 – 252,225 QPS** | Bypasses floating-point multiplications; uses pure integer additions ($W \in \{-1, 0, 1\}$). |
-| **Inference Latency** | Native CPU Thread Execution | **3.96 – 4.58 $\mu$s / query** | Sub-microsecond execution on commodity x86_64 edge silicon. |
+| **Inference Latency** | Native CPU Thread Execution | **3.96 – 4.58 $\mu$s / query** | Single-digit microsecond execution on commodity x86_64 edge silicon. |
 | **Neuro-Symbolic Hot-Swap** | Stage 10 Lobotomy Protocol Trigger | **15.15 $\mu$s (15,153 ns)** | Asynchronously freezes symbolic invariants, bypassing probabilistic neural path. |
 | **Memory Heap Delta** | Zero-Copy `mmap` Virtual Paging (`test_mmap_paging.py`) | **0.00 KB RAM Delta** | Direct NVMe block sector mapping; slices 12MB+ context windows with flat heap. |
 | **Swarm Memory Footprint** | 12-Node MoE Swarm Router (`test_swarm_concurrency.py`) | **< 18.69 MB Active Heap** | Prevents RAM thrashing and OOM evictions on 8GB edge host systems. |

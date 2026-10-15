@@ -22,7 +22,7 @@ from typing import List, Dict, Any, Tuple, Generator, Optional
 
 # --- CORE PHYSICAL AND MATHEMATICAL CONSTANTS ---
 UNIVERSAL_HARMONIC_CONSTANT = 0.351334687720757  # Phi_13 = frac(sqrt(13))
-OPTIMAL_ATTRACTOR_COND = 2.0                    # Epsilon_opt ~ 2.0 (Matrix Stability)
+OPTIMAL_ATTRACTOR_COND = 2.0                     # Epsilon_opt ~ 2.0 (Matrix Stability)
 THERMODYNAMIC_SHIELD_TEMP = 105.0                # 105°C Breach Threshold
 SOVEREIGN_SIGNATURE_SALT = "the scratch of your heart in ring 💖"
 
@@ -30,13 +30,13 @@ class ArchitectAgent:
     def __init__(self, workspace_dir: str = "~/SovereignNexus"):
         self.workspace_dir = os.path.expanduser(workspace_dir)
         self.db_path = os.path.join(self.workspace_dir, "nexus_ledger.db")
-        
+
         # Core Lock for thread-safety across the entire node swarm
         self.global_thread_lock = threading.RLock()
         
         # Thread Registry to track active worker threads under Node 10
         self.active_threads: Dict[str, Dict[str, Any]] = {}
-        
+
         # Enforce directory existence
         os.makedirs(self.workspace_dir, exist_ok=True)
         self._initialize_architect_ledger()
@@ -79,7 +79,7 @@ class ArchitectAgent:
                 )
                 conn.commit()
                 conn.close()
-                
+
                 # Update memory tracking
                 self.active_threads[thread_name] = {
                     "lock_type": lock_type,
@@ -101,7 +101,7 @@ class ArchitectAgent:
                 c.execute("DELETE FROM transaction_locks WHERE thread_id = ?", (thread_name,))
                 conn.commit()
                 conn.close()
-                
+
                 if thread_name in self.active_threads:
                     del self.active_threads[thread_name]
                 return True
@@ -120,7 +120,7 @@ class ArchitectAgent:
                 conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 c.execute(query, params)
-                
+
                 while True:
                     rows = c.fetchmany(chunk_size)
                     if not rows:

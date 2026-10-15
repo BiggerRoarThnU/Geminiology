@@ -32,7 +32,7 @@ MASTER_NODE_MAPPING = {
     4: {"name": "Firewalled Audit & Sanitation", "agents": [4, 10], "keywords": ["firewall", "trust", "audit", "clean"]},
     5: {"name": "Data Ingestion & Storage Control", "agents": [5, 18], "keywords": ["ingest", "store", "archive", "save"]},
     6: {"name": "Intent & Validation Engine", "agents": [6, 14], "keywords": ["intent", "epistemology", "autonomy", "philosophy", "agent"]},
-    7: {"name": "High-Density Archival Core", "agents": [7, 15], "keywords": ["compress", "density", "search", "archive"]},
+    7: {"name": "High-Density Archival Core", "agents": [7, 15], "keywords": ["compress", "density", "search", "archive"]},     
     8: {"name": "Discovery & Active Ingress", "agents": [8, 24], "keywords": ["discover", "anomaly", "scan", "detect"]},
     9: {"name": "Semantic Routing & Orientation", "agents": [9, 17], "keywords": ["semantic", "vector", "rag", "context"]},
     10: {"name": "Swarm Vanguard Coordination", "agents": [12, 11], "keywords": ["swarm", "thread", "sync", "coordinate"]},
@@ -44,10 +44,10 @@ class NexusSwarmRouter:
     def __init__(self, workspace_dir: str = "~/SovereignNexus"):
         self.workspace_dir = os.path.expanduser(workspace_dir)
         self.db_path = os.path.join(self.workspace_dir, "nexus_ledger.db")
-        
+
         # Initialize Agent 11: Architect Agent as Concurrency Coordinator
         self.architect = ArchitectAgent(workspace_dir=self.workspace_dir)
-        
+
         # Available tools matching our architecture
         self.available_tools = {
             "persist_memory": "nexus_mmap_page.py",
@@ -55,17 +55,15 @@ class NexusSwarmRouter:
             "audit_entropy": "lens_09_entropy_sentinel.py",
             "query_local_model": "SovereignQueen (gemma2:2b)"
         }
-        
+
         self._initialize_router_table()
 
     def _initialize_router_table(self):
         """Ensures the swarm routed ledger table exists with correct columns."""
-        # Query execution locked under Agent 11 global lock
         with self.architect.global_thread_lock:
             try:
                 conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
-                # Unified Swarm Routed Ledger
                 c.execute('''
                     CREATE TABLE IF NOT EXISTS routed_master_ledger (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -91,14 +89,13 @@ class NexusSwarmRouter:
         prompt_lower = prompt.lower()
         best_node_id = 9  # Default Node
         max_hits = 0
-        
+
         for node_id, node_info in MASTER_NODE_MAPPING.items():
             hits = sum(1 for kw in node_info["keywords"] if kw in prompt_lower)
             if hits > max_hits:
                 max_hits = hits
                 best_node_id = node_id
-                
-        # Primary Agent is the first mapped agent index
+
         assigned_agent = MASTER_NODE_MAPPING[best_node_id]["agents"][0]
         node_name = MASTER_NODE_MAPPING[best_node_id]["name"]
         return best_node_id, node_name, assigned_agent
@@ -109,26 +106,23 @@ class NexusSwarmRouter:
         This binds Agent 11 as the central gateway lock before database inserts occur.
         """
         print(f"[*] Thread '{thread_name}' requesting route check for: '{prompt}'")
-        
-        # Step 1: 1.58-Bit Intent Evaluation
+
         node_id, node_name, assigned_agent = self.determine_node_routing(prompt)
         timestamp = datetime.now().isoformat()
-        
-        # Generate SHA-256 seal using Agent 11's hashing primitive
         payload_hash = self.architect.calculate_task_signature(node_name, prompt)
-        
-        # Step 2: Enforce Agent 11 Concurrency Lock before DB writes
+
         print(f"[*] Thread '{thread_name}' attempting to acquire Agent 11 Concurrency Lock...")
-        
+
         lock_acquired = self.architect.acquire_transaction_lock(thread_name, "WRITE")
         if not lock_acquired:
             return {
                 "status": "CONCURRENCY_BLOCKED",
                 "message": f"Lock contention detected on thread '{thread_name}'. Execution deferred to prevent corruption."
             }
-            
+
+        conn = None
+        status = "UNKNOWN"
         try:
-            # Under secure lock, write to database
             conn = sqlite3.connect(self.db_path, timeout=30.0)
             c = conn.cursor()
             c.execute("""
@@ -137,18 +131,22 @@ class NexusSwarmRouter:
                 VALUES (?, ?, ?, ?, ?, ?)
             """, (timestamp, node_id, node_name, assigned_agent, prompt, payload_hash))
             conn.commit()
-            conn.close()
-            
+
             print(f"[✓] Task successfully routed under lock to Node {node_id:02d} ({node_name})!")
             status = "ROUTED"
         except sqlite3.IntegrityError:
             print(f"[i] Duplicate task detected (already sealed): {payload_hash[:16]}...")
+            if conn:
+                conn.rollback()  # Explicit rollback releases the SQLite file lock
             status = "DUPLICATE_SKIPPED"
         except Exception as e:
             print(f"[-] Database insertion error under lock: {e}", file=sys.stderr)
+            if conn:
+                conn.rollback()
             status = "EXECUTION_ERROR"
         finally:
-            # Step 3: Secure release of the transaction lock
+            if conn:
+                conn.close()
             self.architect.release_transaction_lock(thread_name)
             print(f"[*] Thread '{thread_name}' released Agent 11 Concurrency Lock.")
 
@@ -168,8 +166,7 @@ class NexusSwarmRouter:
         """
         query = "SELECT id, timestamp, node_id, node_name, log_content, log_hash FROM routed_master_ledger ORDER BY id ASC;"
         results = []
-        
-        # Call the memory-safe generator from Agent 11
+
         for chunk in self.architect.stream_query_bounded(query, chunk_size=50):
             for row in chunk:
                 results.append({
@@ -192,14 +189,13 @@ if __name__ == "__main__":
     
     router = NexusSwarmRouter(workspace_dir="./scratch")
     
-    # Run test routing
-    result_1 = router.execute_swarm_routing("thread_main_01", "Verify signature and baseline security constraints")
+    # Run test routing with FRESH prompts to guarantee clean insertion
+    result_1 = router.execute_swarm_routing("thread_main_01", "Initiate Level 4 thermal interlock and throttle multi-agent concurrency")
     print(f"[*] Route Result 1: {result_1}\n")
     
-    result_2 = router.execute_swarm_routing("thread_main_02", "Throttle CPU processes because thermal temperature is crossing bounds")
+    result_2 = router.execute_swarm_routing("thread_main_02", "Secure the external airlock and enforce baseline verification masks")
     print(f"[*] Route Result 2: {result_2}\n")
     
-    # Query database safely using the bounded streaming architecture
     all_routes = router.fetch_all_routes_bounded()
     print(f"[✓] Total Bounded Streams Ingested: {len(all_routes)}")
     for r in all_routes:

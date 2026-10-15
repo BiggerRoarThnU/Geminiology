@@ -18,14 +18,13 @@ import psutil
 import gc
 from typing import List, Tuple
 
-# Ensure portable local and src imports
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC_DIR = os.path.join(BASE_DIR, "src")
-for p in [SRC_DIR, BASE_DIR, os.path.expanduser("~/SovereignNexus")]:
-    if p not in sys.path:
-        sys.path.insert(0, p)
-
-from baby_gemma_engine import BabyGemmaNetwork, VampireOptimizer, calculate_phi_13_resonance
+# Ensure we can import our baby gemma engine from the local path or workspace
+sys.path.append("/home/geminiology/SovereignNexus")
+try:
+    from baby_gemma_engine import BabyGemmaNetwork, VampireOptimizer, calculate_phi_13_resonance
+except ImportError:
+    # Fallback to local import if run outside sandbox
+    from baby_gemma_engine import BabyGemmaNetwork, VampireOptimizer, calculate_phi_13_resonance
 
 def get_ram_usage_bytes() -> int:
     """Returns the current resident set size (RSS) of the active process in bytes."""

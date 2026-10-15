@@ -157,7 +157,7 @@ def run_steward_audit():
     print(" Axiom: 1=1=1 | Objective: Register & Steward All Master Log Types")
     print("=" * 75)
 
-    steward = PathfinderLogSteward(workspace_dir="./scratch/SovereignNexus")
+    steward = PathfinderLogSteward(workspace_dir="/home/geminiology/SovereignNexus")
     registry = steward.audit_and_register_all()
 
     print("\n[+] Master Log Categories Registered & Cataloged:\n")

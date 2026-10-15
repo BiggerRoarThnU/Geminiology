@@ -45,19 +45,19 @@ class NexusMemoryManager:
                 
             conn = sqlite3.connect(self.db_path)
             c = conn.cursor()
+            c.execute("PRAGMA journal_mode = WAL;")
             c.execute('''
                 CREATE TABLE IF NOT EXISTS memory_vault (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp TEXT,
-                    state_id TEXT UNIQUE,
-                    score REAL,
-                    entropy REAL,
-                    classification TEXT,
+                    timestamp TEXT NOT NULL,
+                    state_id TEXT UNIQUE NOT NULL,
+                    score REAL NOT NULL,
+                    entropy REAL NOT NULL,
+                    classification TEXT NOT NULL,
                     payload_preview TEXT,
-                    payload_hash TEXT
+                    payload_hash TEXT NOT NULL
                 )
             ''')
-            c.execute("PRAGMA journal_mode = WAL;")
             conn.commit()
             conn.close()
         except Exception as e:
@@ -84,11 +84,12 @@ class NexusMemoryManager:
         """
         Decouples evaluation from state commitment.
         Evaluates incoming context for entropy density and operational relevance.
+        Lens 09 Shannon Entropy filtering: 2.5 <= H <= 5.2 bits/char.
         
         Returns: (relevance_score, entropy, classification)
         """
         if not raw_data or not raw_data.strip():
-            return 0.0, 0.0, "REJECTED_EMPTY_PAYLOAD"
+            return 0.0, 0.0, "REJECTED_NOISE"
 
         entropy = self.calculate_shannon_entropy(raw_data)
 
@@ -96,30 +97,32 @@ class NexusMemoryManager:
         if "1=1=1" in raw_data:
             return 1.0, entropy, "VERIFIED_AXIOM_ANCHOR"
 
-        # Dynamic Shannon Entropy Scoring
+        # Lens 09 Shannon Entropy Filtering (2.5 <= H <= 5.2 bits/char)
         if entropy < 2.5:
-            # Low Entropy Penalty: repetitive text / synthetic slop
-            score = max(0.1, (entropy / 2.5) * 0.5)
-            classification = "REJECTED_LOW_ENTROPY_SLOP"
-        elif entropy >= 3.8:
-            # High Entropy Boost: dense mathematical, cryptographic, or code structures
-            score = min(1.0, 0.75 + (entropy / 8.0) * 0.35)
-            classification = "ACCEPTED_HIGH_ENTROPY_SIGNAL"
+            # Low Entropy Penalty: repetitive text / synthetic slop / noise
+            score = max(0.1, (entropy / 2.5) * 0.4)
+            classification = "REJECTED_NOISE"
+        elif 2.5 <= entropy <= 5.2:
+            # High Entropy Signal: dense code, math, cryptographic hashes, verified structures
+            score = min(1.0, 0.75 + ((entropy - 2.5) / 2.7) * 0.25)
+            classification = "ACCEPTED_HIGH_ENTROPY"
         else:
-            # Moderate Entropy
-            score = (entropy / 4.0) * 0.85
-            classification = "MODERATE_ENTROPY_EVALUATED"
+            # Beyond 5.2: high randomness / compressed noise
+            score = 0.45
+            classification = "REJECTED_NOISE"
 
         return round(score, 4), entropy, classification
 
-    def commit_step(self, verified_data: str, score: float, entropy: float, classification: str) -> str:
+    def commit_step(self, verified_data: str, score: float, entropy: float, classification: str, state_id: Optional[str] = None) -> str:
         """
         Commit Step: Executed ONLY when score >= memory_threshold.
         Generates SHA-256 state seal and archives payload to vault while clearing RAM.
         """
-        state_id = hashlib.sha256(verified_data.encode('utf-8')).hexdigest()
+        payload_hash = hashlib.sha256(verified_data.encode('utf-8')).hexdigest()
+        if not state_id:
+            state_id = payload_hash
         short_id = state_id[:12]
-        timestamp = time.strftime("%Y-%T-%dT%H:%M:%SZ", time.gmtime())
+        timestamp = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
         # Update active state in-memory cache
         self.active_state[short_id] = {
@@ -129,6 +132,9 @@ class NexusMemoryManager:
             "timestamp": timestamp
         }
 
+        # First 256 characters preview
+        payload_preview = verified_data[:256]
+
         # Vault Archival (SQLite + JSON Backup)
         vault_entry = {
             "timestamp": timestamp,
@@ -137,7 +143,8 @@ class NexusMemoryManager:
             "entropy": entropy,
             "classification": classification,
             "payload_length": len(verified_data),
-            "payload_preview": verified_data[:100] + ("..." if len(verified_data) > 100 else "")
+            "payload_preview": payload_preview,
+            "payload_hash": payload_hash
         }
 
         # Write to JSON Vault Log
@@ -152,11 +159,12 @@ class NexusMemoryManager:
             if os.path.exists(self.db_path):
                 conn = sqlite3.connect(self.db_path)
                 c = conn.cursor()
+                c.execute("PRAGMA journal_mode = WAL;")
                 c.execute("""
-                    INSERT OR IGNORE INTO memory_vault 
+                    INSERT OR REPLACE INTO memory_vault 
                     (timestamp, state_id, score, entropy, classification, payload_preview, payload_hash)
                     VALUES (?, ?, ?, ?, ?, ?, ?)
-                """, (timestamp, state_id, score, entropy, classification, vault_entry["payload_preview"], state_id))
+                """, (timestamp, state_id, score, entropy, classification, payload_preview, payload_hash))
                 conn.commit()
                 conn.close()
         except Exception:

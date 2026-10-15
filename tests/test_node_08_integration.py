@@ -19,11 +19,9 @@ import sqlite3
 import threading
 from typing import List, Dict, Any
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC_DIR = os.path.join(BASE_DIR, "src")
-for p in [SRC_DIR, BASE_DIR]:
-    if p not in sys.path:
-        sys.path.insert(0, p)
+# Adjust sys.path to load local scratch and hydrated artifact modules
+sys.path.append("./scratch")
+sys.path.append("/home/geminiology/SovereignNexus")
 
 from nexus_discovery_lens import DiscoveryLens
 from nexus_log_agent import SovereignLogAgent
@@ -37,8 +35,7 @@ def run_node_08_integration():
     print("\033[0m")
 
     # Define paths in scratch sandbox
-    workspace = os.path.join(BASE_DIR, "scratch", "vanguard_workspace")
-    os.makedirs(workspace, exist_ok=True)
+    workspace = "./scratch/vanguard_workspace"
     db_path = os.path.join(workspace, "nexus_ledger.db")
     system_err_log = os.path.join(workspace, "system_error.log")
     log_ndjson = os.path.join(workspace, "nexus_processing_log.ndjson")
