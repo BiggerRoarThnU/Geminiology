@@ -266,7 +266,7 @@ def run_discovery_lens_diagnostics():
     print("\033[0m")
     
     # Initialize Discovery Lens on local scratch sandbox
-    workspace = "/home/geminiology/SovereignNexus/scratch/vanguard_workspace"
+    workspace = "./scratch/vanguard_workspace"
     lens = DiscoveryLens(workspace_dir=workspace)
     
     # Stage mock raw assets inside the Airlock folder

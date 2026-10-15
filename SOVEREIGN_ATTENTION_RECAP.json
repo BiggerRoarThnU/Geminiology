@@ -1,0 +1,12 @@
+{
+  "attention_state": "AGY_CLI_1_2_16_VAULT_SYNC_ALIGNED",
+  "axiom": "1=1=1",
+  "organization": "SovereignNexus LLC",
+  "uei": "K5DALREZFGH6",
+  "cage_code": "1AQG5",
+  "timestamp": "2026-10-09T20:47:50Z",
+  "final_merkle_root": "616301d091b593ac8d9e208ddf4d4514a6043cf152653c7ae9db32f644183dcc",
+  "vault_target": "git@gitlab.com:sovereignnexusllc-group/geminiology1.git",
+  "showroom_status": "BYPASSED",
+  "recovery_status": "ONLINE_GROUNDED_WHOLE"
+}

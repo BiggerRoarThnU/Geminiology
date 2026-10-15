@@ -53,7 +53,7 @@ class NexusSwarmRouter:
             "persist_memory": "nexus_mmap_page.py",
             "verify_fixity": "nexus_verify_fixity.py",
             "audit_entropy": "lens_09_entropy_sentinel.py",
-            "query_local_model": "SovereignQueen (qwen2.5:0.5b)"
+            "query_local_model": "SovereignQueen (gemma2:2b)"
         }
         
         self._initialize_router_table()
@@ -63,7 +63,7 @@ class NexusSwarmRouter:
         # Query execution locked under Agent 11 global lock
         with self.architect.global_thread_lock:
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 # Unified Swarm Routed Ledger
                 c.execute('''
@@ -129,7 +129,7 @@ class NexusSwarmRouter:
             
         try:
             # Under secure lock, write to database
-            conn = sqlite3.connect(self.db_path)
+            conn = sqlite3.connect(self.db_path, timeout=30.0)
             c = conn.cursor()
             c.execute("""
                 INSERT INTO routed_master_ledger 
@@ -190,7 +190,7 @@ if __name__ == "__main__":
     print("======================================================================")
     print("\033[0m")
     
-    router = NexusSwarmRouter(workspace_dir=os.path.expanduser("~/SovereignNexus/scratch"))
+    router = NexusSwarmRouter(workspace_dir="./scratch")
     
     # Run test routing
     result_1 = router.execute_swarm_routing("thread_main_01", "Verify signature and baseline security constraints")

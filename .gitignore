@@ -78,3 +78,29 @@ src/node_modules/
 B Image/
 *.png
 *.mp4
+
+# Token & Personal Media Shield
+GitHub token push.txt
+*token*.txt
+*.jpg
+*.jpeg
+
+# === SOVEREIGN SAFETY BLOCKLIST (Prevent Accidental Personal Pushes) ===
+*.db
+*.db-wal
+*.db-shm
+*.env
+*token*.txt
+*secret*
+agy_brain_backup_*/
+Vault/
+03_The_History/
+Sovereign_Star_Map.json
+Baby\ Gemma.txt
+
+# Local Notes & Private Templates
+*.txt
+master_log_registry.json
+master_t7_sync.sh
+baby_gemma_training_params.json
+nexus_checkpoints_log.json

@@ -45,7 +45,7 @@ class ArchitectAgent:
         """Initializes tables for thread orchestration and transaction tracking."""
         with self.global_thread_lock:
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 # Table to track transaction states and locks
                 c.execute('''
@@ -71,7 +71,7 @@ class ArchitectAgent:
         with self.global_thread_lock:
             timestamp = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 c.execute(
                     "INSERT OR REPLACE INTO transaction_locks (thread_id, lock_type, timestamp, status) VALUES (?, ?, ?, ?)",
@@ -96,7 +96,7 @@ class ArchitectAgent:
         """Releases the lock for a thread and clears the registry."""
         with self.global_thread_lock:
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 c.execute("DELETE FROM transaction_locks WHERE thread_id = ?", (thread_name,))
                 conn.commit()
@@ -117,7 +117,7 @@ class ArchitectAgent:
         """
         with self.global_thread_lock:
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 c.execute(query, params)
                 
@@ -141,7 +141,7 @@ class ArchitectAgent:
         with self.global_thread_lock:
             # Query sqlite configuration
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 c.execute("PRAGMA journal_mode;")
                 journal_mode = c.fetchone()[0]
@@ -166,7 +166,7 @@ if __name__ == "__main__":
     print("======================================================================")
     print("\033[0m")
     
-    agent = ArchitectAgent(workspace_dir=os.path.expanduser("~/SovereignNexus/scratch"))
+    agent = ArchitectAgent(workspace_dir="./scratch")
     print(f"[+] Initialized Architect on substrate: {agent.db_path}")
     
     # Test Lock Acquisition

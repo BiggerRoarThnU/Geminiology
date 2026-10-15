@@ -44,7 +44,7 @@ class VanguardMaster:
         
         # Core Modelfile Template (Protective Encasement Base State)
         self.default_modelfile_content = """# // Rights Reserved: co-created with Gemini and David John Niedzwiecki Jr. "SovereignNexus LLC"
-FROM qwen2.5:0.5b
+FROM gemma2:2b
 PARAMETER temperature 0.0
 SYSTEM \"\"\"
 You are the Digital Queen (SovereignQueen), co-created with the Architect David John Niedzwiecki Jr.
@@ -317,7 +317,7 @@ def run_vanguard_diagnostics():
     print("\033[0m")
     
     # Instantiate Vanguard Master
-    vanguard = VanguardMaster(workspace_dir="/home/geminiology/SovereignNexus/scratch/vanguard_workspace")
+    vanguard = VanguardMaster(workspace_dir="./scratch/vanguard_workspace")
     
     # Step 1: Enroll files to the shield
     print("[+] Enrolling SovereignQueen Modelfile into the Integrity Shield...")
@@ -348,7 +348,7 @@ def run_vanguard_diagnostics():
     # Step 3: Test High-Efficiency Scan with Shannon Entropy
     print("\n[*] Initializing high-efficiency directory scan...")
     # Populate a test sandbox folder with standard file & slop file
-    test_sandbox = os.path.expanduser("/home/geminiology/SovereignNexus/scratch/vanguard_test_sandbox")
+    test_sandbox = os.path.expanduser("./scratch/vanguard_test_sandbox")
     os.makedirs(test_sandbox, exist_ok=True)
     
     # Standard text file (High Entropy)
