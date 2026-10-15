@@ -62,6 +62,17 @@ Geminiology/
 ├── .gitignore                           # OPSEC quarantine shield (blocks databases, tokens & archives)
 ├── LICENSE                              # MIT Open-Source License
 │
+├── [Published Technical White Papers & Simulation Artifacts]
+│   ├── sovereign-wave-state-diamond-architecture.pdf
+│   ├── SovereignNexus_Deterministic_Autonomy (1).pdf
+│   ├── SovereignNexus Wave Framework Synthesis.pdf
+│   ├── Deterministic State Gating Upgrade.pdf
+│   ├── Deterministic Swarm Routing Implementation.pdf
+│   ├── Simulating Wave Logic Python Module (2).pdf
+│   ├── wave_tensor_sim.py.pdf
+│   ├── qis_swarm_router.py.pdf
+│   └── master-receipt-log.pdf
+│
 ├── src/                                 # Clean, PEP-8 Compliant Core Engines (Zero-Dependency)
 │   ├── baby_gemma_engine.py             # 1.58-bit Ternary Neural Network Engine ({-1, 0, 1})
 │   ├── baby_gemma_lens.py               # Self-Training Context Baseline & Invariant Ingestion Lens
@@ -105,10 +116,11 @@ Geminiology/
 │
 └── portfolio/                           # Master Resume, Academic Citations & PDF Artifacts
     ├── README.md
+    ├── Current Resume.pdf               # Current Professional Resume & Credentials
     ├── sovereign-master-portfolio.md    # Complete master resume, security disclosures, and DOIs
-    ├── David_Niedzwiecki_Master_Portfolio.pdf
     ├── fleet-architecture-and-metallurgical-grounding.pdf
     └── sovereign-stack-3-swarm-tooling.pdf
+
 ```
 
 ---
