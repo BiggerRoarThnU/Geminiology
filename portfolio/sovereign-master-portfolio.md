@@ -28,8 +28,9 @@ Combines production edge computing with military-grade structural fabrication ex
 * **Hardware Thermodynamic Governor:** Developed a hardware-level safety monitor that continuously reads system heat flux; initiates a controlled power shutdown above 105°C to prevent hardware faults, bit flips, and state drift.
 * **Computer Vision Media Verification Pipeline:** Authored `nexus_artifact_enhancer.py` using OpenCV to ingest physical artifacts, normalize backgrounds, evaluate Laplacian variance against synthetic degradation, and record cryptographic SHA-256 hashes locally without external API dependencies.
 * **Cryptographic Checkpoint Ledger:** Deployed a local Write-Ahead Logging (WAL) SQLite system (`nexus_checkpoints.db`) that binds sequential agent states using SHA-256 hashes and ECDSA signatures, ensuring an immutable local audit trail.
+* **Sovereign Airlock Validator & Reflection Beam 501B Integration:** Built an autonomous MCP fuzzing harness break-testing high-capacity reasoning models against a 4-Gate Zero-Trust Airlock; proved deterministic error diagnosis and self-recovery without infinite loops or PII leakage, committing sealed Merkle traces to SQLite WAL ([Whitepaper](sovereignnexus-hackathon-whitepaper.pdf) | [10-Slide Pitch Deck](sovereignnexus-10-slide-pitch-deck-v2.pdf)).
 * **Security Disclosure (HackerOne):** Identified and reported an active session leak exposing authentication tokens within high-frequency local logs (Report #3618959).
-* **Published Technical Specifications:** Authored four published architectural papers cataloged on Zenodo and the Open Science Framework (OSF) covering deterministic runtime bounds and agentic safety controls.
+* **Published Technical Specifications:** Authored published architectural papers cataloged on Zenodo and the Open Science Framework (OSF) covering deterministic runtime bounds and agentic safety controls.
 
 ---
 
