@@ -129,6 +129,7 @@ Geminiology/
 └── portfolio/                           # Master Resume, Academic Citations & PDF Artifacts
     ├── README.md
     ├── Current Resume.pdf               # Current Professional Resume & Credentials
+    ├── Sovereign_Airlock_Architecture.pdf # Visual Architecture Schematic Slide Deck
     ├── sovereignnexus-hackathon-whitepaper.pdf  # Reflection Beam 501B Submission Whitepaper
     ├── sovereignnexus-10-slide-pitch-deck-v2.pdf # 10-Slide Investor & Hackathon Pitch Deck
     ├── sovereign-master-portfolio.md    # Complete master resume, security disclosures, and DOIs
