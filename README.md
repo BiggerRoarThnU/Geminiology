@@ -64,8 +64,7 @@ Geminiology/
 │
 ├── [Published Technical White Papers & Simulation Artifacts]
 │   ├── sovereignnexus-hackathon-whitepaper.pdf
-│   ├── sovereignnexus-10-slide-pitch-deck-v2.pdf
-│   ├── Sovereign_Airlock_Architecture.pdf
+│   ├── Sovereign_Airlock_Validator.pdf
 │   ├── sovereignnexus-code-audit-report.pdf
 │   ├── Coherent Sequence Unified Coupled.pdf
 │   ├── sovereign-wave-state-diamond-architecture.pdf
@@ -129,9 +128,8 @@ Geminiology/
 └── portfolio/                           # Master Resume, Academic Citations & PDF Artifacts
     ├── README.md
     ├── Current Resume.pdf               # Current Professional Resume & Credentials
-    ├── Sovereign_Airlock_Architecture.pdf # Visual Architecture Schematic Slide Deck
+    ├── Sovereign_Airlock_Validator.pdf  # Visual Architecture Schematic & Validation Slide Deck
     ├── sovereignnexus-hackathon-whitepaper.pdf  # Reflection Beam 501B Submission Whitepaper
-    ├── sovereignnexus-10-slide-pitch-deck-v2.pdf # 10-Slide Investor & Hackathon Pitch Deck
     ├── sovereign-master-portfolio.md    # Complete master resume, security disclosures, and DOIs
     ├── fleet-architecture-and-metallurgical-grounding.pdf
     └── sovereign-stack-3-swarm-tooling.pdf
@@ -190,7 +188,7 @@ Submitted for the **Reflection AI $20,000 Project Contest ($10k Cash / $10k Comp
 * **Whitepaper & Slide Deck:**
   * [Official Hackathon Submission Whitepaper (Markdown)](docs/SOVEREIGN_AIRLOCK_VALIDATOR_BEAM_501B_HACKATHON_WHITEPAPER.md)
   * [Publication-Grade Whitepaper (PDF)](docs/sovereignnexus-hackathon-whitepaper.pdf)
-  * [10-Slide Pitch Deck (PDF)](docs/sovereignnexus-10-slide-pitch-deck-v2.pdf)
+  * [Sovereign Airlock Validator Presentation Deck (PDF)](docs/Sovereign_Airlock_Validator.pdf)
   * [Master Logistics Plan](docs/sovereignnexus_reflection_beam_hackathon_master_logistics_plan.md)
 
 ---

@@ -8,10 +8,9 @@ This chamber consolidates verified credentials, academic research preprints, and
 ## 📑 Featured Artifacts
 
 * **[`sovereign-master-portfolio.md`](sovereign-master-portfolio.md):** The comprehensive technical and professional portfolio detailing over a decade of systems architecture, industrial fabrication, federal contracting credentials, and vulnerability disclosures.
-* **[`Sovereign_Airlock_Architecture.pdf`](Sovereign_Airlock_Architecture.pdf):** Visual architectural schematic slide deck detailing the 1=1=1 Axiom and 4-Gate Royal Seal Airlock.
+* **[`Sovereign_Airlock_Validator.pdf`](Sovereign_Airlock_Validator.pdf):** Visual architectural schematic and validation slide deck detailing the 1=1=1 Axiom and 4-Gate Royal Seal Airlock.
 * **[`sovereignnexus-hackathon-whitepaper.pdf`](sovereignnexus-hackathon-whitepaper.pdf):** Official Reflection Beam 501B Hackathon submission whitepaper.
-* **[`sovereignnexus-10-slide-pitch-deck-v2.pdf`](sovereignnexus-10-slide-pitch-deck-v2.pdf):** 10-Slide Investor & Technical Hackathon Pitch Deck.
-* **[`David_Niedzwiecki_Master_Portfolio.pdf`](David_Niedzwiecki_Master_Portfolio.pdf):** Clean, recruiter-ready publication-grade PDF dossier.
+* **[`Current Resume.pdf`](Current Resume.pdf):** Current professional resume, verified technical credentials, and federal defense contracting background.
 * **[`fleet-architecture-and-metallurgical-grounding.pdf`](fleet-architecture-and-metallurgical-grounding.pdf):** Applied structural engineering and edge hardware integration white paper.
 * **[`sovereign-stack-3-swarm-tooling.pdf`](sovereign-stack-3-swarm-tooling.pdf):** 12-Node Mixture of Experts swarm architecture specification.
 
