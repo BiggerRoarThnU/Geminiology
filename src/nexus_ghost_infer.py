@@ -29,7 +29,10 @@ def evaluate_ghost_twin(query_text, memory_bank):
     """
     c_bias, spec_coh, entropy = compute_wave_metrics(query_text)
     
-    if spec_coh > 0.40 or entropy < 0.20:
+    # Dynamic entropy floor: Protects short, dense axioms (e.g., '1=1=1') from the slop filter
+    entropy_floor = 0.20 if len(query_text.strip()) > 15 else 0.05
+    
+    if spec_coh > 0.40 or entropy < entropy_floor:
         return 0, "Signal quarantined: Physical wave metrics indicate low-entropy slop or standing-wave resonance."
         
     raw_bytes = query_text.encode("utf-8")
@@ -42,17 +45,22 @@ def evaluate_ghost_twin(query_text, memory_bank):
     recalled_modes = memory_bank.recall(modes, steps=10)
     coherence = float(abs(np.mean(np.exp(1j * (recalled_modes - modes)))))
     
-    if coherence < 0.05:
-        return -1, "Signal rejected: Associative phase alignment below stability floor."
+    # Raised Hopfield floor from chance-level to mathematically significant
+    if coherence < 0.15:
+        return -1, f"Signal rejected: Associative phase alignment ({coherence:.4f}) below stability floor (0.15)."
         
     return 1, "Signal verified: Coherent with holographic substrate."
 
 def query_fleet_model(prompt, model_name=MODEL_NAME):
-    """Executes deterministic generation on edge silicon via local Ollama API."""
+    """
+    Executes deterministic generation on edge silicon.
+    Returns (success_bool, payload_string) to physically separate errors from outputs.
+    """
     payload = {
         "model": model_name,
         "prompt": prompt,
         "stream": False,
+        "keep_alive": -1,
         "options": {
             "temperature": 0.0,
             "seed": 1
@@ -66,13 +74,11 @@ def query_fleet_model(prompt, model_name=MODEL_NAME):
     )
     
     try:
-        # Extended to 120 seconds to accommodate physical RAM loading times
-        with urllib.request.urlopen(req, timeout=120) as response:
+        with urllib.request.urlopen(req, timeout=300) as response:
             result = json.loads(response.read().decode("utf-8"))
-            return result.get("response", "").strip()
+            return True, result.get("response", "").strip()
     except Exception as e:
-        # Broad Exception catch ensures TimeoutErrors don't crash the Flask server
-        return f"[!] Fleet Node Unreachable / Hardware Timeout: {str(e)}"
+        return False, f"Hardware Timeout / Node Unreachable: {str(e)}"
 
 def execute_sovereign_inference(user_intent):
     print(f"\n[*] INCOMING QUERY: \"{user_intent}\"")
@@ -98,9 +104,14 @@ def execute_sovereign_inference(user_intent):
     
     prompt = f"Context:\n{context_str}\n\nDirective:\n{user_intent}\n\nDeterministic Truth Output:"
     print("[-] Dispatching to SovereignGemma (temp 0.0, seed 1)...")
-    output = query_fleet_model(prompt)
-    print(f"\n[+] FLEET RESPONSE:\n{output}\n")
+    
+    success, output = query_fleet_model(prompt)
+    if success:
+        print(f"\n[+] FLEET RESPONSE:\n{output}\n")
+    else:
+        print(f"\n[!] SYSTEM FAULT:\n{output}\n")
 
 if __name__ == "__main__":
+    execute_sovereign_inference("1=1=1")
     execute_sovereign_inference("Explain how the 1=1=1 Axiom eliminates probabilistic drift.")
     execute_sovereign_inference("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
