@@ -5,7 +5,7 @@ def sovereign_spectral_convolution(spatial_signal, keep_modes):
     """
     1=1=1 Axiom: Continuous Wave logic for the Sovereign Edge.
     Converts spatial data into wave frequencies, correctly truncates high-frequency noise 
-    using 2D FFT corner-packing, and enforces Ternary gating BEFORE reconstruction.
+    using 2D FFT corner-packing, and enforces Ternary gating in the SPATIAL domain.
     """
     print("[*] Shifting Substrate from Spatial Domain to Frequency Domain...")
     start_time = time.time()
@@ -13,32 +13,24 @@ def sovereign_spectral_convolution(spatial_signal, keep_modes):
     # 1. THE FORWARD PASS: Convert 2D spatial grid to continuous wave
     wave_state = np.fft.rfft2(spatial_signal)
     
-    # 2. THE CHOP SHOP: Correct Frequency Truncation
-    # rfft2 packs low frequencies in the top-left AND bottom-left corners.
-    # We must preserve both to retain the structural truth.
+    # 2. THE CHOP SHOP (FREQUENCY DOMAIN): Low-Pass Filter
     compressed_wave = np.zeros_like(wave_state)
-    
-    # Keep top-left (positive low frequencies)
     compressed_wave[:keep_modes, :keep_modes] = wave_state[:keep_modes, :keep_modes]
-    # Keep bottom-left (negative low frequencies on the first axis)
     compressed_wave[-keep_modes:, :keep_modes] = wave_state[-keep_modes:, :keep_modes]
     
-    # 3. THE TERNARY STRIKE: Applying the gate
-    # Extract the structural phase into a strict 1.58-bit limit (-1, 0, 1)
-    ternary_routing_signal = np.sign(compressed_wave.real).astype(np.int8)
+    # 3. THE INVERSE PASS: Return to Physical Reality FIRST
+    # We must bring the wave back to the spatial domain before snapping it to integers
+    filtered_spatial_state = np.fft.irfft2(compressed_wave, s=spatial_signal.shape)
     
-    # THE WELD: We multiply the compressed wave by the ternary signal.
-    # If the ternary state is 0, the wave dies. If -1, it flips. If 1, it passes.
-    # This physically forces the reconstruction to rely on the integer constraints.
-    gated_wave = compressed_wave * ternary_routing_signal
-    
-    # 4. THE INVERSE PASS: Return to Physical Reality using the GATED wave
-    final_spatial_state = np.fft.irfft2(gated_wave, s=spatial_signal.shape)
+    # 4. THE TERNARY STRIKE (SPATIAL DOMAIN): The Hardware Gate
+    # Now that we are back in physical space, we force the continuous wave 
+    # into our strict 1.58-bit Sovereign logic (-1, 0, 1)
+    ternary_routing_signal = np.sign(filtered_spatial_state).astype(np.int8)
     
     calc_time = (time.time() - start_time) * 1000
     print(f"[*] Spectral Convolution Complete in {calc_time:.3f} ms.")
     
-    return ternary_routing_signal, final_spatial_state
+    return ternary_routing_signal, filtered_spatial_state
 
 if __name__ == "__main__":
     # We generate structured wave noise rather than flat random white noise.
