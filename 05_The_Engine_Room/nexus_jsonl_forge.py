@@ -46,7 +46,7 @@ def forge_jsonl_dataset(input_dir, output_file):
                         # FIX 4: Cryptographic Provenance in the Input stream
                         data_line = {
                             "instruction": "Assimilate the following data into the 1=1=1 deterministic framework.",
-                            "input": f"Source: {filename} | Section: {chunk_idx} | SHA256: {chunk_hash[:8]}",
+                            "input": f"Source: {filename} | Section: {chunk_idx} | SHA256: {chunk_hash}",
                             "output": chunk
                         }
                         f_out.write(json.dumps(data_line) + '\n')
