@@ -7,20 +7,18 @@ DB_PATH = "nexus_ledger.db"
 
 def generate_spatial_coordinate(chunk_index, total_chunks):
     """
-    Translates 1D sequence data into a 3D spatial coordinate.
-    X: Temporal/Sequence flow (0.0 to 1.0)
-    Y: Semantic Phase (Fixed at 0.5 for baseline, modular for Swarm routing)
-    Z: Agentic Domain (0 = Archive, 1 = Forge, 2 = Airlock)
+    Translates 1D sequence data into a 3D coordinate vector.
+    Currently acts as a 1D sequence index (X) embedded in a 3D spatial costume,
+    with Y and Z pinned as constants for future dimensional routing.
     """
-    # X-axis: Where this data sits in the flow of time
     x_coord = np.interp(chunk_index, [0, max(1, total_chunks - 1)], [0.0, 1.0])
-    y_coord = 0.5 # Baseline semantic depth
-    z_coord = 0.0 # Defaulting to Archive Room 1
+    y_coord = 0.5 
+    z_coord = 0.0 
     
     return np.array([x_coord, y_coord, z_coord], dtype=np.float32)
 
-def generate_fixity_seal(data_string, coords):
-    """Generates the SHA-256 Merkle root / Fixity Seal for the 1=1=1 Axiom."""
+def generate_block_hash(data_string, coords):
+    """Generates a flat SHA-256 fixity hash for the individual chunk and its coordinates."""
     payload = f"{data_string}_{coords[0]}_{coords[1]}_{coords[2]}"
     return hashlib.sha256(payload.encode('utf-8')).hexdigest()
 
@@ -60,7 +58,7 @@ def ingest_payload(conn, text_chunks):
         coords = generate_spatial_coordinate(idx, total)
         
         # Generate the cryptographic seal
-        seal = generate_fixity_seal(chunk, coords)
+        seal = generate_block_hash(chunk, coords)
         
         try:
             cursor.execute('''

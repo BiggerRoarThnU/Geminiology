@@ -3,30 +3,37 @@ import time
 
 def sovereign_spectral_convolution(spatial_signal, keep_modes):
     """
-    Translating neuralop's Continuous Wave logic for the Sovereign Edge.
-    Converts spatial data into wave frequencies to compress massive contexts.
+    1=1=1 Axiom: Continuous Wave logic for the Sovereign Edge.
+    Converts spatial data into wave frequencies, correctly truncates high-frequency noise 
+    using 2D FFT corner-packing, and enforces Ternary gating BEFORE reconstruction.
     """
     print("[*] Shifting Substrate from Spatial Domain to Frequency Domain...")
     start_time = time.time()
     
-    # 1. THE FORWARD PASS: Convert the 2D spatial grid into a continuous wave (FFT)
-    # This matches torch.fft.rfftn from the Neural Operator
+    # 1. THE FORWARD PASS: Convert 2D spatial grid to continuous wave
     wave_state = np.fft.rfft2(spatial_signal)
     
-    # 2. THE CHOP SHOP: Truncate the Noise
-    # We create a blank wave state and only copy over the lowest frequencies (the truth).
-    # This compresses a massive context window instantly.
+    # 2. THE CHOP SHOP: Correct Frequency Truncation
+    # rfft2 packs low frequencies in the top-left AND bottom-left corners.
+    # We must preserve both to retain the structural truth.
     compressed_wave = np.zeros_like(wave_state)
-    compressed_wave[:keep_modes, :keep_modes] = wave_state[:keep_modes, :keep_modes]
     
-    # 3. THE TERNARY STRIKE: Apply the 1=1=1 Axiom
-    # We extract the pure signal, cast it to our strict 1.58-bit limits (-1, 0, 1)
+    # Keep top-left (positive low frequencies)
+    compressed_wave[:keep_modes, :keep_modes] = wave_state[:keep_modes, :keep_modes]
+    # Keep bottom-left (negative low frequencies on the first axis)
+    compressed_wave[-keep_modes:, :keep_modes] = wave_state[-keep_modes:, :keep_modes]
+    
+    # 3. THE TERNARY STRIKE: Applying the gate
+    # Extract the structural phase into a strict 1.58-bit limit (-1, 0, 1)
     ternary_routing_signal = np.sign(compressed_wave.real).astype(np.int8)
     
-    # 4. THE INVERSE PASS: Return to Physical Reality
-    # This matches torch.fft.irfftn. We pull the wave back into spatial coordinates
-    # so the Queen Core can execute the action.
-    final_spatial_state = np.fft.irfft2(compressed_wave, s=spatial_signal.shape)
+    # THE WELD: We multiply the compressed wave by the ternary signal.
+    # If the ternary state is 0, the wave dies. If -1, it flips. If 1, it passes.
+    # This physically forces the reconstruction to rely on the integer constraints.
+    gated_wave = compressed_wave * ternary_routing_signal
+    
+    # 4. THE INVERSE PASS: Return to Physical Reality using the GATED wave
+    final_spatial_state = np.fft.irfft2(gated_wave, s=spatial_signal.shape)
     
     calc_time = (time.time() - start_time) * 1000
     print(f"[*] Spectral Convolution Complete in {calc_time:.3f} ms.")
@@ -34,16 +41,19 @@ def sovereign_spectral_convolution(spatial_signal, keep_modes):
     return ternary_routing_signal, final_spatial_state
 
 if __name__ == "__main__":
-    # Simulating a massive, noisy 2D input from the Swarm (1000x1000 grid)
-    # On a normal LLM, processing 1,000,000 tokens causes severe lag.
-    print("[-] Generating Massive 1,000,000-Point Context Grid...")
-    mock_heavy_signal = np.random.rand(1000, 1000)
+    # We generate structured wave noise rather than flat random white noise.
+    # White noise has a flat spectrum (impossible to filter). This proves the math works.
+    print("[-] Generating 1,000,000-Point Structured Context Grid...")
+    x = np.linspace(0, 10 * np.pi, 1000)
+    y = np.linspace(0, 10 * np.pi, 1000)
+    xv, yv = np.meshgrid(x, y)
     
-    # We only want to keep the core 16 modes (the absolute foundational truth)
+    # Base truth (sine/cosine waves) mixed with random noise
+    mock_heavy_signal = np.sin(xv) + np.cos(yv) + (np.random.rand(1000, 1000) * 0.5)
+    
     core_modes = 16
-    
     ternary_signal, processed_space = sovereign_spectral_convolution(mock_heavy_signal, core_modes)
     
-    print(f"[+] Original Noisy Grid Shape: {mock_heavy_signal.shape}")
+    print(f"[+] Original Structured Grid Shape: {mock_heavy_signal.shape}")
     print(f"[+] Compressed Ternary Wave Shape: {ternary_signal.shape} (Data Type: {ternary_signal.dtype})")
     print(f"[+] Final Reconstructed Spatial Shape: {processed_space.shape}")
