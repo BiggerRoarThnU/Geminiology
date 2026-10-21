@@ -29,7 +29,8 @@ INTAKE_DIR = os.path.expanduser("~/SovereignNexus/sync_intake")
 MODEL_NAME = "gemma2:2b"
 
 # Valid payment/access tokens
-VALID_TOKENS = {"NEXUS-777-ALPHA", "SOVEREIGN-999-BETA"}
+import os
+VALID_TOKENS = set(os.environ.get("NEXUS_TOKENS", "NEXUS-777-ALPHA").split(","))
 
 HTML_TEMPLATE = """
 <!DOCTYPE html>
@@ -307,11 +308,11 @@ HTML_TEMPLATE = """
             if (!query) return;
             
             const chatBox = document.getElementById('chat-box');
-            chatBox.innerHTML += `<div class="user-msg">> ${query}</div>`;
+            chatBox.textContent += `<div class="user-msg">> ${query}</div>`;
             input.value = '';
             
             const loadingId = 'loading-' + Date.now();
-            chatBox.innerHTML += `<div id="${loadingId}" class="oracle-msg" style="color:#888;">[*] Spinning local Qwen core (ETA ~3 mins)...</div>`;
+            chatBox.textContent += `<div id="${loadingId}" class="oracle-msg" style="color:#888;">[*] Spinning local Qwen core (ETA ~3 mins)...</div>`;
             chatBox.scrollTop = chatBox.scrollHeight;
             
             try {
@@ -322,10 +323,10 @@ HTML_TEMPLATE = """
                 });
                 const data = await response.json();
                 document.getElementById(loadingId).remove();
-                chatBox.innerHTML += `<div class="oracle-msg">[ORACLE]: ${data.answer}</div><hr style="border-color:#222;">`;
+                chatBox.textContent += `<div class="oracle-msg">[ORACLE]: ${data.answer}</div><hr style="border-color:#222;">`;
             } catch (err) {
                 document.getElementById(loadingId).remove();
-                chatBox.innerHTML += `<div class="oracle-msg" style="color:red;">[!] Link failure. Check daemon.</div><hr style="border-color:#222;">`;
+                chatBox.textContent += `<div class="oracle-msg" style="color:red;">[!] Link failure. Check daemon.</div><hr style="border-color:#222;">`;
             }
             chatBox.scrollTop = chatBox.scrollHeight;
         }
@@ -362,11 +363,11 @@ HTML_TEMPLATE = """
         async function uploadFile(file) {
             const token = document.getElementById('token-field').value.trim();
             if (!token) {
-                uploadStatus.innerHTML = "<span style='color:red;'>[!] Verification Token Required.</span>";
+                uploadStatus.textContent = "<span style='color:red;'>[!] Verification Token Required.</span>";
                 return;
             }
             
-            uploadStatus.innerHTML = "[*] Verifying token and staging file...";
+            uploadStatus.textContent = "[*] Verifying token and staging file...";
             
             const formData = new FormData();
             formData.append('file', file);
@@ -379,13 +380,13 @@ HTML_TEMPLATE = """
                 });
                 const data = await response.json();
                 if (response.ok) {
-                    uploadStatus.innerHTML = `<span style='color:#00ff00;'>[✓] Autopilot: Processing ${data.filename} in background...</span>`;
+                    uploadStatus.textContent = `<span style='color:#00ff00;'>[✓] Autopilot: Processing ${data.filename} in background...</span>`;
                     setTimeout(updateLedgerTable, 2000);
                 } else {
-                    uploadStatus.innerHTML = `<span style='color:red;'>[!] Reject: ${data.error}</span>`;
+                    uploadStatus.textContent = `<span style='color:red;'>[!] Reject: ${data.error}</span>`;
                 }
             } catch (err) {
-                uploadStatus.innerHTML = "<span style='color:red;'>[!] Staging connection error.</span>";
+                uploadStatus.textContent = "<span style='color:red;'>[!] Staging connection error.</span>";
             }
         }
         
@@ -395,16 +396,16 @@ HTML_TEMPLATE = """
                 const response = await fetch('/api/ledger');
                 const data = await response.json();
                 const tbody = document.getElementById('ledger-body');
-                tbody.innerHTML = '';
+                tbody.textContent = '';
                 
                 if (data.records.length === 0) {
-                    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:#888;">No records logged in chunk_ledger.</td></tr>';
+                    tbody.textContent = '<tr><td colspan="5" style="text-align:center; color:#888;">No records logged in chunk_ledger.</td></tr>';
                     return;
                 }
                 
                 data.records.forEach(row => {
                     const tr = document.createElement('tr');
-                    tr.innerHTML = `
+                    tr.textContent = `
                         <td>${row.timestamp}</td>
                         <td>${row.filename}</td>
                         <td style="text-align:center;">${row.chunk_index}/${row.total_chunks}</td>

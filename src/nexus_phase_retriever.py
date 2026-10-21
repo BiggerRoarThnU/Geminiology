@@ -7,7 +7,7 @@ Rejects synthetic slop and standing-wave noise before context injection.
 import sqlite3
 import os
 
-DB_PATH = os.path.expanduser("~/SovereignNexus/src/nexus_ledger.db")
+DB_PATH = os.path.expanduser("~/SovereignNexus/nexus_ledger.db")
 
 def query_verified_context(min_entropy=0.35, max_spectral_coherence=0.25, limit=10):
     """

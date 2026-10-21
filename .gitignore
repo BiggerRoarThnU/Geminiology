@@ -104,3 +104,6 @@ master_log_registry.json
 master_t7_sync.sh
 baby_gemma_training_params.json
 nexus_checkpoints_log.json
+docs/THE_ARCHITECTURES_OF_AUTONOMY_REFLECTION_BEAM_501B_AND_SOVEREIGN_EDGE.md
+nuclei/action_topology.json
+nuclei/*_CHOP_SHOP_TELEMETRY.md
