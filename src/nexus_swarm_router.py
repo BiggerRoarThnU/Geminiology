@@ -65,15 +65,6 @@ class NexusSwarmRouter:
                 conn = sqlite3.connect(self.db_path, timeout=30.0)
                 c = conn.cursor()
                 c.execute('''
-                    CREATE TABLE IF NOT EXISTS routed_master_ledger (
-                        id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        timestamp TEXT,
-                        node_id INTEGER,
-                        node_name TEXT,
-                        triggering_agent INTEGER,
-                        log_content TEXT,
-                        log_hash TEXT UNIQUE
-                    )
                 ''')
                 c.execute("PRAGMA journal_mode = WAL;")
                 conn.commit()

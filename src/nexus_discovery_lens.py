@@ -50,15 +50,6 @@ class DiscoveryLens:
             conn = sqlite3.connect(self.db_path)
             c = conn.cursor()
             c.execute('''
-                CREATE TABLE IF NOT EXISTS routed_master_ledger (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp TEXT,
-                    node_id INTEGER,
-                    node_name TEXT,
-                    log_text TEXT,
-                    payload_hash TEXT,
-                    signature TEXT
-                )
             ''')
             conn.commit()
             

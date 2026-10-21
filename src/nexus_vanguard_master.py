@@ -63,15 +63,6 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
             c = conn.cursor()
             # Node 10 Routed Ledger Setup
             c.execute('''
-                CREATE TABLE IF NOT EXISTS routed_master_ledger (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp TEXT,
-                    node_id INTEGER,
-                    node_name TEXT,
-                    log_text TEXT,
-                    payload_hash TEXT,
-                    signature TEXT
-                )
             ''')
             # Master Configuration Integrity Shield Table
             c.execute('''
