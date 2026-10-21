@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sovereignnexus"
+version = "1.0.0"
+description = "Deterministic, physics-grounded inference airlock for edge silicon."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "psutil",
+    "flask",
+    "werkzeug",
+    "ollama",
+    "opencv-python-headless"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
