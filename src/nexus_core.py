@@ -53,5 +53,19 @@ def get_unified_db_connection():
             signature TEXT
         )
     ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS assimilated_protocols (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp TEXT NOT NULL,
+            protocol_name TEXT NOT NULL,
+            source_file TEXT NOT NULL,
+            sha256_hash TEXT UNIQUE NOT NULL,
+            shannon_entropy REAL NOT NULL,
+            slerp_coordinate_e8 TEXT NOT NULL,
+            assimilated_payload TEXT NOT NULL,
+            merkle_root_seal TEXT NOT NULL
+        )
+    ''')
     conn.commit()
     return conn
