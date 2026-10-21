@@ -1,3 +1,4 @@
+from nexus_core import get_unified_db_connection, verify_entropy_gate
 #!/usr/bin/env python3
 """
 👑 SOVEREIGN NEXUS LLC: AGENT 08 - DISCOVERY LENS (v2.0)
@@ -47,7 +48,7 @@ class DiscoveryLens:
     def _initialize_routed_ledger(self):
         """Ensures the SQLite database is ready and set to WAL mode for concurrency."""
         try:
-            conn = sqlite3.connect(self.db_path)
+            conn = get_unified_db_connection()
             c = conn.cursor()
             c.execute('''
             ''')
@@ -192,7 +193,7 @@ class DiscoveryLens:
         processed_count = 0
         
         try:
-            conn = sqlite3.connect(self.db_path)
+            conn = get_unified_db_connection()
             c = conn.cursor()
             
             for file_info in discovered_files:
@@ -304,7 +305,7 @@ def run_discovery_lens_diagnostics():
     
     # Read the ledger database back to verify fixity
     try:
-        conn = sqlite3.connect(lens.db_path)
+        conn = get_unified_db_connection()
         c = conn.cursor()
         c.execute("SELECT id, node_name, log_text, payload_hash, signature FROM routed_master_ledger")
         rows = c.fetchall()

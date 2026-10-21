@@ -1,3 +1,4 @@
+from nexus_core import get_unified_db_connection
 #!/usr/bin/env python3
 """
 👑 SOVEREIGN NEXUS LLC: 12-NODE MIXTURE OF EXPERTS SWARM ROUTER (v2.0)
@@ -62,7 +63,7 @@ class NexusSwarmRouter:
         """Ensures the swarm routed ledger table exists with correct columns."""
         with self.architect.global_thread_lock:
             try:
-                conn = sqlite3.connect(self.db_path, timeout=30.0)
+                conn = get_unified_db_connection()
                 c = conn.cursor()
                 c.execute('''
                 ''')
@@ -114,7 +115,7 @@ class NexusSwarmRouter:
         conn = None
         status = "UNKNOWN"
         try:
-            conn = sqlite3.connect(self.db_path, timeout=30.0)
+            conn = get_unified_db_connection()
             c = conn.cursor()
             c.execute("""
                 INSERT INTO routed_master_ledger 

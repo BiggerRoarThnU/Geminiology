@@ -26,14 +26,10 @@ def calculate_shannon_entropy(text: str) -> float:
 
 def verify_entropy_gate(text: str) -> bool:
     """
-    Unified Lens 09 Rule:
-    Rejects repetitive slop (H < floor) and encrypted noise (H > 4.8).
-    Dynamically adjusts floor for short mathematical axioms.
+    Unified Lens 09 Rule: Enforces the Royal Seal standard (2.5 - 5.2).
     """
     h = calculate_shannon_entropy(text)
-    floor = 0.20 if len(text) > 15 else 0.05
-    ceiling = 4.8 
-    return floor <= h <= ceiling
+    return 2.5 <= h <= 5.2
 
 def get_unified_db_connection():
     """

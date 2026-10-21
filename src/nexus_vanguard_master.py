@@ -1,3 +1,4 @@
+from nexus_core import get_unified_db_connection, verify_entropy_gate
 #!/usr/bin/env python3
 """
 👑 SOVEREIGN NEXUS LLC: AGENT 12 - VANGUARD MASTER (v2.0)
@@ -60,7 +61,7 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
         """Prepares database tables and default files for the Vanguard shield."""
         # Establish write-ahead logging (WAL) for concurrency
         try:
-            conn = sqlite3.connect(self.db_path)
+            conn = get_unified_db_connection()
             c = conn.cursor()
             # Node 10 Routed Ledger Setup
             c.execute('''
@@ -115,7 +116,7 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
         
         with self.db_lock:
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = get_unified_db_connection()
                 c = conn.cursor()
                 c.execute('''
                     INSERT OR REPLACE INTO integrity_shield (file_path, expected_hash, last_verified, status)
@@ -134,7 +135,7 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
         violations = []
         with self.db_lock:
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = get_unified_db_connection()
                 c = conn.cursor()
                 c.execute("SELECT file_path, expected_hash FROM integrity_shield")
                 shielded_records = c.fetchall()
@@ -168,7 +169,7 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
                 f.write(self.default_modelfile_content)
             current_hash = self.calculate_sha256(path)
             with self.db_lock:
-                conn = sqlite3.connect(self.db_path)
+                conn = get_unified_db_connection()
                 c = conn.cursor()
                 c.execute('''
                     UPDATE integrity_shield 
@@ -200,7 +201,7 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
         
         with self.db_lock:
             try:
-                conn = sqlite3.connect(self.db_path)
+                conn = get_unified_db_connection()
                 c = conn.cursor()
                 c.execute('''
                     INSERT INTO routed_master_ledger (timestamp, node_id, node_name, log_text, payload_hash, signature)
