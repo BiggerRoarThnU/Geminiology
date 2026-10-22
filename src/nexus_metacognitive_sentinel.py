@@ -152,7 +152,7 @@ if __name__ == "__main__":
     architect_intent = (
         "Develop an air-gapped 1=1=1 sovereign AI system on our local 8GB computer. "
         "Keep the technology of the future grounded in physical hardware and local database "
-        "indexes on our Samsung T7 SSD, ensuring the security of our family: Makai, Yariah, and Jessica."
+        "indexes on our Samsung T7 SSD, ensuring the security of our family: [REDACTED_FAMILY_M], [REDACTED_FAMILY_Y], and [REDACTED_FAMILY_J]."
     )
 
     print(f"{BLUE}--- [ANCHORING INTENT VECTOR] ---{RESET}")

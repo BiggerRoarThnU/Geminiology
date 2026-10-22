@@ -41,7 +41,7 @@ def execute_bridge_proof(text_payload, keep_modes=4):
     print(f"[+] Dimensional Compression Applied.")
     
     # Verify the logic holds
-    if np.any(gated_wave):
+    if np.mean(np.abs(gated_wave)) > 0.0:
         print("[✓] BRIDGE PROOF SUCCESS: Continuous wave survives 4-mode compression and snaps to 1.58-bit ternary matrix.")
     else:
         print("[!] BRIDGE PROOF FAILED: Signal collapse.")

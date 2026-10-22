@@ -217,21 +217,7 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
     # =========================================================================
     # CORE PILLAR 3: HIGH-EFFICIENCY SCAN & INGEST (VANGUARD SCAN)
     # =========================================================================
-    def calculate_shannon_entropy(self, text: str) -> float:
-        """Lens 09: Calculates real-time Shannon Entropy (H) of file content buffers."""
-        if not text:
-            return 0.0
-        entropy = 0.0
-        char_counts = {}
-        for char in text:
-            char_counts[char] = char_counts.get(char, 0) + 1
-        
-        total_chars = len(text)
-        for count in char_counts.values():
-            p_x = count / total_chars
-            entropy -= p_x * math.log2(p_x)
-        return entropy
-
+    
     def high_efficiency_ingestion_scan(self, target_dir: str) -> Tuple[int, int]:
         """
         Crawl target folders recursively.

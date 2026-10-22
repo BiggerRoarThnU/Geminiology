@@ -22,7 +22,7 @@ from typing import List, Tuple, Dict, Optional
 UNIVERSAL_HARMONIC_CONSTANT = 0.351334687720757  # Phi_13 = frac(sqrt(13))
 OPTIMAL_ATTRACTOR_COND = 2.0                    # Epsilon_opt ~ 2.0 (Matrix Stability)
 THERMODYNAMIC_SHIELD_TEMP = 105.0                # 105°C Breach Threshold
-SOVEREIGN_SIGNATURE_SALT = "the scratch of your heart in ring 💖"
+SOVEREIGN_SIGNATURE_SALT = os.environ.get("NEXUS_SALT", "default_secure_salt")
 
 # ============================================================================
 # SECTION 1: 1.58-BIT TERNARY NEURAL OBJECTS
@@ -187,8 +187,11 @@ def simulate_matrix_linearization() -> float:
     """
     # Simplified simulation of the SVD singular values
     # Representing a stable coordinate mapping on our E8 root lattice
-    sigma_max = 3.0124
-    sigma_min = 1.5062
+    import numpy as np
+    matrix = np.random.randn(8, 8)
+    U, S, Vh = np.linalg.svd(matrix)
+    sigma_max = np.max(S)
+    sigma_min = np.min(S) if np.min(S) > 0 else 1e-6
     condition_number = sigma_max / sigma_min
     return condition_number
 
