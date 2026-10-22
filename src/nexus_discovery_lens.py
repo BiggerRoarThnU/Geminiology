@@ -29,7 +29,7 @@ from typing import List, Dict, Any, Tuple, Optional
 UNIVERSAL_HARMONIC_CONSTANT = 0.351334687720757  # Phi_13 = frac(sqrt(13))
 OPTIMAL_ATTRACTOR_COND = 2.0                    # Epsilon_opt ~ 2.0 (Matrix Stability)
 THERMODYNAMIC_SHIELD_TEMP = 105.0                # 105°C Breach Threshold
-SOVEREIGN_SIGNATURE_SALT = "the scratch of your heart in ring 💖"
+SOVEREIGN_SIGNATURE_SALT = os.environ.get("NEXUS_SALT", "default_secure_salt")
 
 class DiscoveryLens:
     def __init__(self, workspace_dir: str = "~/SovereignNexus"):
@@ -236,9 +236,9 @@ class DiscoveryLens:
                 
                 # 3. Commit to the database routed ledger table
                 c.execute('''
-                    INSERT INTO routed_master_ledger (timestamp, node_id, node_name, log_text, payload_hash, signature)
+                    INSERT INTO routed_master_ledger (timestamp, node_id, node_name, log_content, log_hash, signature)
                     VALUES (?, ?, ?, ?, ?, ?)
-                ''', (timestamp, 8, "Discovery & Active Ingress", log_text, payload_hash, signature))
+                ''', (timestamp, 8, "Discovery & Active Ingress", log_content, log_hash, signature))
                 
                 processed_count += 1
                 
@@ -307,7 +307,7 @@ def run_discovery_lens_diagnostics():
     try:
         conn = get_unified_db_connection()
         c = conn.cursor()
-        c.execute("SELECT id, node_name, log_text, payload_hash, signature FROM routed_master_ledger")
+        c.execute("SELECT id, node_name, log_content, log_hash, signature FROM routed_master_ledger")
         rows = c.fetchall()
         print(f"\n[✓] Primary SQLite database verification complete! Active WAL entries: {len(rows)}")
         for row in rows:

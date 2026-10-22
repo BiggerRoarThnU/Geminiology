@@ -30,7 +30,7 @@ MODEL_NAME = "gemma2:2b"
 
 # Valid payment/access tokens
 import os
-VALID_TOKENS = set(os.environ.get("NEXUS_TOKENS", "NEXUS-777-ALPHA").split(","))
+VALID_TOKENS = set(os.environ.get("NEXUS_TOKENS", "").split(","))
 
 HTML_TEMPLATE = """
 <!DOCTYPE html>

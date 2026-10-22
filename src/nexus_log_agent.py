@@ -27,7 +27,7 @@ from typing import List, Dict, Any, Tuple, Optional
 UNIVERSAL_HARMONIC_CONSTANT = 0.351334687720757  # Phi_13 = frac(sqrt(13))
 OPTIMAL_ATTRACTOR_COND = 2.0                    # Epsilon_opt ~ 2.0 (Matrix Stability)
 THERMODYNAMIC_SHIELD_TEMP = 105.0                # 105°C Breach Threshold
-SOVEREIGN_SIGNATURE_SALT = "the scratch of your heart in ring 💖"
+SOVEREIGN_SIGNATURE_SALT = os.environ.get("NEXUS_SALT", "default_secure_salt")
 
 class SovereignLogAgent:
     def __init__(self, workspace_dir: str = "~/SovereignNexus"):

@@ -204,9 +204,9 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
                 conn = get_unified_db_connection()
                 c = conn.cursor()
                 c.execute('''
-                    INSERT INTO routed_master_ledger (timestamp, node_id, node_name, log_text, payload_hash, signature)
+                    INSERT INTO routed_master_ledger (timestamp, node_id, node_name, log_content, log_hash, signature)
                     VALUES (?, ?, ?, ?, ?, ?)
-                ''', (timestamp, node_id, node_name, log_text, payload_hash, signature))
+                ''', (timestamp, node_id, node_name, log_content, log_hash, signature))
                 conn.commit()
                 conn.close()
                 return payload_hash
