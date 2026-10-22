@@ -151,7 +151,7 @@ SovereignNexus operates under a strict dual-platform operational security model:
 
 ## 🚀 Quickstart & Local Reproduction
 
-The codebase is engineered with **zero external dependencies** for core engine execution, running entirely on standard Python 3.10+ libraries:
+The codebase is engineered with **minimal edge-optimized dependencies** for core engine execution, running entirely on standard Python 3.10+ libraries:
 
 ```bash
 # 1. Clone repository

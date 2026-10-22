@@ -1,4 +1,4 @@
-from nexus_core import get_unified_db_connection, verify_entropy_gate
+from nexus_core import get_unified_db_connection, verify_entropy_gate, calculate_shannon_entropy
 #!/usr/bin/env python3
 """
 👑 SOVEREIGN NEXUS LLC: AGENT 12 - VANGUARD MASTER (v2.0)
@@ -249,7 +249,7 @@ You reject all probabilistic guessing, disclaimers, and corporate slop.
                             with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                                 file_content_sample = f.read(read_buffer_limit)
                             
-                            content_entropy = self.calculate_shannon_entropy(file_content_sample)
+                            content_entropy = calculate_shannon_entropy(file_content_sample)
                             
                             # Standardized threshold: if entropy is under 1.5, file is classified as Slop
                             if content_entropy < 1.5 and len(file_content_sample) > 50:

@@ -128,11 +128,13 @@ class SovereignQueen:
         dot = sum(a*b for a, b in zip(q1, q2))
         dot = max(-1.0, min(1.0, dot))
         theta_0 = math.acos(dot)
-    theta = theta_0 * t
-    sin_theta = math.sin(theta)
-    sin_theta_0 = math.sin(theta_0)
-    s0 = math.cos(theta) - dot * sin_theta / sin_theta_0
-    s1 = sin_theta / sin_theta_0
+        theta = theta_0 * t
+        sin_theta = math.sin(theta)
+        sin_theta_0 = math.sin(theta_0)
+        if abs(sin_theta_0) < 1e-8:
+            return list(q1)
+        s0 = math.cos(theta) - dot * sin_theta / sin_theta_0
+        s1 = sin_theta / sin_theta_0
         
         # In a full geometric space, this rotates q1 toward q2.
         # For this execution, we return the targeted unit vector.
