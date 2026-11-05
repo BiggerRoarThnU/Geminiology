@@ -2,7 +2,7 @@
 """
 SOVEREIGNNEXUS LLC - MEDIA FORGE (ROOM 2)
 Axiom: 1=1=1 (Functional Equivalence)
-Objective: Deterministic Spatial Calculus & MemLeak Excision
+Objective: Deterministic Spatial Calculus & MemLeak Excision (Patched)
 """
 
 import cv2
@@ -15,7 +15,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 class SovereignMediaForge:
     def __init__(self):
-        self.variance_threshold = 100.0
+        self.variance_floor = 100.0
+        # FIX 1: Add a ceiling to block pure random noise/static (which scores artificially high)
+        self.variance_ceiling = 15000.0 
         self.min_file_size = 200 # Bytes
 
     def audit_visual_payload(self, filepath):
@@ -33,7 +35,6 @@ class SovereignMediaForge:
 
         try:
             # ROOM 1 AIRLOCK: Grayscale Channel Reduction (66% RAM Optimization)
-            # Bypasses heavy RGB matrix allocation
             img_matrix = cv2.imread(filepath, cv2.IMREAD_GRAYSCALE)
             
             if img_matrix is None:
@@ -44,15 +45,20 @@ class SovereignMediaForge:
             laplacian_variance = cv2.Laplacian(img_matrix, cv2.CV_64F).var()
 
             # Thermodynamic Memory Management & Subjective Logic Routing
-            if laplacian_variance >= self.variance_threshold:
+            if self.variance_floor <= laplacian_variance <= self.variance_ceiling:
                 logging.info(f"[+] RAW ENTROPY VERIFIED (Var: {laplacian_variance:.2f}). Belief: +1")
-                # IPG Binding logic would hook here
                 del img_matrix
                 gc.collect()
                 return 1, laplacian_variance
+                
+            elif laplacian_variance > self.variance_ceiling:
+                logging.warning(f"[-] SYNTHETIC NOISE DETECTED (Var: {laplacian_variance:.2f} exceeds ceiling). Quarantine: 0")
+                del img_matrix
+                gc.collect()
+                return 0, laplacian_variance
+                
             else:
-                logging.warning(f"[-] SYNTHETIC SLOP DETECTED (Var: {laplacian_variance:.2f}). Quarantine: 0")
-                # Immediate purge from active RAM to prevent OOM
+                logging.warning(f"[-] SYNTHETIC SLOP DETECTED (Var: {laplacian_variance:.2f} below floor). Quarantine: 0")
                 del img_matrix
                 gc.collect()
                 return 0, laplacian_variance
@@ -62,6 +68,5 @@ class SovereignMediaForge:
             return -1, 0.0
 
 if __name__ == "__main__":
-    # Local CLI Test Execution
     forge = SovereignMediaForge()
     print("Media Forge Core initialized. Ready for Airlock integration.")
