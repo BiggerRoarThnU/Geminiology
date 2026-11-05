@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSE: Sovereign Lens</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --panel-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-burgundy: #9f1239;
+            --border-color: #334155;
+            --font-mono: 'Courier New', Courier, monospace;
+            --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        header {
+            padding: 1rem 2rem;
+            background-color: var(--panel-bg);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--accent-green);
+        }
+
+        .pulse {
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            animation: pulse-animation 2s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Left Panel - Visuals */
+        .panel-left {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .image-container {
+            flex: 1;
+            border: 2px dashed var(--border-color);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            background-color: #000;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Default Muse Avatar Styling */
+        #preview-image[src="Gemini_Generated_Image_yf41ooyf41ooyf41.jpeg"] {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+        }
+
+        .upload-overlay {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.85);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            border: 1px solid var(--accent-burgundy);
+            backdrop-filter: blur(4px);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-overlay:hover {
+            background: rgba(159, 18, 57, 0.4);
+            border-color: #f43f5e;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        /* Right Panel - Telemetry */
+        .panel-right {
+            width: 450px;
+            background-color: var(--panel-bg);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            font-family: var(--font-mono);
+            overflow-y: auto;
+        }
+
+        .telemetry-block {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1rem;
+        }
+
+        .telemetry-block h3 {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .telemetry-value {
+            font-size: 1.2rem;
+            word-break: break-all;
+        }
+
+        .status-belief { color: var(--accent-green); }
+        .status-quarantine { color: var(--accent-red); }
+
+        #terminal-log {
+            flex: 1;
+            background-color: #000;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .log-entry { margin-bottom: 0.5rem; }
+        .log-time { color: #3b82f6; }
+        
+        button.execute-btn {
+            background-color: var(--accent-burgundy);
+            color: white;
+            border: none;
+            padding: 1rem;
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        button.execute-btn:hover:not(:disabled) {
+            background-color: #be123c;
+        }
+
+        button.execute-btn:disabled {
+            background-color: var(--border-color);
+            cursor: not-allowed;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MUSE Studio // Sovereign Lens</h1>
+        <div class="status-indicator">
+            <div class="pulse"></div>
+            <span>AIRLOCK: 8080 SECURE</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Left Panel: Visuals -->
+        <section class="panel-left">
+            <div class="image-container">
+                <img id="preview-image" src="Gemini_Generated_Image_yf41ooyf41ooyf41.jpeg" alt="Digital Queen Placeholder">
+                
+                <label for="file-upload" class="upload-overlay">
+                    <span style="font-family: var(--font-mono); font-weight: bold;">+ SELECT ASSET</span>
+                </label>
+                <input id="file-upload" type="file" accept="image/*">
+            </div>
+        </section>
+
+        <!-- Right Panel: Math & Telemetry -->
+        <section class="panel-right">
+            
+            <div class="telemetry-block">
+                <h3>Subjective Logic State</h3>
+                <div id="logic-state" class="telemetry-value">AWAITING INPUT</div>
+            </div>
+
+            <div class="telemetry-block">
+                <h3>Laplacian Variance (∇²M)</h3>
+                <div id="variance-score" class="telemetry-value">0.0000</div>
+            </div>
+
+            <div class="telemetry-block">
+                <h3>Cryptographic Root (SHA-256)</h3>
+                <div id="crypto-hash" class="telemetry-value" style="font-size: 0.9rem;">NO HASH GENERATED</div>
+            </div>
+
+            <button id="execute-strike" class="execute-btn" disabled>EXECUTE LAPLACIAN STRIKE</button>
+
+            <div id="terminal-log">
+                <div class="log-entry"><span class="log-time">[SYS]</span> Sovereign Lens Interface Initialized.</div>
+                <div class="log-entry"><span class="log-time">[SYS]</span> Awaiting asset selection...</div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const fileUpload = document.getElementById('file-upload');
+        const previewImage = document.getElementById('preview-image');
+        const executeBtn = document.getElementById('execute-strike');
+        
+        const logicStateEl = document.getElementById('logic-state');
+        const varianceScoreEl = document.getElementById('variance-score');
+        const cryptoHashEl = document.getElementById('crypto-hash');
+        const terminalLog = document.getElementById('terminal-log');
+
+        let currentFile = null;
+
+        function logToTerminal(message) {
+            const time = new Date().toLocaleTimeString('en-US', { hour12: false });
+            const logHTML = `<div class="log-entry"><span class="log-time">[${time}]</span> ${message}</div>`;
+            terminalLog.insertAdjacentHTML('beforeend', logHTML);
+            terminalLog.scrollTop = terminalLog.scrollHeight;
+        }
+
+        // Handle File Selection
+        fileUpload.addEventListener('change', (e) => {
+            if (e.target.files && e.target.files[0]) {
+                currentFile = e.target.files[0];
+                const reader = new FileReader();
+                
+                reader.onload = (e) => {
+                    previewImage.src = e.target.result;
+                    // Reset styling if changing from default avatar
+                    previewImage.style.objectFit = 'contain';
+                    previewImage.style.opacity = '1';
+                }
+                
+                reader.readAsDataURL(currentFile);
+                executeBtn.disabled = false;
+                
+                logToTerminal(`Asset loaded: ${currentFile.name} (${(currentFile.size / 1024).toFixed(2)} KB)`);
+                
+                // Reset metrics
+                logicStateEl.textContent = "READY FOR AUDIT";
+                logicStateEl.className = "telemetry-value";
+                varianceScoreEl.textContent = "0.0000";
+                cryptoHashEl.textContent = "PENDING...";
+            }
+        });
+
+        // Handle the Strike (POST to Python Airlock)
+        executeBtn.addEventListener('click', async () => {
+            if (!currentFile) return;
+
+            logToTerminal(`Initiating proxy connection to Port 8080...`);
+            executeBtn.disabled = true;
+            logicStateEl.textContent = "PROCESSING...";
+
+            const formData = new FormData();
+            formData.append('file', currentFile);
+
+            try {
+                // Ensure your media_forge_airlock.py is running on localhost:8080!
+                const response = await fetch('http://127.0.0.1:8080/airlock/ingest', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.status === 200) {
+                    // Passed Entropy Check
+                    logicStateEl.textContent = data.status;
+                    logicStateEl.className = "telemetry-value status-belief";
+                    varianceScoreEl.textContent = parseFloat(data.variance).toFixed(4);
+                    cryptoHashEl.textContent = data.hash;
+                    logToTerminal(`SUCCESS: Raw Entropy Verified. Ledger updated.`);
+                } else if (response.status === 406) {
+                    // Failed Entropy Check (Slop/Noise)
+                    logicStateEl.textContent = data.status;
+                    logicStateEl.className = "telemetry-value status-quarantine";
+                    varianceScoreEl.textContent = parseFloat(data.variance).toFixed(4);
+                    cryptoHashEl.textContent = "PURGED (0-STATE)";
+                    logToTerminal(`WARNING: ${data.message}`);
+                } else if (response.status === 503) {
+                    // Thermal Halt
+                    logicStateEl.textContent = "THERMAL HALT";
+                    logicStateEl.className = "telemetry-value status-quarantine";
+                    logToTerminal(`CRITICAL: System thermal limit reached. Hardware protected.`);
+                } else {
+                    throw new Error("Unknown response from proxy.");
+                }
+
+            } catch (error) {
+                logToTerminal(`ERROR: Connection to Airlock failed. Is Python running?`);
+                logicStateEl.textContent = "CONNECTION REFUSED";
+                logicStateEl.className = "telemetry-value status-quarantine";
+            } finally {
+                executeBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
