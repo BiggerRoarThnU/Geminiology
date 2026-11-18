@@ -18,6 +18,11 @@ import logging
 import re
 import numpy as np
 
+try:
+    from code_warrior_v3 import scan_payload, egress_scrub, inspect_python_ast
+except ImportError:
+    from src.code_warrior_v3 import scan_payload, egress_scrub, inspect_python_ast
+
 class SovereignDefenseCore:
     """
     Orchestrates real-time defensive audits, thermal throttling, and process isolation
@@ -39,6 +44,22 @@ class SovereignDefenseCore:
         
         logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
         self.logger = logging.getLogger("SovereignDefense")
+
+    # --------------------------------------------------------------------------
+    # LAYER 0: CODE WARRIOR AIRLOCK (AST & Egress Secret Redactor)
+    # --------------------------------------------------------------------------
+    def audit_code_payload(self, file_path: str, db_path: str = None) -> dict:
+        """
+        Audits a target source code file or package payload via Code Warrior v3 5-Gate pipeline.
+        """
+        self.logger.info(f"[CODE WARRIOR] Ingress scan for payload: {file_path}")
+        return scan_payload(file_path, db_path=db_path)
+
+    def scrub_egress_stream(self, text: str) -> str:
+        """
+        Scrubs outgoing telemetry, log lines, or HTTP responses to prevent secret exposure.
+        """
+        return egress_scrub(text)
 
     # --------------------------------------------------------------------------
     # LAYER 1: LITERACY SENTRY (Prompt Injection Shield)

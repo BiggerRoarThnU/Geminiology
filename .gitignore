@@ -107,3 +107,14 @@ nexus_checkpoints_log.json
 docs/THE_ARCHITECTURES_OF_AUTONOMY_REFLECTION_BEAM_501B_AND_SOVEREIGN_EDGE.md
 nuclei/action_topology.json
 nuclei/*_CHOP_SHOP_TELEMETRY.md
+
+# === INTERNAL INFRASTRUCTURE & PRIVATE ARCHIVE SHIELD ===
+04_The_Ledgers/
+Sovereign_Ghost_Codebase.md
+Sovereign_Staging_v4/
+docs/alignment_binder/
+visual_audit_registry.json
+MASTER_ARCHIVE_BINDER.md
+Portfolio/
+truth_markdown_ingest_v3
+
